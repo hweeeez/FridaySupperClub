@@ -17,8 +17,23 @@ public class PlayerJump_01 : MonoBehaviour
     {
         
     }
+    void OnCollisionEnter2D(Collision2D Other)
+    {
+        if (Other.collider.gameObject.tag == "Platform")
+        {          
+            canJump = true;
+       
+        }
+    }
+    void OnCollisionExit2D(Collision2D Other)
+    {
+        if (Other.collider.gameObject.tag == "Platform")
+        {
+            //grounded = false;
+            canJump = false;
 
-  
+        }
+    }
 
     private void Update()
     {
@@ -54,7 +69,7 @@ public class PlayerJump_01 : MonoBehaviour
         if (jumpCancelled && jumping && rb.velocity.y > 0)
         {
             rb.AddForce(Vector2.down * cancelRate);
-            canJump = false;
+            //canJump = false;
         }
         
     }
