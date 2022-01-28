@@ -853,3 +853,4 @@ Received Import Request.
 Start importing Assets/01_Scenes/00_TestScenes/HweeJumpScene_01.unity using Guid(85107a618c91a5f4594b92a99dc74a26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a3a498c04dbab280effc0e2d656aed') in 0.039389 seconds 
   Import took 0.043646 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
