@@ -37,8 +37,6 @@ public class PlayerMovement_01 : MonoBehaviour
         Vector2 targetVelocity = new Vector2(xVal, rb.velocity.y); //y value remains the same, only x changes
         rb.velocity = targetVelocity;
 
-        //Storing current scale value (which is the default (1, 1, 1))
-        //Vector3 currentScale = transform.localScale;
         //If looking right and clicked left, flip to the left
         if (facingRight && dir<0) //dir<0 means going left (dir = -1)
         {
