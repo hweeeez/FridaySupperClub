@@ -38,17 +38,17 @@ public class PlayerMovement_01 : MonoBehaviour
         rb.velocity = targetVelocity;
 
         //Storing current scale value (which is the default (1, 1, 1))
-        Vector3 currentScale = transform.localScale;
+        //Vector3 currentScale = transform.localScale;
         //If looking right and clicked left, flip to the left
         if (facingRight && dir<0) //dir<0 means going left (dir = -1)
         {
-            currentScale.x = -1;
+            transform.localScale = new Vector3(-1, 1, 1);
             facingRight = false;
         }
         //If looking left and clicked right, flip to the right
         else if (!facingRight && dir>0)
         {
-            currentScale.x = 1;
+            transform.localScale = new Vector3(1, 1, 1);
             facingRight = true;
         }
         #endregion
