@@ -11,7 +11,7 @@ public class Controller : MonoBehaviour
     private float playerSpeed = 2.0f;
     private float jumpHeight = 1.0f;
     private float gravityValue = -9.81f;
-
+   
     private Vector2 movementInput = Vector2.zero;
     private bool jumped = false;
     private void Start()
