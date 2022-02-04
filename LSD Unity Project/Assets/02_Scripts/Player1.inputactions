@@ -147,7 +147,7 @@
                 {
                     "name": "",
                     "id": "7b4caffc-fe07-46a3-8140-e2406532749d",
-                    "path": "<Keyboard>/downArrow",
+                    "path": "<Keyboard>/upArrow",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard2",

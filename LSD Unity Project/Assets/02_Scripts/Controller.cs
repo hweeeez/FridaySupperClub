@@ -2,11 +2,9 @@ using UnityEngine.InputSystem;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-[RequireComponent(typeof(PlayerInput))]
 public class Controller : MonoBehaviour
 {
     private PlayerInput m_PlayerInput;
-    public GameObject Player1;
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
@@ -19,10 +17,7 @@ public class Controller : MonoBehaviour
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
-        var p1 = PlayerInput.Instantiate(Player1, controlScheme: "Keyboard", pairWithDevice: Keyboard.current);
-        var p2 = PlayerInput.Instantiate(Player1,
-            controlScheme: "Keyboard2",
-            pairWithDevice: Keyboard.current);
+
     }
 
     public void OnMove(InputAction.CallbackContext context)
