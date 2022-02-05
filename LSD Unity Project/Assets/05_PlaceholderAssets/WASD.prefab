@@ -42,8 +42,7 @@ GameObject:
   - component: {fileID: 7104238988279009786}
   - component: {fileID: 7104238988279009783}
   - component: {fileID: 7104238988279009784}
-  - component: {fileID: 7104238988279009785}
-  - component: {fileID: -5004926392113500399}
+  - component: {fileID: 4086221527760596846}
   - component: {fileID: 7104238988279009777}
   - component: {fileID: 5893018536092498180}
   - component: {fileID: 7104238988279009782}
@@ -151,7 +150,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7104238988279009785
+--- !u!114 &4086221527760596846
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,22 +159,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7104238988279009790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
+  m_Script: {fileID: 11500000, guid: 298e92fe7948ded4d9a9f0d6fe973956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &-5004926392113500399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7104238988279009790}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08aca323512ae684e9207f5c7a68a7b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _groundCheck: {fileID: 6334228408169059922}
+  jumpHeight: 10
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -233,7 +220,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7104238988279009785}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Controller, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
@@ -249,7 +236,7 @@ MonoBehaviour:
     m_ActionName: Player1/Movement[/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7104238988279009785}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Controller, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
