@@ -623,6 +623,7 @@ GameObject:
   - component: {fileID: 1025016130}
   - component: {fileID: 1025016129}
   - component: {fileID: 1025016128}
+  - component: {fileID: 1025016131}
   m_Layer: 0
   m_Name: gameman
   m_TagString: Untagged
@@ -637,13 +638,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1025016127}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 68beb0ee05ec86f4faff27d0ed9d67de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerOne: {fileID: 7104238988279009790, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
   playerTwo: {fileID: 7104238988279009790, guid: d27cb5e3ee4a0694ab346c88750850ca, type: 3}
+  playerThree: {fileID: 7104238988279009790, guid: 209c777aef0909d40ade44a7761d2c90, type: 3}
+  playerFour: {fileID: 7104238988279009790, guid: 6494dd859e0a6d2479749f1b93c907e0, type: 3}
 --- !u!114 &1025016129
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -696,6 +699,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1025016131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1025016127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 621567455fd1c4ceb811cc8a00b6a1a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NotificationBehavior: 2
+  m_MaxPlayerCount: -1
+  m_AllowJoining: 1
+  m_JoinBehavior: 2
+  m_PlayerJoinedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_PlayerLeftEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_JoinAction:
+    m_UseReference: 0
+    m_Action:
+      m_Name: Join
+      m_Type: 0
+      m_ExpectedControlType: 
+      m_Id: 64f3503a-b331-49c4-9756-1c8f4ab1a627
+      m_Processors: 
+      m_Interactions: 
+      m_SingletonActionBindings: []
+    m_Reference: {fileID: 0}
+  m_PlayerPrefab: {fileID: 0}
+  m_SplitScreen: 0
+  m_MaintainAspectRatioInSplitScreen: 0
+  m_FixedNumberOfSplitScreens: -1
+  m_SplitScreenRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
 --- !u!1 &1071357513
 GameObject:
   m_ObjectHideFlags: 0
