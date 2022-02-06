@@ -2,9 +2,9 @@ using UnityEngine.InputSystem;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class Controller : MonoBehaviour
+public class Controller1 : MonoBehaviour
 {
-    private PlayerInput m_PlayerInput;
+    private PlayerInput playerInput;
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
@@ -13,18 +13,22 @@ public class Controller : MonoBehaviour
     private float gravityValue = -9.81f;
 
     private Vector2 movementInput = Vector2.zero;
-    private bool jumped = false;
-    public float buttonTime = 1f;
-    public float jumpHeight = 1f;
+    private bool jumped;
+    private bool isFalling;
+    public float buttonTime = 0.75f;
+    public float jumpHeight = 4f;
     public float cancelRate = 100;
-    float jumpTime = 0.5f;
-    bool jumping;
+    float jumpTime;
+    float fallMultiplier = 2.0f;
+    bool jumping = false;
     bool jumpCancelled;
 
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
+        playerInput = new PlayerInput();
 
+        
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -34,7 +38,6 @@ public class Controller : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        //jumped = context.ReadValue<bool>();
         jumped = context.action.triggered;
     }
 
@@ -46,24 +49,59 @@ public class Controller : MonoBehaviour
         if (groundedPlayer && playerVelocity.y < 0)
         {
             playerVelocity.y = 0f;
-            //jumpCancelled = false;
+            jumpCancelled = false;
         }
 
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
         controller.Move(move * Time.deltaTime * playerSpeed);
-
+        //if (Input.GetButtonDown("Jump")){ 
 
         // Changes the height position of the player..
         //canjump
-        if (jumped && groundedPlayer)
+
+        if( playerVelocity.y <= 0 && jumping)
+        {
+            isFalling = true;
+        }
+        if (jumped && groundedPlayer && !jumping)
         {
             playerVelocity.y += Mathf.Sqrt(jumpHeight * -2.0f * gravityValue);
+            jumping = true;
+            jumpTime = 0;
+        }
+        if (jumping)
+        {
 
+            jumpTime += Time.deltaTime;
+            if (!jumped)
+            {
+                jumpCancelled = true;
+            }
+
+            if (jumpTime > buttonTime)
+            {
+                jumping = false;
+            }
         }
 
+        Debug.Log(jumped);
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
     }
+    private void FixedUpdate()
+    {
+        if (jumpCancelled && jumping && playerVelocity.y > 0)
+        {
+            playerVelocity.y -= Mathf.Sqrt(jumpHeight * 2.0f * gravityValue);
+            //canJump = false;
+        }
+
+    }
+
+
+
 }
+
+
 
 
