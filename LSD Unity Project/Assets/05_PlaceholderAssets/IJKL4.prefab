@@ -42,13 +42,12 @@ GameObject:
   - component: {fileID: 7104238988279009786}
   - component: {fileID: 7104238988279009783}
   - component: {fileID: 7104238988279009784}
-  - component: {fileID: 4086221527760596846}
-  - component: {fileID: 6375593499157839595}
+  - component: {fileID: 7104238988279009785}
   - component: {fileID: 7104238988279009777}
   - component: {fileID: 5893018536092498180}
   - component: {fileID: 7104238988279009782}
   m_Layer: 0
-  m_Name: WASD
+  m_Name: IJKL4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -151,19 +150,7 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &4086221527760596846
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7104238988279009790}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 298e92fe7948ded4d9a9f0d6fe973956, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6375593499157839595
+--- !u!114 &7104238988279009785
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,11 +159,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7104238988279009790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76342de758cb19c448bd45080d375f5d, type: 3}
+  m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonTime: 0.75
-  jumpHeight: 4
+  buttonTime: 1
+  jumpHeight: 1
   cancelRate: 100
 --- !u!136 &7104238988279009777
 CapsuleCollider:
@@ -207,7 +194,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 72
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!114 &7104238988279009782
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -235,8 +222,8 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6375593499157839595}
-        m_TargetAssemblyTypeName: Controller1, Assembly-CSharp
+      - m_Target: {fileID: 7104238988279009785}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
         m_Arguments:
@@ -251,8 +238,8 @@ MonoBehaviour:
     m_ActionName: Player1/Movement[/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6375593499157839595}
-        m_TargetAssemblyTypeName: Controller1, Assembly-CSharp
+      - m_Target: {fileID: 7104238988279009785}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
         m_MethodName: OnJump
         m_Mode: 0
         m_Arguments:
@@ -266,7 +253,7 @@ MonoBehaviour:
     m_ActionId: a2867a95-5af3-4462-8a36-ddc81a7ab9ea
     m_ActionName: Player1/Jump[/Keyboard/w]
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Keyboard
+  m_DefaultControlScheme: Keyboard4
   m_DefaultActionMap: Player1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
