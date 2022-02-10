@@ -2,7 +2,7 @@ using UnityEngine.InputSystem;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
-public class Controller : MonoBehaviour
+public class HinakoTestMap : MonoBehaviour
 {
     private PlayerInput m_PlayerInput;
     private CharacterController controller;
@@ -17,7 +17,7 @@ public class Controller : MonoBehaviour
     private bool jumped = false;
     public float buttonTime = 0.75f;
 
-    private float jumpHeight = 3.5f;
+    private float jumpHeight = 4f;
     public float cancelRate = 100;
     float jumpTime;
     bool jumping;
@@ -90,5 +90,4 @@ public class Controller : MonoBehaviour
         controller.Move(playerVelocity * Time.deltaTime);
     }
 }
-
 
