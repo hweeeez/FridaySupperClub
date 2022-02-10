@@ -8,7 +8,7 @@ public class Controller : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
-    private float playerSpeed = 5.0f;
+    private float playerSpeed = 3.0f;
 
     //private float gravityValue = -9.81f;
     private float jumpGravity = -9.81f;
@@ -17,7 +17,7 @@ public class Controller : MonoBehaviour
     private bool jumped = false;
     public float buttonTime = 0.75f;
 
-    private float jumpHeight = 3.5f;
+    private float jumpHeight = 2f;
     public float cancelRate = 100;
     float jumpTime;
     bool jumping;
