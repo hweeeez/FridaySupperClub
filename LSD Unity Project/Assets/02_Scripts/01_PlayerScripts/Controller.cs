@@ -9,6 +9,12 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private float playerSpeed = 3.0f;
 
+    [SerializeField] private Transform[] _sensors;
+    [SerializeField] private LayerMask _groundCheckLayerMask;
+    [SerializeField] private float _groundCheckDistance = 0.2f;
+    [SerializeField] private Color _groundHit;
+    [SerializeField] private Color _groundMiss;
+
     //private float gravityValue = -9.81f;
     [SerializeField]
     private float jumpGravity = -11.81f;
@@ -26,6 +32,7 @@ public class Controller : MonoBehaviour
     bool startedJump;
     float startY;
 
+    private bool isGrounded;
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -54,16 +61,17 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
+        isGrounded = RaycastFromAllSensors();
         float gravityValue = jumpGravity;// startedJump &&  ? jumpGravity : fallGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
         bool debugGrounded = true;
         //grounded
-        if (controller.isGrounded)
+        if (isGrounded)
         {
             playerVelocity.y = -0.5f;
             startedJump = false;
         }
-        print("isGrounded:" + controller.isGrounded);
+        print("isGrounded: " + isGrounded);
 
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
         controller.Move(move * Time.deltaTime * playerSpeed);
@@ -71,13 +79,12 @@ public class Controller : MonoBehaviour
         // Changes the height position of the player..
         bool tryAccelerate = false;
         float jumpedDistance = transform.position.y - startY;
-        print(startedJump + "startedJump");
-        print(jumpedDistance + "jumpeddistance");
-        print(startY + " Startingpos");
+        //print(startedJump + "startedJump");
+        //print(jumpedDistance + "jumpeddistance");
 
         if (jumpButtonHeld)
         {
-            if (!controller.isGrounded)
+            if (isGrounded)
             {
                 startedJump = true;
                 startY = transform.position.y;
@@ -128,8 +135,33 @@ public class Controller : MonoBehaviour
         //Debug.Log(playerVelocity.y);
         //Debug.Log(jumpHeight);
         playerVelocity.y += gravityValue * Time.deltaTime;
-        // print(playerVelocity.y);
         controller.Move(playerVelocity * Time.deltaTime);
+    }
+
+    private bool RaycastFromSensor(Transform sensor)
+    {
+        RaycastHit2D hit;
+        var position = sensor.position;
+        var forward = sensor.forward;
+        hit = Physics2D.Raycast(position, forward, _groundCheckDistance, _groundCheckLayerMask);
+        if (hit.collider != null)
+        {
+            Debug.DrawRay(position, forward * _groundCheckDistance, _groundHit);
+            return true;
+        }
+        else
+        {
+            Debug.DrawRay(position, forward * _groundCheckDistance, _groundMiss);
+        }
+        return false;
+    }
+    private bool RaycastFromAllSensors()
+    {
+        foreach (var sensor in _sensors)
+        {
+            if (RaycastFromSensor(sensor)) return true;
+        }
+        return false;
     }
 }
 
