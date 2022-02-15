@@ -20,7 +20,7 @@ public class Controller : MonoBehaviour
     private bool jumped = false;
     public float buttonTime = 0.75f;
 
-    private float jumpHeight = 2f;
+    private float jumpHeight = 7f;
     public float cancelRate = 100;
     float jumpTime;
     bool jumping;
