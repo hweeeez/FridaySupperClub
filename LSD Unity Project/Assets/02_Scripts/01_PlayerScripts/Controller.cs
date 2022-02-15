@@ -4,10 +4,8 @@ using UnityEngine;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
-    private PlayerInput m_PlayerInput;
     private CharacterController controller;
     private Vector3 playerVelocity;
-    private bool groundedPlayer;
     [SerializeField]
     private float playerSpeed = 3.0f;
 
@@ -17,14 +15,16 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private float fallGravity = -15.81f;
     private Vector2 movementInput = Vector2.zero;
-    private bool jumped = false;
+    private bool jumpButtonHeld;
     public float buttonTime = 0.75f;
 
-    private float jumpHeight = 2f;
+    private float maxHeight = 2f;
+    private float minHeight = 1f;
+    //private float jumpHeight = 2f;
     public float cancelRate = 100;
     float jumpTime;
-    bool jumping;
-    bool jumpCancelled;
+    bool startedJump;
+    float startY;
 
     private void Awake()
     {
@@ -39,58 +39,96 @@ public class Controller : MonoBehaviour
 
     public void OnJump(InputAction.CallbackContext context)
     {
-        //jumped = context.ReadValue<bool>();
-        jumped = context.action.triggered;
+        if (context.action.triggered)
+        {
+            print("jump!");
+            jumpButtonHeld = true;
+        }
+        else if (context.action.phase == InputActionPhase.Canceled)
+        {
+            print("cancelled");
+            jumpButtonHeld = false;
+            startedJump = false;
+        }
     }
 
     void Update()
     {
-        groundedPlayer = controller.isGrounded;
-        float gravityValue = jumping ? jumpGravity : fallGravity;
-
+        float gravityValue = jumpGravity;// startedJump &&  ? jumpGravity : fallGravity;
+        float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
+        bool debugGrounded = true;
         //grounded
-        if (groundedPlayer && playerVelocity.y < 0)
+        if (controller.isGrounded)
         {
-            playerVelocity.y = 0f;
-            //jumpCancelled = false;
+            playerVelocity.y = -0.5f;
+            startedJump = false;
         }
+        print("isGrounded:" + controller.isGrounded);
 
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-
         // Changes the height position of the player..
-        if (jumped && groundedPlayer )//&& !jumping)
+        bool tryAccelerate = false;
+        float jumpedDistance = transform.position.y - startY;
+        print(startedJump + "startedJump");
+        print(jumpedDistance + "jumpeddistance");
+        print(startY + " Startingpos");
+
+        if (jumpButtonHeld)
         {
-            playerVelocity.y += Mathf.Sqrt(jumpHeight * -2.0f * gravityValue);
-            jumping = true;
-            jumpTime = 0;
-            jumpCancelled = false;
+            if (!controller.isGrounded)
+            {
+                startedJump = true;
+                startY = transform.position.y;
+            }
+            tryAccelerate = true;
         }
-        if (jumping)
+        else if (startedJump && jumpedDistance < minHeight)
         {
-
-            jumpTime += Time.deltaTime;
-            if (!jumped)
-            {
-                jumpCancelled = true;
-            }
-
-            if (jumpTime > buttonTime)
-            {
-                jumping = false;
-            }
+            tryAccelerate = true;
         }
-
-         if (jumpCancelled && jumping && playerVelocity.y > 0)
+        if (tryAccelerate)
+        {
+            bool maxHeightExceeded = jumpedDistance > maxHeight;
+            if (startedJump && !maxHeightExceeded)
+            {
+                playerVelocity.y += Mathf.Sqrt(jumpHeight * -2.0f * gravityValue) * Time.deltaTime * 10;
+            }
+            if (startedJump && maxHeightExceeded)
+                playerVelocity.y = 0;
+        }
+        /* if (!jumped && jumping == true)
          {
-             playerVelocity.y = 0;
-             
-         }
+             playerVelocity.y = 2;
+         }*/
+        /*       if (jumping)
+               {
+
+                   jumpTime += Time.deltaTime;
+                   if (!jumped)
+                   {
+                       jumpCancelled = true;
+                   }
+
+                   if (jumpTime > buttonTime)
+                   {
+                       jumping = false;
+                   }
+               }
+
+               if (jumpCancelled && jumping && playerVelocity.y > 0)
+               {
+
+                       playerVelocity.y = 0;
+
+               }*/
         /* Debug.Log(jumping);
-         Debug.Log(jumped);
-         Debug.Log(playerVelocity.y);*/
+         Debug.Log(jumped);*/
+        //Debug.Log(playerVelocity.y);
+        //Debug.Log(jumpHeight);
         playerVelocity.y += gravityValue * Time.deltaTime;
+        // print(playerVelocity.y);
         controller.Move(playerVelocity * Time.deltaTime);
     }
 }
