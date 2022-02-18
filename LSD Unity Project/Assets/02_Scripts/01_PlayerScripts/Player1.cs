@@ -41,6 +41,14 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Slam"",
+                    ""type"": ""Button"",
+                    ""id"": ""6f974148-8a7b-4ca8-b5c7-643429069806"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -318,6 +326,50 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""action"": ""Select"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""55acbf41-9f96-475c-9557-307ea61d59af"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Slam"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a8317d1a-c3b5-4757-b1f7-6688e237dffb"",
+                    ""path"": ""<Keyboard>/k"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard4"",
+                    ""action"": ""Slam"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""be2ecec3-48b7-475b-97d8-8a956eca6142"",
+                    ""path"": ""<Keyboard>/numpad2"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard2;Keyboard3"",
+                    ""action"": ""Slam"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""5bec7fbe-de2f-41a6-bcb4-1407b554b6ca"",
+                    ""path"": ""<Keyboard>/downArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard2"",
+                    ""action"": ""Slam"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -374,6 +426,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
         m_Player1_Movement = m_Player1.FindAction("Movement", throwIfNotFound: true);
         m_Player1_Jump = m_Player1.FindAction("Jump", throwIfNotFound: true);
         m_Player1_Select = m_Player1.FindAction("Select", throwIfNotFound: true);
+        m_Player1_Slam = m_Player1.FindAction("Slam", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -426,6 +479,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
     private readonly InputAction m_Player1_Movement;
     private readonly InputAction m_Player1_Jump;
     private readonly InputAction m_Player1_Select;
+    private readonly InputAction m_Player1_Slam;
     public struct Player1Actions
     {
         private @AutoGen m_Wrapper;
@@ -433,6 +487,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player1_Movement;
         public InputAction @Jump => m_Wrapper.m_Player1_Jump;
         public InputAction @Select => m_Wrapper.m_Player1_Select;
+        public InputAction @Slam => m_Wrapper.m_Player1_Slam;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -451,6 +506,9 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 @Select.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSelect;
                 @Select.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSelect;
                 @Select.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSelect;
+                @Slam.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
+                @Slam.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
+                @Slam.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
             }
             m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
@@ -464,6 +522,9 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 @Select.started += instance.OnSelect;
                 @Select.performed += instance.OnSelect;
                 @Select.canceled += instance.OnSelect;
+                @Slam.started += instance.OnSlam;
+                @Slam.performed += instance.OnSlam;
+                @Slam.canceled += instance.OnSlam;
             }
         }
     }
@@ -509,5 +570,6 @@ public class @AutoGen : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnSelect(InputAction.CallbackContext context);
+        void OnSlam(InputAction.CallbackContext context);
     }
 }

@@ -12,22 +12,30 @@ public class Controller : MonoBehaviour
 
     //private float gravityValue = -9.81f;
     [SerializeField]
-    private float jumpGravity = -11.81f;
+    private float jumpGravity = -10.81f;
     [SerializeField]
     private float fallGravity = -15.81f;
+    private float slamGravity = -26f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
     public float buttonTime = 0.75f;
 
-    private float maxHeight = 4f;
-    private float minHeight = 2f;
-    //private float jumpHeight = 2f;
-    public float cancelRate = 100;
-    float jumpTime;
+    private float maxHeight = 3f;
+    private float minHeight = 1.5f;
+
     bool startedJump;
     float startY;
+    private bool slammed = false;
 
-    private bool isGrounded;
+    public GameObject currentHitObject;
+    public float currentHitDistance;
+    private Vector3 origin;
+    private Vector3 direction;
+
+    public float sphereRadius;
+    public float maxDist;
+    public LayerMask layerMask;
+  
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -39,6 +47,14 @@ public class Controller : MonoBehaviour
         movementInput = context.ReadValue<Vector2>();
     }
 
+    public void OnSlam(InputAction.CallbackContext context)
+    {
+        if (context.action.triggered)
+        {
+            print("slam!");
+            slammed = true;
+        }
+    }
     public void OnJump(InputAction.CallbackContext context)
     {
         if (context.action.triggered)
@@ -56,8 +72,23 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
+        origin = transform.position;
+        direction = -transform.up;
+        RaycastHit hit;
+        if (Physics.SphereCast(origin, sphereRadius,direction, out hit, maxDist, layerMask, QueryTriggerInteraction.UseGlobal))
+        {
+            currentHitObject = hit.transform.gameObject;
+            currentHitDistance = hit.distance;
+            print(currentHitObject + "hobj");
+        }
+        else
+        {
+            currentHitDistance = maxDist;
+            currentHitObject = null;
+        }
 
-        float gravityValue = jumpGravity;// startedJump &&  ? jumpGravity : fallGravity;
+        float gravityValue =  startedJump ? jumpGravity : fallGravity;
+        float defaultfallGravity = slammed ? fallGravity : slamGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
 
         if (controller.isGrounded && playerVelocity.y < 0)
@@ -70,17 +101,15 @@ public class Controller : MonoBehaviour
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
         controller.Move(move * Time.deltaTime * playerSpeed);
 
-        // Changes the height position of the player..
+       
         bool tryAccelerate = false;
         float jumpedDistance = transform.position.y - startY;
-        //print(startedJump + "startedJump");
-        //print(jumpedDistance + "jumpeddistance");
+     
 
         if (jumpButtonHeld)
         {
             if (controller.isGrounded)
-            {
-                print("statjump");
+            {                                                           
                 startedJump = true;
                 startY = transform.position.y;
             }
@@ -95,22 +124,29 @@ public class Controller : MonoBehaviour
             bool maxHeightExceeded = jumpedDistance > maxHeight;
             if (startedJump && !maxHeightExceeded)
             {
-                playerVelocity.y += Mathf.Sqrt(jumpHeight * -2.0f * gravityValue) * Time.deltaTime * 10;
+                playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravityValue) ;
             }
             else if (startedJump && maxHeightExceeded)
             {
-                print("drop");
+             
+                startedJump = false;
+            }
+            if(slammed)
+            {
                 startedJump = false;
             }
         }
-
-
-
-
+        print(slammed);
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
     }
 
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Debug.DrawLine(origin, origin + direction * currentHitDistance);
+        Gizmos.DrawWireSphere(origin + direction * currentHitDistance, sphereRadius);
+    }
 
 }
 
