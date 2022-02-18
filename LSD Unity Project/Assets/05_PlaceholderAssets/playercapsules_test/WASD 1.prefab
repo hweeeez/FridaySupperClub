@@ -250,8 +250,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 7104238988279009785}
         m_TargetAssemblyTypeName: Controller, Assembly-CSharp
-        m_MethodName: OnSlam
-        m_Mode: 0
+        m_MethodName: 
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -263,7 +263,19 @@ MonoBehaviour:
     m_ActionId: 1daf9279-5b96-427a-800e-636da4e65806
     m_ActionName: Player1/Select[/Keyboard/enter]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7104238988279009785}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+        m_MethodName: OnSlam
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 6f974148-8a7b-4ca8-b5c7-643429069806
     m_ActionName: Player1/Slam[/Keyboard/s,/Keyboard/k,/Keyboard/numpad2,/Keyboard/downArrow]
   m_NeverAutoSwitchControlSchemes: 1
