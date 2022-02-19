@@ -1,4 +1,5 @@
 using UnityEngine.InputSystem;
+using UnityEngine.InputSystem.Interactions;
 using UnityEngine;
 
 [RequireComponent(typeof(CharacterController))]
@@ -7,9 +8,12 @@ public class Controller : MonoBehaviour
     private CharacterController controller;
     private Vector3 playerVelocity;
     [SerializeField]
-    private float playerSpeed = 3.0f;
+    private InputActionReference actionReference;
 
-
+    [SerializeField]
+    private float defplayerSpeed = 3.0f;
+    [SerializeField]
+    private float dashSpeed = 8.0f;
     //private float gravityValue = -9.81f;
     [SerializeField]
     private float jumpGravity = -10.81f;
@@ -27,24 +31,59 @@ public class Controller : MonoBehaviour
     float startY;
     private bool slammed = false;
 
-    public GameObject currentHitObject;
-    public float currentHitDistance;
-    private Vector3 origin;
-    private Vector3 direction;
-
-    public float sphereRadius;
-    public float maxDist;
-    public LayerMask layerMask;
+    private bool dash = false;
+    private bool canDash;
 
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
+    }
+    private void Start()
+    {
+
 
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        movementInput = context.ReadValue<Vector2>();
+        if (!actionReference.action.interactions.Contains("Press") && actionReference.action.interactions.Contains("MultiTap"))
+        {
+            return;
+        }
+        actionReference.action.started += context =>
+        {
+            if (context.interaction is PressInteraction)
+            {
+                canDash = false;
+            }
+            else if (context.interaction is MultiTapInteraction)
+            {
+                canDash = true;
+            }
+        };
+        actionReference.action.performed += context =>
+        {
+            if (context.interaction is PressInteraction)
+            {
+                movementInput = context.ReadValue<Vector2>();
+            }
+            else if (context.interaction is MultiTapInteraction)
+            {
+                movementInput = context.ReadValue<Vector2>();
+
+            }
+        };
+        actionReference.action.canceled += context =>
+        {
+            if (context.interaction is PressInteraction)
+            {
+                canDash = true;
+            }
+            else if (context.interaction is MultiTapInteraction)
+            {
+                canDash = false;
+            }
+        };
     }
 
     public void OnSlam(InputAction.CallbackContext context)
@@ -77,22 +116,9 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        origin = transform.position;
-        direction = -transform.up;
-        RaycastHit hit;
-        if (Physics.SphereCast(origin, sphereRadius, direction, out hit, maxDist, layerMask, QueryTriggerInteraction.UseGlobal))
-        {
-            currentHitObject = hit.transform.gameObject;
-            currentHitDistance = hit.distance;
-            // print(currentHitObject + "hobj");
-        }
-        else
-        {
-            currentHitDistance = maxDist;
-            currentHitObject = null;
-        }
-        float defaultfallGravity = slammed ? slamGravity : fallGravity;
 
+        float defaultfallGravity = slammed ? slamGravity : fallGravity;
+        float playerSpeed = canDash ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
         print(defaultfallGravity);
@@ -104,8 +130,18 @@ public class Controller : MonoBehaviour
         print("isGrounded: " + controller.isGrounded);
 
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
-        controller.Move(move * Time.deltaTime * playerSpeed);
 
+        if (movementInput == Vector2.zero)
+        {
+            move = Vector3.zero;
+        }
+        else
+        {
+
+            controller.Move(move * Time.deltaTime * playerSpeed);
+
+        }
+        print("dash: " + canDash);
 
         bool tryAccelerate = false;
         float jumpedDistance = transform.position.y - startY;
@@ -138,17 +174,10 @@ public class Controller : MonoBehaviour
             }
 
         }
-        print(slammed);
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Debug.DrawLine(origin, origin + direction * currentHitDistance);
-        Gizmos.DrawWireSphere(origin + direction * currentHitDistance, sphereRadius);
-    }
 
 }
 

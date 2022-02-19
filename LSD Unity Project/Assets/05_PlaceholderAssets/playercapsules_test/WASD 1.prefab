@@ -148,17 +148,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerSpeed: 3
+  actionReference: {fileID: 8861459484310693198, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
+  defplayerSpeed: 3
+  dashSpeed: 8
   jumpGravity: -11.81
   fallGravity: -15.81
-  buttonTime: 1
-  currentHitObject: {fileID: 0}
-  currentHitDistance: 0
-  sphereRadius: 0.5
-  maxDist: 5
-  layerMask:
-    serializedVersion: 2
-    m_Bits: 8
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0
