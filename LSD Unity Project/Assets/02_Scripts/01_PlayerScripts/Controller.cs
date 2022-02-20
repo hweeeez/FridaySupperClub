@@ -26,7 +26,7 @@ public class Controller : MonoBehaviour
     bool startedJump;
     float startY;
     private bool slammed = false;
-
+    private bool rayground;
     public GameObject currentHitObject;
     public float currentHitDistance;
     private Vector3 origin;
@@ -77,14 +77,16 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
+     
         origin = transform.position;
         direction = -transform.up;
         RaycastHit hit;
-        if (Physics.SphereCast(origin, sphereRadius, direction, out hit, maxDist, layerMask, QueryTriggerInteraction.UseGlobal))
+        if (Physics.Raycast(origin, direction, out hit, maxDist, layerMask, QueryTriggerInteraction.UseGlobal))
         {
+            rayground = true;
             currentHitObject = hit.transform.gameObject;
             currentHitDistance = hit.distance;
-            // print(currentHitObject + "hobj");
+            print(currentHitObject + "hobj");
         }
         else
         {
@@ -96,12 +98,12 @@ public class Controller : MonoBehaviour
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
         print(defaultfallGravity);
-        if (controller.isGrounded && playerVelocity.y < 0)
+        if (rayground == true && playerVelocity.y < 0)
         {
             playerVelocity.y = -0.5f;
             startedJump = false;
         }
-        print("isGrounded: " + controller.isGrounded);
+        //print("isGrounded: " + controller.isGrounded);
 
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
         controller.Move(move * Time.deltaTime * playerSpeed);
@@ -113,7 +115,7 @@ public class Controller : MonoBehaviour
 
         if (jumpButtonHeld)
         {
-            if (controller.isGrounded)
+            if (rayground == true)
             {
                 startedJump = true;
                 startY = transform.position.y;
@@ -138,7 +140,7 @@ public class Controller : MonoBehaviour
             }
 
         }
-        print(slammed);
+
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
     }
