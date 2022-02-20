@@ -1,7 +1,7 @@
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 using UnityEngine;
-
+using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
@@ -13,8 +13,12 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private float defplayerSpeed = 3.0f;
     [SerializeField]
-    private float dashSpeed = 8.0f;
-    //private float gravityValue = -9.81f;
+    private float dashSpeed = 10.0f;
+
+    public float MaxDashTime = 1.0f;
+    public float dashStopSpeed = 0.1f;
+    private float currentDashTime;
+    public int tapCount;
     [SerializeField]
     private float jumpGravity = -10.81f;
     [SerializeField]
@@ -31,59 +35,61 @@ public class Controller : MonoBehaviour
     float startY;
     private bool slammed = false;
 
-    private bool dash = false;
+    private bool dashing = false;
     private bool canDash;
-
+    public float xDir;
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
-    }
+          }
     private void Start()
     {
-
-
+        currentDashTime = MaxDashTime;
+    }
+    public void OnDash(InputAction.CallbackContext context)
+    {
+        /*     if (!actionReference.action.interactions.Contains("MultiTap"))
+             {
+                 return;
+             }*/
+        if (actionReference.action.triggered)
+        {
+            if (context.interaction is MultiTapInteraction)
+            {
+                Debug.Log("triggered");
+                canDash = true;
+            }
+        }
+        if (context.action.phase == InputActionPhase.Canceled)
+        {
+            if (context.interaction is MultiTapInteraction)
+            {
+                canDash = false;
+                currentDashTime = MaxDashTime;
+                Debug.Log("cancel");
+            }
+        }
+    
+    }
+    IEnumerator Dashing()
+    {
+        if (currentDashTime < MaxDashTime && dashing)
+        {
+            playerVelocity = Vector2.left * dashSpeed;
+            currentDashTime += dashStopSpeed;
+            yield return null;
+        }
+        if (currentDashTime >= MaxDashTime && dashing == true)
+        {
+            currentDashTime = MaxDashTime;
+            canDash = false;
+            dashing = false;
+        }
     }
 
     public void OnMove(InputAction.CallbackContext context)
     {
-        if (!actionReference.action.interactions.Contains("Press") && actionReference.action.interactions.Contains("MultiTap"))
-        {
-            return;
-        }
-        actionReference.action.started += context =>
-        {
-            if (context.interaction is PressInteraction)
-            {
-                canDash = false;
-            }
-            else if (context.interaction is MultiTapInteraction)
-            {
-                canDash = true;
-            }
-        };
-        actionReference.action.performed += context =>
-        {
-            if (context.interaction is PressInteraction)
-            {
-                movementInput = context.ReadValue<Vector2>();
-            }
-            else if (context.interaction is MultiTapInteraction)
-            {
-                movementInput = context.ReadValue<Vector2>();
-
-            }
-        };
-        actionReference.action.canceled += context =>
-        {
-            if (context.interaction is PressInteraction)
-            {
-                canDash = true;
-            }
-            else if (context.interaction is MultiTapInteraction)
-            {
-                canDash = false;
-            }
-        };
+        movementInput = context.ReadValue<Vector2>();
     }
 
     public void OnSlam(InputAction.CallbackContext context)
@@ -103,12 +109,10 @@ public class Controller : MonoBehaviour
     {
         if (context.action.triggered)
         {
-            //print("jump!");
             jumpButtonHeld = true;
         }
         else if (context.action.phase == InputActionPhase.Canceled)
         {
-            // print("cancelled");
             jumpButtonHeld = false;
             startedJump = false;
         }
@@ -116,13 +120,12 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
         float playerSpeed = canDash ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
-        print(defaultfallGravity);
-        if (rayground == true && playerVelocity.y < 0)
+    
+        if (controller.isGrounded == true && playerVelocity.y < 0)
         {
             playerVelocity.y = -0.5f;
             startedJump = false;
@@ -137,10 +140,50 @@ public class Controller : MonoBehaviour
         }
         else
         {
+            if (!canDash && !dashing)
+            {
+                controller.Move(move * Time.deltaTime * playerSpeed);
+         
+            }
+            if (canDash)
+            {
 
-            controller.Move(move * Time.deltaTime * playerSpeed);
+                if (Keyboard.current.aKey.wasPressedThisFrame)
+                {
+                    currentDashTime = 0;
+                    dashing = true;
+                }
+          
+                /*  if (Keyboard.current.sKey.wasPressedThisFrame)
+                  {
+                      currentDashTime = 0f;
+                      if (currentDashTime < MaxDashTime)
+                      {
+                          playerVelocity = Vector2.right * dashSpeed;
+                          currentDashTime += dashStopSpeed;
+
+                      }
+                      if (currentDashTime == MaxDashTime)
+                      {
+                          canDash = false;
+                      }
+                  }*/
+            }
 
         }
+     /*   if (currentDashTime < MaxDashTime && dashing)
+        {
+            playerVelocity = Vector2.left * dashSpeed;
+            currentDashTime += dashStopSpeed;
+        }
+      if (currentDashTime >= MaxDashTime && dashing == true)
+        {
+            currentDashTime = MaxDashTime;
+            canDash = false;
+            dashing = false;
+        }*/
+        print(dashing);
+        print(currentDashTime);
         print("dash: " + canDash);
 
         bool tryAccelerate = false;
@@ -149,7 +192,7 @@ public class Controller : MonoBehaviour
 
         if (jumpButtonHeld)
         {
-            if (rayground == true)
+            if (controller.isGrounded)
             {
                 startedJump = true;
                 startY = transform.position.y;
@@ -174,6 +217,8 @@ public class Controller : MonoBehaviour
             }
 
         }
+
+       
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
     }

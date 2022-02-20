@@ -24,7 +24,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""id"": ""0c06fc2e-c03d-4182-b45e-c3a7a2f3ef69"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
-                    ""interactions"": ""Press,MultiTap""
+                    ""interactions"": """"
                 },
                 {
                     ""name"": ""Jump"",
@@ -46,6 +46,14 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""name"": ""Slam"",
                     ""type"": ""Button"",
                     ""id"": ""6f974148-8a7b-4ca8-b5c7-643429069806"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Dash"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""8fb2e689-e0ef-4258-aeec-4bedcfefb93f"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -370,6 +378,28 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""action"": ""Slam"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a4aeb68f-f05c-4e36-8fe9-4a31d606d38b"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": ""MultiTap(tapCount=1)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f712de36-61fa-4eaa-b9bb-7dbd2f8717c7"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": ""MultiTap(tapCount=1)"",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -427,6 +457,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
         m_Player1_Jump = m_Player1.FindAction("Jump", throwIfNotFound: true);
         m_Player1_Select = m_Player1.FindAction("Select", throwIfNotFound: true);
         m_Player1_Slam = m_Player1.FindAction("Slam", throwIfNotFound: true);
+        m_Player1_Dash = m_Player1.FindAction("Dash", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -480,6 +511,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
     private readonly InputAction m_Player1_Jump;
     private readonly InputAction m_Player1_Select;
     private readonly InputAction m_Player1_Slam;
+    private readonly InputAction m_Player1_Dash;
     public struct Player1Actions
     {
         private @AutoGen m_Wrapper;
@@ -488,6 +520,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_Player1_Jump;
         public InputAction @Select => m_Wrapper.m_Player1_Select;
         public InputAction @Slam => m_Wrapper.m_Player1_Slam;
+        public InputAction @Dash => m_Wrapper.m_Player1_Dash;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -509,6 +542,9 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 @Slam.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
                 @Slam.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
                 @Slam.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
+                @Dash.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash;
+                @Dash.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash;
+                @Dash.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash;
             }
             m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
@@ -525,6 +561,9 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 @Slam.started += instance.OnSlam;
                 @Slam.performed += instance.OnSlam;
                 @Slam.canceled += instance.OnSlam;
+                @Dash.started += instance.OnDash;
+                @Dash.performed += instance.OnDash;
+                @Dash.canceled += instance.OnDash;
             }
         }
     }
@@ -571,5 +610,6 @@ public class @AutoGen : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnSelect(InputAction.CallbackContext context);
         void OnSlam(InputAction.CallbackContext context);
+        void OnDash(InputAction.CallbackContext context);
     }
 }

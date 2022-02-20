@@ -148,11 +148,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionReference: {fileID: 8861459484310693198, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
+  actionReference: {fileID: -7197453741310385100, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
   defplayerSpeed: 3
   dashSpeed: 8
+  MaxDashTime: 1
+  dashStopSpeed: 0.1
   jumpGravity: -11.81
   fallGravity: -15.81
+  buttonTime: 0.75
+  xDir: 0
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -181,7 +185,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 120
   m_CollisionDetection: 2
 --- !u!114 &7104238988279009782
 MonoBehaviour:
@@ -272,6 +276,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 6f974148-8a7b-4ca8-b5c7-643429069806
     m_ActionName: Player1/Slam[/Keyboard/s,/Keyboard/k,/Keyboard/numpad2,/Keyboard/downArrow]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7104238988279009785}
+        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
+        m_MethodName: OnDash
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8fb2e689-e0ef-4258-aeec-4bedcfefb93f
+    m_ActionName: Player1/Dash[/Keyboard/a,/Keyboard/d]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Player1
