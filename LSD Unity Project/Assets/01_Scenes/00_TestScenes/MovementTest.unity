@@ -1201,11 +1201,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7104238988279009777, guid: 6494dd859e0a6d2479749f1b93c907e0, type: 3}
       propertyPath: m_Height
-      value: 3.962059
+      value: 4.4813824
       objectReference: {fileID: 0}
     - target: {fileID: 7104238988279009777, guid: 6494dd859e0a6d2479749f1b93c907e0, type: 3}
       propertyPath: m_Center.y
-      value: -0.24532318
+      value: -0.50498486
       objectReference: {fileID: 0}
     - target: {fileID: 7104238988279009781, guid: 6494dd859e0a6d2479749f1b93c907e0, type: 3}
       propertyPath: m_RootOrder

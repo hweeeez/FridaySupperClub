@@ -2,6 +2,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 using UnityEngine;
 using System.Collections;
+
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
@@ -10,48 +11,48 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private InputActionReference actionReference;
 
-    [SerializeField]
-    private float defplayerSpeed = 3.0f;
-    [SerializeField]
-    private float dashSpeed = 10.0f;
+    private float defplayerSpeed = 12.0f;
 
-    public float MaxDashTime = 1.0f;
-    public float dashStopSpeed = 0.1f;
+    private float dashSpeed = 25.0f;
+
+    private float MaxDashTime = 1.5f;
+    private float dashStopSpeed = 0.1f;
     private float currentDashTime;
-    public int tapCount;
-    [SerializeField]
-    private float jumpGravity = -10.81f;
-    [SerializeField]
-    private float fallGravity = -15.81f;
-    private float slamGravity = -80f;
+    private float jumpGravity = -35.81f;
+    private float fallGravity = -40.81f;
+    private float slamGravity = -130f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
-    public float buttonTime = 0.75f;
 
-    private float maxHeight = 3f;
-    private float minHeight = 1.5f;
+    private float maxHeight = 5.5f;
+    private float minHeight = 2f;
 
     bool startedJump;
     float startY;
     private bool slammed = false;
 
-    private bool dashing = false;
+    // if canDash and !dashing then perform dash
+    private bool isDashing = false;
     private bool canDash;
-    public float xDir;
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
-          }
+    }
     private void Start()
     {
         currentDashTime = MaxDashTime;
     }
+
+    IEnumerator CancelDash()
+    {
+        yield return new WaitForSeconds(1.5f);
+        canDash = false;
+        currentDashTime = MaxDashTime;
+
+    }
     public void OnDash(InputAction.CallbackContext context)
     {
-        /*     if (!actionReference.action.interactions.Contains("MultiTap"))
-             {
-                 return;
-             }*/
+        //print(gameObject.name);
         if (actionReference.action.triggered)
         {
             if (context.interaction is MultiTapInteraction)
@@ -64,27 +65,11 @@ public class Controller : MonoBehaviour
         {
             if (context.interaction is MultiTapInteraction)
             {
-                canDash = false;
-                currentDashTime = MaxDashTime;
+                StartCoroutine(CancelDash());
                 Debug.Log("cancel");
             }
         }
-    
-    }
-    IEnumerator Dashing()
-    {
-        if (currentDashTime < MaxDashTime && dashing)
-        {
-            playerVelocity = Vector2.left * dashSpeed;
-            currentDashTime += dashStopSpeed;
-            yield return null;
-        }
-        if (currentDashTime >= MaxDashTime && dashing == true)
-        {
-            currentDashTime = MaxDashTime;
-            canDash = false;
-            dashing = false;
-        }
+
     }
 
     public void OnMove(InputAction.CallbackContext context)
@@ -121,10 +106,10 @@ public class Controller : MonoBehaviour
     void Update()
     {
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
-        float playerSpeed = canDash ? dashSpeed : defplayerSpeed;
+        float playerSpeed = isDashing ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
-    
+
         if (controller.isGrounded == true && playerVelocity.y < 0)
         {
             playerVelocity.y = -0.5f;
@@ -140,51 +125,28 @@ public class Controller : MonoBehaviour
         }
         else
         {
-            if (!canDash && !dashing)
-            {
-                controller.Move(move * Time.deltaTime * playerSpeed);
-         
-            }
-            if (canDash)
-            {
 
-                if (Keyboard.current.aKey.wasPressedThisFrame)
-                {
-                    currentDashTime = 0;
-                    dashing = true;
-                }
-          
-                /*  if (Keyboard.current.sKey.wasPressedThisFrame)
-                  {
-                      currentDashTime = 0f;
-                      if (currentDashTime < MaxDashTime)
-                      {
-                          playerVelocity = Vector2.right * dashSpeed;
-                          currentDashTime += dashStopSpeed;
-
-                      }
-                      if (currentDashTime == MaxDashTime)
-                      {
-                          canDash = false;
-                      }
-                  }*/
-            }
+            controller.Move(move * Time.deltaTime * playerSpeed);
 
         }
-     /*   if (currentDashTime < MaxDashTime && dashing)
+        if (canDash && !isDashing)
         {
-            playerVelocity = Vector2.left * dashSpeed;
-            currentDashTime += dashStopSpeed;
+            currentDashTime = 0;
         }
-      if (currentDashTime >= MaxDashTime && dashing == true)
+        if (currentDashTime < MaxDashTime)
+        {
+            isDashing = true;
+            currentDashTime += dashStopSpeed * Time.deltaTime;
+        }
+        if (currentDashTime >= MaxDashTime && isDashing)
         {
             currentDashTime = MaxDashTime;
             canDash = false;
-            dashing = false;
-        }*/
-        print(dashing);
-        print(currentDashTime);
-        print("dash: " + canDash);
+            isDashing = false;
+        }
+
+        print("isDashing" + isDashing);
+        print("canDash: " + canDash);
 
         bool tryAccelerate = false;
         float jumpedDistance = transform.position.y - startY;
@@ -205,6 +167,7 @@ public class Controller : MonoBehaviour
         }
         if (tryAccelerate)
         {
+
             bool maxHeightExceeded = jumpedDistance > maxHeight;
             if (startedJump && !maxHeightExceeded)
             {
@@ -217,13 +180,22 @@ public class Controller : MonoBehaviour
             }
 
         }
+        if (playerVelocity.y > 0)
+        {
+            canDash = false;
+            /*  if (controller.detectCollisions == true)
+              {
+                  startedJump = false;
+              }*/
+        }
 
-       
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
     }
 
 
 }
+
+
 
 

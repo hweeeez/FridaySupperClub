@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Enemy
+  - Head
   layers:
   - Default
   - TransparentFX

@@ -88,7 +88,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": """",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard1"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -99,7 +99,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard1"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -110,7 +110,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard1"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -286,7 +286,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/w"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard1"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -341,7 +341,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/s"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard1"",
                     ""action"": ""Slam"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -380,34 +380,144 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""a4aeb68f-f05c-4e36-8fe9-4a31d606d38b"",
-                    ""path"": ""<Keyboard>/a"",
+                    ""name"": ""WASD 1D Axis"",
+                    ""id"": ""7d04780d-ae36-404a-a9b2-613d88186b13"",
+                    ""path"": ""1DAxis"",
                     ""interactions"": ""MultiTap(tapCount=1)"",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": """",
                     ""action"": ""Dash"",
-                    ""isComposite"": false,
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": """",
-                    ""id"": ""f712de36-61fa-4eaa-b9bb-7dbd2f8717c7"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": ""MultiTap(tapCount=1)"",
+                    ""name"": ""negative"",
+                    ""id"": ""7eea532f-bad8-4475-8a76-3ee50b367438"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard"",
+                    ""groups"": ""Keyboard1"",
                     ""action"": ""Dash"",
                     ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""ff3cdecf-936b-476c-b21c-b4a9198578a5"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard1"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""IJKL 1D Axis"",
+                    ""id"": ""bb93900d-5772-419f-9f26-d01f79d62df8"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": ""MultiTap(tapCount=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": true,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""6b333d4e-6170-4ae2-8243-11c7e3ea62dd"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard4"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""cff569c0-a355-41e2-9041-e502ca059d70"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard4"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""arrow 1D Axis"",
+                    ""id"": ""683b77fe-40bc-4631-bde5-35fc2220f987"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": ""MultiTap(tapCount=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""d2c4a5fb-9307-44fd-a8e7-ade0774042f2"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard2"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""21dcd786-a5b9-4158-9805-6a39c06f89b3"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard2"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""5123 1D Axis"",
+                    ""id"": ""928b232c-ad3e-4dfb-bdbc-39ef1c6f30b1"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": ""MultiTap(tapCount=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""950132c7-03f3-4b67-9725-c6807c830436"",
+                    ""path"": ""<Keyboard>/numpad1"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard3"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""1009518c-dfd8-4c1a-9314-8998c68e61c4"",
+                    ""path"": ""<Keyboard>/numpad3"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard3"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
     ],
     ""controlSchemes"": [
         {
-            ""name"": ""Keyboard"",
-            ""bindingGroup"": ""Keyboard"",
+            ""name"": ""Keyboard1"",
+            ""bindingGroup"": ""Keyboard1"",
             ""devices"": [
                 {
                     ""devicePath"": ""<Keyboard>"",
@@ -568,13 +678,13 @@ public class @AutoGen : IInputActionCollection, IDisposable
         }
     }
     public Player1Actions @Player1 => new Player1Actions(this);
-    private int m_KeyboardSchemeIndex = -1;
-    public InputControlScheme KeyboardScheme
+    private int m_Keyboard1SchemeIndex = -1;
+    public InputControlScheme Keyboard1Scheme
     {
         get
         {
-            if (m_KeyboardSchemeIndex == -1) m_KeyboardSchemeIndex = asset.FindControlSchemeIndex("Keyboard");
-            return asset.controlSchemes[m_KeyboardSchemeIndex];
+            if (m_Keyboard1SchemeIndex == -1) m_Keyboard1SchemeIndex = asset.FindControlSchemeIndex("Keyboard1");
+            return asset.controlSchemes[m_Keyboard1SchemeIndex];
         }
     }
     private int m_Keyboard2SchemeIndex = -1;
