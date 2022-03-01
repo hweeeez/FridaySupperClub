@@ -133,8 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionReference: {fileID: -7197453741310385100, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
-  dashStopSpeed: 0.1
+  actionReference: {fileID: 6832862665110910685, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -243,6 +242,18 @@ MonoBehaviour:
     m_ActionId: 6f974148-8a7b-4ca8-b5c7-643429069806
     m_ActionName: Player1/Slam[/Keyboard/s,/Keyboard/k,/Keyboard/numpad2,/Keyboard/downArrow]
   - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8fb2e689-e0ef-4258-aeec-4bedcfefb93f
+    m_ActionName: Player1/Dash[/Keyboard/a,/Keyboard/d,/Keyboard/j,/Keyboard/l,/Keyboard/numpad1,/Keyboard/numpad3,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8211506b-88bd-4fa0-825e-5bd252ce81fb
+    m_ActionName: Player1/Dash  Arrows[/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 16705aac-8f06-43dc-8a7e-87253f2f8a85
+    m_ActionName: Player1/Dash  5123[/Keyboard/numpad1,/Keyboard/numpad3]
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7104238988279009785}
         m_TargetAssemblyTypeName: Controller, Assembly-CSharp
@@ -256,8 +267,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 8fb2e689-e0ef-4258-aeec-4bedcfefb93f
-    m_ActionName: Player1/Dash[/Keyboard/a,/Keyboard/d,/Keyboard/j,/Keyboard/l,/Keyboard/numpad1,/Keyboard/numpad3,/Keyboard/leftArrow,/Keyboard/rightArrow]
+    m_ActionId: de23f853-6d68-4325-a564-62b75ea33be3
+    m_ActionName: Player1/Dash  IJKL[/Keyboard/j,/Keyboard/l]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard4
   m_DefaultActionMap: Player1

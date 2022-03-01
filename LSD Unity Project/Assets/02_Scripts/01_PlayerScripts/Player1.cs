@@ -51,9 +51,33 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Dash"",
+                    ""name"": ""Dash WASD"",
                     ""type"": ""PassThrough"",
                     ""id"": ""8fb2e689-e0ef-4258-aeec-4bedcfefb93f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Dash  Arrows"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""8211506b-88bd-4fa0-825e-5bd252ce81fb"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Dash  5123"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""16705aac-8f06-43dc-8a7e-87253f2f8a85"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Dash  IJKL"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""de23f853-6d68-4325-a564-62b75ea33be3"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
@@ -386,7 +410,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""interactions"": ""MultiTap(tapCount=1)"",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash WASD"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
@@ -397,7 +421,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard1"",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash WASD"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
@@ -408,106 +432,106 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard1"",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash WASD"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""IJKL 1D Axis"",
-                    ""id"": ""bb93900d-5772-419f-9f26-d01f79d62df8"",
+                    ""name"": ""Arrows 1D Axis"",
+                    ""id"": ""13c4d73e-17e5-466c-b586-247dce1b721c"",
                     ""path"": ""1DAxis"",
                     ""interactions"": ""MultiTap(tapCount=1)"",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash  Arrows"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""6b333d4e-6170-4ae2-8243-11c7e3ea62dd"",
-                    ""path"": ""<Keyboard>/j"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard4"",
-                    ""action"": ""Dash"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""positive"",
-                    ""id"": ""cff569c0-a355-41e2-9041-e502ca059d70"",
-                    ""path"": ""<Keyboard>/l"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard4"",
-                    ""action"": ""Dash"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""arrow 1D Axis"",
-                    ""id"": ""683b77fe-40bc-4631-bde5-35fc2220f987"",
-                    ""path"": ""1DAxis"",
-                    ""interactions"": ""MultiTap(tapCount=1)"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Dash"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""negative"",
-                    ""id"": ""d2c4a5fb-9307-44fd-a8e7-ade0774042f2"",
+                    ""id"": ""94d697b3-3491-4178-bc85-a921d40b2a60"",
                     ""path"": ""<Keyboard>/leftArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard2"",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash  Arrows"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""21dcd786-a5b9-4158-9805-6a39c06f89b3"",
+                    ""id"": ""345d6819-0c88-4efa-a0e1-094cf2757264"",
                     ""path"": ""<Keyboard>/rightArrow"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard2"",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash  Arrows"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""5123 1D Axis"",
-                    ""id"": ""928b232c-ad3e-4dfb-bdbc-39ef1c6f30b1"",
+                    ""id"": ""c3c7b42e-8732-4fc6-bf25-bdc624da42a8"",
                     ""path"": ""1DAxis"",
                     ""interactions"": ""MultiTap(tapCount=1)"",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash  5123"",
                     ""isComposite"": true,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": ""negative"",
-                    ""id"": ""950132c7-03f3-4b67-9725-c6807c830436"",
+                    ""id"": ""9a8e15e1-9b50-4637-9aca-49e32af800ec"",
                     ""path"": ""<Keyboard>/numpad1"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard3"",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash  5123"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 },
                 {
                     ""name"": ""positive"",
-                    ""id"": ""1009518c-dfd8-4c1a-9314-8998c68e61c4"",
+                    ""id"": ""88da2fb3-660d-439a-a620-f5aadabfd5ce"",
                     ""path"": ""<Keyboard>/numpad3"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard3"",
-                    ""action"": ""Dash"",
+                    ""action"": ""Dash  5123"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""IJKL 1D Axis"",
+                    ""id"": ""c8f8605f-95fe-46f7-931e-97fbdfee26ad"",
+                    ""path"": ""1DAxis"",
+                    ""interactions"": ""MultiTap(tapCount=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Dash  IJKL"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""negative"",
+                    ""id"": ""9063975b-1214-453f-b33e-cce7433dbe0c"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard4"",
+                    ""action"": ""Dash  IJKL"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""positive"",
+                    ""id"": ""bf690181-e2c7-49f1-bcc9-ac2b14efa950"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard4"",
+                    ""action"": ""Dash  IJKL"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
                 }
@@ -567,7 +591,10 @@ public class @AutoGen : IInputActionCollection, IDisposable
         m_Player1_Jump = m_Player1.FindAction("Jump", throwIfNotFound: true);
         m_Player1_Select = m_Player1.FindAction("Select", throwIfNotFound: true);
         m_Player1_Slam = m_Player1.FindAction("Slam", throwIfNotFound: true);
-        m_Player1_Dash = m_Player1.FindAction("Dash", throwIfNotFound: true);
+        m_Player1_DashWASD = m_Player1.FindAction("Dash WASD", throwIfNotFound: true);
+        m_Player1_DashArrows = m_Player1.FindAction("Dash  Arrows", throwIfNotFound: true);
+        m_Player1_Dash5123 = m_Player1.FindAction("Dash  5123", throwIfNotFound: true);
+        m_Player1_DashIJKL = m_Player1.FindAction("Dash  IJKL", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -621,7 +648,10 @@ public class @AutoGen : IInputActionCollection, IDisposable
     private readonly InputAction m_Player1_Jump;
     private readonly InputAction m_Player1_Select;
     private readonly InputAction m_Player1_Slam;
-    private readonly InputAction m_Player1_Dash;
+    private readonly InputAction m_Player1_DashWASD;
+    private readonly InputAction m_Player1_DashArrows;
+    private readonly InputAction m_Player1_Dash5123;
+    private readonly InputAction m_Player1_DashIJKL;
     public struct Player1Actions
     {
         private @AutoGen m_Wrapper;
@@ -630,7 +660,10 @@ public class @AutoGen : IInputActionCollection, IDisposable
         public InputAction @Jump => m_Wrapper.m_Player1_Jump;
         public InputAction @Select => m_Wrapper.m_Player1_Select;
         public InputAction @Slam => m_Wrapper.m_Player1_Slam;
-        public InputAction @Dash => m_Wrapper.m_Player1_Dash;
+        public InputAction @DashWASD => m_Wrapper.m_Player1_DashWASD;
+        public InputAction @DashArrows => m_Wrapper.m_Player1_DashArrows;
+        public InputAction @Dash5123 => m_Wrapper.m_Player1_Dash5123;
+        public InputAction @DashIJKL => m_Wrapper.m_Player1_DashIJKL;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -652,9 +685,18 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 @Slam.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
                 @Slam.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
                 @Slam.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnSlam;
-                @Dash.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash;
-                @Dash.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash;
-                @Dash.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash;
+                @DashWASD.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashWASD;
+                @DashWASD.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashWASD;
+                @DashWASD.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashWASD;
+                @DashArrows.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashArrows;
+                @DashArrows.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashArrows;
+                @DashArrows.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashArrows;
+                @Dash5123.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash5123;
+                @Dash5123.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash5123;
+                @Dash5123.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDash5123;
+                @DashIJKL.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashIJKL;
+                @DashIJKL.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashIJKL;
+                @DashIJKL.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashIJKL;
             }
             m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
@@ -671,9 +713,18 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 @Slam.started += instance.OnSlam;
                 @Slam.performed += instance.OnSlam;
                 @Slam.canceled += instance.OnSlam;
-                @Dash.started += instance.OnDash;
-                @Dash.performed += instance.OnDash;
-                @Dash.canceled += instance.OnDash;
+                @DashWASD.started += instance.OnDashWASD;
+                @DashWASD.performed += instance.OnDashWASD;
+                @DashWASD.canceled += instance.OnDashWASD;
+                @DashArrows.started += instance.OnDashArrows;
+                @DashArrows.performed += instance.OnDashArrows;
+                @DashArrows.canceled += instance.OnDashArrows;
+                @Dash5123.started += instance.OnDash5123;
+                @Dash5123.performed += instance.OnDash5123;
+                @Dash5123.canceled += instance.OnDash5123;
+                @DashIJKL.started += instance.OnDashIJKL;
+                @DashIJKL.performed += instance.OnDashIJKL;
+                @DashIJKL.canceled += instance.OnDashIJKL;
             }
         }
     }
@@ -720,6 +771,9 @@ public class @AutoGen : IInputActionCollection, IDisposable
         void OnJump(InputAction.CallbackContext context);
         void OnSelect(InputAction.CallbackContext context);
         void OnSlam(InputAction.CallbackContext context);
-        void OnDash(InputAction.CallbackContext context);
+        void OnDashWASD(InputAction.CallbackContext context);
+        void OnDashArrows(InputAction.CallbackContext context);
+        void OnDash5123(InputAction.CallbackContext context);
+        void OnDashIJKL(InputAction.CallbackContext context);
     }
 }
