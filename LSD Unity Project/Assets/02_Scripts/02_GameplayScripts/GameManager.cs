@@ -11,10 +11,17 @@ public class GameManager : MonoBehaviour
     bool timerIsRunning = false;
     public GameObject timerText;
 
+    //Rising Water
+    public GameObject water;
+    float riseSpeed = 10f;
+    Vector2 maxWaterHeight;
+    bool isRising = false;
+
     // Start is called before the first frame update
     void Start()
     {
         timerIsRunning = true;
+        maxWaterHeight = new Vector2(transform.position.x, 4.8f);
     }
 
     // Update is called once per frame
@@ -34,6 +41,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log("Game over!");
                 timeRemaining = 0;
                 timerIsRunning = false;
+                StartCoroutine(WaterRise(transform, maxWaterHeight, riseSpeed));
             }
 
         }
@@ -47,4 +55,26 @@ public class GameManager : MonoBehaviour
         float seconds = Mathf.FloorToInt(timeToDisplay % 60);
         timerText.GetComponent<TMP_Text>().text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
+
+    IEnumerator WaterRise(Transform transform, Vector2 maxLevel, float timeToRise)
+    {
+        if (isRising)
+        {
+            yield break; ///exit if this is still running
+        }
+        isRising = true;
+
+        var t = 0f;
+        Vector2 startLevel = water.transform.position;
+
+        while (t <= 1f)
+        {
+            t += Time.deltaTime / timeToRise;
+            water.transform.position = Vector2.Lerp(startLevel, maxLevel, t);
+            yield return null;
+        }
+
+        isRising = false;
+    }
+
 }
