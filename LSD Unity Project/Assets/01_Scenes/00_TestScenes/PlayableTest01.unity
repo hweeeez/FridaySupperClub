@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 30703416}
   - component: {fileID: 30703415}
   - component: {fileID: 30703417}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (21)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 303969333}
   - component: {fileID: 303969332}
   - component: {fileID: 303969334}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (20)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -562,7 +562,7 @@ GameObject:
   - component: {fileID: 314932396}
   - component: {fileID: 314932395}
   - component: {fileID: 314932397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (19)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   - component: {fileID: 359176616}
   - component: {fileID: 359176615}
   - component: {fileID: 359176617}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (16)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -867,7 +867,7 @@ GameObject:
   - component: {fileID: 369170749}
   - component: {fileID: 369170748}
   - component: {fileID: 369170750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (13)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -980,7 +980,7 @@ GameObject:
   - component: {fileID: 381892831}
   - component: {fileID: 381892830}
   - component: {fileID: 381892832}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (17)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1093,7 +1093,7 @@ GameObject:
   - component: {fileID: 429889650}
   - component: {fileID: 429889649}
   - component: {fileID: 429889651}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (3)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1206,7 +1206,7 @@ GameObject:
   - component: {fileID: 447557243}
   - component: {fileID: 447557242}
   - component: {fileID: 447557244}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (2)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1319,7 +1319,7 @@ GameObject:
   - component: {fileID: 548902672}
   - component: {fileID: 548902671}
   - component: {fileID: 548902673}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (6)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1432,7 +1432,7 @@ GameObject:
   - component: {fileID: 622317631}
   - component: {fileID: 622317630}
   - component: {fileID: 622317632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (11)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1546,7 +1546,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3337912935887144733, guid: bc2a3d0a9eabbce47abf1b65bc7284ea, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3337912935887144733, guid: bc2a3d0a9eabbce47abf1b65bc7284ea, type: 3}
       propertyPath: m_TagString
@@ -1554,7 +1554,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3337912935887144800, guid: bc2a3d0a9eabbce47abf1b65bc7284ea, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3337912935887144800, guid: bc2a3d0a9eabbce47abf1b65bc7284ea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1614,7 +1614,7 @@ GameObject:
   - component: {fileID: 685366490}
   - component: {fileID: 685366489}
   - component: {fileID: 685366491}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (5)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1727,7 +1727,7 @@ GameObject:
   - component: {fileID: 856441004}
   - component: {fileID: 856441003}
   - component: {fileID: 856441005}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (8)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -1940,7 +1940,7 @@ GameObject:
   - component: {fileID: 913985685}
   - component: {fileID: 913985684}
   - component: {fileID: 913985686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (1)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -2041,6 +2041,63 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!1001 &915662370
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.36
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7.991
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009781, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009790, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: m_Name
+      value: Arrows2
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
 --- !u!1 &963384960
 GameObject:
   m_ObjectHideFlags: 0
@@ -2053,7 +2110,7 @@ GameObject:
   - component: {fileID: 963384963}
   - component: {fileID: 963384962}
   - component: {fileID: 963384964}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (4)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -2166,7 +2223,7 @@ GameObject:
   - component: {fileID: 1169460657}
   - component: {fileID: 1169460656}
   - component: {fileID: 1169460658}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (7)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -2279,7 +2336,7 @@ GameObject:
   - component: {fileID: 1174706906}
   - component: {fileID: 1174706905}
   - component: {fileID: 1174706907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (10)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -2392,7 +2449,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1206140800}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 702fc242325438940864b6b2a5bd5301, type: 3}
   m_Name: 
@@ -2425,7 +2482,7 @@ Transform:
   m_GameObject: {fileID: 1228748232}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 19.74, y: 4.09, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 8.2269}
   m_Children:
   - {fileID: 1629174951}
   - {fileID: 913985683}
@@ -2467,7 +2524,7 @@ GameObject:
   - component: {fileID: 1263207113}
   - component: {fileID: 1263207112}
   - component: {fileID: 1263207114}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (24)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -2580,7 +2637,7 @@ GameObject:
   - component: {fileID: 1274443913}
   - component: {fileID: 1274443912}
   - component: {fileID: 1274443914}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (18)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -2693,7 +2750,7 @@ GameObject:
   - component: {fileID: 1330736186}
   - component: {fileID: 1330736185}
   - component: {fileID: 1330736187}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (14)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -2806,7 +2863,7 @@ GameObject:
   - component: {fileID: 1621663837}
   - component: {fileID: 1621663836}
   - component: {fileID: 1621663838}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (22)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -2919,7 +2976,7 @@ GameObject:
   - component: {fileID: 1629174953}
   - component: {fileID: 1629174952}
   - component: {fileID: 1629174954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -3032,7 +3089,7 @@ GameObject:
   - component: {fileID: 1686877634}
   - component: {fileID: 1686877633}
   - component: {fileID: 1686877635}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (15)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -3145,7 +3202,7 @@ GameObject:
   - component: {fileID: 1731904215}
   - component: {fileID: 1731904214}
   - component: {fileID: 1731904216}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (12)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -3258,7 +3315,7 @@ GameObject:
   - component: {fileID: 1749557421}
   - component: {fileID: 1749557420}
   - component: {fileID: 1749557422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (9)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -3423,7 +3480,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1773131837
 GameObject:
@@ -3437,7 +3494,7 @@ GameObject:
   - component: {fileID: 1773131840}
   - component: {fileID: 1773131839}
   - component: {fileID: 1773131841}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: ground (23)
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -3618,7 +3675,7 @@ Transform:
   m_LocalScale: {x: 51.46945, y: 28.727137, z: 1.196964}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1822207630
 GameObject:
@@ -3663,5 +3720,5 @@ Transform:
   - {fileID: 1228748233}
   - {fileID: 86844657}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
