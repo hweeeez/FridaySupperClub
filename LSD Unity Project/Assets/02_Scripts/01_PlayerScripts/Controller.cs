@@ -107,35 +107,40 @@ public class Controller : MonoBehaviour
     }
     private void FixedUpdate()
     {
-        ray.origin = transform.position;
-        ray.direction = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-        if (Physics.Raycast(ray, out hit) && hit.transform.tag == "Platform")
-        {
-            Debug.Log(hit.transform.tag);
-            rayGrounded = true;
-        }
-        else { rayGrounded = false; }
-        /*   if (!Physics.Raycast(transform.position, Vector3.down, distToGround + 0.1f))
-           {
-               rayGrounded = false;
-           }
-           else
-           {
-               rayGrounded = true;
-           }*/
-    }
-    void Update()
-    {
-    /*    ray.origin = transform.position;
-        ray.direction = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-        if (Physics.Raycast(ray, out hit) && hit.transform.tag == "Platform")
+        //ray.origin = transform.position;
+       /* if (Physics.Raycast(ray, out hit) && hit.transform.tag == "Platform")
         {
             Debug.Log(hit.transform.tag);
             rayGrounded = true;
         }
         else { rayGrounded = false; }*/
+      
+    }
+    void Update()
+    {
+        int layer = 6;
+        int layerMask = 1 << layer;
+        //layerMask = ~layerMask;
+           ray.origin = transform.position;
+            ray.direction = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
+            if (Physics.Raycast(ray, out hit, 0.3f, layerMask))
+            {
+                Debug.Log(hit.transform.tag);
+                rayGrounded = true;
+            }
+            else { rayGrounded = false; }
+   /*     Vector3 raydirection = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
+        if (!Physics.Raycast(transform.position, raydirection, distToGround + 0.05f, layerMask))
+        {
+            rayGrounded = true;
+        }
+        else
+        {
+            rayGrounded = false;
+        }*/
         Debug.Log(rayGrounded);
-        Debug.DrawRay(transform.position, Vector3.down,  Color.red);
+       //Debug.Log("Ray Hit: " + hit.transform.name);
+       Debug.DrawRay(transform.position, ray.direction,  Color.red);
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
         float playerSpeed = isDashing ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
