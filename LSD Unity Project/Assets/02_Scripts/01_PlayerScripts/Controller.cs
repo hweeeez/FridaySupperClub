@@ -6,15 +6,17 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    private bool rayGrounded;
     private CharacterController controller;
     private Vector3 playerVelocity;
     [SerializeField]
     private InputActionReference actionReference;
 
     private float defplayerSpeed = 12.0f;
-
     private float dashSpeed = 25.0f;
 
+    private float distToGround;
+    
     private float MaxDashTime = 1.5f;
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
@@ -26,7 +28,8 @@ public class Controller : MonoBehaviour
 
     private float maxHeight = 5.5f;
     private float minHeight = 2f;
-
+    Ray ray;
+    RaycastHit hit;
     bool startedJump;
     float startY;
     private bool slammed = false;
@@ -37,6 +40,7 @@ public class Controller : MonoBehaviour
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
+        rayGrounded = true;
     }
     private void Start()
     {
@@ -66,7 +70,6 @@ public class Controller : MonoBehaviour
             if (context.interaction is MultiTapInteraction)
             {
                 StartCoroutine(CancelDash());
-                Debug.Log("cancel");
             }
         }
 
@@ -102,19 +105,42 @@ public class Controller : MonoBehaviour
             startedJump = false;
         }
     }
-
+    private void FixedUpdate()
+    {
+        ray.origin = transform.position;
+        ray.direction = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
+        if (Physics.Raycast(ray, out hit) && hit.transform.tag == "Platform")
+        {
+            Debug.Log(hit.transform.tag);
+            rayGrounded = true;
+        }
+        else { rayGrounded = false; }
+        /*   if (!Physics.Raycast(transform.position, Vector3.down, distToGround + 0.1f))
+           {
+               rayGrounded = false;
+           }
+           else
+           {
+               rayGrounded = true;
+           }*/
+    }
     void Update()
     {
+    /*    ray.origin = transform.position;
+        ray.direction = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
+        if (Physics.Raycast(ray, out hit) && hit.transform.tag == "Platform")
+        {
+            Debug.Log(hit.transform.tag);
+            rayGrounded = true;
+        }
+        else { rayGrounded = false; }*/
+        Debug.Log(rayGrounded);
+        Debug.DrawRay(transform.position, Vector3.down,  Color.red);
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
         float playerSpeed = isDashing ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
-
-        if (controller.isGrounded == true && playerVelocity.y < 0)
-        {
-            playerVelocity.y = -0.5f;
-            startedJump = false;
-        }
+ 
         //print("isGrounded: " + controller.isGrounded);
 
         Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
@@ -125,9 +151,7 @@ public class Controller : MonoBehaviour
         }
         else
         {
-
-            controller.Move(move * Time.deltaTime * playerSpeed);
-
+            if (rayGrounded) { controller.Move(move * Time.deltaTime * playerSpeed); }
         }
         if (canDash && !isDashing)
         {
@@ -145,8 +169,6 @@ public class Controller : MonoBehaviour
             isDashing = false;
         }
 
-        print("isDashing" + isDashing);
-        print("canDash: " + canDash);
 
         bool tryAccelerate = false;
         float jumpedDistance = transform.position.y - startY;
@@ -154,7 +176,7 @@ public class Controller : MonoBehaviour
 
         if (jumpButtonHeld)
         {
-            if (controller.isGrounded)
+            if (rayGrounded)
             {
                 startedJump = true;
                 startY = transform.position.y;
