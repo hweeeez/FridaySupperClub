@@ -130,6 +130,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   actionReference: {fileID: -7197453741310385100, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
+  spawnPos: {x: -20.3, y: -7.1, z: 0}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -294,10 +295,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44380064afd43de4390e93ee82770726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  livestext: {fileID: 0}
   numberOfLives: 3
   playerLifeImage: {fileID: 4511206266648666129, guid: 5fa5e647f9ca96247946b0199fc30ca4, type: 3}
   emptyLife: {fileID: 21300000, guid: e1b395e62df54db42a6edcd75481959d, type: 3}
+  fillLife: {fileID: 21300000, guid: aae59a42d6b742b4187bd1e68c39ad9d, type: 3}
   gridPos: {x: 9, y: -12.5}
 --- !u!1001 &1654017330098811165
 PrefabInstance:
@@ -419,6 +420,10 @@ PrefabInstance:
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099028649837626815, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33dc8e62615de34093694359ecc03d2, type: 3}

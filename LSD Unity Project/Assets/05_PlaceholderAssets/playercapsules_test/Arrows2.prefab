@@ -102,10 +102,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44380064afd43de4390e93ee82770726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  livestext: {fileID: 0}
   numberOfLives: 3
   playerLifeImage: {fileID: 2466212561428719197, guid: c17fee8d11bff9948a9585608268ce62, type: 3}
   emptyLife: {fileID: 21300000, guid: 7ec084cfaab54c54a8c27b954a42236a, type: 3}
+  fillLife: {fileID: 21300000, guid: 5b87ccf6cc8413643962075ccea99344, type: 3}
   gridPos: {x: -9, y: -12.5}
 --- !u!143 &7104238988279009784
 CharacterController:
@@ -147,6 +147,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   actionReference: {fileID: 5498996190181039899, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
+  spawnPos: {x: 21.6, y: 7.1, z: 0}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0

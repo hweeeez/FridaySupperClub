@@ -30,7 +30,7 @@ public class Controller : MonoBehaviour
     private float slamGravity = -160f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
-
+    public Vector3 spawnPos;
     private float maxHeight = 5.5f;
     private float minHeight = 2f;
     Ray ray;
@@ -110,35 +110,27 @@ public class Controller : MonoBehaviour
             startedJump = false;
         }
     }
-    /*private void FixedUpdate()
-    {*/
-    //ray.origin = transform.position;
-    /* if (Physics.Raycast(ray, out hit) && hit.transform.tag == "Platform")
-     {
-         Debug.Log(hit.transform.tag);
-         rayGrounded = true;
-     }
-     else { rayGrounded = false; }*/
+    IEnumerator RespawnPlayer()
+    {
+        controller.enabled = false;
+        this.transform.position = spawnPos;
+        yield return new WaitForSeconds(0.5f);
+        controller.enabled = true;
 
-    /*        isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+    }
 
-            if (isColliding)
-            {
-                Debug.Log("is colliding");
-                rayGrounded = true;
-            }
-            else { rayGrounded = false; }*/
-    // }
+
     void Update()
     {
-        
+
         //ceilingcheck
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
-        if (isAttacked) { 
+        if (isAttacked)
+        {
             lifeScript.LoseLife();
-            this.transform.position = new Vector3(-38, 3, 0);
+            StartCoroutine(RespawnPlayer());
         }
 
         Debug.DrawRay(transform.position, ray.direction, Color.red);
@@ -157,7 +149,7 @@ public class Controller : MonoBehaviour
         }
         else
         {
-                 controller.Move(move * Time.deltaTime * playerSpeed);
+            controller.Move(move * Time.deltaTime * playerSpeed);
         }
         if (canDash && !isDashing)
         {
@@ -206,7 +198,7 @@ public class Controller : MonoBehaviour
 
                 startedJump = false;
             }
-           if (startedJump && isColliding)
+            if (startedJump && isColliding)
             {
                 startedJump = false;
                 playerVelocity.y = 0;
