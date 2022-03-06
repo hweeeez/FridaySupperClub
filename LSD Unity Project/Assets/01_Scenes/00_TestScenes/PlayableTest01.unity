@@ -2092,6 +2092,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7104238988279009785, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 7104238988279009790, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
       propertyPath: m_Name
       value: Arrows2

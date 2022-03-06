@@ -133,6 +133,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundCheck: {fileID: 8876327421701773602}
+  isColliding: 0
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 0
   actionReference: {fileID: 5498996190181039899, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
 --- !u!136 &7104238988279009777
 CapsuleCollider:

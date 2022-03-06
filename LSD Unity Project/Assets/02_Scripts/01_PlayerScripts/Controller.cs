@@ -6,7 +6,12 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
-    private bool rayGrounded;
+    /*public Transform groundCheck;
+    public bool isColliding;
+    public float groundDistance = 0.4f;
+    public LayerMask groundMask;
+
+    private bool rayGrounded;*/
     private CharacterController controller;
     private Vector3 playerVelocity;
     [SerializeField]
@@ -16,13 +21,13 @@ public class Controller : MonoBehaviour
     private float dashSpeed = 25.0f;
 
     private float distToGround;
-    
+
     private float MaxDashTime = 1.5f;
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
-    private float jumpGravity = -35.81f;
-    private float fallGravity = -40.81f;
-    private float slamGravity = -130f;
+    private float jumpGravity = -40.81f;
+    private float fallGravity = -48.81f;
+    private float slamGravity = -160f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
 
@@ -40,7 +45,6 @@ public class Controller : MonoBehaviour
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
-        rayGrounded = true;
     }
     private void Start()
     {
@@ -105,50 +109,58 @@ public class Controller : MonoBehaviour
             startedJump = false;
         }
     }
-    private void FixedUpdate()
-    {
-        //ray.origin = transform.position;
-       /* if (Physics.Raycast(ray, out hit) && hit.transform.tag == "Platform")
-        {
-            Debug.Log(hit.transform.tag);
-            rayGrounded = true;
-        }
-        else { rayGrounded = false; }*/
-      
-    }
-    void Update()
-    {
-        int layer = 6;
-        int layerMask = 1 << layer;
-        //layerMask = ~layerMask;
-           ray.origin = transform.position;
-            ray.direction = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-            if (Physics.Raycast(ray, out hit, 0.3f, layerMask))
+    /*private void FixedUpdate()
+    {*/
+    //ray.origin = transform.position;
+    /* if (Physics.Raycast(ray, out hit) && hit.transform.tag == "Platform")
+     {
+         Debug.Log(hit.transform.tag);
+         rayGrounded = true;
+     }
+     else { rayGrounded = false; }*/
+
+    /*        isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+            if (isColliding)
             {
-                Debug.Log(hit.transform.tag);
+                Debug.Log("is colliding");
                 rayGrounded = true;
             }
-            else { rayGrounded = false; }
-   /*     Vector3 raydirection = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-        if (!Physics.Raycast(transform.position, raydirection, distToGround + 0.05f, layerMask))
-        {
-            rayGrounded = true;
-        }
-        else
-        {
-            rayGrounded = false;
-        }*/
-        Debug.Log(rayGrounded);
-       //Debug.Log("Ray Hit: " + hit.transform.name);
-       Debug.DrawRay(transform.position, ray.direction,  Color.red);
+            else { rayGrounded = false; }*/
+    // }
+    void Update()
+    {
+        /*   int layer = 6;
+           int layerMask = 1 << layer;
+           //layerMask = ~layerMask;
+           ray.origin = transform.position;
+           ray.direction = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
+           if (Physics.Raycast(ray, out hit, 0.3f, layerMask))
+           {
+               Debug.Log(hit.transform.tag);
+               rayGrounded = true;
+           }
+           else { rayGrounded = false; }*/
+        /*     Vector3 raydirection = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
+             if (!Physics.Raycast(transform.position, raydirection, distToGround + 0.05f, layerMask))
+             {
+                 rayGrounded = true;
+             }
+             else
+             {
+                 rayGrounded = false;
+             }*/
+        //Debug.Log(rayGrounded);
+        //Debug.Log("Ray Hit: " + hit.transform.name);
+        Debug.DrawRay(transform.position, ray.direction, Color.red);
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
         float playerSpeed = isDashing ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
- 
+
         //print("isGrounded: " + controller.isGrounded);
 
-        Vector3 move = new Vector3(movementInput.x, 0, movementInput.y);
+        Vector3 move = new Vector3(movementInput.x, movementInput.y, 0);
 
         if (movementInput == Vector2.zero)
         {
@@ -156,7 +168,8 @@ public class Controller : MonoBehaviour
         }
         else
         {
-            if (rayGrounded) { controller.Move(move * Time.deltaTime * playerSpeed); }
+            // if (controller.isGrounded)
+            controller.Move(move * Time.deltaTime * playerSpeed);
         }
         if (canDash && !isDashing)
         {
@@ -181,7 +194,7 @@ public class Controller : MonoBehaviour
 
         if (jumpButtonHeld)
         {
-            if (rayGrounded)
+            if (controller.isGrounded)
             {
                 startedJump = true;
                 startY = transform.position.y;
@@ -205,6 +218,11 @@ public class Controller : MonoBehaviour
 
                 startedJump = false;
             }
+            else if (startedJump && !controller.isGrounded)
+            {
+                startedJump = false;
+                Debug.Log("ceiling");
+            }
 
         }
         if (playerVelocity.y > 0)
@@ -218,6 +236,7 @@ public class Controller : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+        Debug.Log(controller.isGrounded + "startedjump" + startedJump);
     }
 
 }
