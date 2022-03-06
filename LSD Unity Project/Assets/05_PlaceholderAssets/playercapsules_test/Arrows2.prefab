@@ -103,6 +103,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   livestext: {fileID: 0}
+  numberOfLives: 3
+  playerLifeImage: {fileID: 2466212561428719197, guid: c17fee8d11bff9948a9585608268ce62, type: 3}
+  emptyLife: {fileID: 21300000, guid: 7ec084cfaab54c54a8c27b954a42236a, type: 3}
+  gridPos: {x: -9, y: -12.5}
 --- !u!143 &7104238988279009784
 CharacterController:
   m_ObjectHideFlags: 0
@@ -133,12 +137,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  groundCheck: {fileID: 8876327421701773602}
+  groundCheck: {fileID: 8204520651651225929}
   isColliding: 0
   groundDistance: 0.4
   groundMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+  feetMask:
+    serializedVersion: 2
+    m_Bits: 128
   actionReference: {fileID: 5498996190181039899, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
@@ -374,6 +381,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ground
       objectReference: {fileID: 0}
+    - target: {fileID: 6648478455415243156, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_IsTrigger
       value: 1
@@ -420,6 +431,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8796241824840874716, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9099028649837626815, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

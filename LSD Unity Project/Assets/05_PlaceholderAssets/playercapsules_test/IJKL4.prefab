@@ -97,12 +97,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7104238988279009790}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44380064afd43de4390e93ee82770726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   livestext: {fileID: 0}
+  numberOfLives: 3
+  playerLifeImage: {fileID: 1728723369393501297, guid: 7c0bf6615eb7659478e99e2d204738ee, type: 3}
+  emptyLife: {fileID: 21300000, guid: cc812bdcbdc4fa74e8e1a93ed914d5ac, type: 3}
+  gridPos: {x: 0, y: -12.5}
 --- !u!143 &7104238988279009784
 CharacterController:
   m_ObjectHideFlags: 0
@@ -133,6 +137,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundCheck: {fileID: 5502757190978252275}
+  isColliding: 0
+  groundDistance: 0.4
+  groundMask:
+    serializedVersion: 2
+    m_Bits: 64
+  feetMask:
+    serializedVersion: 2
+    m_Bits: 128
   actionReference: {fileID: 6832862665110910685, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
 --- !u!136 &7104238988279009777
 CapsuleCollider:

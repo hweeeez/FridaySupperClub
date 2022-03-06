@@ -1,26 +1,26 @@
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 using UnityEngine;
+using System.Collections.Generic;
 using System.Collections;
 
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
-    /*public Transform groundCheck;
+    public Transform groundCheck;
     public bool isColliding;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-
-    private bool rayGrounded;*/
+    public LayerMask feetMask;
+    private bool rayGrounded;
     private CharacterController controller;
+    private HealthSystem lifeScript;
     private Vector3 playerVelocity;
     [SerializeField]
     private InputActionReference actionReference;
 
     private float defplayerSpeed = 12.0f;
     private float dashSpeed = 25.0f;
-
-    private float distToGround;
 
     private float MaxDashTime = 1.5f;
     private float dashStopSpeed = 0.1f;
@@ -45,6 +45,7 @@ public class Controller : MonoBehaviour
     private void Awake()
     {
         controller = gameObject.GetComponent<CharacterController>();
+        lifeScript = gameObject.GetComponent<HealthSystem>();
     }
     private void Start()
     {
@@ -130,28 +131,16 @@ public class Controller : MonoBehaviour
     // }
     void Update()
     {
-        /*   int layer = 6;
-           int layerMask = 1 << layer;
-           //layerMask = ~layerMask;
-           ray.origin = transform.position;
-           ray.direction = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-           if (Physics.Raycast(ray, out hit, 0.3f, layerMask))
-           {
-               Debug.Log(hit.transform.tag);
-               rayGrounded = true;
-           }
-           else { rayGrounded = false; }*/
-        /*     Vector3 raydirection = new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z);
-             if (!Physics.Raycast(transform.position, raydirection, distToGround + 0.05f, layerMask))
-             {
-                 rayGrounded = true;
-             }
-             else
-             {
-                 rayGrounded = false;
-             }*/
-        //Debug.Log(rayGrounded);
-        //Debug.Log("Ray Hit: " + hit.transform.name);
+        
+        //ceilingcheck
+        isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+
+        bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
+        if (isAttacked) { 
+            lifeScript.LoseLife();
+            this.transform.position = new Vector3(-38, 3, 0);
+        }
+
         Debug.DrawRay(transform.position, ray.direction, Color.red);
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
         float playerSpeed = isDashing ? dashSpeed : defplayerSpeed;
@@ -168,8 +157,7 @@ public class Controller : MonoBehaviour
         }
         else
         {
-            // if (controller.isGrounded)
-            controller.Move(move * Time.deltaTime * playerSpeed);
+                 controller.Move(move * Time.deltaTime * playerSpeed);
         }
         if (canDash && !isDashing)
         {
@@ -218,10 +206,10 @@ public class Controller : MonoBehaviour
 
                 startedJump = false;
             }
-            else if (startedJump && !controller.isGrounded)
+           if (startedJump && isColliding)
             {
                 startedJump = false;
-                Debug.Log("ceiling");
+                playerVelocity.y = 0;
             }
 
         }
