@@ -7,6 +7,8 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    Rigidbody playerRB;
+    public bool groundcheck;
     public Transform groundCheck;
     public bool isColliding;
     public float groundDistance = 0.4f;
@@ -19,15 +21,15 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private InputActionReference actionReference;
 
-    private float defplayerSpeed = 12.0f;
+    private float defplayerSpeed = 14.0f;
     private float dashSpeed = 25.0f;
-
+    private Vector3 move;
     private float MaxDashTime = 1.5f;
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
     private float jumpGravity = -40.81f;
     private float fallGravity = -48.81f;
-    private float slamGravity = -160f;
+    private float slamGravity = -100f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
     public Vector3 spawnPos;
@@ -44,6 +46,7 @@ public class Controller : MonoBehaviour
     private bool canDash;
     private void Awake()
     {
+        playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
         lifeScript = gameObject.GetComponent<HealthSystem>();
     }
@@ -102,6 +105,7 @@ public class Controller : MonoBehaviour
     {
         if (context.action.triggered)
         {
+            print("jumping");
             jumpButtonHeld = true;
         }
         else if (context.action.phase == InputActionPhase.Canceled)
@@ -112,10 +116,11 @@ public class Controller : MonoBehaviour
     }
     IEnumerator RespawnPlayer()
     {
-        controller.enabled = false;
+        playerRB.constraints = RigidbodyConstraints.FreezeAll;
+        yield return new WaitForSeconds(1f);
         this.transform.position = spawnPos;
+        playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
         yield return new WaitForSeconds(0.5f);
-        controller.enabled = true;
 
     }
 
@@ -139,9 +144,29 @@ public class Controller : MonoBehaviour
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
         float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
 
+        playerVelocity.y += gravityValue * Time.deltaTime;
+        controller.Move(playerVelocity * Time.deltaTime);
         //print("isGrounded: " + controller.isGrounded);
+        bool tryAccelerate = false;
+        float jumpedDistance = transform.position.y - startY;
 
-        Vector3 move = new Vector3(movementInput.x, movementInput.y, 0);
+        print(playerVelocity.y);
+        if (jumpButtonHeld)
+        {
+
+            if (controller.isGrounded)
+            {
+                startedJump = true;
+                startY = transform.position.y;
+            }
+            tryAccelerate = true;
+        }
+        else if (startedJump && jumpedDistance < minHeight)
+        {
+            tryAccelerate = true;
+        }
+
+        move = new Vector3(movementInput.x, movementInput.y, 0);
 
         if (movementInput == Vector2.zero)
         {
@@ -168,23 +193,7 @@ public class Controller : MonoBehaviour
         }
 
 
-        bool tryAccelerate = false;
-        float jumpedDistance = transform.position.y - startY;
 
-
-        if (jumpButtonHeld)
-        {
-            if (controller.isGrounded)
-            {
-                startedJump = true;
-                startY = transform.position.y;
-            }
-            tryAccelerate = true;
-        }
-        else if (startedJump && jumpedDistance < minHeight)
-        {
-            tryAccelerate = true;
-        }
         if (tryAccelerate)
         {
 
@@ -205,6 +214,10 @@ public class Controller : MonoBehaviour
             }
 
         }
+        if (controller.isGrounded)
+        {
+            slammed = false;
+        }
         if (playerVelocity.y > 0)
         {
             canDash = false;
@@ -214,9 +227,7 @@ public class Controller : MonoBehaviour
               }*/
         }
 
-        playerVelocity.y += gravityValue * Time.deltaTime;
-        controller.Move(playerVelocity * Time.deltaTime);
-        Debug.Log(controller.isGrounded + "startedjump" + startedJump);
+
     }
 
 }

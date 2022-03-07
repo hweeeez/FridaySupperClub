@@ -10,21 +10,21 @@ public class CountDown : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartDelay());
-        StartCoroutine(CountdownToStart());
+        // StartCoroutine(CountdownToStart());
     }
 
-    IEnumerator CountdownToStart()
-    {
-        while (countdownTime > 0)
-        {
-            countdownDisplay.text = countdownTime.ToString();
-            yield return new WaitForSeconds(1f);
-            countdownTime--;
-        }
-        countdownDisplay.text = "GO!";
-        yield return new WaitForSeconds(1f);
+    /* IEnumerator CountdownToStart()
+     {
+         while (countdownTime > 0)
+         {
+             countdownDisplay.text = countdownTime.ToString();
+             yield return new WaitForSeconds(1f);
+             countdownTime--;
+         }
+         countdownDisplay.text = "GO!";
+         yield return new WaitForSeconds(1f);
 
-    }
+     }*/
     IEnumerator StartDelay()
     {
         Time.timeScale = 0;

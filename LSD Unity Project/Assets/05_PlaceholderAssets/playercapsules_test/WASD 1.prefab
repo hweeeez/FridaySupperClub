@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 00c50835f64db7e46976398f64105bd7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -120,6 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundcheck: 0
   groundCheck: {fileID: 6038114291375835737}
   isColliding: 0
   groundDistance: 0.4
@@ -130,7 +131,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   actionReference: {fileID: -7197453741310385100, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
-  spawnPos: {x: -20.3, y: -7.1, z: 0}
+  spawnPos: {x: -20.3, y: 7.1, z: 0}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -156,7 +157,7 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 120
@@ -417,15 +418,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: feet
       objectReference: {fileID: 0}
-    - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9099028649837626815, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9099028649837626815, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
 --- !u!4 &8412014376694724086 stripped
 Transform:

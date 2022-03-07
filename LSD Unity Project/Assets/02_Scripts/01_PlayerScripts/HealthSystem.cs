@@ -30,6 +30,7 @@ public class HealthSystem : MonoBehaviour
             GameObject lifeImage = Instantiate(playerLifeImage, new Vector2(gridPos.x + (2 * lifeIndex), gridPos.y), Quaternion.identity) as GameObject;
             this.lifeImages.Add(lifeImage);
         }
+
     }
 
 
@@ -50,44 +51,48 @@ public class HealthSystem : MonoBehaviour
              this.isInvulnerable = true;
              Invoke("BecomeVulnerable", this.invulnerabilityDuration);
          }
-     }
-     private void BecomeVulnerable()
-     {
-         this.isInvulnerable = false;
      }*/
+    private void BecomeVulnerable()
+    {
+        this.isInvulnerable = false;
+    }
     public void LoseLife()
     {
-        this.health--;
-        if (health > numberOfLives)
+        if (!isInvulnerable)
         {
-            health = numberOfLives;
-        }
-        for (int i = 0; i < numberOfLives; i++)
-        {
-            if (i < health)
+            this.health--;
+            if (health > numberOfLives)
             {
-                lifeImages[i].GetComponent<SpriteRenderer>().sprite = fillLife;
+                health = numberOfLives;
             }
-            else
+            for (int i = 0; i < numberOfLives; i++)
             {
-                lifeImages[i].GetComponent<SpriteRenderer>().sprite = emptyLife;
+                if (i < health)
+                {
+                    lifeImages[i].GetComponent<SpriteRenderer>().sprite = fillLife;
+                }
+                else
+                {
+                    lifeImages[i].GetComponent<SpriteRenderer>().sprite = emptyLife;
+                }
+                if (i < numberOfLives)
+                {
+                    lifeImages[i].SetActive(true);
+                }
+                else
+                {
+                    lifeImages[i].SetActive(false);
+                }
             }
-            if (i < numberOfLives)
-            {
-                lifeImages[i].SetActive(true);
-            }
-            else
-            {
-                lifeImages[i].SetActive(false);
-            }
-        }
 
-        if (this.health == 0)
-        {
-            Destroy(this.gameObject);
+            if (this.health == 0)
+            {
+                Destroy(this.gameObject);
+            }
+            this.isInvulnerable = true;
+            Invoke("BecomeVulnerable", this.invulnerabilityDuration);
         }
     }
-
 }
 
 
