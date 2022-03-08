@@ -142,7 +142,7 @@ public class Controller : MonoBehaviour
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
         float playerSpeed = isDashing ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
-        float jumpHeight = minHeight;// jumpCancelled ? minHeight : maxHeight;
+        float jumpHeight = minHeight;
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
@@ -150,7 +150,6 @@ public class Controller : MonoBehaviour
         bool tryAccelerate = false;
         float jumpedDistance = transform.position.y - startY;
 
-        print(playerVelocity.y);
         if (jumpButtonHeld)
         {
 
@@ -212,11 +211,11 @@ public class Controller : MonoBehaviour
                 startedJump = false;
                 playerVelocity.y = 0;
             }
-
         }
-        if (controller.isGrounded)
+        else if (controller.isGrounded)
         {
             slammed = false;
+            playerVelocity.y = 0;
         }
         if (playerVelocity.y > 0)
         {
