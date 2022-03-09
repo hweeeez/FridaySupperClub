@@ -273,3 +273,237 @@ Received Import Request.
 Start importing Assets/06_UI/Fonts/DigitalDismay/Digital Dismay SDF.asset using Guid(48405d0810b734846a4909a08dad3d1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '841d124a9b18086c59d30b86de055f1f') in 0.032555 seconds 
   Import took 0.037632 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 891.122329 seconds.
+  path: Assets/06_UI/In-game_UI/CharacterIcons
+  artifactKey: Guid(8293f7094929e4d708d0b1cf45926fd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/CharacterIcons using Guid(8293f7094929e4d708d0b1cf45926fd6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b269bf588ef4029bdca7e60aa6149a52') in 0.001797 seconds 
+  Import took 0.010211 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 156.123528 seconds.
+  path: Assets/06_UI/In-game_UI/CharacterIcons/Konpei_icon.png
+  artifactKey: Guid(a773fe74c42aa4c7dbe22e7957663d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/CharacterIcons/Konpei_icon.png using Guid(a773fe74c42aa4c7dbe22e7957663d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50d82e7417efe2d89a614079e2156b2') in 0.036219 seconds 
+  Import took 0.041860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000248 seconds.
+  path: Assets/06_UI/In-game_UI/CharacterIcons/RockS_icon.png
+  artifactKey: Guid(5a7270563e9544d1c801954224d098b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/CharacterIcons/RockS_icon.png using Guid(5a7270563e9544d1c801954224d098b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79f9bed98bf257e39210f585a1e1d807') in 0.016618 seconds 
+  Import took 0.020970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/06_UI/In-game_UI/CharacterIcons/Konpei_icon.png
+  artifactKey: Guid(a773fe74c42aa4c7dbe22e7957663d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/CharacterIcons/Konpei_icon.png using Guid(a773fe74c42aa4c7dbe22e7957663d9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50d82e7417efe2d89a614079e2156b2') in 0.015555 seconds 
+  Import took 0.021487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/06_UI/In-game_UI/CharacterIcons/Tang_icon.png
+  artifactKey: Guid(c90f7ed5b6424458f883f9563188ab2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/CharacterIcons/Tang_icon.png using Guid(c90f7ed5b6424458f883f9563188ab2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e69182d4a0742cbd420540af0c6b394') in 0.019102 seconds 
+  Import took 0.025255 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/06_UI/In-game_UI/CharacterIcons/Mac_icon.png
+  artifactKey: Guid(907b9903177054d33a29b4502894a3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/CharacterIcons/Mac_icon.png using Guid(907b9903177054d33a29b4502894a3b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fea63dd34dc1e06d1fe7d445f95501') in 0.017023 seconds 
+  Import took 0.022683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 32.201277 seconds.
+  path: Assets/06_UI/In-game_UI/Gradient.png
+  artifactKey: Guid(108e42ea3f4e14bbf8eddca1a43aa566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/Gradient.png using Guid(108e42ea3f4e14bbf8eddca1a43aa566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c624407b22aaa2c11daa36eb5ea9062') in 0.030964 seconds 
+  Import took 0.035394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/06_UI/In-game_UI/PlayerNumbers.png
+  artifactKey: Guid(e00c865157cdf48f5aaffcbd20ac8cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/PlayerNumbers.png using Guid(e00c865157cdf48f5aaffcbd20ac8cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d2fa1cd4d73ed752fd8a3a747dbc5e') in 0.016624 seconds 
+  Import took 0.021535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/06_UI/In-game_UI/Gradient.png
+  artifactKey: Guid(108e42ea3f4e14bbf8eddca1a43aa566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/Gradient.png using Guid(108e42ea3f4e14bbf8eddca1a43aa566) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c624407b22aaa2c11daa36eb5ea9062') in 0.014995 seconds 
+  Import took 0.018704 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/06_UI/In-game_UI/PlayerNumbers.png
+  artifactKey: Guid(e00c865157cdf48f5aaffcbd20ac8cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/PlayerNumbers.png using Guid(e00c865157cdf48f5aaffcbd20ac8cf4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6d2fa1cd4d73ed752fd8a3a747dbc5e') in 0.017140 seconds 
+  Import took 0.021468 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.265029 seconds.
+  path: Assets/06_UI/In-game_UI/00_MainUI_overview.png
+  artifactKey: Guid(3f8c44dde37aa41819867674131e8aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/00_MainUI_overview.png using Guid(3f8c44dde37aa41819867674131e8aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0f4cb17959730104c27f25c4ca6043') in 0.033648 seconds 
+  Import took 0.038782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000853 seconds.
+  path: Assets/06_UI/In-game_UI/00_MainUI_overview.png
+  artifactKey: Guid(3f8c44dde37aa41819867674131e8aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/00_MainUI_overview.png using Guid(3f8c44dde37aa41819867674131e8aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b0f4cb17959730104c27f25c4ca6043') in 0.016780 seconds 
+  Import took 0.020948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 248.573362 seconds.
+  path: Assets/06_UI/In-game_UI/00_Overview.png
+  artifactKey: Guid(3f8c44dde37aa41819867674131e8aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/00_Overview.png using Guid(3f8c44dde37aa41819867674131e8aad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e18de2da66d6cdc465745f688bf84192') in 0.038930 seconds 
+  Import took 0.044824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 266.048210 seconds.
+  path: Assets/06_UI/In-game_UI/Others
+  artifactKey: Guid(21714b28d64cc42ce8193acdcc0b2ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/Others using Guid(21714b28d64cc42ce8193acdcc0b2ecd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e2d8819bc227ef7ecbc5ed55f085f1') in 0.002643 seconds 
+  Import took 0.008358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2244.907092 seconds.
+  path: Assets/06_UI/In-game_UI/Others/PauseIcon.png
+  artifactKey: Guid(ada5bbfb31f1249738df8ade628a2c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/In-game_UI/Others/PauseIcon.png using Guid(ada5bbfb31f1249738df8ade628a2c1b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6eb3449bddd1b3ade218d1c94833a00') in 0.023543 seconds 
+  Import took 0.031255 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008374 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.48 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.455 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1457ms)
+		BeginReloadAssembly (253ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (22ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (151ms)
+		EndReloadAssembly (1128ms)
+			LoadAssemblies (96ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (416ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (421ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (331ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.56 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 199.6 MB.
+System memory in use after: 199.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2908.
+Total: 3.888836 ms (FindLiveObjects: 0.335416 ms CreateObjectMapping: 0.109546 ms MarkObjects: 3.426270 ms  DeleteObjects: 0.016803 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002224 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.259 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1259ms)
+		BeginReloadAssembly (153ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (79ms)
+		EndReloadAssembly (1025ms)
+			LoadAssemblies (83ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (357ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (400ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (79ms)
+				ProcessInitializeOnLoadAttributes (308ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 199.9 MB.
+System memory in use after: 200.1 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2911.
+Total: 3.908744 ms (FindLiveObjects: 0.240803 ms CreateObjectMapping: 0.118504 ms MarkObjects: 3.528786 ms  DeleteObjects: 0.019664 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
