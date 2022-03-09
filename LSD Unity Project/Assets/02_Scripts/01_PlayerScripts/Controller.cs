@@ -7,6 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    SpriteRenderer spriteRender;
     Animator anim;
     Rigidbody playerRB;
     public bool groundcheck;
@@ -41,12 +42,14 @@ public class Controller : MonoBehaviour
     bool startedJump;
     float startY;
     private bool slammed = false;
+    private bool slamming = false;
 
     // if canDash and !dashing then perform dash
     private bool isDashing = false;
     private bool canDash;
     private void Awake()
     {
+        spriteRender = gameObject.GetComponent<SpriteRenderer>();
         anim = gameObject.GetComponent<Animator>();
         playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
@@ -94,7 +97,7 @@ public class Controller : MonoBehaviour
     {
         if (context.action.triggered)
         {
-            //print("slam!");
+            slamming = true;
             slammed = true;
             startedJump = false;
         }
@@ -157,7 +160,7 @@ public class Controller : MonoBehaviour
 
             if (controller.isGrounded)
             {
-               
+
                 startedJump = true;
                 startY = transform.position.y;
             }
@@ -219,7 +222,7 @@ public class Controller : MonoBehaviour
         }
         else if (controller.isGrounded)
         {
-            slammed = false;
+            slamming = false;
             playerVelocity.y = 0;
         }
         if (playerVelocity.y > 0)
@@ -230,17 +233,28 @@ public class Controller : MonoBehaviour
                   startedJump = false;
               }*/
         }
-        if(slammed && playerVelocity.y > 0)
+        if (slamming && !controller.isGrounded)
         {
             anim.SetBool("slam", true);
         }
-        else if(controller.isGrounded){ anim.SetBool("slam", false); }
+        else if (controller.isGrounded) { anim.SetBool("slam", false); }
         if (playerVelocity.y > 0)
         {
             anim.SetBool("isGrounded", false);
-        }else
-            { anim.SetBool("isGrounded", true); }
+        }
+        else
+        { anim.SetBool("isGrounded", true); }
+
+        if (movementInput.x > 0)
+        {
+            spriteRender.flipX = false;
+        }
+        if (movementInput.x < 0)
+        {
+            spriteRender.flipX = true;
+        }
     }
+
 
 }
 
