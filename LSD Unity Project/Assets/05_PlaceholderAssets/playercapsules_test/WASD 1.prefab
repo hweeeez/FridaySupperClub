@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5893018536092498180}
   - component: {fileID: 7104238988279009782}
   - component: {fileID: 8112301054674655947}
+  - component: {fileID: 9138606239988338720}
   m_Layer: 0
   m_Name: WASD 1
   m_TagString: Player
@@ -301,6 +302,25 @@ MonoBehaviour:
   emptyLife: {fileID: 21300000, guid: e1b395e62df54db42a6edcd75481959d, type: 3}
   fillLife: {fileID: 21300000, guid: aae59a42d6b742b4187bd1e68c39ad9d, type: 3}
   gridPos: {x: 9, y: -12.5}
+--- !u!95 &9138606239988338720
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7104238988279009790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 223511807344a49df973e1cce6458343, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1654017330098811165
 PrefabInstance:
   m_ObjectHideFlags: 0

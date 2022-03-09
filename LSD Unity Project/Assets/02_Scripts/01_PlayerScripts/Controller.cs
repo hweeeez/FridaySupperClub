@@ -7,6 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    Animator anim;
     Rigidbody playerRB;
     public bool groundcheck;
     public Transform groundCheck;
@@ -46,6 +47,7 @@ public class Controller : MonoBehaviour
     private bool canDash;
     private void Awake()
     {
+        anim = gameObject.GetComponent<Animator>();
         playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
         lifeScript = gameObject.GetComponent<HealthSystem>();
@@ -155,9 +157,11 @@ public class Controller : MonoBehaviour
 
             if (controller.isGrounded)
             {
+               
                 startedJump = true;
                 startY = transform.position.y;
             }
+
             tryAccelerate = true;
         }
         else if (startedJump && jumpedDistance < minHeight)
@@ -170,9 +174,11 @@ public class Controller : MonoBehaviour
         if (movementInput == Vector2.zero)
         {
             move = Vector3.zero;
+            anim.SetBool("isMoving", false);
         }
         else
         {
+            anim.SetBool("isMoving", true);
             controller.Move(move * Time.deltaTime * playerSpeed);
         }
         if (canDash && !isDashing)
@@ -195,7 +201,6 @@ public class Controller : MonoBehaviour
 
         if (tryAccelerate)
         {
-
             bool maxHeightExceeded = jumpedDistance > maxHeight;
             if (startedJump && !maxHeightExceeded)
             {
@@ -225,8 +230,16 @@ public class Controller : MonoBehaviour
                   startedJump = false;
               }*/
         }
-
-
+        if(slammed && playerVelocity.y > 0)
+        {
+            anim.SetBool("slam", true);
+        }
+        else if(controller.isGrounded){ anim.SetBool("slam", false); }
+        if (playerVelocity.y > 0)
+        {
+            anim.SetBool("isGrounded", false);
+        }else
+            { anim.SetBool("isGrounded", true); }
     }
 
 }
