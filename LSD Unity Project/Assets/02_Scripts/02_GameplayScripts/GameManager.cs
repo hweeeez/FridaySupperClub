@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         timerIsRunning = true;
-        maxWaterHeight = new Vector2(transform.position.x, 4.8f);
+        maxWaterHeight = new Vector2(water.transform.position.x, -9.8f);
+        water.transform.position = new Vector2(0, -30f);
     }
 
     // Update is called once per frame
@@ -65,7 +66,8 @@ public class GameManager : MonoBehaviour
         isRising = true;
 
         var t = 0f;
-        Vector2 startLevel = water.transform.position;
+        Vector2 startLevel = new Vector2(0, -30f);
+            //water.transform.position;
 
         while (t <= 1f)
         {
