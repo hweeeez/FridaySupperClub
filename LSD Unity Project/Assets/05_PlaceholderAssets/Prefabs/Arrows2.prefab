@@ -107,7 +107,7 @@ MonoBehaviour:
   playerLifeImage: {fileID: 2466212561428719197, guid: c17fee8d11bff9948a9585608268ce62, type: 3}
   emptyLife: {fileID: 21300000, guid: 7ec084cfaab54c54a8c27b954a42236a, type: 3}
   fillLife: {fileID: 21300000, guid: 5b87ccf6cc8413643962075ccea99344, type: 3}
-  gridPos: {x: -9, y: -12.5}
+  gridPos: {x: 4.7, y: -12.3}
 --- !u!143 &7104238988279009784
 CharacterController:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ CharacterController:
   m_Radius: 0.5
   m_SlopeLimit: 45
   m_StepOffset: 0
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: -0.08, z: 0}
 --- !u!114 &7104238988279009785
@@ -404,12 +404,28 @@ PrefabInstance:
       value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.y
       value: -1.67
       objectReference: {fileID: 0}
     - target: {fileID: 6648478455415243156, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_Layer
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_Size.x
+      value: 1.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.88
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_Center.y
+      value: -0.93
       objectReference: {fileID: 0}
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_IsTrigger

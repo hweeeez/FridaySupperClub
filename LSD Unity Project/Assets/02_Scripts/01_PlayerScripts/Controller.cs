@@ -23,6 +23,7 @@ public class Controller : MonoBehaviour
     [SerializeField]
     private InputActionReference actionReference;
 
+    private bool invulnerable = false;
     private float defplayerSpeed = 14.0f;
     private float dashSpeed = 25.0f;
     private Vector3 move;
@@ -121,11 +122,15 @@ public class Controller : MonoBehaviour
     }
     IEnumerator RespawnPlayer()
     {
+        controller.enabled = false;
         playerRB.constraints = RigidbodyConstraints.FreezeAll;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(1.1f);
         this.transform.position = spawnPos;
+        anim.ResetTrigger("Dead");
         playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
+        invulnerable = false;
+        controller.enabled = true;
 
     }
 
@@ -137,8 +142,10 @@ public class Controller : MonoBehaviour
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
-        if (isAttacked)
+        if (isAttacked && !invulnerable)
         {
+            anim.SetTrigger("Dead");
+            invulnerable = true;
             lifeScript.LoseLife();
             StartCoroutine(RespawnPlayer());
         }
@@ -245,14 +252,14 @@ public class Controller : MonoBehaviour
         else
         { anim.SetBool("isGrounded", true); }
 
-       /* if (movementInput.x > 0)
-        {
-            spriteRender.flipX = false;
-        }
-        if (movementInput.x < 0)
-        {
-            spriteRender.flipX = true;
-        }*/
+        /* if (movementInput.x > 0)
+         {
+             spriteRender.flipX = false;
+         }
+         if (movementInput.x < 0)
+         {
+             spriteRender.flipX = true;
+         }*/
     }
 
 

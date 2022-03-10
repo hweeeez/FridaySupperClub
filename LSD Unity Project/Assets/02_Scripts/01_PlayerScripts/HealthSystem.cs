@@ -27,7 +27,7 @@ public class HealthSystem : MonoBehaviour
         this.lifeImages = new List<GameObject>();
         for (int lifeIndex = 0; lifeIndex < this.numberOfLives; ++lifeIndex)
         {
-            GameObject lifeImage = Instantiate(playerLifeImage, new Vector2(gridPos.x + (2 * lifeIndex), gridPos.y), Quaternion.identity) as GameObject;
+            GameObject lifeImage = Instantiate(playerLifeImage, new Vector2(gridPos.x + (1f * lifeIndex), gridPos.y), Quaternion.identity) as GameObject;
             this.lifeImages.Add(lifeImage);
         }
 

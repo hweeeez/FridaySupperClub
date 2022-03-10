@@ -107,7 +107,7 @@ MonoBehaviour:
   playerLifeImage: {fileID: 1728723369393501297, guid: 7c0bf6615eb7659478e99e2d204738ee, type: 3}
   emptyLife: {fileID: 21300000, guid: cc812bdcbdc4fa74e8e1a93ed914d5ac, type: 3}
   fillLife: {fileID: 21300000, guid: 0ccd1dd3f4ff5764f92db591e5c39e0b, type: 3}
-  gridPos: {x: 0, y: -12.5}
+  gridPos: {x: 12.93, y: -12.3}
 --- !u!143 &7104238988279009784
 CharacterController:
   m_ObjectHideFlags: 0
@@ -123,7 +123,7 @@ CharacterController:
   m_Radius: 1.08
   m_SlopeLimit: 45
   m_StepOffset: 0
-  m_SkinWidth: 0.08
+  m_SkinWidth: 0.0001
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: -0.27, z: 0}
 --- !u!114 &7104238988279009785
@@ -425,6 +425,10 @@ PrefabInstance:
     - target: {fileID: 6648478455415243156, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_Name
       value: feet
+      objectReference: {fileID: 0}
+    - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_Size.y
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_IsTrigger
