@@ -49,7 +49,7 @@ public class Controller : MonoBehaviour
     private bool canDash;
     private void Awake()
     {
-        spriteRender = gameObject.GetComponent<SpriteRenderer>();
+        //spriteRender = gameObject.GetComponent<SpriteRenderer>();
         anim = gameObject.GetComponent<Animator>();
         playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
@@ -245,14 +245,14 @@ public class Controller : MonoBehaviour
         else
         { anim.SetBool("isGrounded", true); }
 
-        if (movementInput.x > 0)
+       /* if (movementInput.x > 0)
         {
             spriteRender.flipX = false;
         }
         if (movementInput.x < 0)
         {
             spriteRender.flipX = true;
-        }
+        }*/
     }
 
 
