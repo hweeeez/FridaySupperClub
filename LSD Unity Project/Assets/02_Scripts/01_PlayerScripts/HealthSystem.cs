@@ -13,7 +13,7 @@ public class HealthSystem : MonoBehaviour
     private GameObject playerLifeImage;
     private List<GameObject> lifeImages;
 
-    private int health = 3;
+    public int health = 3;
     //public Image[] hearts;
     public Sprite emptyLife;
     public Sprite fillLife;
@@ -32,7 +32,15 @@ public class HealthSystem : MonoBehaviour
         }
 
     }
+    private void Update()
+    {
+        if (health == 0)
+        {
+            foreach (GameObject lifeImage in lifeImages)
+                lifeImage.GetComponent<SpriteRenderer>().sprite = emptyLife;
 
+        }
+    }
 
     // Update is called once per frame
     /* public void LoseLife()
@@ -85,14 +93,12 @@ public class HealthSystem : MonoBehaviour
                 }
             }
 
-            if (this.health == 0)
-            {
-                Destroy(this.gameObject);
-            }
+
             this.isInvulnerable = true;
             Invoke("BecomeVulnerable", this.invulnerabilityDuration);
         }
     }
+
 }
 
 

@@ -16,6 +16,7 @@ public class Controller : MonoBehaviour
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
     public LayerMask feetMask;
+
     private bool rayGrounded;
     private CharacterController controller;
     private HealthSystem lifeScript;
@@ -30,9 +31,9 @@ public class Controller : MonoBehaviour
     private float MaxDashTime = 1.5f;
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
-    private float jumpGravity = -40.81f;
-    private float fallGravity = -48.81f;
-    private float slamGravity = -100f;
+    private float jumpGravity = -65.81f;
+    private float fallGravity = -95.81f;
+    private float slamGravity = -160f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
     public Vector3 spawnPos;
@@ -50,11 +51,12 @@ public class Controller : MonoBehaviour
     private bool canDash;
     private void Awake()
     {
-        //spriteRender = gameObject.GetComponent<SpriteRenderer>();
+        spriteRender = gameObject.GetComponent<SpriteRenderer>();
         anim = gameObject.GetComponent<Animator>();
         playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
         lifeScript = gameObject.GetComponent<HealthSystem>();
+
     }
     private void Start()
     {
@@ -75,7 +77,6 @@ public class Controller : MonoBehaviour
         {
             if (context.interaction is MultiTapInteraction)
             {
-                Debug.Log("triggered");
                 canDash = true;
             }
         }
@@ -137,7 +138,7 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-
+        print(lifeScript.health);
         //ceilingcheck
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -190,6 +191,10 @@ public class Controller : MonoBehaviour
         {
             anim.SetBool("isMoving", true);
             controller.Move(move * Time.deltaTime * playerSpeed);
+            if (controller.isGrounded)
+            {
+                playerVelocity.y = 0;
+            }
         }
         if (canDash && !isDashing)
         {
@@ -252,17 +257,34 @@ public class Controller : MonoBehaviour
         else
         { anim.SetBool("isGrounded", true); }
 
-        /* if (movementInput.x > 0)
-         {
-             spriteRender.flipX = false;
-         }
-         if (movementInput.x < 0)
-         {
-             spriteRender.flipX = true;
-         }*/
+        if (movementInput.x > 0)
+        {
+            spriteRender.flipX = false;
+        }
+        if (movementInput.x < 0)
+        {
+            spriteRender.flipX = true;
+        }
+        if (lifeScript.health == 0)
+        {
+            StartCoroutine(finalDeath());
+        }
     }
-
-
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Water")
+        {
+            lifeScript.health = 0;
+        }
+    }
+    IEnumerator finalDeath()
+    {
+        controller.enabled = false;
+        playerRB.constraints = RigidbodyConstraints.FreezeAll;
+        anim.Play("death");
+        yield return new WaitForSeconds(0.9f);
+        Destroy(this.gameObject);
+    }
 }
 
 

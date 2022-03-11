@@ -7,7 +7,7 @@ public class GameManager : MonoBehaviour
 {
 
     //Timer
-    float timeRemaining = 300; //5 minutes = 300 seconds
+    float timeRemaining = 120; //5 minutes = 300 seconds
     bool timerIsRunning = false;
     public GameObject timerText;
 
@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("Game over!");
+                //Debug.Log("Game over!");
                 timeRemaining = 0;
                 timerIsRunning = false;
                 StartCoroutine(WaterRise(transform, maxWaterHeight, riseSpeed));
@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
         var t = 0f;
         Vector2 startLevel = new Vector2(0, -30f);
-            //water.transform.position;
+        //water.transform.position;
 
         while (t <= 1f)
         {

@@ -81,6 +81,22 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""MouseClick"",
+                    ""type"": ""Button"",
+                    ""id"": ""404c1e98-15d8-4f99-804d-fdfcb7a09077"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=1)""
+                },
+                {
+                    ""name"": ""MousePosition"",
+                    ""type"": ""PassThrough"",
+                    ""id"": ""2f5b79bb-e1de-47ec-b7c9-3d3f599653bf"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": ""Press(behavior=1)""
                 }
             ],
             ""bindings"": [
@@ -534,6 +550,28 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""action"": ""Dash  IJKL"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""1d0cedc4-e8bf-47f6-b6b1-dfe217f8c2ed"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MouseClick"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""257e0faa-8f3d-4617-8d60-55b5b96e9588"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MousePosition"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -595,6 +633,8 @@ public class @AutoGen : IInputActionCollection, IDisposable
         m_Player1_DashArrows = m_Player1.FindAction("Dash  Arrows", throwIfNotFound: true);
         m_Player1_Dash5123 = m_Player1.FindAction("Dash  5123", throwIfNotFound: true);
         m_Player1_DashIJKL = m_Player1.FindAction("Dash  IJKL", throwIfNotFound: true);
+        m_Player1_MouseClick = m_Player1.FindAction("MouseClick", throwIfNotFound: true);
+        m_Player1_MousePosition = m_Player1.FindAction("MousePosition", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -652,6 +692,8 @@ public class @AutoGen : IInputActionCollection, IDisposable
     private readonly InputAction m_Player1_DashArrows;
     private readonly InputAction m_Player1_Dash5123;
     private readonly InputAction m_Player1_DashIJKL;
+    private readonly InputAction m_Player1_MouseClick;
+    private readonly InputAction m_Player1_MousePosition;
     public struct Player1Actions
     {
         private @AutoGen m_Wrapper;
@@ -664,6 +706,8 @@ public class @AutoGen : IInputActionCollection, IDisposable
         public InputAction @DashArrows => m_Wrapper.m_Player1_DashArrows;
         public InputAction @Dash5123 => m_Wrapper.m_Player1_Dash5123;
         public InputAction @DashIJKL => m_Wrapper.m_Player1_DashIJKL;
+        public InputAction @MouseClick => m_Wrapper.m_Player1_MouseClick;
+        public InputAction @MousePosition => m_Wrapper.m_Player1_MousePosition;
         public InputActionMap Get() { return m_Wrapper.m_Player1; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -697,6 +741,12 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 @DashIJKL.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashIJKL;
                 @DashIJKL.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashIJKL;
                 @DashIJKL.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnDashIJKL;
+                @MouseClick.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMouseClick;
+                @MouseClick.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMouseClick;
+                @MouseClick.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMouseClick;
+                @MousePosition.started -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMousePosition;
+                @MousePosition.performed -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMousePosition;
+                @MousePosition.canceled -= m_Wrapper.m_Player1ActionsCallbackInterface.OnMousePosition;
             }
             m_Wrapper.m_Player1ActionsCallbackInterface = instance;
             if (instance != null)
@@ -725,6 +775,12 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 @DashIJKL.started += instance.OnDashIJKL;
                 @DashIJKL.performed += instance.OnDashIJKL;
                 @DashIJKL.canceled += instance.OnDashIJKL;
+                @MouseClick.started += instance.OnMouseClick;
+                @MouseClick.performed += instance.OnMouseClick;
+                @MouseClick.canceled += instance.OnMouseClick;
+                @MousePosition.started += instance.OnMousePosition;
+                @MousePosition.performed += instance.OnMousePosition;
+                @MousePosition.canceled += instance.OnMousePosition;
             }
         }
     }
@@ -775,5 +831,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
         void OnDashArrows(InputAction.CallbackContext context);
         void OnDash5123(InputAction.CallbackContext context);
         void OnDashIJKL(InputAction.CallbackContext context);
+        void OnMouseClick(InputAction.CallbackContext context);
+        void OnMousePosition(InputAction.CallbackContext context);
     }
 }

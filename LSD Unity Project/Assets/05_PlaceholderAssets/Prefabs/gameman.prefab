@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3337912935887144800}
   - component: {fileID: 3337912935887144803}
   - component: {fileID: 3337912935887144802}
+  - component: {fileID: 5785965903953117625}
   m_Layer: 0
   m_Name: gameman
   m_TagString: Untagged
@@ -77,6 +78,18 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: 8fb2e689-e0ef-4258-aeec-4bedcfefb93f
     m_ActionName: Player1/Dash[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8211506b-88bd-4fa0-825e-5bd252ce81fb
+    m_ActionName: Player1/Dash  Arrows[/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 16705aac-8f06-43dc-8a7e-87253f2f8a85
+    m_ActionName: Player1/Dash  5123[/Keyboard/numpad1,/Keyboard/numpad3]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: de23f853-6d68-4325-a564-62b75ea33be3
+    m_ActionName: Player1/Dash  IJKL[/Keyboard/j,/Keyboard/l]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player1
@@ -98,3 +111,17 @@ MonoBehaviour:
   playerTwo: {fileID: 7104238988279009790, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
   playerThree: {fileID: 7104238988279009790, guid: 209c777aef0909d40ade44a7761d2c90, type: 3}
   playerFour: {fileID: 7104238988279009790, guid: 6494dd859e0a6d2479749f1b93c907e0, type: 3}
+--- !u!114 &5785965903953117625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3337912935887144733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9f21b664da5e45c3a9d749d05121053, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timerText: {fileID: 0}
+  water: {fileID: 0}

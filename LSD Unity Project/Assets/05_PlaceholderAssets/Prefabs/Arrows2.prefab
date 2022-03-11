@@ -82,7 +82,7 @@ SpriteRenderer:
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 3de40d027e14647a0a77a77ba3a27f64, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 2}
@@ -105,6 +105,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfLives: 3
   playerLifeImage: {fileID: 2466212561428719197, guid: c17fee8d11bff9948a9585608268ce62, type: 3}
+  health: 3
   emptyLife: {fileID: 21300000, guid: 7ec084cfaab54c54a8c27b954a42236a, type: 3}
   fillLife: {fileID: 21300000, guid: 5b87ccf6cc8413643962075ccea99344, type: 3}
   gridPos: {x: 4.7, y: -12.3}
@@ -119,8 +120,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 3.41
-  m_Radius: 0.5
+  m_Height: 3.24
+  m_Radius: 0.65
   m_SlopeLimit: 45
   m_StepOffset: 0
   m_SkinWidth: 0.0001
@@ -269,6 +270,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: de23f853-6d68-4325-a564-62b75ea33be3
     m_ActionName: Player1/Dash  IJKL[/Keyboard/j,/Keyboard/l]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 404c1e98-15d8-4f99-804d-fdfcb7a09077
+    m_ActionName: Player1/MouseClick[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2f5b79bb-e1de-47ec-b7c9-3d3f599653bf
+    m_ActionName: Player1/MousePosition[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard2
   m_DefaultActionMap: Player1
@@ -417,11 +426,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_Size.x
-      value: 1.42
+      value: 1.63
       objectReference: {fileID: 0}
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_Size.y
-      value: 0.88
+      value: 1.14
       objectReference: {fileID: 0}
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_Center.y

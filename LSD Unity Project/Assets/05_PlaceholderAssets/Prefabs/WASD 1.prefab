@@ -215,6 +215,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: de23f853-6d68-4325-a564-62b75ea33be3
     m_ActionName: Player1/Dash  IJKL[/Keyboard/j,/Keyboard/l]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 404c1e98-15d8-4f99-804d-fdfcb7a09077
+    m_ActionName: Player1/MouseClick[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2f5b79bb-e1de-47ec-b7c9-3d3f599653bf
+    m_ActionName: Player1/MousePosition[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard1
   m_DefaultActionMap: Player1
@@ -234,6 +242,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfLives: 3
   playerLifeImage: {fileID: 4511206266648666129, guid: 5fa5e647f9ca96247946b0199fc30ca4, type: 3}
+  health: 3
   emptyLife: {fileID: 21300000, guid: e1b395e62df54db42a6edcd75481959d, type: 3}
   fillLife: {fileID: 21300000, guid: aae59a42d6b742b4187bd1e68c39ad9d, type: 3}
   gridPos: {x: -3.1, y: -12.3}
@@ -298,7 +307,7 @@ SpriteRenderer:
   m_SortingOrder: 11
   m_Sprite: {fileID: 21300000, guid: d7acad3cb13e344718c9de2b07361b2c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 5, y: 5}
