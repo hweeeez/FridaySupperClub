@@ -3073,3 +3073,651 @@ Received Import Request.
 Start importing Assets/06_UI/In-game_UI/Others/HelpIcon_alone.png using Guid(958885d18eade46fa9978f0ec48fc860) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd151771167ca9bd06072a34797dcdd1b') in 0.010258 seconds 
   Import took 0.015501 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 370.010032 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/Map 1 Molasses Intro Loop
+  artifactKey: Guid(9e36f92fd9615429ebbed924c0f773e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/Map 1 Molasses Intro Loop using Guid(9e36f92fd9615429ebbed924c0f773e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '579db446ba3ad6eb9f396574c9d655ce') in 0.002494 seconds 
+  Import took 0.007397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.406649 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop
+  artifactKey: Guid(9e36f92fd9615429ebbed924c0f773e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop using Guid(9e36f92fd9615429ebbed924c0f773e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642d9e2adb6196f2009555c93d1174d1') in 0.001158 seconds 
+  Import took 0.005767 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.660815 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/OLDMolassesIntro
+  artifactKey: Guid(211badc9168834e5690abd9b059a82c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/OLDMolassesIntro using Guid(211badc9168834e5690abd9b059a82c5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3cd7c41c72261cd090ed81364260dc1b') in 0.001048 seconds 
+  Import took 0.005809 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.610868 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop00.png
+  artifactKey: Guid(7f2ca89549cc44cf5b40467c8afe686d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop00.png using Guid(7f2ca89549cc44cf5b40467c8afe686d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea11f64718914953ff2d460da03d57a4') in 0.032017 seconds 
+  Import took 0.037227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop16.png
+  artifactKey: Guid(997f9c5ab6a3f4ecea966e604df5d589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop16.png using Guid(997f9c5ab6a3f4ecea966e604df5d589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e367fdbe6a5c8d3b1f33ff48c74afe1a') in 0.029367 seconds 
+  Import took 0.033759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop22.png
+  artifactKey: Guid(0c51aaaa1f2a2408899eb307661d3117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop22.png using Guid(0c51aaaa1f2a2408899eb307661d3117) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02844d4a442c399e7bd0f96301f01ccd') in 0.013993 seconds 
+  Import took 0.018605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop13.png
+  artifactKey: Guid(b6f949bb15093464283512edd8b47d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop13.png using Guid(b6f949bb15093464283512edd8b47d01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '785fa7c8a042ec3e232dbb0503ef154b') in 0.012354 seconds 
+  Import took 0.017018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop06.png
+  artifactKey: Guid(a990425ab205d411a95ab5ec938343ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop06.png using Guid(a990425ab205d411a95ab5ec938343ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca308c3d7b2f05bfbbac7f0b30e4e4a') in 0.014712 seconds 
+  Import took 0.018478 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop50.png
+  artifactKey: Guid(d547f96a8d6b7489bbbcd2227be58850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop50.png using Guid(d547f96a8d6b7489bbbcd2227be58850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd0d1ea6adbf1a77bd1ff2b06299e1826') in 0.011610 seconds 
+  Import took 0.016124 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop19.png
+  artifactKey: Guid(762817ca2ce0d4fdca0a090006e0ebf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop19.png using Guid(762817ca2ce0d4fdca0a090006e0ebf5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83dee8e552ece6dae2f89f86d500e70e') in 0.011603 seconds 
+  Import took 0.016121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop46.png
+  artifactKey: Guid(6b69273ec964a439c87a94570a047c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop46.png using Guid(6b69273ec964a439c87a94570a047c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60999f328fec4bbc7db7680b277f4bf6') in 0.012476 seconds 
+  Import took 0.016717 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop34.png
+  artifactKey: Guid(952e376167732445a8f8ecb440f622f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop34.png using Guid(952e376167732445a8f8ecb440f622f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407228872c1b3d9fd1af02988c3af94a') in 0.015611 seconds 
+  Import took 0.020334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000164 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop35.png
+  artifactKey: Guid(c9be5f730ced64fc58ed8ac4e25017b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop35.png using Guid(c9be5f730ced64fc58ed8ac4e25017b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e041b5272313cd061aa68120afb9b94') in 0.012267 seconds 
+  Import took 0.017076 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop44.png
+  artifactKey: Guid(c74a667f037ec43a8bfac2d8edba936e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop44.png using Guid(c74a667f037ec43a8bfac2d8edba936e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '07c8139e62bc1c08dd2dbcd20e67f8c2') in 0.012026 seconds 
+  Import took 0.016663 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop41.png
+  artifactKey: Guid(d6d62f63d81b74a268be0bec663828c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop41.png using Guid(d6d62f63d81b74a268be0bec663828c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '651603377b6679eda7f9fd251b057e4d') in 0.014081 seconds 
+  Import took 0.018009 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop29.png
+  artifactKey: Guid(af57e8bc1e76c42cd92dbbc1a2cace9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop29.png using Guid(af57e8bc1e76c42cd92dbbc1a2cace9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1b9e5bb5db7046a58d87f229a52d9a') in 0.013736 seconds 
+  Import took 0.017915 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop53.png
+  artifactKey: Guid(894efafe97e684a3abf69c1096891ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop53.png using Guid(894efafe97e684a3abf69c1096891ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87ef9cd9c529eaaf06ba915e90bdb41') in 0.012677 seconds 
+  Import took 0.017201 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop42.png
+  artifactKey: Guid(3e7e2f05f6d8a42cb91ecdc5282f200e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop42.png using Guid(3e7e2f05f6d8a42cb91ecdc5282f200e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '266c30d784e21e0f6f556fd1a8f50851') in 0.011946 seconds 
+  Import took 0.016519 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop26.png
+  artifactKey: Guid(18dbe16dc7586408282063376638b3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop26.png using Guid(18dbe16dc7586408282063376638b3e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '446372caf3939be2de0235df87bc0a11') in 0.011805 seconds 
+  Import took 0.016046 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop10.png
+  artifactKey: Guid(738a2402a37bf44d5a3eb5f836ba84e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop10.png using Guid(738a2402a37bf44d5a3eb5f836ba84e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66fed8c3c696355208c8d4c7344acdca') in 0.014383 seconds 
+  Import took 0.018485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop05.png
+  artifactKey: Guid(892efaab4046e4485baaa3ab671a2dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop05.png using Guid(892efaab4046e4485baaa3ab671a2dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9d2b60097f7ea1bc206767203a07c7') in 0.014750 seconds 
+  Import took 0.018689 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop47.png
+  artifactKey: Guid(6ab8282ca4fda4a5abe8b9cd682fc371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop47.png using Guid(6ab8282ca4fda4a5abe8b9cd682fc371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aaf7fb45bbe011b60306005823d3d58c') in 0.012488 seconds 
+  Import took 0.017320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop20.png
+  artifactKey: Guid(42d8da48d557c4c57aceb0d68fc4fe98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop20.png using Guid(42d8da48d557c4c57aceb0d68fc4fe98) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '567f8b6aa2315799f5845b4d4aad84cf') in 0.016273 seconds 
+  Import took 0.020561 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop55.png
+  artifactKey: Guid(8089390f913ef45f189398cf9fbcd0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop55.png using Guid(8089390f913ef45f189398cf9fbcd0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e907ccf0078134de72f5209e9a03a43') in 0.015645 seconds 
+  Import took 0.019925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop03.png
+  artifactKey: Guid(b1e30cdaa6710406b9651cb153b3ce0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop03.png using Guid(b1e30cdaa6710406b9651cb153b3ce0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a53d161f2364ee67795435e7f0197017') in 0.015364 seconds 
+  Import took 0.019702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop27.png
+  artifactKey: Guid(c3e6eeeff16774305a43e6732ed88939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop27.png using Guid(c3e6eeeff16774305a43e6732ed88939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffe95d55bcdf05a88b4d5776c4c7c57a') in 0.012585 seconds 
+  Import took 0.016677 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop31.png
+  artifactKey: Guid(83ac6895844c54b229406b688de40d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop31.png using Guid(83ac6895844c54b229406b688de40d55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d7a3e60c4f99c363d5975c518556e3') in 0.014189 seconds 
+  Import took 0.018630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop38.png
+  artifactKey: Guid(9336c6d7355ff4d38be119a9018c9dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop38.png using Guid(9336c6d7355ff4d38be119a9018c9dff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99a0f7fcae755e652ebfdea9c96646d3') in 0.014044 seconds 
+  Import took 0.018345 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop45.png
+  artifactKey: Guid(083c9dd2228aa48ae8d3df8629532766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop45.png using Guid(083c9dd2228aa48ae8d3df8629532766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33a2cf5546b8f68d6289af80af0d6aa7') in 0.011901 seconds 
+  Import took 0.015925 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop12.png
+  artifactKey: Guid(486460f128d8c451a94a3018d860d565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop12.png using Guid(486460f128d8c451a94a3018d860d565) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4abce7f136f8fec318bfec4cba111d1') in 0.012381 seconds 
+  Import took 0.016077 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop11.png
+  artifactKey: Guid(baa6870326ad74dda9e6e1f32adce733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop11.png using Guid(baa6870326ad74dda9e6e1f32adce733) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2496fed4e3175d9fe032496857c1d401') in 0.012385 seconds 
+  Import took 0.016884 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop23.png
+  artifactKey: Guid(d05f4ef1d1eb64e86823d283299cf013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop23.png using Guid(d05f4ef1d1eb64e86823d283299cf013) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '29f7705f3b204c20ad14bce28811aca8') in 0.015256 seconds 
+  Import took 0.019903 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop18.png
+  artifactKey: Guid(ba2e904ced804454aab52bb94d54be96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop18.png using Guid(ba2e904ced804454aab52bb94d54be96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '879bfbb532e57c6ff7c542e7c2da04a8') in 0.011836 seconds 
+  Import took 0.016560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop14.png
+  artifactKey: Guid(72178a81b0b454d7cbe52dd2672b0d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop14.png using Guid(72178a81b0b454d7cbe52dd2672b0d21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4695c8f507702fcde8c35dac518cf516') in 0.012195 seconds 
+  Import took 0.017385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop32.png
+  artifactKey: Guid(066bca38408f148c2a36db4f6a1cd2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop32.png using Guid(066bca38408f148c2a36db4f6a1cd2a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '873c9c73b2aff15d2df1cc9b8378b11e') in 0.014927 seconds 
+  Import took 0.019428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000180 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop58.png
+  artifactKey: Guid(0a9a893ab9d564b18950c42f5299f42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop58.png using Guid(0a9a893ab9d564b18950c42f5299f42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '671b53a06c625e3f9a214a34dc51ca10') in 0.011850 seconds 
+  Import took 0.015817 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop54.png
+  artifactKey: Guid(413e8a1942d25411885fb852000110f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop54.png using Guid(413e8a1942d25411885fb852000110f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54b5193c3d346da599b94dad77777f1') in 0.013601 seconds 
+  Import took 0.018358 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop30.png
+  artifactKey: Guid(5950f5d74f39c452980436eca4a1fd24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop30.png using Guid(5950f5d74f39c452980436eca4a1fd24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f720a83d234c0a7fee24168068e57be') in 0.014001 seconds 
+  Import took 0.018258 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop25.png
+  artifactKey: Guid(6d50e12b7f5db4a0d99b48b53c2d11ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop25.png using Guid(6d50e12b7f5db4a0d99b48b53c2d11ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab761d1cf7053a3a0af785da41e5c468') in 0.013673 seconds 
+  Import took 0.018025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop28.png
+  artifactKey: Guid(df9fd1be848fa4a509c62389b532094d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop28.png using Guid(df9fd1be848fa4a509c62389b532094d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881e620b0f4f72c5656ce23f5b823795') in 0.021922 seconds 
+  Import took 0.026187 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop51.png
+  artifactKey: Guid(d2ca55bc7cb2a450581fe1eb24e84a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop51.png using Guid(d2ca55bc7cb2a450581fe1eb24e84a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '51ba2861ea71423ebc67071b4d5835d0') in 0.014108 seconds 
+  Import took 0.018315 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop02.png
+  artifactKey: Guid(aaf6df3818ebe49f8ac0283dc149b41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop02.png using Guid(aaf6df3818ebe49f8ac0283dc149b41e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '731a67a00b1b0f50a7802d14ec94dba2') in 0.012162 seconds 
+  Import took 0.016491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop40.png
+  artifactKey: Guid(97ffccd01a2304a5f8015ab1a8953cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop40.png using Guid(97ffccd01a2304a5f8015ab1a8953cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b5a9152689402bc8ea06802ea3d054b') in 0.012657 seconds 
+  Import took 0.016487 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop17.png
+  artifactKey: Guid(263ae558afda248edb620e1f7a7d0ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop17.png using Guid(263ae558afda248edb620e1f7a7d0ac8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91b29042a064a6298cbe847958761cec') in 0.012297 seconds 
+  Import took 0.017264 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop57.png
+  artifactKey: Guid(35ea719dd559b4584a8f55441407e5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop57.png using Guid(35ea719dd559b4584a8f55441407e5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c22282aacd1db03492f2e4a03abb42d9') in 0.012635 seconds 
+  Import took 0.017738 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop24.png
+  artifactKey: Guid(ced9b0729bfe34de897892fff6e2f019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop24.png using Guid(ced9b0729bfe34de897892fff6e2f019) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e39aa7dc9b7ec83674dc74621fc90ee') in 0.011931 seconds 
+  Import took 0.017169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000309 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop08.png
+  artifactKey: Guid(7762782193a8046058b7823fa7fe03e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop08.png using Guid(7762782193a8046058b7823fa7fe03e1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056a2fea129abd50b46101f0e8f0d76c') in 0.013043 seconds 
+  Import took 0.017840 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop04.png
+  artifactKey: Guid(613967daa09df4a12b3a16a235413106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop04.png using Guid(613967daa09df4a12b3a16a235413106) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a22196118dd7d44e2b6763d025cbd999') in 0.015587 seconds 
+  Import took 0.019407 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop56.png
+  artifactKey: Guid(e8800df9386f346a6a0b4b5896257d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop56.png using Guid(e8800df9386f346a6a0b4b5896257d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e9d82f0731dd5139f2c41f437514093') in 0.012603 seconds 
+  Import took 0.017858 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop07.png
+  artifactKey: Guid(65b898cee9c44471a97a7ed26deecf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop07.png using Guid(65b898cee9c44471a97a7ed26deecf28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '52bec3b0507672c2369f83cde8e60749') in 0.012948 seconds 
+  Import took 0.018043 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop15.png
+  artifactKey: Guid(eb2ce3f1c28bb4ddc95a3e60a86e733d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop15.png using Guid(eb2ce3f1c28bb4ddc95a3e60a86e733d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '326e77f45738897fde7243016744941c') in 0.014781 seconds 
+  Import took 0.018778 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop39.png
+  artifactKey: Guid(c8b612b8408134b759dedc76d7849320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop39.png using Guid(c8b612b8408134b759dedc76d7849320) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10f726a072a1f624a3382b11a0ff118d') in 0.012980 seconds 
+  Import took 0.017204 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop36.png
+  artifactKey: Guid(c57daf9622c6041d0ab9cd9fa1cf4e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop36.png using Guid(c57daf9622c6041d0ab9cd9fa1cf4e74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44e3342a74c780e66ce25481b24a5b3f') in 0.015229 seconds 
+  Import took 0.019179 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000252 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop52.png
+  artifactKey: Guid(eb36109eda8704ab8be7a23801dcc682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop52.png using Guid(eb36109eda8704ab8be7a23801dcc682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa3445dd168ed3cdce3f6ba5a59c3108') in 0.012441 seconds 
+  Import took 0.017245 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop01.png
+  artifactKey: Guid(94067e2f08cf54714baba0d175bd113b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop01.png using Guid(94067e2f08cf54714baba0d175bd113b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57034d7333a6d3c34230cb3d80d3b93a') in 0.012576 seconds 
+  Import took 0.017052 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop60.png
+  artifactKey: Guid(89a56a3e20b1f40ff96b4ed2fa02bfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop60.png using Guid(89a56a3e20b1f40ff96b4ed2fa02bfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63df7b0805710fda0ea02b193591c0a3') in 0.016001 seconds 
+  Import took 0.019899 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop37.png
+  artifactKey: Guid(ef6cbc356327f492589445358d6c50e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop37.png using Guid(ef6cbc356327f492589445358d6c50e8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '736d6fe54bd1d80444c4ab9913edc670') in 0.011698 seconds 
+  Import took 0.016556 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop49.png
+  artifactKey: Guid(187ef90f14d9f4908b9e72f6ff8347d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop49.png using Guid(187ef90f14d9f4908b9e72f6ff8347d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e45f44c44c944c6e32ecc7eb6959738') in 0.013874 seconds 
+  Import took 0.018683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop48.png
+  artifactKey: Guid(1678fa9d045fe4f4b98e0491b0d6fab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop48.png using Guid(1678fa9d045fe4f4b98e0491b0d6fab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddb4063377eed945cd4a1d9dfd69f1cc') in 0.012820 seconds 
+  Import took 0.017021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop33.png
+  artifactKey: Guid(03631dc6ad6cc449f928ef6dc830a555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop33.png using Guid(03631dc6ad6cc449f928ef6dc830a555) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '221b8505cf8fa18c2123c867122419d3') in 0.016398 seconds 
+  Import took 0.020927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop43.png
+  artifactKey: Guid(48598a00b08c044719edb614e7bb6678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop43.png using Guid(48598a00b08c044719edb614e7bb6678) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81e052ba3e5680fc02eef50f737b8fb0') in 0.013460 seconds 
+  Import took 0.018018 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop59.png
+  artifactKey: Guid(fd83611c1c1284da9aa78c2994bdf4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop59.png using Guid(fd83611c1c1284da9aa78c2994bdf4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f316b8132a372909693f1289d5855e63') in 0.014975 seconds 
+  Import took 0.019025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop21.png
+  artifactKey: Guid(8981b8cb15c6b4a529b06e61d09a5d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop21.png using Guid(8981b8cb15c6b4a529b06e61d09a5d69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b53735f14769b7f95b408cd606026dc3') in 0.012260 seconds 
+  Import took 0.017383 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop09.png
+  artifactKey: Guid(69d52b33bf6b84f37a7869fc1c8c6530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop09.png using Guid(69d52b33bf6b84f37a7869fc1c8c6530) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0263ff6b0c1cb7fc13746b3c05824595') in 0.014717 seconds 
+  Import took 0.019004 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.033596 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop45.png
+  artifactKey: Guid(083c9dd2228aa48ae8d3df8629532766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop45.png using Guid(083c9dd2228aa48ae8d3df8629532766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '084333cd06039b01a55d8fb14537f09b') in 0.039964 seconds 
+  Import took 0.044424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop50.png
+  artifactKey: Guid(d547f96a8d6b7489bbbcd2227be58850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop50.png using Guid(d547f96a8d6b7489bbbcd2227be58850) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd695114bde07bd83a5fa3f0067a65163') in 0.022975 seconds 
+  Import took 0.027834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop46.png
+  artifactKey: Guid(6b69273ec964a439c87a94570a047c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop46.png using Guid(6b69273ec964a439c87a94570a047c78) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd5d63d80244492f29910fa8ff9c155a') in 0.020149 seconds 
+  Import took 0.026164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop53.png
+  artifactKey: Guid(894efafe97e684a3abf69c1096891ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop53.png using Guid(894efafe97e684a3abf69c1096891ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35a71cf938e9435b50545c7a50821998') in 0.027770 seconds 
+  Import took 0.037909 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop47.png
+  artifactKey: Guid(6ab8282ca4fda4a5abe8b9cd682fc371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop47.png using Guid(6ab8282ca4fda4a5abe8b9cd682fc371) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '633fc5fee97838a9813420513a29c3d7') in 0.035252 seconds 
+  Import took 0.041818 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop55.png
+  artifactKey: Guid(8089390f913ef45f189398cf9fbcd0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop55.png using Guid(8089390f913ef45f189398cf9fbcd0a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4d305ee8c438f4277c63443fd6a6200') in 0.038711 seconds 
+  Import took 0.042505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop58.png
+  artifactKey: Guid(0a9a893ab9d564b18950c42f5299f42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop58.png using Guid(0a9a893ab9d564b18950c42f5299f42d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e6042f697156fa48a342651a0cda9af') in 0.022779 seconds 
+  Import took 0.026683 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000217 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop54.png
+  artifactKey: Guid(413e8a1942d25411885fb852000110f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop54.png using Guid(413e8a1942d25411885fb852000110f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62439308cfabfdd14f6df1c122064a61') in 0.023322 seconds 
+  Import took 0.027942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop28.png
+  artifactKey: Guid(df9fd1be848fa4a509c62389b532094d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop28.png using Guid(df9fd1be848fa4a509c62389b532094d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7ceaa769e53ad0fb116fc942afeb9e6') in 0.020079 seconds 
+  Import took 0.023992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop51.png
+  artifactKey: Guid(d2ca55bc7cb2a450581fe1eb24e84a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop51.png using Guid(d2ca55bc7cb2a450581fe1eb24e84a03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3f387128a5fc434939be574f3cfa12f') in 0.017924 seconds 
+  Import took 0.022409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop57.png
+  artifactKey: Guid(35ea719dd559b4584a8f55441407e5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop57.png using Guid(35ea719dd559b4584a8f55441407e5cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce7aaa785fb976615d8d2b6418c4c389') in 0.019094 seconds 
+  Import took 0.023424 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop56.png
+  artifactKey: Guid(e8800df9386f346a6a0b4b5896257d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop56.png using Guid(e8800df9386f346a6a0b4b5896257d8f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09ba185d38842b52702b8f4d82bc9f34') in 0.017805 seconds 
+  Import took 0.022426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000241 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop52.png
+  artifactKey: Guid(eb36109eda8704ab8be7a23801dcc682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop52.png using Guid(eb36109eda8704ab8be7a23801dcc682) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4532a0da6cd29b585aab5f037db2c72') in 0.017224 seconds 
+  Import took 0.021360 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop60.png
+  artifactKey: Guid(89a56a3e20b1f40ff96b4ed2fa02bfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop60.png using Guid(89a56a3e20b1f40ff96b4ed2fa02bfd1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47306530c8279e2adcb4754282e567aa') in 0.025982 seconds 
+  Import took 0.030217 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop49.png
+  artifactKey: Guid(187ef90f14d9f4908b9e72f6ff8347d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop49.png using Guid(187ef90f14d9f4908b9e72f6ff8347d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8b7a91a7932c32679a48de683af85d50') in 0.018338 seconds 
+  Import took 0.022590 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop48.png
+  artifactKey: Guid(1678fa9d045fe4f4b98e0491b0d6fab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop48.png using Guid(1678fa9d045fe4f4b98e0491b0d6fab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30a8c7c979f6d26a4acc262765b217ba') in 0.020517 seconds 
+  Import took 0.024395 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop59.png
+  artifactKey: Guid(fd83611c1c1284da9aa78c2994bdf4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/Water/MolassesLoop/Map 1 Molasses Intro Loop59.png using Guid(fd83611c1c1284da9aa78c2994bdf4a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9770eeb57b1335e92cdbe6cb9b3e2be') in 0.018834 seconds 
+  Import took 0.023193 seconds .
+
