@@ -711,3 +711,67 @@ Received Import Request.
 Start importing Assets/01_Scenes/00_TestScenes/PlayableTest01.unity using Guid(34426630cfc123647b10ecaab8c5693e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8da74b57955f14c091ff6ec79a77e967') in 0.002158 seconds 
   Import took 0.007532 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 66.501465 seconds.
+  path: Assets/01_Scenes/TitleMenu.unity
+  artifactKey: Guid(8f19b84b091ec4d619557ab672a7283d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01_Scenes/TitleMenu.unity using Guid(8f19b84b091ec4d619557ab672a7283d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66a9c5dd3a536511f1d6c32f876613d4') in 0.001534 seconds 
+  Import took 0.006293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 64.515852 seconds.
+  path: Assets/06_UI/Title_UI/Title_BG_Still.png
+  artifactKey: Guid(7ef3929c8774a48098b4d7e5b4a09e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/Title_UI/Title_BG_Still.png using Guid(7ef3929c8774a48098b4d7e5b4a09e14) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc413279c8b65b7e850b317beceae913') in 0.042351 seconds 
+  Import took 0.047696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 63.718897 seconds.
+  path: Assets/06_UI/Title_UI/Title_Menu_Template.png
+  artifactKey: Guid(e13f7b29e32814ca09ceb30d744e0b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/Title_UI/Title_Menu_Template.png using Guid(e13f7b29e32814ca09ceb30d744e0b04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '733d386f9df55bc2da613affd82476e7') in 0.063627 seconds 
+  Import took 0.068552 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/06_UI/Title_UI/Title_Left_Logo.png
+  artifactKey: Guid(a8db719caf8db45c795e8056961553bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/Title_UI/Title_Left_Logo.png using Guid(a8db719caf8db45c795e8056961553bb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd974161785341ffa76333a6a614de328') in 0.020892 seconds 
+  Import took 0.025660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/06_UI/Title_UI/Title_Characters_Still.png
+  artifactKey: Guid(5346e9f2ff0344e81b857c56d6756272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/Title_UI/Title_Characters_Still.png using Guid(5346e9f2ff0344e81b857c56d6756272) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df6c66974bf27f66b54a9edd5c6ee107') in 0.024236 seconds 
+  Import took 0.029420 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/06_UI/Title_UI/Title_Gradient.png
+  artifactKey: Guid(6a04b8d5dd13b411b879db48a6714a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/Title_UI/Title_Gradient.png using Guid(6a04b8d5dd13b411b879db48a6714a9c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03dcf3d526c9c79e522203c53942c656') in 0.024347 seconds 
+  Import took 0.029353 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 318.504318 seconds.
+  path: Assets/06_UI/Fonts/CHORIPAN/ChoripanDingbats SDF.asset
+  artifactKey: Guid(d9fbb8e2ca98843428d6dee5b5a8c0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/Fonts/CHORIPAN/ChoripanDingbats SDF.asset using Guid(d9fbb8e2ca98843428d6dee5b5a8c0e0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc907eec4de529fc1dcb91065dd528b5') in 0.468280 seconds 
+  Import took 0.473611 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 280.552186 seconds.
+  path: Assets/06_UI/Fonts/CHORIPAN/Choripan SDF.asset
+  artifactKey: Guid(3e5c06ca88fe040a79e235a1465941f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/06_UI/Fonts/CHORIPAN/Choripan SDF.asset using Guid(3e5c06ca88fe040a79e235a1465941f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd88654acee5c80ced826783ef6e6bf90') in 0.026581 seconds 
+  Import took 0.031481 seconds .
+
