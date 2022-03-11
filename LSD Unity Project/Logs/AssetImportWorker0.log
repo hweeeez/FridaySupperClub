@@ -568,3 +568,2460 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 746.729077 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG000.png
+  artifactKey: Guid(e5a2efca752c64c14a45a374ef4b0a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG000.png using Guid(e5a2efca752c64c14a45a374ef4b0a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca76174ce4a647e8a7eec2da693541f') in 0.064673 seconds 
+  Import took 0.070435 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG003.png
+  artifactKey: Guid(0fd1b5b1b63af403590f4776d1d711f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG003.png using Guid(0fd1b5b1b63af403590f4776d1d711f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ffd3f946a565cd154be7abfde2b2b199') in 0.016500 seconds 
+  Import took 0.021152 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG007.png
+  artifactKey: Guid(15a6efb5ff3334a53bfca83669c089cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG007.png using Guid(15a6efb5ff3334a53bfca83669c089cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85cdc379c2ce9b76b5775f4fd7aee117') in 0.038716 seconds 
+  Import took 0.043234 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG026.png
+  artifactKey: Guid(de649432c6f24450e98be5c794479f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG026.png using Guid(de649432c6f24450e98be5c794479f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5608ff59e385afcf13c190e2e745eaf6') in 0.013829 seconds 
+  Import took 0.018092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000172 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG053.png
+  artifactKey: Guid(41f1f2f62723346cdba06d3fd41bad21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG053.png using Guid(41f1f2f62723346cdba06d3fd41bad21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e96b7fd99f2c6bc30971483471e4022') in 0.017444 seconds 
+  Import took 0.023100 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG030.png
+  artifactKey: Guid(ac210901e16c54752acad9ddec3006d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG030.png using Guid(ac210901e16c54752acad9ddec3006d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faac6c529fd918a4f2d70fb97c2f10a7') in 0.016546 seconds 
+  Import took 0.022012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG055.png
+  artifactKey: Guid(c7518d2686b364b5ba655752f1a500b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG055.png using Guid(c7518d2686b364b5ba655752f1a500b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da159f876594b9e2a61e376821ae07b6') in 0.014885 seconds 
+  Import took 0.019123 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG059.png
+  artifactKey: Guid(691a0f30bef2144c18b89e5cb10ca021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG059.png using Guid(691a0f30bef2144c18b89e5cb10ca021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94e0b1ae30b57865add65c74bad9f91b') in 0.014058 seconds 
+  Import took 0.018285 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG046.png
+  artifactKey: Guid(986afbe9f31cf4668ba21d157ecc3765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG046.png using Guid(986afbe9f31cf4668ba21d157ecc3765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '97d2d95c1d794f0353f51b69951039d1') in 0.015096 seconds 
+  Import took 0.019823 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG056.png
+  artifactKey: Guid(7eb98287927be42ccb7da755f1e8f86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG056.png using Guid(7eb98287927be42ccb7da755f1e8f86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500d237d6b285b267f214e350f0db361') in 0.018101 seconds 
+  Import took 0.022911 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG041.png
+  artifactKey: Guid(f1abdc2a25d96496ca3f29acc461752f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG041.png using Guid(f1abdc2a25d96496ca3f29acc461752f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2d14709c8131a5fe6b74aa2190732dc') in 0.015221 seconds 
+  Import took 0.019185 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000150 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG048.png
+  artifactKey: Guid(047f626d0de6a4e1aa2a565665a0143a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG048.png using Guid(047f626d0de6a4e1aa2a565665a0143a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2698c76284fafe1e565872ebadd243b') in 0.017025 seconds 
+  Import took 0.022090 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG049.png
+  artifactKey: Guid(165f02d1a312d4366bb05f2a08498ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG049.png using Guid(165f02d1a312d4366bb05f2a08498ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f380e54ad782186b2950728549653bc') in 0.018126 seconds 
+  Import took 0.022322 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG005.png
+  artifactKey: Guid(80258ca26f03b40ac968f57787e5da07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG005.png using Guid(80258ca26f03b40ac968f57787e5da07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da29fce247a9485f2cb105878cb6a8ae') in 0.016759 seconds 
+  Import took 0.021536 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG031.png
+  artifactKey: Guid(8759229748a384b05aea28dd3f7013cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG031.png using Guid(8759229748a384b05aea28dd3f7013cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6c3bfa951e4aef5d3a8df5121c480f6') in 0.014271 seconds 
+  Import took 0.019464 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG044.png
+  artifactKey: Guid(b267ca3af35e34fffb01ee2b7543ec93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG044.png using Guid(b267ca3af35e34fffb01ee2b7543ec93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '569766e61cc92bf01b98db89b02903ca') in 0.017173 seconds 
+  Import took 0.021776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG060.png
+  artifactKey: Guid(1be70ac7dd6fb455395d1ad44370ade3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG060.png using Guid(1be70ac7dd6fb455395d1ad44370ade3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1da2bbac0bc66620823bdb43021844c6') in 0.016557 seconds 
+  Import took 0.022108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG016.png
+  artifactKey: Guid(62211414348ce4a9493db98f46ba8c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG016.png using Guid(62211414348ce4a9493db98f46ba8c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd575eefb3168218e64558a5dd3a3f270') in 0.016523 seconds 
+  Import took 0.020337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000214 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG010.png
+  artifactKey: Guid(ee811f2520e84433faf6790f2a31c1e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG010.png using Guid(ee811f2520e84433faf6790f2a31c1e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c9e333ea0e92fa85b09968f8605c6b1') in 0.013952 seconds 
+  Import took 0.018660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG011.png
+  artifactKey: Guid(c73ebfb8095564906a92486557001cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG011.png using Guid(c73ebfb8095564906a92486557001cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af71cde64006d7474817787f4018accd') in 0.014608 seconds 
+  Import took 0.019445 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG015.png
+  artifactKey: Guid(7296009481a6c4aca89ec5b519f4062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG015.png using Guid(7296009481a6c4aca89ec5b519f4062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e99873bf9da0cf365698001a753b50b') in 0.015520 seconds 
+  Import took 0.020017 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG027.png
+  artifactKey: Guid(08346c0ba371447ca9967bbe181e8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG027.png using Guid(08346c0ba371447ca9967bbe181e8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55554ddc7d6fbe3f8432b91f43ae7104') in 0.015542 seconds 
+  Import took 0.020271 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG033.png
+  artifactKey: Guid(2142123388fe3468d93f058e5dee9b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG033.png using Guid(2142123388fe3468d93f058e5dee9b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c300a6d596a4fbe621e2ae3d3eff75c') in 0.014779 seconds 
+  Import took 0.020591 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG012.png
+  artifactKey: Guid(e55e58af48ebe43e98f818af9ede4e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG012.png using Guid(e55e58af48ebe43e98f818af9ede4e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44f0bc63483531f814c74d749918f1a6') in 0.018243 seconds 
+  Import took 0.022489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG047.png
+  artifactKey: Guid(ab285ef32ae424f1eb5e2d6a55a6d4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG047.png using Guid(ab285ef32ae424f1eb5e2d6a55a6d4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e1fc0d24abcdf0461ce6fb6d22a1bf2') in 0.015920 seconds 
+  Import took 0.020307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG021.png
+  artifactKey: Guid(c03a7a8c14ad64d86a3130585b204e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG021.png using Guid(c03a7a8c14ad64d86a3130585b204e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba6707edc17557809377b7751418f1d3') in 0.013867 seconds 
+  Import took 0.018108 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG024.png
+  artifactKey: Guid(16be7e4763c0a4ccdad0d04ed198d1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG024.png using Guid(16be7e4763c0a4ccdad0d04ed198d1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31baff627932e3bb6e32d3226165442b') in 0.017196 seconds 
+  Import took 0.022081 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG054.png
+  artifactKey: Guid(a2e1572835e0a4c22b2d9221f93b12be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG054.png using Guid(a2e1572835e0a4c22b2d9221f93b12be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8129b5b09f323af98f08f022d686cf78') in 0.015027 seconds 
+  Import took 0.019472 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG050.png
+  artifactKey: Guid(95447583d194e477d90d183b43b348a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG050.png using Guid(95447583d194e477d90d183b43b348a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b84a88d70465a5453ac82a7608e5ad2') in 0.014497 seconds 
+  Import took 0.019582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG042.png
+  artifactKey: Guid(767de63c874924bd8ac9169fa2c49ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG042.png using Guid(767de63c874924bd8ac9169fa2c49ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48edd7d683636bafcd505f64f953bfaf') in 0.018031 seconds 
+  Import took 0.022644 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG018.png
+  artifactKey: Guid(e41b91fb3267042c7bfdbeb895bb1a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG018.png using Guid(e41b91fb3267042c7bfdbeb895bb1a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '734b7964b541a15adde69f54c41379f4') in 0.014892 seconds 
+  Import took 0.019488 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG020.png
+  artifactKey: Guid(f41a3c711b3fe412a860d82d79f6da3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG020.png using Guid(f41a3c711b3fe412a860d82d79f6da3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d438f7a0dfa599a828fdf984b421fe9') in 0.014234 seconds 
+  Import took 0.018685 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000165 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG009.png
+  artifactKey: Guid(314865e2dcdcc4db884aeb3e7e5ba2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG009.png using Guid(314865e2dcdcc4db884aeb3e7e5ba2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9765fef48da03e065c06b7424ed9e093') in 0.015781 seconds 
+  Import took 0.021409 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG017.png
+  artifactKey: Guid(6d58a79e5e2084bc5ba19def71b2e597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG017.png using Guid(6d58a79e5e2084bc5ba19def71b2e597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38976aef0d4bd8dd59727fec90b68be5') in 0.014774 seconds 
+  Import took 0.019398 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG004.png
+  artifactKey: Guid(13cddb3f0f04541769aa742f6f37e482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG004.png using Guid(13cddb3f0f04541769aa742f6f37e482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91984d634368f1eb8dcb12d8488eeaad') in 0.014156 seconds 
+  Import took 0.018956 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG038.png
+  artifactKey: Guid(4905a5a22cb2b4d36be611581039360b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG038.png using Guid(4905a5a22cb2b4d36be611581039360b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dca4e19eb045be0083adae9018fc1e91') in 0.014564 seconds 
+  Import took 0.018959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG028.png
+  artifactKey: Guid(0cf5869426a484eb7b19d6d42974e705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG028.png using Guid(0cf5869426a484eb7b19d6d42974e705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24dff481a7d646737d6417653667749a') in 0.014915 seconds 
+  Import took 0.019359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000231 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG034.png
+  artifactKey: Guid(8856945fb083843eeb6bc25b6040df97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG034.png using Guid(8856945fb083843eeb6bc25b6040df97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '038ac377f074a3bce274c5a4b90f4e72') in 0.023450 seconds 
+  Import took 0.027620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG052.png
+  artifactKey: Guid(ef7e3badd11224bf389e0b13326759ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG052.png using Guid(ef7e3badd11224bf389e0b13326759ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a19c27b95d5285817e007034bb4da137') in 0.014372 seconds 
+  Import took 0.018227 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000219 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG013.png
+  artifactKey: Guid(93b54a777fc0a45e59f8527528c1aae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG013.png using Guid(93b54a777fc0a45e59f8527528c1aae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b3eb61199a2197c085389d920edbfb1') in 0.013779 seconds 
+  Import took 0.018025 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG037.png
+  artifactKey: Guid(54b0bec4a617f4c2688a1a64402ee699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG037.png using Guid(54b0bec4a617f4c2688a1a64402ee699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aea465d0b3f7afa620dc119c8f0b552a') in 0.020887 seconds 
+  Import took 0.025293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG039.png
+  artifactKey: Guid(cfb5ee20006c34b6fa432ec870f4c463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG039.png using Guid(cfb5ee20006c34b6fa432ec870f4c463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a52dd97258be582de6a85f970f0a255e') in 0.025365 seconds 
+  Import took 0.030061 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG001.png
+  artifactKey: Guid(f655a3071617f4bb18ae9cbb9ab17254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG001.png using Guid(f655a3071617f4bb18ae9cbb9ab17254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efba11bd4b1743f63be4b97e3f8e21c8') in 0.014113 seconds 
+  Import took 0.019975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG051.png
+  artifactKey: Guid(794fa1d0a41524963aff1c4ce9974ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG051.png using Guid(794fa1d0a41524963aff1c4ce9974ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4bbb5db76aeb32d0b89adb0c8d4de5d') in 0.015147 seconds 
+  Import took 0.020758 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG019.png
+  artifactKey: Guid(87ef7f797be2f4626875989a5394c87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG019.png using Guid(87ef7f797be2f4626875989a5394c87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8d995ff369b7c0d8f19529e3eb77ba02') in 0.013472 seconds 
+  Import took 0.019031 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG045.png
+  artifactKey: Guid(6cc40b68edaf344809839e273ec98546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG045.png using Guid(6cc40b68edaf344809839e273ec98546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e967135a8f86f61309a1f5779336cf1') in 0.016327 seconds 
+  Import took 0.021545 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG002.png
+  artifactKey: Guid(a84509d5750264c189cc46d2993adb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG002.png using Guid(a84509d5750264c189cc46d2993adb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22b8086ebb1071f70e4c22d0ee043fb4') in 0.015951 seconds 
+  Import took 0.020675 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG023.png
+  artifactKey: Guid(094ff3d8a664f491bacb68f8f0148859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG023.png using Guid(094ff3d8a664f491bacb68f8f0148859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9f711b6e8bfb7c9c83aba8ec2284a84') in 0.013941 seconds 
+  Import took 0.018523 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG057.png
+  artifactKey: Guid(74faf236339ad456fbe00134d873ea03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG057.png using Guid(74faf236339ad456fbe00134d873ea03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5ef2ecbd35dfaad49f555e163d9456') in 0.013395 seconds 
+  Import took 0.018317 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG036.png
+  artifactKey: Guid(06343b8510a4b4bf4b30dcfd639fd30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG036.png using Guid(06343b8510a4b4bf4b30dcfd639fd30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e489ab6a3976829cb4a64dea5e540aa') in 0.017587 seconds 
+  Import took 0.022101 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG029.png
+  artifactKey: Guid(c1edc8304dcd94cab81b7d66220679df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG029.png using Guid(c1edc8304dcd94cab81b7d66220679df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17e8d350c0f247a3d5b835965ef223fe') in 0.014342 seconds 
+  Import took 0.018781 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG035.png
+  artifactKey: Guid(b330605cfc5c344a0a61f1ff543ce3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG035.png using Guid(b330605cfc5c344a0a61f1ff543ce3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5b2ad878b4f2c6edd0c6fb392795f0b') in 0.014195 seconds 
+  Import took 0.019324 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG040.png
+  artifactKey: Guid(afa9f570b946a416a9ded46873b097f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG040.png using Guid(afa9f570b946a416a9ded46873b097f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd47ad70c79f9bbf911660cd0f99e08e') in 0.016152 seconds 
+  Import took 0.020631 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG043.png
+  artifactKey: Guid(35b227d5de54049f3ac642987e92b88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG043.png using Guid(35b227d5de54049f3ac642987e92b88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a5c7ec088ffaced0b4fd8b228edd27c') in 0.017088 seconds 
+  Import took 0.021653 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG006.png
+  artifactKey: Guid(ca3531431a3584abfbdafa3364ddcb8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG006.png using Guid(ca3531431a3584abfbdafa3364ddcb8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ca5b2ff75d22e09faf50a57d185315') in 0.019708 seconds 
+  Import took 0.024630 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG032.png
+  artifactKey: Guid(ecd92aee290a0408f98a801e490f69a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG032.png using Guid(ecd92aee290a0408f98a801e490f69a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e0c3e32b643a68bf1a9632f1e3db7f2') in 0.015615 seconds 
+  Import took 0.019868 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG008.png
+  artifactKey: Guid(22a3e36bc7edf4af296a33ceaf052996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG008.png using Guid(22a3e36bc7edf4af296a33ceaf052996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '179321f6f10b531c2f0453a62b3e2e98') in 0.017835 seconds 
+  Import took 0.022969 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG025.png
+  artifactKey: Guid(8dc7acd10c03746d197a3f822041deb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG025.png using Guid(8dc7acd10c03746d197a3f822041deb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7d21b4609657740842484f1cb36b863') in 0.013963 seconds 
+  Import took 0.018540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG022.png
+  artifactKey: Guid(4a774963da6524f5e813ea9d2f04aa6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG022.png using Guid(4a774963da6524f5e813ea9d2f04aa6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eb689151b6c24c27c9536f4f8d4a7fd') in 0.013363 seconds 
+  Import took 0.017900 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG014.png
+  artifactKey: Guid(2c1d63488f8e746c0a8d99a3102358e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG014.png using Guid(2c1d63488f8e746c0a8d99a3102358e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2fb75cfe599157d5f9c710ff738cf97') in 0.017560 seconds 
+  Import took 0.021481 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG058.png
+  artifactKey: Guid(c3de1de9a8d7848618f1af01c7000887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG058.png using Guid(c3de1de9a8d7848618f1af01c7000887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01d320a0e40a78d1c6767b8295f20f79') in 0.018030 seconds 
+  Import took 0.022502 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 40.387340 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG000.png
+  artifactKey: Guid(e5a2efca752c64c14a45a374ef4b0a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG000.png using Guid(e5a2efca752c64c14a45a374ef4b0a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1f4a442c1d58b7ce3021db10da6c8f5') in 0.048730 seconds 
+  Import took 0.053821 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.143082 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG000.png
+  artifactKey: Guid(e5a2efca752c64c14a45a374ef4b0a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG000.png using Guid(e5a2efca752c64c14a45a374ef4b0a42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b86c0b55399981773a08e563139466c') in 0.068706 seconds 
+  Import took 0.073272 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 4.697178 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG061.png
+  artifactKey: Guid(11032415ff53140ba87aaff3d0a4260b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG061.png using Guid(11032415ff53140ba87aaff3d0a4260b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72259d496ca54e1b9095958302d23a7c') in 0.020174 seconds 
+  Import took 0.024855 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG095.png
+  artifactKey: Guid(d2622b017234f4b97beac866129d4b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG095.png using Guid(d2622b017234f4b97beac866129d4b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea2ba181ab5ca32e8b86129f45cf575a') in 0.018141 seconds 
+  Import took 0.022293 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG115.png
+  artifactKey: Guid(3f3f620e6055a4056a41b0e7ef8f3f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG115.png using Guid(3f3f620e6055a4056a41b0e7ef8f3f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cf093c7f1769e03a7dce500a399737f0') in 0.032304 seconds 
+  Import took 0.036337 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG101.png
+  artifactKey: Guid(feba2f723c15f4ed7b6943b118cf2395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG101.png using Guid(feba2f723c15f4ed7b6943b118cf2395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7867906aaff241f67dda94a666bdfaf') in 0.016217 seconds 
+  Import took 0.020287 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG117.png
+  artifactKey: Guid(8f3e73e0882f64520b96fb9acf725dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG117.png using Guid(8f3e73e0882f64520b96fb9acf725dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af8f0cc0c45a7c2c74211126d5a1d82b') in 0.017355 seconds 
+  Import took 0.021387 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG065.png
+  artifactKey: Guid(64f229731b3224dac847bfe8915b2b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG065.png using Guid(64f229731b3224dac847bfe8915b2b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '667c6aa9e75beae540ed03b43b9af45d') in 0.013358 seconds 
+  Import took 0.017381 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG071.png
+  artifactKey: Guid(0ec4eee73941f4f7e97dbec8a07cfec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG071.png using Guid(0ec4eee73941f4f7e97dbec8a07cfec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6204445c160b5bd0a76182f59b5e59a') in 0.015653 seconds 
+  Import took 0.019856 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG122.png
+  artifactKey: Guid(a183b218c34ee4b24961b8aef7af959b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG122.png using Guid(a183b218c34ee4b24961b8aef7af959b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '48f488ab6269208cbf98645b8d7b119a') in 0.017440 seconds 
+  Import took 0.021493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG078.png
+  artifactKey: Guid(58becea627b6a49bb906720f89c18197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG078.png using Guid(58becea627b6a49bb906720f89c18197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '347a2aeaabff724dcc0c55e60ed7703f') in 0.013361 seconds 
+  Import took 0.017547 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG088.png
+  artifactKey: Guid(a510ad80362cc4461adb8ca18391ca03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG088.png using Guid(a510ad80362cc4461adb8ca18391ca03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8823b69df46d38b5abb89590657b901f') in 0.031459 seconds 
+  Import took 0.036476 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG112.png
+  artifactKey: Guid(0413df912de1f4bfea34c11fbbc6a9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG112.png using Guid(0413df912de1f4bfea34c11fbbc6a9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9fea8c4fac41577cfbfa9a7cd23650c') in 0.021110 seconds 
+  Import took 0.025953 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG094.png
+  artifactKey: Guid(b00440ab3d73541c4b6e2b3766175764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG094.png using Guid(b00440ab3d73541c4b6e2b3766175764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f137347e6fbfc330ebb281b3711d9b9') in 0.023417 seconds 
+  Import took 0.029164 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG074.png
+  artifactKey: Guid(af0c13e8774204d03acb60eaa081b1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG074.png using Guid(af0c13e8774204d03acb60eaa081b1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fc37a9ddb387aa5e4395e3af1cbafb0') in 0.013432 seconds 
+  Import took 0.018336 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG077.png
+  artifactKey: Guid(2578582ea5ed147a3b53834fabebc0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG077.png using Guid(2578582ea5ed147a3b53834fabebc0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c313bd6262b6c728061563bf5be97013') in 0.017905 seconds 
+  Import took 0.022262 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG082.png
+  artifactKey: Guid(a7a48813a3b4c4237b8321cc5a390bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG082.png using Guid(a7a48813a3b4c4237b8321cc5a390bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2aa9c036e90d43b4f038ca5eaebbe5d9') in 0.016016 seconds 
+  Import took 0.020132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG114.png
+  artifactKey: Guid(fc0d84139f4a842808e5f52ec2b09129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG114.png using Guid(fc0d84139f4a842808e5f52ec2b09129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46c4d894d298b86bbdfa31dfd6b8b866') in 0.012796 seconds 
+  Import took 0.017024 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000199 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG133.png
+  artifactKey: Guid(2adcedd2cdb714be59d49cf3c12462dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG133.png using Guid(2adcedd2cdb714be59d49cf3c12462dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7afc6af2b15d369b7524da2da754f6bb') in 0.017483 seconds 
+  Import took 0.021804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG121.png
+  artifactKey: Guid(cdc73205532a945e386eed0afda9010f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG121.png using Guid(cdc73205532a945e386eed0afda9010f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63f842f95e29d8435a7dbe6544351438') in 0.013974 seconds 
+  Import took 0.017954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG142.png
+  artifactKey: Guid(ec775cbfd886745f393c115b72cf6d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG142.png using Guid(ec775cbfd886745f393c115b72cf6d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2fe7ba7736e3b2c3981bc185245bb02') in 0.015653 seconds 
+  Import took 0.019833 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG066.png
+  artifactKey: Guid(a57f65a7a41da4a0da4890eb15546045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG066.png using Guid(a57f65a7a41da4a0da4890eb15546045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '893cdaa80ecb0c8309bc4dfd6428404b') in 0.017754 seconds 
+  Import took 0.021805 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000253 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG075.png
+  artifactKey: Guid(2ef4bb74fe2544587883e482298c11ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG075.png using Guid(2ef4bb74fe2544587883e482298c11ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5201e6e3fa90a13c61b6aba4607c534d') in 0.013761 seconds 
+  Import took 0.018181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG113.png
+  artifactKey: Guid(4ba6914d3447e416588dec9ded7f0ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG113.png using Guid(4ba6914d3447e416588dec9ded7f0ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd62633b8ec336e1f869e9cf830f545c') in 0.013167 seconds 
+  Import took 0.017836 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG123.png
+  artifactKey: Guid(115f3aecf90134beabf43c9228a991e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG123.png using Guid(115f3aecf90134beabf43c9228a991e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0551ba8b581d4e5c51410b52cc13a8ae') in 0.017550 seconds 
+  Import took 0.022027 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG091.png
+  artifactKey: Guid(c1f2cf6739e8840a88df80e2d830d902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG091.png using Guid(c1f2cf6739e8840a88df80e2d830d902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '149c9ac8ef4755cedd5d7ffec8de2bd8') in 0.014331 seconds 
+  Import took 0.018539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000355 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG136.png
+  artifactKey: Guid(2aa310adab783460dab88c4227d19ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG136.png using Guid(2aa310adab783460dab88c4227d19ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc3740d6c72c1905f880d63ab36fe8c2') in 0.013303 seconds 
+  Import took 0.017952 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG137.png
+  artifactKey: Guid(e7b5fcc77d20b458ea0fb2bc0b2054f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG137.png using Guid(e7b5fcc77d20b458ea0fb2bc0b2054f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae9b68f8b37cc783179598a35ac73cf') in 0.018144 seconds 
+  Import took 0.022280 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG070.png
+  artifactKey: Guid(d66e0c3a1fdb64c7f95368777f41d0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG070.png using Guid(d66e0c3a1fdb64c7f95368777f41d0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '728efc697b22bfe56f968586e01dc9e0') in 0.013460 seconds 
+  Import took 0.017885 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG125.png
+  artifactKey: Guid(25535f7e494134835b18b6e82cce8dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG125.png using Guid(25535f7e494134835b18b6e82cce8dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd77b846c7a9eb3c11ab531895e99f78') in 0.013169 seconds 
+  Import took 0.017650 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG104.png
+  artifactKey: Guid(d73add88dee984d24b8201e9708a9a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG104.png using Guid(d73add88dee984d24b8201e9708a9a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a6bfd122fd6f7ffc1b88133d8cfaf8f') in 0.014266 seconds 
+  Import took 0.018444 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG063.png
+  artifactKey: Guid(26a4f840154e844dc813e5cad3cef2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG063.png using Guid(26a4f840154e844dc813e5cad3cef2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9b31803585cfc19313a6db6ac5097782') in 0.014214 seconds 
+  Import took 0.018937 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000280 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG105.png
+  artifactKey: Guid(1a803a2a8cf19404fba715675978fe3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG105.png using Guid(1a803a2a8cf19404fba715675978fe3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95d3f2c271edbaed767677bc8b6a4359') in 0.016139 seconds 
+  Import took 0.019955 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000218 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG102.png
+  artifactKey: Guid(ce6c36ca8624a40f7b7a447383ab4014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG102.png using Guid(ce6c36ca8624a40f7b7a447383ab4014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc16278f0525bab4da543e0b40ef59a5') in 0.013537 seconds 
+  Import took 0.018192 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG139.png
+  artifactKey: Guid(7cb9c3f23e83c431da8b07396c2ec8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG139.png using Guid(7cb9c3f23e83c431da8b07396c2ec8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '848b5f611994817996d4a6465999f757') in 0.018941 seconds 
+  Import took 0.023485 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG147.png
+  artifactKey: Guid(69b26e5b84e3b4ec68087e69f526af24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG147.png using Guid(69b26e5b84e3b4ec68087e69f526af24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc2f62693649dde67ebcb125363d2ee2') in 0.015751 seconds 
+  Import took 0.019934 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG076.png
+  artifactKey: Guid(1f8b31e456a6941e3a06a4c93c269183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG076.png using Guid(1f8b31e456a6941e3a06a4c93c269183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c9c81b22c0cec7a13741cc21f889dabc') in 0.013660 seconds 
+  Import took 0.018480 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG132.png
+  artifactKey: Guid(03abcc270911e47eca7bf6175f279ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG132.png using Guid(03abcc270911e47eca7bf6175f279ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '712c5ab0fc81c76f50cac016395f7b55') in 0.016504 seconds 
+  Import took 0.020741 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG128.png
+  artifactKey: Guid(481bf2cee816243419338f29d43e0e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG128.png using Guid(481bf2cee816243419338f29d43e0e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11029a5f3d379b996242734316de21de') in 0.016644 seconds 
+  Import took 0.021089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG135.png
+  artifactKey: Guid(94152586a5d574012b4eba682d02469f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG135.png using Guid(94152586a5d574012b4eba682d02469f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '561194d7a42f722c232beed8dfac60fd') in 0.013867 seconds 
+  Import took 0.018277 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000405 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG068.png
+  artifactKey: Guid(3caf442b5d3c44ea0bbf8c3469af6e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG068.png using Guid(3caf442b5d3c44ea0bbf8c3469af6e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b645ff3dfcfddfc02381525c920acae0') in 0.016169 seconds 
+  Import took 0.021045 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG072.png
+  artifactKey: Guid(c2fc078777c3d4ad0839aefc114f490e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG072.png using Guid(c2fc078777c3d4ad0839aefc114f490e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39d903cf2093307cb892092349e83697') in 0.016543 seconds 
+  Import took 0.021325 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG086.png
+  artifactKey: Guid(89446083f636e4a5bb0f3f3f6a01b020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG086.png using Guid(89446083f636e4a5bb0f3f3f6a01b020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1af084644902519c860fe88c45a3bd9d') in 0.014318 seconds 
+  Import took 0.018936 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG089.png
+  artifactKey: Guid(d7d81c285d87247da810087746b02ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG089.png using Guid(d7d81c285d87247da810087746b02ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2bf11863efff5d14fca1bbea17056b3') in 0.013064 seconds 
+  Import took 0.017661 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG111.png
+  artifactKey: Guid(e68d1aa0dd459481692448ddc1299b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG111.png using Guid(e68d1aa0dd459481692448ddc1299b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0d0da3a13ffc27d0ea977bccad324aa') in 0.018054 seconds 
+  Import took 0.022451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG092.png
+  artifactKey: Guid(3096328a8d23e4fd6a4f2e582a62f2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG092.png using Guid(3096328a8d23e4fd6a4f2e582a62f2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50768971201c9c847d6d35561b78069c') in 0.013762 seconds 
+  Import took 0.018190 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG129.png
+  artifactKey: Guid(405489d2d00d646b1983bc8899b9c44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG129.png using Guid(405489d2d00d646b1983bc8899b9c44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8393cf918c98d9b0e101f03dd92909d') in 0.013203 seconds 
+  Import took 0.017839 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG140.png
+  artifactKey: Guid(78d1ed5a0277747b49469f0ff840e9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG140.png using Guid(78d1ed5a0277747b49469f0ff840e9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84947db9726f5b5e3210240d0255a58b') in 0.017150 seconds 
+  Import took 0.021244 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000197 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG081.png
+  artifactKey: Guid(d03d55b81985d428a9649452699b050b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG081.png using Guid(d03d55b81985d428a9649452699b050b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a1536f7033a5e3838c839792f05f9fc') in 0.017346 seconds 
+  Import took 0.022004 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG099.png
+  artifactKey: Guid(68d8e00ce31114a3385350df519baf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG099.png using Guid(68d8e00ce31114a3385350df519baf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84747f3f986050cf5852119bb4c09e13') in 0.013761 seconds 
+  Import took 0.018334 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG069.png
+  artifactKey: Guid(1c1b6a1cc9560450bb2def92f599aa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG069.png using Guid(1c1b6a1cc9560450bb2def92f599aa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dec272ba174410f8277caa0c1423769') in 0.017967 seconds 
+  Import took 0.022501 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000239 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG116.png
+  artifactKey: Guid(fadcdcdd7f76f4b1f975fa850599ffaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG116.png using Guid(fadcdcdd7f76f4b1f975fa850599ffaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '594ae49f38eeb044ad43edbc6036f8b3') in 0.014223 seconds 
+  Import took 0.018730 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG084.png
+  artifactKey: Guid(344f428934e9342d8b77e485646b8599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG084.png using Guid(344f428934e9342d8b77e485646b8599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd79fee532656b1d36fbced8df38f0418') in 0.013361 seconds 
+  Import took 0.017970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000185 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG124.png
+  artifactKey: Guid(a8493c96c2f0f4c9083b87f4422f9652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG124.png using Guid(a8493c96c2f0f4c9083b87f4422f9652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fe0ec006282d57c6192398ce9a0b8e3') in 0.017453 seconds 
+  Import took 0.021913 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG079.png
+  artifactKey: Guid(5a1aa183053904958a4b1e613bb8488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG079.png using Guid(5a1aa183053904958a4b1e613bb8488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1c139379eb577ef35d04c8423eeab9a') in 0.014942 seconds 
+  Import took 0.019516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG067.png
+  artifactKey: Guid(b9ea4da40ad3d4626a07a201077d5364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG067.png using Guid(b9ea4da40ad3d4626a07a201077d5364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73e98be2e107543349f5c426a87c4f6d') in 0.013350 seconds 
+  Import took 0.017822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000235 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG131.png
+  artifactKey: Guid(4538411c626cb4607a9dee47e2ab082e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG131.png using Guid(4538411c626cb4607a9dee47e2ab082e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f25d3b8584d0a2c0afa7a9e0724a7548') in 0.019866 seconds 
+  Import took 0.024275 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG107.png
+  artifactKey: Guid(280cddbffd53448b6ae284cd4199165d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG107.png using Guid(280cddbffd53448b6ae284cd4199165d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ea6e90e74e2af161b0acae2cda09e017') in 0.014525 seconds 
+  Import took 0.019125 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG080.png
+  artifactKey: Guid(8db556cb3409c48ffab2afa6f3a53685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG080.png using Guid(8db556cb3409c48ffab2afa6f3a53685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55ff883f0ebe5c4fdc35fcf3a6dd3c27') in 0.013412 seconds 
+  Import took 0.017892 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG110.png
+  artifactKey: Guid(9accd48f655e34d3499f0ee0b77e80d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG110.png using Guid(9accd48f655e34d3499f0ee0b77e80d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e492274f4169a964c47b0e2cdb4079cb') in 0.013475 seconds 
+  Import took 0.017929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG100.png
+  artifactKey: Guid(eb4b6612290194d8292921902cd9d2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG100.png using Guid(eb4b6612290194d8292921902cd9d2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bef9a50831868fe3b257d47b695be893') in 0.027846 seconds 
+  Import took 0.031782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG146.png
+  artifactKey: Guid(0d1a48777f09f433e94ce0a3bfe6c9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG146.png using Guid(0d1a48777f09f433e94ce0a3bfe6c9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b141820cc1d9257692a5ea4e1d473bc') in 0.016915 seconds 
+  Import took 0.022132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000357 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG097.png
+  artifactKey: Guid(8fce6b38f6bad4127bc962aacc93ef93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG097.png using Guid(8fce6b38f6bad4127bc962aacc93ef93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31bf4871cf3c69335b543999ae13a811') in 0.019406 seconds 
+  Import took 0.024350 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG073.png
+  artifactKey: Guid(d827a521e49b04667ab4ac16234697ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG073.png using Guid(d827a521e49b04667ab4ac16234697ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab600e48a9b6872e8030ade4c8b54e15') in 0.017755 seconds 
+  Import took 0.023218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000320 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG103.png
+  artifactKey: Guid(db6631fc0be964811abe802b8af8ac57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG103.png using Guid(db6631fc0be964811abe802b8af8ac57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f726aeca1604e0a65f39a4f992806ff') in 0.020198 seconds 
+  Import took 0.026588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG141.png
+  artifactKey: Guid(d3477189623c0402581afbda0fcfb0a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG141.png using Guid(d3477189623c0402581afbda0fcfb0a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83405c35ae4e8b9523eab75f2a184167') in 0.016736 seconds 
+  Import took 0.022567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000324 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG144.png
+  artifactKey: Guid(a80aa74f1791b4a6690bc08dcbb815a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG144.png using Guid(a80aa74f1791b4a6690bc08dcbb815a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2d592f4543d7aad607f0eb11e2b3a03') in 0.021172 seconds 
+  Import took 0.026774 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG093.png
+  artifactKey: Guid(b47f75717e5004194be50884a562a636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG093.png using Guid(b47f75717e5004194be50884a562a636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11142778a702182b9c76c31c0e9dc3bc') in 0.017409 seconds 
+  Import took 0.025006 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG108.png
+  artifactKey: Guid(492adaebf5557475ea9770b9fddcd315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG108.png using Guid(492adaebf5557475ea9770b9fddcd315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6fbd9c8ec7e0af13cf445ce2ed4a3602') in 0.020834 seconds 
+  Import took 0.025462 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG106.png
+  artifactKey: Guid(c2c230c846241423c94d3fee865163ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG106.png using Guid(c2c230c846241423c94d3fee865163ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23ff20cbbb9ccdace6c9e891b0745cd') in 0.018116 seconds 
+  Import took 0.023326 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG138.png
+  artifactKey: Guid(563841d97812f4f95962938d219e573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG138.png using Guid(563841d97812f4f95962938d219e573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dff24a0c8a2c7a2399d03ac1967168e') in 0.026183 seconds 
+  Import took 0.031132 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000221 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG090.png
+  artifactKey: Guid(7f508bcbcd9e14dde9c745de1f347f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG090.png using Guid(7f508bcbcd9e14dde9c745de1f347f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1525d37473461bf56329d864367c1db5') in 0.015342 seconds 
+  Import took 0.020228 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG118.png
+  artifactKey: Guid(f4427c1386a184500852aa1aedf57720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG118.png using Guid(f4427c1386a184500852aa1aedf57720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96a63695974530c884fb03fbea401567') in 0.030825 seconds 
+  Import took 0.035589 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000175 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG087.png
+  artifactKey: Guid(76e080f736a674d9db8f31c1bb400e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG087.png using Guid(76e080f736a674d9db8f31c1bb400e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedf7930c5186de0f433b44b443eaf6b') in 0.048539 seconds 
+  Import took 0.052960 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG064.png
+  artifactKey: Guid(b29b2e1ebb8be4d888b2e15f9e9dda01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG064.png using Guid(b29b2e1ebb8be4d888b2e15f9e9dda01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63e63624706d3f2abbdea9d4a3a8d3d7') in 0.032806 seconds 
+  Import took 0.036826 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000224 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG096.png
+  artifactKey: Guid(331b8c3c56a1e4ea5abdfe1f88091a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG096.png using Guid(331b8c3c56a1e4ea5abdfe1f88091a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c197ed75c73d81c32f379098b627e60') in 0.013494 seconds 
+  Import took 0.017901 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG130.png
+  artifactKey: Guid(d9b416174eacc4532a3185ff0222281a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG130.png using Guid(d9b416174eacc4532a3185ff0222281a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f6e66255957f506bf5c648f5de8b3df') in 0.013613 seconds 
+  Import took 0.017399 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG126.png
+  artifactKey: Guid(7c94d99f8f27c4ce88c27351d1584667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG126.png using Guid(7c94d99f8f27c4ce88c27351d1584667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eef9ffe5984a2580cc37fc12e178418') in 0.013424 seconds 
+  Import took 0.017566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG083.png
+  artifactKey: Guid(a349e473934c04ef7b35cd3900db33bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG083.png using Guid(a349e473934c04ef7b35cd3900db33bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f056dd1c303f2342080fa5bba24e32d') in 0.014009 seconds 
+  Import took 0.017863 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG134.png
+  artifactKey: Guid(9cd4d1e2941e54a1dbcae9051bb02eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG134.png using Guid(9cd4d1e2941e54a1dbcae9051bb02eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e9f36f612f01f49ec968bb9464e128bb') in 0.035924 seconds 
+  Import took 0.040975 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG145.png
+  artifactKey: Guid(91bddbbe4b9d34eedbed00b67ee35a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG145.png using Guid(91bddbbe4b9d34eedbed00b67ee35a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6ff2eabd3e8486b1533806af0a15ff8') in 0.018018 seconds 
+  Import took 0.024696 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG148.png
+  artifactKey: Guid(d8f86d20e543a4a729a6770a6fc205a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG148.png using Guid(d8f86d20e543a4a729a6770a6fc205a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4206cf72f730eeba1a995b211e26986') in 0.035484 seconds 
+  Import took 0.039634 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG062.png
+  artifactKey: Guid(2744d8a7793c6426b94ea7f4cc5659ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG062.png using Guid(2744d8a7793c6426b94ea7f4cc5659ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76f153b81267704db6997ec41792528b') in 0.012242 seconds 
+  Import took 0.019064 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG098.png
+  artifactKey: Guid(f0918365cabf74a368186fcb48dd9408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG098.png using Guid(f0918365cabf74a368186fcb48dd9408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e49b60e27351651603da01ff4ab42b4a') in 0.013103 seconds 
+  Import took 0.017036 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG109.png
+  artifactKey: Guid(3e26ed46350c14bf3bcf4e18470e605c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG109.png using Guid(3e26ed46350c14bf3bcf4e18470e605c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f9de5822ab3b0b84b8f8d898d209609') in 0.042383 seconds 
+  Import took 0.048980 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG119.png
+  artifactKey: Guid(60ecf73a0be8c467c8552f3864de2bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG119.png using Guid(60ecf73a0be8c467c8552f3864de2bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '725f164cf09f4e8dbab306e350974f88') in 0.011005 seconds 
+  Import took 0.014678 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG120.png
+  artifactKey: Guid(b896ca4c09ce4443e81b8cf5517ac8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG120.png using Guid(b896ca4c09ce4443e81b8cf5517ac8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e879e66962e1178e9e49f96e08b75292') in 0.016398 seconds 
+  Import took 0.020524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG143.png
+  artifactKey: Guid(e73c089566bab4b09a4fd245a24bb405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG143.png using Guid(e73c089566bab4b09a4fd245a24bb405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '70aae37d3adbcc8a849cf93221ab48f7') in 0.011932 seconds 
+  Import took 0.015992 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG127.png
+  artifactKey: Guid(dc6cdf8cf971e41c18f70776b287451b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG127.png using Guid(dc6cdf8cf971e41c18f70776b287451b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbdb0f67b6e473f988cee1955a7d3851') in 0.013607 seconds 
+  Import took 0.017733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG085.png
+  artifactKey: Guid(74a2fffcd816844f5b6f6c864bd9d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG085.png using Guid(74a2fffcd816844f5b6f6c864bd9d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb6d084524ec4440a2b47021552da771') in 0.011438 seconds 
+  Import took 0.015535 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 66.880741 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG120.png
+  artifactKey: Guid(b896ca4c09ce4443e81b8cf5517ac8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG120.png using Guid(b896ca4c09ce4443e81b8cf5517ac8cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3f620f60ea6720a50e14ba8f65474f') in 0.059100 seconds 
+  Import took 0.071307 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG122.png
+  artifactKey: Guid(a183b218c34ee4b24961b8aef7af959b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG122.png using Guid(a183b218c34ee4b24961b8aef7af959b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cbb914e7c2116ef250bb36357e4e439') in 0.025614 seconds 
+  Import took 0.030571 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000227 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG133.png
+  artifactKey: Guid(2adcedd2cdb714be59d49cf3c12462dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG133.png using Guid(2adcedd2cdb714be59d49cf3c12462dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81d07c97e70c26ee5fddb7cfcf1a0942') in 0.027961 seconds 
+  Import took 0.033084 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG121.png
+  artifactKey: Guid(cdc73205532a945e386eed0afda9010f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG121.png using Guid(cdc73205532a945e386eed0afda9010f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55745facabbcce5904202f1ddfcd6225') in 0.155161 seconds 
+  Import took 0.159386 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG142.png
+  artifactKey: Guid(ec775cbfd886745f393c115b72cf6d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG142.png using Guid(ec775cbfd886745f393c115b72cf6d56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18943f3e85f94f3ae641ed7e857cf24b') in 0.098518 seconds 
+  Import took 0.104060 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG123.png
+  artifactKey: Guid(115f3aecf90134beabf43c9228a991e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG123.png using Guid(115f3aecf90134beabf43c9228a991e7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6683d58e0af7deb280f09cacb4feb5bb') in 0.020296 seconds 
+  Import took 0.024747 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG136.png
+  artifactKey: Guid(2aa310adab783460dab88c4227d19ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG136.png using Guid(2aa310adab783460dab88c4227d19ff8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1591c3e6ee47cfd9b0bfce10e534cea') in 0.022101 seconds 
+  Import took 0.026586 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG137.png
+  artifactKey: Guid(e7b5fcc77d20b458ea0fb2bc0b2054f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG137.png using Guid(e7b5fcc77d20b458ea0fb2bc0b2054f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18a6ed5e6c4106fc8526528e7cf7b917') in 0.032202 seconds 
+  Import took 0.036483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG125.png
+  artifactKey: Guid(25535f7e494134835b18b6e82cce8dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG125.png using Guid(25535f7e494134835b18b6e82cce8dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b016f3434e76617fd350704dee3d250e') in 0.020416 seconds 
+  Import took 0.024239 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG139.png
+  artifactKey: Guid(7cb9c3f23e83c431da8b07396c2ec8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG139.png using Guid(7cb9c3f23e83c431da8b07396c2ec8c8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '433b7e487483c2ee510442137a26f749') in 0.019878 seconds 
+  Import took 0.023988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000215 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG147.png
+  artifactKey: Guid(69b26e5b84e3b4ec68087e69f526af24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG147.png using Guid(69b26e5b84e3b4ec68087e69f526af24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fab38b4a80089eea0dad2f43d7d554e0') in 0.024959 seconds 
+  Import took 0.029220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG132.png
+  artifactKey: Guid(03abcc270911e47eca7bf6175f279ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG132.png using Guid(03abcc270911e47eca7bf6175f279ec1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb93aee283389dd874898a1e6c445ea') in 0.026545 seconds 
+  Import took 0.031426 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG128.png
+  artifactKey: Guid(481bf2cee816243419338f29d43e0e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG128.png using Guid(481bf2cee816243419338f29d43e0e0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04d6112d42dc05c96ad21ca33af23684') in 0.027605 seconds 
+  Import took 0.032692 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG135.png
+  artifactKey: Guid(94152586a5d574012b4eba682d02469f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG135.png using Guid(94152586a5d574012b4eba682d02469f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '467cfd51716a9b9bb804980b55abec2d') in 0.028486 seconds 
+  Import took 0.033549 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG092.png
+  artifactKey: Guid(3096328a8d23e4fd6a4f2e582a62f2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG092.png using Guid(3096328a8d23e4fd6a4f2e582a62f2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c99fe2a92ccffeaa8d31006de1539865') in 0.032765 seconds 
+  Import took 0.037128 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG129.png
+  artifactKey: Guid(405489d2d00d646b1983bc8899b9c44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG129.png using Guid(405489d2d00d646b1983bc8899b9c44f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e00b2d8c4128e0cd0d15339fa38ca0b1') in 0.032241 seconds 
+  Import took 0.037882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000226 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG140.png
+  artifactKey: Guid(78d1ed5a0277747b49469f0ff840e9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG140.png using Guid(78d1ed5a0277747b49469f0ff840e9b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f44e733fea33992307e726bf6435e51b') in 0.029393 seconds 
+  Import took 0.033874 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000343 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG124.png
+  artifactKey: Guid(a8493c96c2f0f4c9083b87f4422f9652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG124.png using Guid(a8493c96c2f0f4c9083b87f4422f9652) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7aba49f98d1437707e1c25136fc9a1fc') in 0.027195 seconds 
+  Import took 0.032157 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG131.png
+  artifactKey: Guid(4538411c626cb4607a9dee47e2ab082e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG131.png using Guid(4538411c626cb4607a9dee47e2ab082e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c6cf7d5dbe994c715221e44ad25d84d8') in 0.026664 seconds 
+  Import took 0.030793 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG146.png
+  artifactKey: Guid(0d1a48777f09f433e94ce0a3bfe6c9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG146.png using Guid(0d1a48777f09f433e94ce0a3bfe6c9a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87499fbd06bb467eb58c6581a2a1d575') in 0.026834 seconds 
+  Import took 0.031524 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000220 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG141.png
+  artifactKey: Guid(d3477189623c0402581afbda0fcfb0a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG141.png using Guid(d3477189623c0402581afbda0fcfb0a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0acc76051c1bf37120bcddaa971bef5e') in 0.028017 seconds 
+  Import took 0.031816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG144.png
+  artifactKey: Guid(a80aa74f1791b4a6690bc08dcbb815a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG144.png using Guid(a80aa74f1791b4a6690bc08dcbb815a5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c056e54b2feb125801aaf81a500fa33') in 0.028320 seconds 
+  Import took 0.032180 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG138.png
+  artifactKey: Guid(563841d97812f4f95962938d219e573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG138.png using Guid(563841d97812f4f95962938d219e573b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e873b8ae4c39c4b0592d8d85edb05ac9') in 0.032350 seconds 
+  Import took 0.036247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG130.png
+  artifactKey: Guid(d9b416174eacc4532a3185ff0222281a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG130.png using Guid(d9b416174eacc4532a3185ff0222281a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02758db6c987ce4654a0b344fe122ff7') in 0.027942 seconds 
+  Import took 0.031755 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG126.png
+  artifactKey: Guid(7c94d99f8f27c4ce88c27351d1584667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG126.png using Guid(7c94d99f8f27c4ce88c27351d1584667) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b90a3ee2ede9cb4f8803b54a948a9cc0') in 0.028262 seconds 
+  Import took 0.032111 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG134.png
+  artifactKey: Guid(9cd4d1e2941e54a1dbcae9051bb02eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG134.png using Guid(9cd4d1e2941e54a1dbcae9051bb02eb2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91ca03288f3de47d9a47313676d7f2f') in 0.027097 seconds 
+  Import took 0.031743 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG145.png
+  artifactKey: Guid(91bddbbe4b9d34eedbed00b67ee35a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG145.png using Guid(91bddbbe4b9d34eedbed00b67ee35a11) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '740ac5c6d61651f464a97f481dcea1a2') in 0.027205 seconds 
+  Import took 0.031791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000242 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG148.png
+  artifactKey: Guid(d8f86d20e543a4a729a6770a6fc205a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG148.png using Guid(d8f86d20e543a4a729a6770a6fc205a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7d2c81c72469632f0f103ae3a32a238') in 0.030733 seconds 
+  Import took 0.035474 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG143.png
+  artifactKey: Guid(e73c089566bab4b09a4fd245a24bb405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG143.png using Guid(e73c089566bab4b09a4fd245a24bb405) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '892128d338e4afbe0a5174127269cb7f') in 0.028804 seconds 
+  Import took 0.032744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG127.png
+  artifactKey: Guid(dc6cdf8cf971e41c18f70776b287451b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG127.png using Guid(dc6cdf8cf971e41c18f70776b287451b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbe18659259365fa5c228d4442e554cc') in 0.029901 seconds 
+  Import took 0.035051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 84.821565 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG001.png
+  artifactKey: Guid(f655a3071617f4bb18ae9cbb9ab17254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG001.png using Guid(f655a3071617f4bb18ae9cbb9ab17254) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b23ffd45be84fde7228cd236b9a80c66') in 0.038866 seconds 
+  Import took 0.043679 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG003.png
+  artifactKey: Guid(0fd1b5b1b63af403590f4776d1d711f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG003.png using Guid(0fd1b5b1b63af403590f4776d1d711f2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4db1c9397d6fd370b091661e788799b') in 0.034132 seconds 
+  Import took 0.038742 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG007.png
+  artifactKey: Guid(15a6efb5ff3334a53bfca83669c089cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG007.png using Guid(15a6efb5ff3334a53bfca83669c089cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c730738bbb7cb232e615aa77fd20c33') in 0.023493 seconds 
+  Import took 0.028059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG026.png
+  artifactKey: Guid(de649432c6f24450e98be5c794479f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG026.png using Guid(de649432c6f24450e98be5c794479f04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55609be96c359754278ad61cdb1cea35') in 0.022119 seconds 
+  Import took 0.026865 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000178 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG030.png
+  artifactKey: Guid(ac210901e16c54752acad9ddec3006d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG030.png using Guid(ac210901e16c54752acad9ddec3006d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1597c81b19a6b70c7c7291b7b7c9f12') in 0.020887 seconds 
+  Import took 0.024824 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000160 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG046.png
+  artifactKey: Guid(986afbe9f31cf4668ba21d157ecc3765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG046.png using Guid(986afbe9f31cf4668ba21d157ecc3765) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab6f3d80dd12a21f4402699d0ea112ea') in 0.021424 seconds 
+  Import took 0.025789 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG056.png
+  artifactKey: Guid(7eb98287927be42ccb7da755f1e8f86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG056.png using Guid(7eb98287927be42ccb7da755f1e8f86e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6793c937f7802417436ebcb5210638c') in 0.020459 seconds 
+  Import took 0.024588 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG049.png
+  artifactKey: Guid(165f02d1a312d4366bb05f2a08498ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG049.png using Guid(165f02d1a312d4366bb05f2a08498ce6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb13086849e4a7ec12f3ff74b479e0a9') in 0.022047 seconds 
+  Import took 0.026517 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000162 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG044.png
+  artifactKey: Guid(b267ca3af35e34fffb01ee2b7543ec93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG044.png using Guid(b267ca3af35e34fffb01ee2b7543ec93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc3207acf9d0d0b8e33530219cf42ac1') in 0.020867 seconds 
+  Import took 0.025159 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG010.png
+  artifactKey: Guid(ee811f2520e84433faf6790f2a31c1e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG010.png using Guid(ee811f2520e84433faf6790f2a31c1e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eedc206f12fa91dc2378f260ad57c72d') in 0.023028 seconds 
+  Import took 0.027082 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000206 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG011.png
+  artifactKey: Guid(c73ebfb8095564906a92486557001cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG011.png using Guid(c73ebfb8095564906a92486557001cf8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e17eece27dfe392343694f716e02d0f1') in 0.022783 seconds 
+  Import took 0.026776 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG015.png
+  artifactKey: Guid(7296009481a6c4aca89ec5b519f4062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG015.png using Guid(7296009481a6c4aca89ec5b519f4062c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9cb30a918bcd9dd8b8d1a450a64c032c') in 0.022858 seconds 
+  Import took 0.027290 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG027.png
+  artifactKey: Guid(08346c0ba371447ca9967bbe181e8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG027.png using Guid(08346c0ba371447ca9967bbe181e8ad5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db0d3d0b767e1e889756e20b7e3b1475') in 0.023606 seconds 
+  Import took 0.027722 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG054.png
+  artifactKey: Guid(a2e1572835e0a4c22b2d9221f93b12be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG054.png using Guid(a2e1572835e0a4c22b2d9221f93b12be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd24a097a7d799a0a1bd1a231229c303d') in 0.022582 seconds 
+  Import took 0.026715 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG042.png
+  artifactKey: Guid(767de63c874924bd8ac9169fa2c49ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG042.png using Guid(767de63c874924bd8ac9169fa2c49ee8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2623243ec03bf4e11892979a5c249cea') in 0.021753 seconds 
+  Import took 0.025782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG034.png
+  artifactKey: Guid(8856945fb083843eeb6bc25b6040df97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG034.png using Guid(8856945fb083843eeb6bc25b6040df97) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b51ce224fb1568ff19920de436f9950') in 0.023821 seconds 
+  Import took 0.027576 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG017.png
+  artifactKey: Guid(6d58a79e5e2084bc5ba19def71b2e597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG017.png using Guid(6d58a79e5e2084bc5ba19def71b2e597) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c03f2f71c0743a494cca4a4a078f4cc3') in 0.024705 seconds 
+  Import took 0.028988 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG004.png
+  artifactKey: Guid(13cddb3f0f04541769aa742f6f37e482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG004.png using Guid(13cddb3f0f04541769aa742f6f37e482) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e6cab4b5d858f36bfa83d24e934f374') in 0.023026 seconds 
+  Import took 0.026916 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000211 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG052.png
+  artifactKey: Guid(ef7e3badd11224bf389e0b13326759ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG052.png using Guid(ef7e3badd11224bf389e0b13326759ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78a1047d24f84101eb28a62a8ad26f90') in 0.022493 seconds 
+  Import took 0.027097 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG013.png
+  artifactKey: Guid(93b54a777fc0a45e59f8527528c1aae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG013.png using Guid(93b54a777fc0a45e59f8527528c1aae3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90319a36b89294d0caee8a9a0038cb5b') in 0.023256 seconds 
+  Import took 0.027316 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG037.png
+  artifactKey: Guid(54b0bec4a617f4c2688a1a64402ee699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG037.png using Guid(54b0bec4a617f4c2688a1a64402ee699) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0709ad8fffdd7c4154ca2b4324fc6501') in 0.023259 seconds 
+  Import took 0.027256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000174 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG039.png
+  artifactKey: Guid(cfb5ee20006c34b6fa432ec870f4c463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG039.png using Guid(cfb5ee20006c34b6fa432ec870f4c463) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00811e9c360f094f2652c4f6af76a155') in 0.020959 seconds 
+  Import took 0.025215 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000334 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG019.png
+  artifactKey: Guid(87ef7f797be2f4626875989a5394c87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG019.png using Guid(87ef7f797be2f4626875989a5394c87a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a559b129ffc721c2d5b818f2bbac59') in 0.022162 seconds 
+  Import took 0.026816 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG002.png
+  artifactKey: Guid(a84509d5750264c189cc46d2993adb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG002.png using Guid(a84509d5750264c189cc46d2993adb0a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '716eac5652444b6ecfb50fa582ab0fc4') in 0.023794 seconds 
+  Import took 0.028636 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000195 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG036.png
+  artifactKey: Guid(06343b8510a4b4bf4b30dcfd639fd30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG036.png using Guid(06343b8510a4b4bf4b30dcfd639fd30e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4238250749e73ec2424b16af33a2a5b') in 0.023479 seconds 
+  Import took 0.027978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG043.png
+  artifactKey: Guid(35b227d5de54049f3ac642987e92b88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG043.png using Guid(35b227d5de54049f3ac642987e92b88d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c8f54d5476da83cfbafd0e5078cafba') in 0.022584 seconds 
+  Import took 0.027605 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG006.png
+  artifactKey: Guid(ca3531431a3584abfbdafa3364ddcb8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG006.png using Guid(ca3531431a3584abfbdafa3364ddcb8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53082d1bfdcc48325e477ff5aeae14a3') in 0.022578 seconds 
+  Import took 0.027034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG008.png
+  artifactKey: Guid(22a3e36bc7edf4af296a33ceaf052996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG008.png using Guid(22a3e36bc7edf4af296a33ceaf052996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '514d00bd70a873b8d48bb5d1b16fdb46') in 0.022685 seconds 
+  Import took 0.026829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG022.png
+  artifactKey: Guid(4a774963da6524f5e813ea9d2f04aa6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG022.png using Guid(4a774963da6524f5e813ea9d2f04aa6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63b1e9d9428ea32d1bba602f12d3701f') in 0.022697 seconds 
+  Import took 0.027218 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG014.png
+  artifactKey: Guid(2c1d63488f8e746c0a8d99a3102358e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG014.png using Guid(2c1d63488f8e746c0a8d99a3102358e2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b269d220ecff7206f8cd22d4790201a') in 0.022581 seconds 
+  Import took 0.027256 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG053.png
+  artifactKey: Guid(41f1f2f62723346cdba06d3fd41bad21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG053.png using Guid(41f1f2f62723346cdba06d3fd41bad21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39bce9737f417988e413715812900f19') in 0.023444 seconds 
+  Import took 0.027300 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000204 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG055.png
+  artifactKey: Guid(c7518d2686b364b5ba655752f1a500b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG055.png using Guid(c7518d2686b364b5ba655752f1a500b0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a2325d2a911231940789fe4544f8121') in 0.022697 seconds 
+  Import took 0.026362 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG041.png
+  artifactKey: Guid(f1abdc2a25d96496ca3f29acc461752f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG041.png using Guid(f1abdc2a25d96496ca3f29acc461752f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32633f93b2f74157f49383912918c67') in 0.023831 seconds 
+  Import took 0.027950 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000208 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG048.png
+  artifactKey: Guid(047f626d0de6a4e1aa2a565665a0143a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG048.png using Guid(047f626d0de6a4e1aa2a565665a0143a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f38a3d73088f5dc0fc7b818d7b8dc3cd') in 0.024558 seconds 
+  Import took 0.028289 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG005.png
+  artifactKey: Guid(80258ca26f03b40ac968f57787e5da07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG005.png using Guid(80258ca26f03b40ac968f57787e5da07) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '982f459890872dc81acc447c3951281d') in 0.024665 seconds 
+  Import took 0.028942 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000237 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG031.png
+  artifactKey: Guid(8759229748a384b05aea28dd3f7013cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG031.png using Guid(8759229748a384b05aea28dd3f7013cf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc31dcc162c66a7462e83c71f0b9ba20') in 0.023355 seconds 
+  Import took 0.027380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG060.png
+  artifactKey: Guid(1be70ac7dd6fb455395d1ad44370ade3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG060.png using Guid(1be70ac7dd6fb455395d1ad44370ade3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f18939d9ce220f0d20303e80a971c377') in 0.023182 seconds 
+  Import took 0.027220 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000167 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG016.png
+  artifactKey: Guid(62211414348ce4a9493db98f46ba8c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG016.png using Guid(62211414348ce4a9493db98f46ba8c44) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a356ee010d4a158f5ff5562a0976f9e3') in 0.023770 seconds 
+  Import took 0.028051 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000251 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG033.png
+  artifactKey: Guid(2142123388fe3468d93f058e5dee9b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG033.png using Guid(2142123388fe3468d93f058e5dee9b25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a69bd0d1c007c1e9c46255c763f9566e') in 0.023447 seconds 
+  Import took 0.028071 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000170 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG012.png
+  artifactKey: Guid(e55e58af48ebe43e98f818af9ede4e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG012.png using Guid(e55e58af48ebe43e98f818af9ede4e53) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5904baecb5879c018ec26c733eaa8cca') in 0.023736 seconds 
+  Import took 0.028314 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000177 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG047.png
+  artifactKey: Guid(ab285ef32ae424f1eb5e2d6a55a6d4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG047.png using Guid(ab285ef32ae424f1eb5e2d6a55a6d4be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2ebb5c49c60c4c78269b7eab4cc8f37') in 0.023586 seconds 
+  Import took 0.028181 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG021.png
+  artifactKey: Guid(c03a7a8c14ad64d86a3130585b204e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG021.png using Guid(c03a7a8c14ad64d86a3130585b204e2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19abf34f061239ad7a7d8082215469bf') in 0.022076 seconds 
+  Import took 0.026847 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG024.png
+  artifactKey: Guid(16be7e4763c0a4ccdad0d04ed198d1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG024.png using Guid(16be7e4763c0a4ccdad0d04ed198d1ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cad243a96ee226c8cf5ad0a858ec902') in 0.022963 seconds 
+  Import took 0.027614 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG050.png
+  artifactKey: Guid(95447583d194e477d90d183b43b348a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG050.png using Guid(95447583d194e477d90d183b43b348a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b0f0ea00226e4a3c348962d80c8f111c') in 0.022866 seconds 
+  Import took 0.027558 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG018.png
+  artifactKey: Guid(e41b91fb3267042c7bfdbeb895bb1a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG018.png using Guid(e41b91fb3267042c7bfdbeb895bb1a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f820c3a934bd4c611c8c119c92e7c90') in 0.022887 seconds 
+  Import took 0.027771 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG020.png
+  artifactKey: Guid(f41a3c711b3fe412a860d82d79f6da3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG020.png using Guid(f41a3c711b3fe412a860d82d79f6da3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20d16c380b6db8dedd3420fc99195edd') in 0.023379 seconds 
+  Import took 0.028359 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000171 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG009.png
+  artifactKey: Guid(314865e2dcdcc4db884aeb3e7e5ba2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG009.png using Guid(314865e2dcdcc4db884aeb3e7e5ba2b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91c5999ccef48ec285c260bba8d15a93') in 0.022370 seconds 
+  Import took 0.026349 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG038.png
+  artifactKey: Guid(4905a5a22cb2b4d36be611581039360b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG038.png using Guid(4905a5a22cb2b4d36be611581039360b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cb9f1203f87290e26ff09d8fb080df') in 0.024460 seconds 
+  Import took 0.028613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000207 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG028.png
+  artifactKey: Guid(0cf5869426a484eb7b19d6d42974e705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG028.png using Guid(0cf5869426a484eb7b19d6d42974e705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f53228cd52b6734114160c48f7324c81') in 0.024320 seconds 
+  Import took 0.028585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG051.png
+  artifactKey: Guid(794fa1d0a41524963aff1c4ce9974ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG051.png using Guid(794fa1d0a41524963aff1c4ce9974ba9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a90d3d16b7aa7d05aae197c7279a63') in 0.022498 seconds 
+  Import took 0.026585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG045.png
+  artifactKey: Guid(6cc40b68edaf344809839e273ec98546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG045.png using Guid(6cc40b68edaf344809839e273ec98546) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc9092c829b61feebde3997a699c937') in 0.022358 seconds 
+  Import took 0.026216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000183 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG023.png
+  artifactKey: Guid(094ff3d8a664f491bacb68f8f0148859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG023.png using Guid(094ff3d8a664f491bacb68f8f0148859) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577c1d0f50fcdf6de1f3de67072e6fda') in 0.024346 seconds 
+  Import took 0.028760 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG057.png
+  artifactKey: Guid(74faf236339ad456fbe00134d873ea03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG057.png using Guid(74faf236339ad456fbe00134d873ea03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '117241ba60653c1d70d96c9db836ad87') in 0.023703 seconds 
+  Import took 0.027871 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG029.png
+  artifactKey: Guid(c1edc8304dcd94cab81b7d66220679df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG029.png using Guid(c1edc8304dcd94cab81b7d66220679df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b2902bc20ac016e977ef08764117ca') in 0.023859 seconds 
+  Import took 0.027570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG035.png
+  artifactKey: Guid(b330605cfc5c344a0a61f1ff543ce3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG035.png using Guid(b330605cfc5c344a0a61f1ff543ce3b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ae8b4679f42ae5ae39e6a2c825f1951') in 0.023609 seconds 
+  Import took 0.027391 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG040.png
+  artifactKey: Guid(afa9f570b946a416a9ded46873b097f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG040.png using Guid(afa9f570b946a416a9ded46873b097f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c551993823f6f49a3afacd802c92716') in 0.021956 seconds 
+  Import took 0.026134 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG032.png
+  artifactKey: Guid(ecd92aee290a0408f98a801e490f69a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG032.png using Guid(ecd92aee290a0408f98a801e490f69a6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '828c73bbccd5c552882218affb02e1ce') in 0.024159 seconds 
+  Import took 0.028401 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG025.png
+  artifactKey: Guid(8dc7acd10c03746d197a3f822041deb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG025.png using Guid(8dc7acd10c03746d197a3f822041deb8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ca32f0f7b7a87f2960b770e44fc29d1') in 0.022900 seconds 
+  Import took 0.026983 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG058.png
+  artifactKey: Guid(c3de1de9a8d7848618f1af01c7000887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG058.png using Guid(c3de1de9a8d7848618f1af01c7000887) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28ed2951e3c0fa1fc2243284d5eb6668') in 0.024424 seconds 
+  Import took 0.028584 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG059.png
+  artifactKey: Guid(691a0f30bef2144c18b89e5cb10ca021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG059.png using Guid(691a0f30bef2144c18b89e5cb10ca021) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac91a6379c49982ca2315e461a0e076f') in 0.023432 seconds 
+  Import took 0.028382 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 18.404690 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG061.png
+  artifactKey: Guid(11032415ff53140ba87aaff3d0a4260b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG061.png using Guid(11032415ff53140ba87aaff3d0a4260b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '504aa6988c0d12b77afe8792cb7a520f') in 0.029421 seconds 
+  Import took 0.033733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000166 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG101.png
+  artifactKey: Guid(feba2f723c15f4ed7b6943b118cf2395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG101.png using Guid(feba2f723c15f4ed7b6943b118cf2395) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1581d353c6708f5dc97d56b21d9a09d5') in 0.025908 seconds 
+  Import took 0.029695 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG115.png
+  artifactKey: Guid(3f3f620e6055a4056a41b0e7ef8f3f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG115.png using Guid(3f3f620e6055a4056a41b0e7ef8f3f4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '04fc274b657451c18778c4bfb97446e9') in 0.033154 seconds 
+  Import took 0.037419 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG117.png
+  artifactKey: Guid(8f3e73e0882f64520b96fb9acf725dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG117.png using Guid(8f3e73e0882f64520b96fb9acf725dad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd7a60dc845ff9dd67e13f3170ca843b9') in 0.021068 seconds 
+  Import took 0.025566 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000290 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG065.png
+  artifactKey: Guid(64f229731b3224dac847bfe8915b2b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG065.png using Guid(64f229731b3224dac847bfe8915b2b26) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c600915349ac1b29ae03a81c2865fac') in 0.024075 seconds 
+  Import took 0.028455 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG071.png
+  artifactKey: Guid(0ec4eee73941f4f7e97dbec8a07cfec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG071.png using Guid(0ec4eee73941f4f7e97dbec8a07cfec6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f23425c8765f0b90baf370d9ba9be25') in 0.022931 seconds 
+  Import took 0.027274 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG078.png
+  artifactKey: Guid(58becea627b6a49bb906720f89c18197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG078.png using Guid(58becea627b6a49bb906720f89c18197) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae057bd792fdc7275bc17d41d3676720') in 0.023095 seconds 
+  Import took 0.027098 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG088.png
+  artifactKey: Guid(a510ad80362cc4461adb8ca18391ca03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG088.png using Guid(a510ad80362cc4461adb8ca18391ca03) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42e02500d115d34760d2ebc639e33c93') in 0.047913 seconds 
+  Import took 0.052646 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000210 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG112.png
+  artifactKey: Guid(0413df912de1f4bfea34c11fbbc6a9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG112.png using Guid(0413df912de1f4bfea34c11fbbc6a9f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '324e1dc9ab221273431379077193507b') in 0.036379 seconds 
+  Import took 0.040882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG094.png
+  artifactKey: Guid(b00440ab3d73541c4b6e2b3766175764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG094.png using Guid(b00440ab3d73541c4b6e2b3766175764) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fec13db35193c4c6e3171b90bf32d34') in 0.023741 seconds 
+  Import took 0.028560 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG074.png
+  artifactKey: Guid(af0c13e8774204d03acb60eaa081b1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG074.png using Guid(af0c13e8774204d03acb60eaa081b1f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '068d781c236c0195cc521015d216a02a') in 0.020637 seconds 
+  Import took 0.025269 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG077.png
+  artifactKey: Guid(2578582ea5ed147a3b53834fabebc0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG077.png using Guid(2578582ea5ed147a3b53834fabebc0fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8931f34d3a2241174184ecb122341e95') in 0.023200 seconds 
+  Import took 0.027309 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG082.png
+  artifactKey: Guid(a7a48813a3b4c4237b8321cc5a390bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG082.png using Guid(a7a48813a3b4c4237b8321cc5a390bb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2913ecf345d9cea36d5ed76a3d8ee6aa') in 0.023544 seconds 
+  Import took 0.027533 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG114.png
+  artifactKey: Guid(fc0d84139f4a842808e5f52ec2b09129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG114.png using Guid(fc0d84139f4a842808e5f52ec2b09129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a2460c36f55cac1018ec6d77dab788b1') in 0.023936 seconds 
+  Import took 0.027682 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG066.png
+  artifactKey: Guid(a57f65a7a41da4a0da4890eb15546045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG066.png using Guid(a57f65a7a41da4a0da4890eb15546045) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b52fad29cf4e489c7ad95d442745f25') in 0.023677 seconds 
+  Import took 0.027927 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG075.png
+  artifactKey: Guid(2ef4bb74fe2544587883e482298c11ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG075.png using Guid(2ef4bb74fe2544587883e482298c11ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63850e9f40646ddd521413991634ef8c') in 0.023163 seconds 
+  Import took 0.027367 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG113.png
+  artifactKey: Guid(4ba6914d3447e416588dec9ded7f0ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG113.png using Guid(4ba6914d3447e416588dec9ded7f0ae4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b31777ed88b8abded3c921d4268fbdd0') in 0.020784 seconds 
+  Import took 0.025015 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000233 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG091.png
+  artifactKey: Guid(c1f2cf6739e8840a88df80e2d830d902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG091.png using Guid(c1f2cf6739e8840a88df80e2d830d902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17674cf9dab5fdcd338c980f6c79f3e0') in 0.022919 seconds 
+  Import took 0.026987 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000184 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG070.png
+  artifactKey: Guid(d66e0c3a1fdb64c7f95368777f41d0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG070.png using Guid(d66e0c3a1fdb64c7f95368777f41d0b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1abd004f38ad0f1d112f82327672524d') in 0.023422 seconds 
+  Import took 0.027620 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG104.png
+  artifactKey: Guid(d73add88dee984d24b8201e9708a9a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG104.png using Guid(d73add88dee984d24b8201e9708a9a6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eef1340636af1b6f6b834f9896433f25') in 0.022605 seconds 
+  Import took 0.026601 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG063.png
+  artifactKey: Guid(26a4f840154e844dc813e5cad3cef2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG063.png using Guid(26a4f840154e844dc813e5cad3cef2d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75cc62765152a1494a1873bab900d7c9') in 0.023655 seconds 
+  Import took 0.028708 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG105.png
+  artifactKey: Guid(1a803a2a8cf19404fba715675978fe3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG105.png using Guid(1a803a2a8cf19404fba715675978fe3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4aa6880afbc07b3cb128e7b901d1f3fc') in 0.022929 seconds 
+  Import took 0.027354 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000213 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG102.png
+  artifactKey: Guid(ce6c36ca8624a40f7b7a447383ab4014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG102.png using Guid(ce6c36ca8624a40f7b7a447383ab4014) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f524b80e362115af0230997abdf692') in 0.023406 seconds 
+  Import took 0.028073 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG076.png
+  artifactKey: Guid(1f8b31e456a6941e3a06a4c93c269183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG076.png using Guid(1f8b31e456a6941e3a06a4c93c269183) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c165f85c8d1c6b0f8f6da210477f4116') in 0.024039 seconds 
+  Import took 0.027891 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000192 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG068.png
+  artifactKey: Guid(3caf442b5d3c44ea0bbf8c3469af6e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG068.png using Guid(3caf442b5d3c44ea0bbf8c3469af6e2f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b74ac206173ae4dbab2ad07037d72fa1') in 0.022918 seconds 
+  Import took 0.027092 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000186 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG072.png
+  artifactKey: Guid(c2fc078777c3d4ad0839aefc114f490e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG072.png using Guid(c2fc078777c3d4ad0839aefc114f490e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '563c976437649cedc9155d5e860f5bf8') in 0.023325 seconds 
+  Import took 0.027388 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG086.png
+  artifactKey: Guid(89446083f636e4a5bb0f3f3f6a01b020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG086.png using Guid(89446083f636e4a5bb0f3f3f6a01b020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '056a44fea00391066b841df5d59dd601') in 0.023781 seconds 
+  Import took 0.027929 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000176 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG089.png
+  artifactKey: Guid(d7d81c285d87247da810087746b02ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG089.png using Guid(d7d81c285d87247da810087746b02ff6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c5cda258ed1de369f88c2dfd00b282a') in 0.023652 seconds 
+  Import took 0.027765 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000168 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG111.png
+  artifactKey: Guid(e68d1aa0dd459481692448ddc1299b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG111.png using Guid(e68d1aa0dd459481692448ddc1299b24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ab49010978abead4ba324dd2694c5f40') in 0.023897 seconds 
+  Import took 0.028054 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000262 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG081.png
+  artifactKey: Guid(d03d55b81985d428a9649452699b050b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG081.png using Guid(d03d55b81985d428a9649452699b050b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '495a3725c94b4ed6bef4c5d7b4711578') in 0.022908 seconds 
+  Import took 0.027232 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG099.png
+  artifactKey: Guid(68d8e00ce31114a3385350df519baf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG099.png using Guid(68d8e00ce31114a3385350df519baf24) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd044835fc1099efef919cda182ab45a') in 0.023213 seconds 
+  Import took 0.027759 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG069.png
+  artifactKey: Guid(1c1b6a1cc9560450bb2def92f599aa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG069.png using Guid(1c1b6a1cc9560450bb2def92f599aa55) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b266203eb90e0ffbe87ca8dd4f2c1101') in 0.022570 seconds 
+  Import took 0.026994 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG116.png
+  artifactKey: Guid(fadcdcdd7f76f4b1f975fa850599ffaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG116.png using Guid(fadcdcdd7f76f4b1f975fa850599ffaf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91cf9c6128d55abca25d243a07e8f8d3') in 0.023516 seconds 
+  Import took 0.027791 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG084.png
+  artifactKey: Guid(344f428934e9342d8b77e485646b8599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG084.png using Guid(344f428934e9342d8b77e485646b8599) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd290cb63a610fea1276ecea901c46df') in 0.023209 seconds 
+  Import took 0.027127 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG079.png
+  artifactKey: Guid(5a1aa183053904958a4b1e613bb8488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG079.png using Guid(5a1aa183053904958a4b1e613bb8488c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25e8c3d7e1732f6d82c67b2a1e15ef85') in 0.023197 seconds 
+  Import took 0.027385 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG067.png
+  artifactKey: Guid(b9ea4da40ad3d4626a07a201077d5364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG067.png using Guid(b9ea4da40ad3d4626a07a201077d5364) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61efd3c002199648cb79786f0f29f4b4') in 0.023245 seconds 
+  Import took 0.027493 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000234 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG095.png
+  artifactKey: Guid(d2622b017234f4b97beac866129d4b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG095.png using Guid(d2622b017234f4b97beac866129d4b9d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32ccffedb8304b74e77560c16602b243') in 0.023796 seconds 
+  Import took 0.027599 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000194 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG107.png
+  artifactKey: Guid(280cddbffd53448b6ae284cd4199165d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG107.png using Guid(280cddbffd53448b6ae284cd4199165d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80762eec6d34417754d73fbf42eaed74') in 0.023765 seconds 
+  Import took 0.027787 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000201 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG080.png
+  artifactKey: Guid(8db556cb3409c48ffab2afa6f3a53685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG080.png using Guid(8db556cb3409c48ffab2afa6f3a53685) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a70b06723ac617dc2e0f91fe3e04c281') in 0.023010 seconds 
+  Import took 0.026963 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000187 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG110.png
+  artifactKey: Guid(9accd48f655e34d3499f0ee0b77e80d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG110.png using Guid(9accd48f655e34d3499f0ee0b77e80d0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbb1fe55eb895ff2a98d9518bcbbc3ef') in 0.024011 seconds 
+  Import took 0.027873 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000191 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG100.png
+  artifactKey: Guid(eb4b6612290194d8292921902cd9d2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG100.png using Guid(eb4b6612290194d8292921902cd9d2f9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6664cb512e6b5d07cdc956a95e0c01fe') in 0.023682 seconds 
+  Import took 0.027511 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000188 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG097.png
+  artifactKey: Guid(8fce6b38f6bad4127bc962aacc93ef93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG097.png using Guid(8fce6b38f6bad4127bc962aacc93ef93) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44d9b1484b885247b77b0739b56f1cea') in 0.023238 seconds 
+  Import took 0.027056 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000292 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG073.png
+  artifactKey: Guid(d827a521e49b04667ab4ac16234697ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG073.png using Guid(d827a521e49b04667ab4ac16234697ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41baeaf431066ffcc04c0dc313a2ee6e') in 0.026855 seconds 
+  Import took 0.031744 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG103.png
+  artifactKey: Guid(db6631fc0be964811abe802b8af8ac57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG103.png using Guid(db6631fc0be964811abe802b8af8ac57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87f0a0b74dda1fb812330c22804de6de') in 0.026123 seconds 
+  Import took 0.030102 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000196 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG093.png
+  artifactKey: Guid(b47f75717e5004194be50884a562a636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG093.png using Guid(b47f75717e5004194be50884a562a636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b2172816535b5e30c1344aae0d2e6bc') in 0.025398 seconds 
+  Import took 0.029242 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG108.png
+  artifactKey: Guid(492adaebf5557475ea9770b9fddcd315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG108.png using Guid(492adaebf5557475ea9770b9fddcd315) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df41879b7c1539f1992c4548f22241e1') in 0.024969 seconds 
+  Import took 0.029247 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000272 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG106.png
+  artifactKey: Guid(c2c230c846241423c94d3fee865163ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG106.png using Guid(c2c230c846241423c94d3fee865163ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47249b1d7e2bf165da9afc96230aa0b9') in 0.024885 seconds 
+  Import took 0.029341 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000181 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG090.png
+  artifactKey: Guid(7f508bcbcd9e14dde9c745de1f347f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG090.png using Guid(7f508bcbcd9e14dde9c745de1f347f40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53c3e9605a0a476488af403a1f7988d8') in 0.023976 seconds 
+  Import took 0.027829 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG118.png
+  artifactKey: Guid(f4427c1386a184500852aa1aedf57720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG118.png using Guid(f4427c1386a184500852aa1aedf57720) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eecbdea742af6b1786d5884e77e3076e') in 0.023606 seconds 
+  Import took 0.027801 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG087.png
+  artifactKey: Guid(76e080f736a674d9db8f31c1bb400e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG087.png using Guid(76e080f736a674d9db8f31c1bb400e29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c75e261536502a46584c67716891d805') in 0.024652 seconds 
+  Import took 0.028733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000202 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG064.png
+  artifactKey: Guid(b29b2e1ebb8be4d888b2e15f9e9dda01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG064.png using Guid(b29b2e1ebb8be4d888b2e15f9e9dda01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3aa5344b2e67eeeee102444e0b68513') in 0.023596 seconds 
+  Import took 0.027702 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000193 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG096.png
+  artifactKey: Guid(331b8c3c56a1e4ea5abdfe1f88091a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG096.png using Guid(331b8c3c56a1e4ea5abdfe1f88091a25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5fbd1ad8b181fbcb3095dc426139bde1') in 0.023386 seconds 
+  Import took 0.027169 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG083.png
+  artifactKey: Guid(a349e473934c04ef7b35cd3900db33bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG083.png using Guid(a349e473934c04ef7b35cd3900db33bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08283e4db88a9b551d4dbfa4538c5d62') in 0.023996 seconds 
+  Import took 0.028320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000173 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG062.png
+  artifactKey: Guid(2744d8a7793c6426b94ea7f4cc5659ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG062.png using Guid(2744d8a7793c6426b94ea7f4cc5659ad) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bff44f3c08a418b2209172b8b48e472') in 0.024857 seconds 
+  Import took 0.029130 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000189 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG098.png
+  artifactKey: Guid(f0918365cabf74a368186fcb48dd9408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG098.png using Guid(f0918365cabf74a368186fcb48dd9408) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e2f7ce73c2f160297e6237365b140ef') in 0.024667 seconds 
+  Import took 0.028804 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG109.png
+  artifactKey: Guid(3e26ed46350c14bf3bcf4e18470e605c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG109.png using Guid(3e26ed46350c14bf3bcf4e18470e605c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d1a8869fa0e5cd506531f075ec53684') in 0.021164 seconds 
+  Import took 0.025143 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000212 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG119.png
+  artifactKey: Guid(60ecf73a0be8c467c8552f3864de2bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG119.png using Guid(60ecf73a0be8c467c8552f3864de2bc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da1f83be97f4f7375929b1f60d607d47') in 0.020903 seconds 
+  Import took 0.024283 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000179 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG085.png
+  artifactKey: Guid(74a2fffcd816844f5b6f6c864bd9d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/Map 1 BG085.png using Guid(74a2fffcd816844f5b6f6c864bd9d6e6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '50d387625b4601e8a7206ea62d5f7b44') in 0.025821 seconds 
+  Import took 0.029567 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 43.520979 seconds.
+  path: Assets/03_Sprites/02_Environment/Map01/anims/BG/sprites
+  artifactKey: Guid(c982cb53634f54fddb1107a2fb983b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/03_Sprites/02_Environment/Map01/anims/BG/sprites using Guid(c982cb53634f54fddb1107a2fb983b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '98e3b86aabf4878f9116545f1e5bcf64') in 0.001249 seconds 
+  Import took 0.005539 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006128 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.235 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1236ms)
+		BeginReloadAssembly (151ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (82ms)
+		EndReloadAssembly (1019ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (349ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (378ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (299ms)
+				ProcessInitializeOnLoadMethodAttributes (5ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.72 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2394 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 205.6 MB.
+System memory in use after: 205.8 MB.
+
+Unloading 16 unused Assets to reduce memory usage. Loaded Objects now: 2894.
+Total: 3.655781 ms (FindLiveObjects: 0.232599 ms CreateObjectMapping: 0.102752 ms MarkObjects: 3.304968 ms  DeleteObjects: 0.014590 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:framework-osx-AVFoundation: b23960f63f64bdc6ff669e2cdcee2391 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
