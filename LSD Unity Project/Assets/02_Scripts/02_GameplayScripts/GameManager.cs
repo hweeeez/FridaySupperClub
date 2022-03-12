@@ -7,13 +7,14 @@ public class GameManager : MonoBehaviour
 {
 
     //Timer
-    float timeRemaining = 120; //5 minutes = 300 seconds
+    float timeRemaining = 3; //5 minutes = 300 seconds
     bool timerIsRunning = false;
     public GameObject timerText;
 
     //Rising Water
+    public GameObject molassesIntro;
     public GameObject water;
-    float riseSpeed = 10f;
+    float riseSpeed = 12.5f;
     Vector2 maxWaterHeight;
     bool isRising = false;
 
@@ -22,7 +23,9 @@ public class GameManager : MonoBehaviour
     {
         timerIsRunning = true;
         maxWaterHeight = new Vector2(water.transform.position.x, -9.8f);
-        water.transform.position = new Vector2(0, -30f);
+        water.transform.position = new Vector2(0, -36f);
+
+        molassesIntro.SetActive(false);
     }
 
     // Update is called once per frame
@@ -39,6 +42,7 @@ public class GameManager : MonoBehaviour
             }
             else
             {
+                molassesIntro.SetActive(true);
                 //Debug.Log("Game over!");
                 timeRemaining = 0;
                 timerIsRunning = false;
