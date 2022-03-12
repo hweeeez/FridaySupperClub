@@ -11,29 +11,18 @@ public class CountDown : MonoBehaviour
     private void Start()
     {
         StartCoroutine(StartDelay());
-        // StartCoroutine(CountdownToStart());
+
     }
 
-    /* IEnumerator CountdownToStart()
-     {
-         while (countdownTime > 0)
-         {
-             countdownDisplay.text = countdownTime.ToString();
-             yield return new WaitForSeconds(1f);
-             countdownTime--;
-         }
-         countdownDisplay.text = "GO!";
-         yield return new WaitForSeconds(1f);
 
-     }*/
     IEnumerator StartDelay()
     {
         Time.timeScale = 0;
         float pauseTime = Time.realtimeSinceStartup + 3.4f;
         while (Time.realtimeSinceStartup < pauseTime)
             yield return 0;
-        countDown.gameObject.SetActive(false);
-        GameManager.SetActive(true);
+        countDown.SetActive(false);
+        //GameManager.SetActive(true);
         Time.timeScale = 1;
     }
 }

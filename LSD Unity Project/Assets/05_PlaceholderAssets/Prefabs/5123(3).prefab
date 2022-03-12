@@ -123,6 +123,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   numberOfLives: 3
   playerLifeImage: {fileID: 8158411879373891571, guid: 0f5c00d40e85ff742bf28b16b683f48f, type: 3}
+  health: 3
   emptyLife: {fileID: 21300000, guid: a51834ee98754224994d6f7362d4eb20, type: 3}
   fillLife: {fileID: 21300000, guid: 2df47d3bb6245b7449f267a3fc20558b, type: 3}
   gridPos: {x: -11.1, y: -12.3}
@@ -149,7 +150,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   actionReference: {fileID: -2863195469134742232, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
-  spawnPos: {x: -19.7, y: -5.1, z: 0}
+  spawnPos: {x: -6.33, y: 16.1, z: 0}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -285,6 +286,14 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: de23f853-6d68-4325-a564-62b75ea33be3
     m_ActionName: Player1/Dash  IJKL[/Keyboard/j,/Keyboard/l]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 404c1e98-15d8-4f99-804d-fdfcb7a09077
+    m_ActionName: Player1/MouseClick[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2f5b79bb-e1de-47ec-b7c9-3d3f599653bf
+    m_ActionName: Player1/MousePosition[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard3
   m_DefaultActionMap: Player1
@@ -384,15 +393,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.09252
+      value: 1.0897887
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.24293603
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.07
+      value: 0.094
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.67
+      value: -1.751
       objectReference: {fileID: 0}
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_Size.x

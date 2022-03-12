@@ -145,6 +145,7 @@ public class Controller : MonoBehaviour
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
         if (isAttacked && !invulnerable)
         {
+            Debug.Log("attacked");
             anim.SetTrigger("Dead");
             invulnerable = true;
             lifeScript.LoseLife();

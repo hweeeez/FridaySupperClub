@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/02_Scripts/01_PlayerScripts/Player1.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/02_Scripts/03_CursorController/Player1.inputactions'
 
 using System;
 using System.Collections;
@@ -24,7 +24,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""id"": ""0c06fc2e-c03d-4182-b45e-c3a7a2f3ef69"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press,MultiTap""
                 },
                 {
                     ""name"": ""Jump"",

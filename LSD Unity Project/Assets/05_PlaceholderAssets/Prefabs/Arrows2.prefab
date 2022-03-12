@@ -150,7 +150,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   actionReference: {fileID: 5498996190181039899, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
-  spawnPos: {x: 20.79, y: -2.78, z: 0}
+  spawnPos: {x: 20.79, y: 16.1, z: 0}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -413,12 +413,16 @@ PrefabInstance:
       value: ground
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.20649563
+      objectReference: {fileID: 0}
+    - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.06
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.67
+      value: -1.643
       objectReference: {fileID: 0}
     - target: {fileID: 6648478455415243156, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_Layer
