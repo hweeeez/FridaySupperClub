@@ -6,7 +6,9 @@ using UnityEngine.UI;
 
 public class HealthSystem : MonoBehaviour
 {
-
+    public GameObject playerIcon;
+    public Sprite aliveIcon;
+    public Sprite deadIcon;
     private int numofLives;
     public int numberOfLives = 3;
     [SerializeField]
@@ -24,6 +26,8 @@ public class HealthSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instantiate(playerIcon);
+        playerIcon.GetComponent<SpriteRenderer>().sprite = aliveIcon;
         this.lifeImages = new List<GameObject>();
         for (int lifeIndex = 0; lifeIndex < this.numberOfLives; ++lifeIndex)
         {
@@ -36,9 +40,11 @@ public class HealthSystem : MonoBehaviour
     {
         if (health == 0)
         {
+            playerIcon.GetComponent<SpriteRenderer>().sprite = deadIcon;
+            Debug.Log("dead");
             foreach (GameObject lifeImage in lifeImages)
-                lifeImage.GetComponent<SpriteRenderer>().sprite = emptyLife;
-
+            { lifeImage.GetComponent<SpriteRenderer>().sprite = emptyLife; }
+            
         }
     }
 

@@ -121,6 +121,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44380064afd43de4390e93ee82770726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerIcon: {fileID: 556057226320055218, guid: fb935dcbe7721a74d8f61c1bef2ea2fe, type: 3}
+  aliveIcon: {fileID: 21300000, guid: af53120a1e5edc24d971bb5baf52bcbf, type: 3}
+  deadIcon: {fileID: 21300000, guid: 63480f404df0b534eb812885213c39c4, type: 3}
   numberOfLives: 3
   playerLifeImage: {fileID: 8158411879373891571, guid: 0f5c00d40e85ff742bf28b16b683f48f, type: 3}
   health: 3
@@ -393,7 +396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.0897887
+      value: 1.3077464
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalScale.y
