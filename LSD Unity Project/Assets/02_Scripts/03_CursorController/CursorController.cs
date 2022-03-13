@@ -4,17 +4,22 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 public class CursorController : MonoBehaviour
 {
+    private float timeInactive;
     [SerializeField]
     private InputAction mouseClick;
     public Texture2D cursor;
     public Texture2D cursorClicked;
     private AutoGen controls;
     private Camera mainCamera;
-
+    private Vector3 lastPos;
+    private Vector3 currentPos;
+    private float mouseActiveTime = 0f;
+    private bool isMoving;
+    private Vector2 mouseInput;
     // Start is called before the first frame update
     void Awake()
     {
-
+        lastPos = transform.position;
         controls = new AutoGen();
         mainCamera = Camera.main;
         ChangeCursor(cursor);
@@ -24,20 +29,23 @@ public class CursorController : MonoBehaviour
     {
         controls.Enable();
         mouseClick.Enable();
-        mouseClick.performed += MousePressed;
+
     }
     private void OnDisable()
     {
         controls.Disable();
         mouseClick.Disable();
-        mouseClick.performed -= MousePressed;
+
     }
     private void Start()
     {
         controls.Player1.MouseClick.started += _ => StartedClick();
         controls.Player1.MouseClick.performed += _ => EndedClick();
     }
-
+    public void OnMousePosition(InputAction.CallbackContext context)
+    {
+        mouseInput = context.ReadValue<Vector2>();
+    }
     private void StartedClick()
     {
         ChangeCursor(cursorClicked);
@@ -46,7 +54,7 @@ public class CursorController : MonoBehaviour
     private void EndedClick()
     {
         ChangeCursor(cursor);
-        DetectObject();
+
     }
     private void ChangeCursor(Texture2D cursorType)
     {
@@ -54,57 +62,22 @@ public class CursorController : MonoBehaviour
         Cursor.SetCursor(cursorType, Vector2.zero, CursorMode.Auto);
     }
 
-    private void MousePressed(InputAction.CallbackContext context)
+     void Update()
     {
-        Ray ray = mainCamera.ScreenPointToRay(Mouse.current.position.ReadValue());
-        RaycastHit2D hit2D = Physics2D.GetRayIntersection(ray);
-    }
-    private void DetectObject()
-    {
-        Ray ray = mainCamera.ScreenPointToRay(controls.Player1.MousePosition.ReadValue<Vector2>());
-        RaycastHit2D hits2D = Physics2D.GetRayIntersection(ray);
-        if (hits2D.collider != null)
+        
+        var mousePosition = controls.asset["MousePosition"].ReadValue<Vector2>();
+        currentPos = mousePosition;
+        if (currentPos != lastPos)
         {
-            IClick click = hits2D.collider.gameObject.GetComponent<IClick>();
-            if (click != null) click.onClickAction();
-            Debug.Log("Hit 2D Collider" + hits2D.collider.tag);
-
+            //StopCoroutine(HideCursor());
+            timeInactive = 0;
+            Cursor.visible = true; Cursor.lockState = CursorLockMode.None; 
+            
         }
-        /* Ray ray = mainCamera.ScreenPointToRay(controls.Player1.MousePosition.ReadValue<Vector2>());
-         RaycastHit hit;
-         if (Physics.Raycast(ray, out hit))
-         {
-             if (hit.collider != null)
-             {
-                 Debug.Log("3D Hit: +hit.collider.tag");
-             }
-         }*/
+        else { timeInactive += Time.deltaTime;
+            if (timeInactive > 2f) { Cursor.visible = false; Cursor.lockState = CursorLockMode.Locked; } }
 
-        /* RaycastHit[] hits = Physics.RaycastAll(ray, 200);
-  for (int i = 0; i < hits.Length; ++i)
-         {
-             if (hits[i].collider != null)
-             {
-                 Debug.Log("3D Hit All:" + hits[i]);
-             }
-         }
-         Physics.RaycastAll(ray, 200);
-     */
+        lastPos = currentPos;
     }
-    // Update is called once per frame
-    void Update()
-    {
-
-        Vector2 MousePosition = Camera.main.ScreenToWorldPoint(new Vector2(Input.mousePosition.x, Input.mousePosition.y));
-        if (Input.mousePosition == null)
-        {
-            StartCoroutine(HideCursor());
-        }
-        else { Cursor.visible = true; }
-    }
-    private IEnumerator HideCursor()
-    {
-        yield return new WaitForSeconds(1);
-        Cursor.visible = false;
-    }
+  
 }

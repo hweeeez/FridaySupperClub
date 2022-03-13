@@ -31,8 +31,10 @@ public class Controller : MonoBehaviour
     private float MaxDashTime = 1.5f;
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
+    private bool hasJumped = false;
+    private float dropGravity = -60.91f;
     private float jumpGravity = -65.81f;
-    private float fallGravity = -95.81f;
+    private float fallingGravity = -95.81f;
     private float slamGravity = -160f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
@@ -152,7 +154,7 @@ public class Controller : MonoBehaviour
             StartCoroutine(RespawnPlayer());
         }
 
-        Debug.DrawRay(transform.position, ray.direction, Color.red);
+        float fallGravity = hasJumped ? fallingGravity : dropGravity;
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
         float playerSpeed = isDashing ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
@@ -217,6 +219,7 @@ public class Controller : MonoBehaviour
 
         if (tryAccelerate)
         {
+            hasJumped = true;
             bool maxHeightExceeded = jumpedDistance > maxHeight;
             if (startedJump && !maxHeightExceeded)
             {
@@ -235,6 +238,7 @@ public class Controller : MonoBehaviour
         }
         else if (controller.isGrounded)
         {
+            hasJumped = false;
             slamming = false;
             playerVelocity.y = 0;
         }
@@ -270,6 +274,7 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
+       
     }
     private void OnTriggerEnter(Collider other)
     {

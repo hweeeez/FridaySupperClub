@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class GameManager : MonoBehaviour
+public class MolassesScript : MonoBehaviour
 {
 
     //Timer
-    float timeRemaining = 3; //5 minutes = 300 seconds
+    float timeRemaining = 120; //5 minutes = 300 seconds
     bool timerIsRunning = false;
     public GameObject timerText;
 

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameButtons : MonoBehaviour
 {
@@ -9,8 +10,19 @@ public class GameButtons : MonoBehaviour
     public void openPause()
     {
         pauseMenu.SetActive(true);
+        Time.timeScale = 0;
     }
-
+    public void continueGame()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+    }
+    public void restartGame()
+    {
+        pauseMenu.SetActive(false);
+        Time.timeScale = 1;
+        SceneManager.LoadScene("PlayableTest01");
+    }
   
     // Start is called before the first frame update
     void Start()
