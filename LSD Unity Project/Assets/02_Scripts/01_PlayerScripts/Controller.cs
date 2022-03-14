@@ -7,6 +7,8 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    Collider collider;
+    public Transform feetTransform;
     SpriteRenderer spriteRender;
     Animator anim;
     Rigidbody playerRB;
@@ -32,9 +34,12 @@ public class Controller : MonoBehaviour
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
     private bool hasJumped = false;
-    private float dropGravity = -60.91f;
+    private float dropGravity = -65.91f;
+    [SerializeField]
     private float jumpGravity = -85.81f;
+    [SerializeField]
     private float fallingGravity = -95.81f;
+    [SerializeField]
     private float slamGravity = -280f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
@@ -53,12 +58,13 @@ public class Controller : MonoBehaviour
     private bool canDash;
     private void Awake()
     {
+        Collider feetCollider = ColliderTransform.GetChild(0).GetComponent<collider>();
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
         anim = gameObject.GetComponent<Animator>();
         playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
         lifeScript = gameObject.GetComponent<HealthSystem>();
-
+        collider = gameObject.GetComponent<collider>();
     }
     private void Start()
     {
@@ -125,6 +131,9 @@ public class Controller : MonoBehaviour
     }
     IEnumerator RespawnPlayer()
     {
+        controller.detectCollisions = false;
+        feetCollider.enabled = false;
+        collider.enabled = false;
         controller.enabled = false;
         playerRB.constraints = RigidbodyConstraints.FreezeAll;
         yield return new WaitForSeconds(1.1f);
@@ -134,6 +143,9 @@ public class Controller : MonoBehaviour
         yield return new WaitForSeconds(1f);
         invulnerable = false;
         controller.enabled = true;
+        feetCollider.enabled = true;
+        collider.enabled = true;
+        controller.detectCollisions = true;
 
     }
 
