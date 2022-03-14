@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  feetTransform: {fileID: 8876327421701773602}
   groundcheck: 0
   groundCheck: {fileID: 8204520651651225929}
   isColliding: 0
@@ -153,6 +154,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   actionReference: {fileID: 5498996190181039899, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
+  jumpGravity: -85.81
+  fallingGravity: -95.81
+  slamGravity: -280
   spawnPos: {x: 20.79, y: 16.1, z: 0}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
@@ -417,7 +421,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.1008749
+      value: 0.7706124
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalScale.y
@@ -425,7 +429,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06
+      value: -0.03
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.y

@@ -7,7 +7,9 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
-    Collider collider;
+    Color color;
+    Collider collider; 
+    Collider feetCollider;
     public Transform feetTransform;
     SpriteRenderer spriteRender;
     Animator anim;
@@ -58,16 +60,21 @@ public class Controller : MonoBehaviour
     private bool canDash;
     private void Awake()
     {
-        Collider feetCollider = ColliderTransform.GetChild(0).GetComponent<collider>();
+        feetCollider = feetTransform.GetComponent<Collider>();
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
+        color = spriteRender.color;
         anim = gameObject.GetComponent<Animator>();
         playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
         lifeScript = gameObject.GetComponent<HealthSystem>();
-        collider = gameObject.GetComponent<collider>();
+        collider = gameObject.GetComponent<Collider>();
     }
     private void Start()
     {
+        controller.enabled = true;
+        feetCollider.enabled = true;
+        collider.enabled = true;
+        controller.detectCollisions = true;
         currentDashTime = MaxDashTime;
     }
 
@@ -134,15 +141,49 @@ public class Controller : MonoBehaviour
         controller.detectCollisions = false;
         feetCollider.enabled = false;
         collider.enabled = false;
-        controller.enabled = false;
-        playerRB.constraints = RigidbodyConstraints.FreezeAll;
-        yield return new WaitForSeconds(1.1f);
-        this.transform.position = spawnPos;
-        anim.ResetTrigger("Dead");
-        playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
+        //controller.enabled = false;
+        playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;
         yield return new WaitForSeconds(1f);
-        invulnerable = false;
-        controller.enabled = true;
+        this.transform.position = spawnPos;
+        //controller.enabled = true;
+        anim.ResetTrigger("Dead");
+        color.a =  0.5f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 1f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 0.5f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 1f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 0.5f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 1f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 0.5f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 1f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 0.5f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 1f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 0.5f;
+        spriteRender.color = color;
+        yield return new WaitForSeconds(.1f);
+        color.a = 1f;
+        spriteRender.color = color;
+        playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
+        invulnerable = false;        
         feetCollider.enabled = true;
         collider.enabled = true;
         controller.detectCollisions = true;
@@ -152,15 +193,16 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        print(lifeScript.health);
+       // print(collider.enabled);
         //ceilingcheck
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
         if (isAttacked && !invulnerable)
         {
-            Debug.Log("attacked");
+     
             anim.SetTrigger("Dead");
+            StartCoroutine(RespawnPlayer());
             invulnerable = true;
             lifeScript.LoseLife();
             StartCoroutine(RespawnPlayer());
@@ -283,8 +325,8 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
-        Debug.Log("pvy");
-        Debug.Log(playerVelocity.y);
+        
+        //Debug.Log(playerVelocity.y);
     }
     private void OnTriggerEnter(Collider other)
     {
