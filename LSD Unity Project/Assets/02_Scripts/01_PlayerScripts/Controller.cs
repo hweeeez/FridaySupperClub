@@ -33,9 +33,9 @@ public class Controller : MonoBehaviour
     private float currentDashTime;
     private bool hasJumped = false;
     private float dropGravity = -60.91f;
-    private float jumpGravity = -65.81f;
+    private float jumpGravity = -85.81f;
     private float fallingGravity = -95.81f;
-    private float slamGravity = -160f;
+    private float slamGravity = -280f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
     public Vector3 spawnPos;
@@ -236,7 +236,7 @@ public class Controller : MonoBehaviour
                 playerVelocity.y = 0;
             }
         }
-        else if (controller.isGrounded)
+        else if (controller.isGrounded && !tryAccelerate)
         {
             hasJumped = false;
             slamming = false;
@@ -245,10 +245,7 @@ public class Controller : MonoBehaviour
         if (playerVelocity.y > 0)
         {
             canDash = false;
-            /*  if (controller.detectCollisions == true)
-              {
-                  startedJump = false;
-              }*/
+
         }
         if (slamming && !controller.isGrounded)
         {
@@ -274,7 +271,8 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
-       
+        Debug.Log("pvy");
+        Debug.Log(playerVelocity.y);
     }
     private void OnTriggerEnter(Collider other)
     {

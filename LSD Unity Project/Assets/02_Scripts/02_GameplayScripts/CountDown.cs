@@ -20,10 +20,11 @@ public class CountDown : MonoBehaviour
         Time.timeScale = 0;
         float pauseTime = Time.realtimeSinceStartup + 3.4f;
         while (Time.realtimeSinceStartup < pauseTime)
-            yield return 0;
-        countDown.SetActive(false);
-        //GameManager.SetActive(true);
+        { yield return 0; }
+        GameManager.SetActive(true);
         Time.timeScale = 1;
+
+        countDown.SetActive(false);
     }
 }
 

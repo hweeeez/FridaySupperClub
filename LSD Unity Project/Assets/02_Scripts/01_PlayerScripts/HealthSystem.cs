@@ -26,7 +26,7 @@ public class HealthSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(playerIcon);
+        playerIcon = Instantiate(playerIcon);
         playerIcon.GetComponent<SpriteRenderer>().sprite = aliveIcon;
         this.lifeImages = new List<GameObject>();
         for (int lifeIndex = 0; lifeIndex < this.numberOfLives; ++lifeIndex)
@@ -44,7 +44,7 @@ public class HealthSystem : MonoBehaviour
             Debug.Log("dead");
             foreach (GameObject lifeImage in lifeImages)
             { lifeImage.GetComponent<SpriteRenderer>().sprite = emptyLife; }
-            
+
         }
     }
 
