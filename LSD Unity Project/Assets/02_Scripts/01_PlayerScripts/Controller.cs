@@ -200,7 +200,14 @@ public class Controller : MonoBehaviour
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
         if (isAttacked && !invulnerable)
         {
-     
+            startedJump = false;
+            if (playerVelocity.y > 0)
+            { playerVelocity.y += -140f * Time.deltaTime;
+                controller.Move(playerVelocity * Time.deltaTime);
+            }
+            if (playerVelocity.y < 0)
+            { playerVelocity.y =0;
+                controller.Move(playerVelocity * Time.deltaTime); }                 
             anim.SetTrigger("Dead");
             StartCoroutine(RespawnPlayer());
             invulnerable = true;
