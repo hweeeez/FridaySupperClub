@@ -59,7 +59,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -103,6 +103,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44380064afd43de4390e93ee82770726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerIcon: {fileID: 0}
+  aliveIcon: {fileID: 0}
+  deadIcon: {fileID: 0}
   numberOfLives: 3
   playerLifeImage: {fileID: 4511206266648666129, guid: 5fa5e647f9ca96247946b0199fc30ca4, type: 3}
   health: 3
@@ -139,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  feetTransform: {fileID: 0}
   groundcheck: 0
   groundCheck: {fileID: 5502757190978252275}
   isColliding: 0
@@ -150,6 +154,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   actionReference: {fileID: -7197453741310385100, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
+  jumpGravity: -85.81
+  fallingGravity: -95.81
+  slamGravity: -280
   spawnPos: {x: 20.9, y: 9.6, z: 0}
 --- !u!136 &7104238988279009777
 CapsuleCollider:
