@@ -607,6 +607,11 @@
                     "isOR": false
                 }
             ]
+        },
+        {
+            "name": "CharSelect",
+            "bindingGroup": "CharSelect",
+            "devices": []
         }
     ]
 }

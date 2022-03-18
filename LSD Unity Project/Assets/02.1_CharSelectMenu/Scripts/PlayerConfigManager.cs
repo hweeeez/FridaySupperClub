@@ -36,7 +36,7 @@ public class PlayerConfigManager : MonoBehaviour
         playerConfigs[index].IsReady = true;
         if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.IsReady == true))
         {
-            SceneManager.LoadScene("HweePlayScene_01");
+            SceneManager.LoadScene("PlayableTest01");
         }
     }
 

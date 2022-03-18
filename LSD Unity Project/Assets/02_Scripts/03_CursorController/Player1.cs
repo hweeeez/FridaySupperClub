@@ -620,6 +620,11 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""isOR"": false
                 }
             ]
+        },
+        {
+            ""name"": ""CharSelect"",
+            ""bindingGroup"": ""CharSelect"",
+            ""devices"": []
         }
     ]
 }");
@@ -819,6 +824,15 @@ public class @AutoGen : IInputActionCollection, IDisposable
         {
             if (m_Keyboard4SchemeIndex == -1) m_Keyboard4SchemeIndex = asset.FindControlSchemeIndex("Keyboard4");
             return asset.controlSchemes[m_Keyboard4SchemeIndex];
+        }
+    }
+    private int m_CharSelectSchemeIndex = -1;
+    public InputControlScheme CharSelectScheme
+    {
+        get
+        {
+            if (m_CharSelectSchemeIndex == -1) m_CharSelectSchemeIndex = asset.FindControlSchemeIndex("CharSelect");
+            return asset.controlSchemes[m_CharSelectSchemeIndex];
         }
     }
     public interface IPlayer1Actions

@@ -44,8 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
-  m_NotificationBehavior: 0
+  m_Actions: {fileID: -944628639613478452, guid: 42b548d0b9ad0094b8d89b8b2c12f7a9, type: 3}
+  m_NotificationBehavior: 3
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
     m_PersistentCalls:
@@ -57,9 +57,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ActionEvents: []
-  m_NeverAutoSwitchControlSchemes: 0
+  m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: 
-  m_DefaultActionMap: Player1
+  m_DefaultActionMap: CharSelect
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
 --- !u!114 &-6891752259284917405
@@ -74,5 +74,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4887b2863daab544d952e599d29a9f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playersetupmenuPrefab: {fileID: 7510710178322114018, guid: 7c48b9eb4e2c0c943a2fbfb1c388de50, type: 3}
+  playersetupmenuPrefab: {fileID: 7666439747113261534, guid: 3dbac05da10277f41b0018e0aba2b1d8, type: 3}
   input: {fileID: 7657182378987568287}

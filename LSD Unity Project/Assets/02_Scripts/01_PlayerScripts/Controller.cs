@@ -7,8 +7,10 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    public Material hitMaterial;
+    public Material defMaterial;
     Color color;
-    Collider collider; 
+    Collider capcollider; 
     Collider feetCollider;
     public Transform feetTransform;
     SpriteRenderer spriteRender;
@@ -67,13 +69,14 @@ public class Controller : MonoBehaviour
         playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
         lifeScript = gameObject.GetComponent<HealthSystem>();
-        collider = gameObject.GetComponent<Collider>();
+        capcollider = gameObject.GetComponent<Collider>();
+        spriteRender.material = defMaterial;
     }
     private void Start()
     {
         controller.enabled = true;
         feetCollider.enabled = true;
-        collider.enabled = true;
+        capcollider.enabled = true;
         controller.detectCollisions = true;
         currentDashTime = MaxDashTime;
     }
@@ -140,52 +143,26 @@ public class Controller : MonoBehaviour
     {
         controller.detectCollisions = false;
         feetCollider.enabled = false;
-        collider.enabled = false;
+        capcollider.enabled = false;
         //controller.enabled = false;
         playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;
         yield return new WaitForSeconds(1f);
         this.transform.position = spawnPos;
+        capcollider.enabled = true;
         //controller.enabled = true;
         anim.ResetTrigger("Dead");
-        color.a =  0.5f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 1f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 0.5f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 1f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 0.5f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 1f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 0.5f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 1f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 0.5f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 1f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 0.5f;
-        spriteRender.color = color;
-        yield return new WaitForSeconds(.1f);
-        color.a = 1f;
-        spriteRender.color = color;
+        for (int i = 0; i < 10; i++)
+        {
+            spriteRender.material = hitMaterial;
+            yield return new WaitForSeconds(0.08f);
+            spriteRender.material = defMaterial;
+            yield return new WaitForSeconds(0.08f);
+
+        }
         playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
         invulnerable = false;        
         feetCollider.enabled = true;
-        collider.enabled = true;
+        
         controller.detectCollisions = true;
 
     }
@@ -205,7 +182,7 @@ public class Controller : MonoBehaviour
             { playerVelocity.y += -140f * Time.deltaTime;
                 controller.Move(playerVelocity * Time.deltaTime);
             }
-            if (playerVelocity.y < 0)
+            if (playerVelocity.y <= 0)
             { playerVelocity.y =0;
                 controller.Move(playerVelocity * Time.deltaTime); }                 
             anim.SetTrigger("Dead");
