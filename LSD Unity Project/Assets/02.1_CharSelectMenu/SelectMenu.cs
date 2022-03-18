@@ -19,78 +19,31 @@ public class @SelectMenu : IInputActionCollection, IDisposable
             ""id"": ""3a50fd1b-d13a-48f6-bd98-c4f840fa92b7"",
             ""actions"": [
                 {
-                    ""name"": ""Movement"",
-                    ""type"": ""Button"",
-                    ""id"": ""6b03a214-4890-4965-911e-fa4f09fe4383"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """"
-                },
-                {
                     ""name"": ""Select"",
                     ""type"": ""Button"",
                     ""id"": ""adfd1ac1-9800-4bb7-a310-ee16bd91d5ed"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Left"",
+                    ""type"": ""Button"",
+                    ""id"": ""acc470d0-5340-4115-95d8-e76c66ce051f"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
+                },
+                {
+                    ""name"": ""Right"",
+                    ""type"": ""Button"",
+                    ""id"": ""7d71ec8b-3ccb-4198-96f7-e2f2741d7328"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
-                {
-                    ""name"": ""WASD"",
-                    ""id"": ""16e0ef5b-fb6d-49fd-9811-d030e34e9d13"",
-                    ""path"": ""2DVector"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": true,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": ""up"",
-                    ""id"": ""c5c74f71-e424-4b29-a7e6-301fdb88c051"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""41ae56bf-85fb-481b-a800-5a6b025b5a47"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""ddce3ae4-7ac5-4d49-8589-6e079582ac9d"",
-                    ""path"": ""<Keyboard>/a"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""right"",
-                    ""id"": ""50d4099d-5454-48f2-bdcf-027e73fe83f4"",
-                    ""path"": ""<Keyboard>/d"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
                 {
                     ""name"": """",
                     ""id"": ""2e8dbb8d-2ec1-417f-a635-d148487e127e"",
@@ -101,6 +54,94 @@ public class @SelectMenu : IInputActionCollection, IDisposable
                     ""action"": ""Select"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7f09cd0a-0efb-440a-85b2-09406b7ba39d"",
+                    ""path"": ""<Keyboard>/leftArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""500e1a6c-6ad8-4c49-b88e-4ceee8a4b822"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a676a92f-8caa-4ecc-8a19-ba2dfb2065b0"",
+                    ""path"": ""<Keyboard>/j"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c0f4e538-273e-43c3-b774-a1ae094ddd18"",
+                    ""path"": ""<Keyboard>/numpad4"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Left"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f133392e-4a8a-4e4f-9488-5744060fc823"",
+                    ""path"": ""<Keyboard>/rightArrow"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""259485c7-43bc-4981-b952-52124e16bad0"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""b52a8073-f1f7-40aa-888f-a73b5dd196b4"",
+                    ""path"": ""<Keyboard>/l"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""44d10c7e-073a-436c-a7df-67113732f1a9"",
+                    ""path"": ""<Keyboard>/numpad6"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Right"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -109,8 +150,9 @@ public class @SelectMenu : IInputActionCollection, IDisposable
 }");
         // CharSelect
         m_CharSelect = asset.FindActionMap("CharSelect", throwIfNotFound: true);
-        m_CharSelect_Movement = m_CharSelect.FindAction("Movement", throwIfNotFound: true);
         m_CharSelect_Select = m_CharSelect.FindAction("Select", throwIfNotFound: true);
+        m_CharSelect_Left = m_CharSelect.FindAction("Left", throwIfNotFound: true);
+        m_CharSelect_Right = m_CharSelect.FindAction("Right", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -160,14 +202,16 @@ public class @SelectMenu : IInputActionCollection, IDisposable
     // CharSelect
     private readonly InputActionMap m_CharSelect;
     private ICharSelectActions m_CharSelectActionsCallbackInterface;
-    private readonly InputAction m_CharSelect_Movement;
     private readonly InputAction m_CharSelect_Select;
+    private readonly InputAction m_CharSelect_Left;
+    private readonly InputAction m_CharSelect_Right;
     public struct CharSelectActions
     {
         private @SelectMenu m_Wrapper;
         public CharSelectActions(@SelectMenu wrapper) { m_Wrapper = wrapper; }
-        public InputAction @Movement => m_Wrapper.m_CharSelect_Movement;
         public InputAction @Select => m_Wrapper.m_CharSelect_Select;
+        public InputAction @Left => m_Wrapper.m_CharSelect_Left;
+        public InputAction @Right => m_Wrapper.m_CharSelect_Right;
         public InputActionMap Get() { return m_Wrapper.m_CharSelect; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -177,29 +221,36 @@ public class @SelectMenu : IInputActionCollection, IDisposable
         {
             if (m_Wrapper.m_CharSelectActionsCallbackInterface != null)
             {
-                @Movement.started -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnMovement;
-                @Movement.performed -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnMovement;
-                @Movement.canceled -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnMovement;
                 @Select.started -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnSelect;
                 @Select.performed -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnSelect;
                 @Select.canceled -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnSelect;
+                @Left.started -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnLeft;
+                @Left.performed -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnLeft;
+                @Left.canceled -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnLeft;
+                @Right.started -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnRight;
+                @Right.performed -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnRight;
+                @Right.canceled -= m_Wrapper.m_CharSelectActionsCallbackInterface.OnRight;
             }
             m_Wrapper.m_CharSelectActionsCallbackInterface = instance;
             if (instance != null)
             {
-                @Movement.started += instance.OnMovement;
-                @Movement.performed += instance.OnMovement;
-                @Movement.canceled += instance.OnMovement;
                 @Select.started += instance.OnSelect;
                 @Select.performed += instance.OnSelect;
                 @Select.canceled += instance.OnSelect;
+                @Left.started += instance.OnLeft;
+                @Left.performed += instance.OnLeft;
+                @Left.canceled += instance.OnLeft;
+                @Right.started += instance.OnRight;
+                @Right.performed += instance.OnRight;
+                @Right.canceled += instance.OnRight;
             }
         }
     }
     public CharSelectActions @CharSelect => new CharSelectActions(this);
     public interface ICharSelectActions
     {
-        void OnMovement(InputAction.CallbackContext context);
         void OnSelect(InputAction.CallbackContext context);
+        void OnLeft(InputAction.CallbackContext context);
+        void OnRight(InputAction.CallbackContext context);
     }
 }

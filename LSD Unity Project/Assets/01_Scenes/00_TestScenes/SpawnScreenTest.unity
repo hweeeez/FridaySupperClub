@@ -296,7 +296,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1358104217
 Transform:
   m_ObjectHideFlags: 0
@@ -443,10 +443,14 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: adfd1ac1-9800-4bb7-a310-ee16bd91d5ed
+    m_ActionName: CharSelect/Select[/Keyboard/space]
+  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1418470187}
         m_TargetAssemblyTypeName: SelectChar, Assembly-CSharp
-        m_MethodName: OnSelecting
+        m_MethodName: OnLeft
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -456,12 +460,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-    m_ActionId: 6b03a214-4890-4965-911e-fa4f09fe4383
-    m_ActionName: CharSelect/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/j,/Keyboard/l]
+    m_ActionId: acc470d0-5340-4115-95d8-e76c66ce051f
+    m_ActionName: CharSelect/Left[/Keyboard/leftArrow]
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: adfd1ac1-9800-4bb7-a310-ee16bd91d5ed
-    m_ActionName: CharSelect/Select[/Keyboard/space]
+      m_Calls:
+      - m_Target: {fileID: 1418470187}
+        m_TargetAssemblyTypeName: SelectChar, Assembly-CSharp
+        m_MethodName: OnRight
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 7d71ec8b-3ccb-4198-96f7-e2f2741d7328
+    m_ActionName: CharSelect/Right[/Keyboard/rightArrow]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: CharSelect
