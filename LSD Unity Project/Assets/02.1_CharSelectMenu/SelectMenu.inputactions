@@ -34,10 +34,43 @@
                 {
                     "name": "",
                     "id": "2e8dbb8d-2ec1-417f-a635-d148487e127e",
-                    "path": "<Keyboard>/space",
-                    "interactions": "Press(behavior=2)",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard2",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0caa6077-6966-4f07-bbe2-497c97c228b5",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard1",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "da855944-6b7b-487a-9d36-329a09222282",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard3",
+                    "action": "Select",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "51b8dad2-9eb9-4471-b834-93bade6ffbb1",
+                    "path": "<Keyboard>/numpad8",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard4",
                     "action": "Select",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -48,7 +81,7 @@
                     "path": "<Keyboard>/leftArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard2",
                     "action": "Left",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -59,7 +92,7 @@
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard1",
                     "action": "Left",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -70,7 +103,7 @@
                     "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard3",
                     "action": "Left",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -81,7 +114,7 @@
                     "path": "<Keyboard>/numpad4",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard4",
                     "action": "Left",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -92,7 +125,7 @@
                     "path": "<Keyboard>/rightArrow",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard2",
                     "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -103,7 +136,7 @@
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard1",
                     "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -114,7 +147,7 @@
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard3",
                     "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -125,7 +158,7 @@
                     "path": "<Keyboard>/numpad6",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Keyboard4",
                     "action": "Right",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -133,5 +166,26 @@
             ]
         }
     ],
-    "controlSchemes": []
+    "controlSchemes": [
+        {
+            "name": "Keyboard1",
+            "bindingGroup": "Keyboard1",
+            "devices": []
+        },
+        {
+            "name": "Keyboard2",
+            "bindingGroup": "Keyboard2",
+            "devices": []
+        },
+        {
+            "name": "Keyboard3",
+            "bindingGroup": "Keyboard3",
+            "devices": []
+        },
+        {
+            "name": "Keyboard4",
+            "bindingGroup": "Keyboard4",
+            "devices": []
+        }
+    ]
 }

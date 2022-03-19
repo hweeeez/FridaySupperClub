@@ -6,6 +6,7 @@ using UnityEngine.InputSystem.UI;
 
 public class SpawnPlayerSetupMenu : MonoBehaviour
 {
+    public GameObject charlist;
     public GameObject playersetupmenuPrefab;
     public PlayerInput input;
     private void Awake()
@@ -15,7 +16,7 @@ public class SpawnPlayerSetupMenu : MonoBehaviour
         {
             var menu = Instantiate(playersetupmenuPrefab, rootMenu.transform);
             input.uiInputModule = menu.GetComponentInChildren<InputSystemUIInputModule>();
-            menu.GetComponent<PlayerSetupMenuManager>().setPlayerindex(input.playerIndex);
+           // menu.GetComponent<SelectChar>().setPlayerindex(input.playerIndex);
         }
     }
 
