@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6151093433109889998}
   - component: {fileID: 1558157894792315857}
   m_Layer: 0
-  m_Name: CharacterList
+  m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46,12 +46,12 @@ CharacterController:
   m_GameObject: {fileID: 4535869762573773693}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 0
+  m_Radius: 0
   m_SlopeLimit: 45
-  m_StepOffset: 0.3
+  m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
@@ -67,13 +67,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa75eb4559ca1dc43aab051753bd2d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  titleText: {fileID: 0}
+  configManagerObj: {fileID: 2130741575401582097, guid: a8af8b825a3dc0e46aff8b59057ec8ad, type: 3}
   characterList:
   - {fileID: 4535869762644348610}
   - {fileID: 4535869762888018537}
   - {fileID: 4535869762719725045}
   - {fileID: 4535869762895814167}
   readySprite: {fileID: 0}
+  isReady: 0
 --- !u!114 &1558157894792315857
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -104,19 +105,7 @@ MonoBehaviour:
       - m_Target: {fileID: 6151093433109889998}
         m_TargetAssemblyTypeName: SelectChar, Assembly-CSharp
         m_MethodName: OnSelect
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: PlayerConfigManager, Assembly-CSharp
-        m_MethodName: ReadyPlayer
-        m_Mode: 3
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -159,8 +148,8 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 7d71ec8b-3ccb-4198-96f7-e2f2741d7328
     m_ActionName: CharSelect/Right[/Keyboard/rightArrow]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
+  m_NeverAutoSwitchControlSchemes: 1
+  m_DefaultControlScheme: Keyboard2
   m_DefaultActionMap: CharSelect
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

@@ -9,21 +9,19 @@ using UnityEngine.UI;
 public class SelectChar : MonoBehaviour
 {
     private int playerIndex;
-    [SerializeField]
-    private TextMeshProUGUI titleText;
-    private float ignoreInputTime = 1.5f;
     private bool inputEnabled;
+    public GameObject configManagerObj;
     private PlayerConfigManager configManager;
     private float value;
     private int index;
     public GameObject[] characterList;
     private float playerInput;
     public Sprite readySprite;
-
+    public bool isReady = false;
     private void Start()
     {
         //index = PlayerPrefs.GetInt("CharacterSelected");
-        configManager = GameObject.Find("PlayerConfigManager").GetComponent<PlayerConfigManager>();
+        configManager = configManagerObj.GetComponent<PlayerConfigManager>();
         characterList = new GameObject[transform.childCount];
         for (int i = 0; i < transform.childCount; i++)
         {
@@ -35,16 +33,11 @@ public class SelectChar : MonoBehaviour
         if (characterList[0])
             characterList[0].SetActive(true);
     }
-    public void setPlayerindex(int pi)
-    {
-        playerIndex = pi;
-        titleText.SetText("Player" + (pi + 1).ToString());
-        //ignoreInputTime = Time.time + ignoreInputTime;
 
-    }
 
     public void OnLeft(InputAction.CallbackContext context)
     {
+        print("left!");
         if (context.performed)
         {
             characterList[index].SetActive(false);
@@ -70,19 +63,21 @@ public class SelectChar : MonoBehaviour
         }
     }
 
-    public void OnSelect()
+    public void OnSelect(InputAction.CallbackContext context)
     {
-        
-        readySprite = characterList[index].GetComponent<Sprite>();
-        if (!inputEnabled) { return; }
-
-        //PlayerConfigManager.Instance.SetPlayerChar(playerIndex, readySprite);
-        PlayerConfigManager.Instance.ReadyPlayer(playerIndex);
+        if (context.performed)
+        {
+           isReady = true;
+            readySprite = characterList[index].GetComponent<SpriteRenderer>().sprite;
+        }
     }
     // Update is called once per frame
     void Update()
     {
-     
+        if (this.transform.localScale == Vector3.zero)
+        {
+            characterList[0].SetActive(true);
+        }
     }
 
 }

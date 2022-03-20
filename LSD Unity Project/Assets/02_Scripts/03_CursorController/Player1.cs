@@ -403,7 +403,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/numpad2"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard2;Keyboard3"",
+                    ""groups"": ""Keyboard3"",
                     ""action"": ""Slam"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false

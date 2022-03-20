@@ -44,6 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 377652b15b6a9b548838dc95fe191014, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 4535869762573773693, guid: 3809ee6cf695b0643a7ad5df50357fd7, type: 3}
+  p1: {fileID: 4535869762573773693, guid: fbd0d88ca27b37044adb48a03b5f35c9, type: 3}
+  p2: {fileID: 4535869762573773693, guid: 1fdf3c00b3e56da4ca411a1973c9d825, type: 3}
+  p3: {fileID: 4535869762573773693, guid: bacb09fe0e4a1694bbdd243cfd981900, type: 3}
+  p4: {fileID: 4535869762573773693, guid: 3809ee6cf695b0643a7ad5df50357fd7, type: 3}
+  selectMenu: {fileID: -944628639613478452, guid: 42b548d0b9ad0094b8d89b8b2c12f7a9, type: 3}
   MaxPlayers: 4
 --- !u!114 &2130741575401582096
 MonoBehaviour:
