@@ -246,7 +246,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 {
                     ""name"": ""left"",
                     ""id"": ""4a7fc0c4-5690-44a2-b765-6cdcd4002974"",
-                    ""path"": ""<Keyboard>/numpad1"",
+                    ""path"": ""<Keyboard>/numpad4"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard3"",
@@ -257,7 +257,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 {
                     ""name"": ""right"",
                     ""id"": ""52605e2a-716c-422c-b11f-6c65f540246c"",
-                    ""path"": ""<Keyboard>/numpad3"",
+                    ""path"": ""<Keyboard>/numpad6"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard3"",
@@ -345,7 +345,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""06f61648-cf27-4fd0-af99-8ab82b7797b6"",
-                    ""path"": ""<Keyboard>/numpad5"",
+                    ""path"": ""<Keyboard>/numpad8"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard3"",
@@ -400,7 +400,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""be2ecec3-48b7-475b-97d8-8a956eca6142"",
-                    ""path"": ""<Keyboard>/numpad2"",
+                    ""path"": ""<Keyboard>/numpad5"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard3"",

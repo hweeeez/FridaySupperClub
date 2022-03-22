@@ -5,14 +5,16 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
-public class PlayerConfigManager : MonoBehaviour { 
+public class PlayerConfigManager : MonoBehaviour
+{
     private bool readyUp;
     private List<PlayerInput> players;
     private List<GameObject> playerobj;
-    static PlayerInput player1;
-    static PlayerInput player2;
-    static PlayerInput player3;
-    static PlayerInput player4;
+    public string sprite1;
+    public string sprite2;
+    public string sprite3;
+    public string sprite4;
+
     public GameObject p1;
     public GameObject p2;
     public GameObject p3;
@@ -21,10 +23,13 @@ public class PlayerConfigManager : MonoBehaviour {
     public GameObject g2;
     public GameObject g3;
     public GameObject g4;
-    private SelectChar selectChar;
-    public InputActionAsset selectMenu;
 
-    private PlayerInputManager PlayerInputManager;
+    private bool p1Ready;
+    private bool p2Ready;
+    private bool p3Ready;
+    private bool p4Ready;
+
+
     [SerializeField]
     private int MaxPlayers = 4;
     public static PlayerConfigManager Instance { get; private set; }
@@ -33,23 +38,19 @@ public class PlayerConfigManager : MonoBehaviour {
 
         players = new List<PlayerInput>();
         playerobj = new List<GameObject>();
-        PlayerInputManager = this.GetComponent<PlayerInputManager>();
-  
-        player1 = PlayerInput.Instantiate(prefab: p1, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current);
-        player2 = PlayerInput.Instantiate(prefab: p2, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current);
-        player3 = PlayerInput.Instantiate(prefab: p3, playerIndex: 2, controlScheme: "Keyboard3", pairWithDevice: Keyboard.current);
-        player4 = PlayerInput.Instantiate(prefab: p4, playerIndex: 3, controlScheme: "Keyboard4", pairWithDevice: Keyboard.current);
+
+        var player1 = PlayerInput.Instantiate(prefab: p1, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current);
+        var player2 = PlayerInput.Instantiate(prefab: p2, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current);
+        var player3 = PlayerInput.Instantiate(prefab: p3, playerIndex: 2, controlScheme: "Keyboard3", pairWithDevice: Keyboard.current);
+        var player4 = PlayerInput.Instantiate(prefab: p4, playerIndex: 3, controlScheme: "Keyboard4", pairWithDevice: Keyboard.current);
         g1 = GameObject.Find("Player1(Clone)");
         g2 = GameObject.Find("Player2(Clone)");
         g3 = GameObject.Find("Player3(Clone)");
         g4 = GameObject.Find("Player4(Clone)");
-    
-/*        g2.GetComponent<SelectChar>().enabled = false;
+
         g2.transform.localScale = new Vector3(0, 0, 0);
-        g3.GetComponent<SelectChar>().enabled = false;
         g3.transform.localScale = new Vector3(0, 0, 0);
-        g4.GetComponent<SelectChar>().enabled = false;
-        g4.transform.localScale = new Vector3(0, 0, 0);*/
+        g4.transform.localScale = new Vector3(0, 0, 0);
         if (Instance != null)
         {
             Debug.Log("create instance of singleton");
@@ -65,58 +66,73 @@ public class PlayerConfigManager : MonoBehaviour {
 
         if (g1.GetComponent<SelectChar>().isReady)
         {
+            sprite1 = g1.GetComponent<SelectChar>().readySprite.name;
+            PlayerPrefs.SetString("Sprite1", sprite1);
+            p1Ready = true;
             print("p1ready");
-            g1.GetComponent<SelectChar>().enabled = false;
+            //g1.GetComponent<SelectChar>().enabled = false;
             g1.transform.localScale = new Vector3(0, 0, 0);
-            g2.GetComponent<SelectChar>().enabled = true;
+            //g2.GetComponent<SelectChar>().enabled = true;
             g2.transform.localScale = new Vector3(1, 1, 1);
         }
 
-        if (p2.GetComponent<SelectChar>().isReady)
+        if (g2.GetComponent<SelectChar>().isReady)
         {
+            sprite2 = g2.GetComponent<SelectChar>().readySprite.name;
+            p2Ready = true;
             print("p2ready");
-            p2.GetComponent<SelectChar>().enabled = false;
-            p2.transform.localScale = new Vector3(0, 0, 0);
-            p3.GetComponent<SelectChar>().enabled = true;
-            p3.transform.localScale = new Vector3(1, 1, 1);
+            g2.transform.localScale = new Vector3(0, 0, 0);
+            g3.transform.localScale = new Vector3(1, 1, 1);
+            PlayerPrefs.SetString("Sprite2", sprite2);
+
         }
 
-        if (p3.GetComponent<SelectChar>().isReady)
+        if (g3.GetComponent<SelectChar>().isReady)
         {
+            p3Ready = true;
+            sprite3 = g3.GetComponent<SelectChar>().readySprite.name;
             print("p3ready");
-            p3.GetComponent<SelectChar>().enabled = false;
-            p3.transform.localScale = new Vector3(0, 0, 0);
-            p4.GetComponent<SelectChar>().enabled = true;
-            p4.transform.localScale = new Vector3(1, 1, 1);
+            g3.transform.localScale = new Vector3(0, 0, 0);
+            g4.transform.localScale = new Vector3(1, 1, 1);
+            PlayerPrefs.SetString("Sprite3", sprite3);
+
         }
+        if (g3.GetComponent<SelectChar>().isReady)
+        {
+            p4Ready = true;
+            sprite4 = g4.GetComponent<SelectChar>().readySprite.name;
+            PlayerPrefs.SetString("Sprite4", sprite4);
 
-    }
-   
-
-
-    public void SetPlayerChar(int index, Sprite pickchar)
-    {
-        pickchar = selectChar.readySprite;
-         //  playerConfigs[index].PlayerChar = pickchar;
-    }
-    
-/*    public void ReadyPlayer(int index)
-    {
-
-        playerConfigs[index].IsReady = true;
-        if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.IsReady == true))
+        }
+        bool sceneloaded = false;
+        if (p1Ready && p2Ready && p3Ready && p4Ready && !sceneloaded)
         {
             SceneManager.LoadScene("PlayableTest01");
+            sceneloaded = true;
         }
-    }*//*    public void ReadyPlayer(int index)
-    {
+    }
 
-        playerConfigs[index].IsReady = true;
-        if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.IsReady == true))
+
+
+
+
+    /*    public void ReadyPlayer(int index)
         {
-            SceneManager.LoadScene("PlayableTest01");
-        }
-    }*/
+
+            playerConfigs[index].IsReady = true;
+            if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.IsReady == true))
+            {
+                SceneManager.LoadScene("PlayableTest01");
+            }
+        }*//*    public void ReadyPlayer(int index)
+        {
+
+            playerConfigs[index].IsReady = true;
+            if (playerConfigs.Count == MaxPlayers && playerConfigs.All(p => p.IsReady == true))
+            {
+                SceneManager.LoadScene("PlayableTest01");
+            }
+        }*/
 
 
 

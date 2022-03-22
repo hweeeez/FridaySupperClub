@@ -3,35 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
-using TMPro;
-using UnityEngine.UI;
+
+
 [RequireComponent(typeof(CharacterController))]
 public class SelectChar : MonoBehaviour
 {
-    private int playerIndex;
-    private bool inputEnabled;
-    public GameObject configManagerObj;
-    private PlayerConfigManager configManager;
-    private float value;
     private int index;
+    public List<GameObject> charList;
     public GameObject[] characterList;
-    private float playerInput;
+    private GameObject charTaken;
     public Sprite readySprite;
     public bool isReady = false;
     private void Start()
     {
         //index = PlayerPrefs.GetInt("CharacterSelected");
-        configManager = configManagerObj.GetComponent<PlayerConfigManager>();
+        charList = new List<GameObject>(transform.childCount);
         characterList = new GameObject[transform.childCount];
         for (int i = 0; i < transform.childCount; i++)
         {
             characterList[i] = transform.GetChild(i).gameObject;
-
+            charList.Add(transform.GetChild(i).gameObject);
         }
-        foreach (GameObject go in characterList)
+        foreach (GameObject go in charList)
             go.SetActive(false);
-        if (characterList[0])
-            characterList[0].SetActive(true);
+        if (charList[0])
+            charList[0].SetActive(true);
     }
 
 
@@ -40,26 +36,26 @@ public class SelectChar : MonoBehaviour
         print("left!");
         if (context.performed)
         {
-            characterList[index].SetActive(false);
+            charList[index].SetActive(false);
 
             index--;
             if (index < 0)
-                index = characterList.Length - 1;
+                index = charList.Remove(index);
 
-            characterList[index].SetActive(true);
+            charList[index].SetActive(true);
         }
     }
     public void OnRight(InputAction.CallbackContext context)
     {
         if (context.performed)
         {
-            characterList[index].SetActive(false);
+            charList[index].SetActive(false);
 
             index++;
-            if (index == characterList.Length)
+            if (index == charList.Count)
                 index = 0;
 
-            characterList[index].SetActive(true);
+            charList[index].SetActive(true);
         }
     }
 
@@ -67,8 +63,10 @@ public class SelectChar : MonoBehaviour
     {
         if (context.performed)
         {
-           isReady = true;
-            readySprite = characterList[index].GetComponent<SpriteRenderer>().sprite;
+            isReady = true;
+            charTaken = charList[index];
+            readySprite = charList[index].GetComponent<SpriteRenderer>().sprite;
+            print(readySprite.name);
         }
     }
     // Update is called once per frame
@@ -76,8 +74,9 @@ public class SelectChar : MonoBehaviour
     {
         if (this.transform.localScale == Vector3.zero)
         {
-            characterList[0].SetActive(true);
+            charList[0].SetActive(true);
         }
+        charList.Remove(charTaken);
     }
 
 }

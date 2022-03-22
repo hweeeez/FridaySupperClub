@@ -79,6 +79,10 @@ MonoBehaviour:
   playerTwo: {fileID: 7104238988279009790, guid: 7b683f62bc78d004eae966f73f0cd128, type: 3}
   playerThree: {fileID: 7104238988279009790, guid: 209c777aef0909d40ade44a7761d2c90, type: 3}
   playerFour: {fileID: 7104238988279009790, guid: 6494dd859e0a6d2479749f1b93c907e0, type: 3}
+  konpeito: {fileID: 21300000, guid: d7acad3cb13e344718c9de2b07361b2c, type: 3}
+  rocksugar: {fileID: 21300000, guid: e9e1bda35657b420e8a62c6791f4ce1d, type: 3}
+  macaroon: {fileID: 21300000, guid: 3de40d027e14647a0a77a77ba3a27f64, type: 3}
+  tanghulu: {fileID: 21300000, guid: 7388e88b0e6a54626aa30b1cd18e8466, type: 3}
 --- !u!114 &5263477463205811498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,4 +96,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timerText: {fileID: 0}
+  molassesIntro: {fileID: 0}
   water: {fileID: 0}

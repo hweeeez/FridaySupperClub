@@ -67,7 +67,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa75eb4559ca1dc43aab051753bd2d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  configManagerObj: {fileID: 2130741575401582097, guid: a8af8b825a3dc0e46aff8b59057ec8ad, type: 3}
   characterList:
   - {fileID: 4535869762644348610}
   - {fileID: 4535869762888018537}
@@ -408,14 +407,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4535869762895814164}
-  - component: {fileID: 4535869762895814165}
+  - component: {fileID: 1656865070935865704}
   m_Layer: 0
   m_Name: Tanghulu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4535869762895814164
 Transform:
   m_ObjectHideFlags: 0
@@ -430,7 +429,7 @@ Transform:
   m_Father: {fileID: 4535869762573773682}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &4535869762895814165
+--- !u!212 &1656865070935865704
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -475,7 +474,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 5, y: 5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
