@@ -51,7 +51,7 @@ public class characterspawn : MonoBehaviour
         {
             playerTwo.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
-        if (Sprite2 == "RocksugarR")
+        if (Sprite2 == "Rocksugar")
         {
             playerTwo.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }

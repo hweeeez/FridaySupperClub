@@ -67,14 +67,13 @@ public class PlayerConfigManager : MonoBehaviour
         if (g1.GetComponent<SelectChar>().isReady)
         {
             sprite1 = g1.GetComponent<SelectChar>().readySprite.name;
-            var p1char = g1.GetComponent<SelectChar>().charTaken;
             PlayerPrefs.SetString("Sprite1", sprite1);
             p1Ready = true;
             print("p1ready");
+            //g1.GetComponent<SelectChar>().enabled = false;
             g1.transform.localScale = new Vector3(0, 0, 0);
+            //g2.GetComponent<SelectChar>().enabled = true;
             g2.transform.localScale = new Vector3(1, 1, 1);
-            g2.GetComponent<SelectChar>().charList.Remove(p1char);
-       
         }
 
         if (g2.GetComponent<SelectChar>().isReady)
@@ -111,7 +110,6 @@ public class PlayerConfigManager : MonoBehaviour
             SceneManager.LoadScene("PlayableTest01");
             sceneloaded = true;
         }
-        
     }
 
 
