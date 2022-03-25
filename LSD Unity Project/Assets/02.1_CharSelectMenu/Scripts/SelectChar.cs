@@ -11,7 +11,7 @@ public class SelectChar : MonoBehaviour
     private int index;
     public List<GameObject> charList;
     public GameObject[] characterList;
-    public GameObject charTaken;
+    private GameObject charTaken;
     public Sprite readySprite;
     public bool isReady = false;
     private void Start()
@@ -37,10 +37,10 @@ public class SelectChar : MonoBehaviour
         if (context.performed)
         {
             charList[index].SetActive(false);
-            
+
             index--;
             if (index < 0)
-                index = charList.Count - 1;
+                index = charList.Remove(index);
 
             charList[index].SetActive(true);
         }
