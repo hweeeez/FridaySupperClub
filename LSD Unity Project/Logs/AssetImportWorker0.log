@@ -141,3 +141,4 @@ Received Import Request.
 Start importing Assets/01_Scenes/TitleMenu.unity using Guid(4304750575ae9f14a819d5723e5ccc0b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ea5ceed8e389036a123619038fc1428') in 0.027499 seconds 
   Import took 0.033991 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
