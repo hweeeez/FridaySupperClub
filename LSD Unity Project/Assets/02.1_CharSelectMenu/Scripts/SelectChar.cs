@@ -40,7 +40,7 @@ public class SelectChar : MonoBehaviour
 
             index--;
             if (index < 0)
-                //index = charList.Remove(index);
+                index = charList.Remove(index);
 
             charList[index].SetActive(true);
         }
