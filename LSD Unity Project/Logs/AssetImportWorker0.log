@@ -155,3 +155,4 @@ Received Import Request.
 Start importing Assets/01_Scenes/TitleMenuHinako.unity using Guid(9dfd7d816d41946d4b3d46206d008777) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8b654fe70f95e694b3dc544ec08f9f5') in 0.001293 seconds 
   Import took 0.008447 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
