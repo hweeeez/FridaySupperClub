@@ -40,11 +40,12 @@ public class PlayerConfigManager : MonoBehaviour
     private int MaxPlayers = 4;
     public static PlayerConfigManager Instance { get; private set; }
     void Awake()
-    {charaList = new List<List<GameObject>>();
+    {
+        charaList = new List<List<GameObject>>();
         playerList = new List<SelectChar>();
         players = new List<PlayerInput>();
         playerobj = new List<GameObject>();
-        
+
         var player1 = PlayerInput.Instantiate(prefab: p1, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current);
         var player2 = PlayerInput.Instantiate(prefab: p2, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current);
         var player3 = PlayerInput.Instantiate(prefab: p3, playerIndex: 2, controlScheme: "Keyboard3", pairWithDevice: Keyboard.current);
@@ -61,13 +62,9 @@ public class PlayerConfigManager : MonoBehaviour
         g3.transform.localScale = new Vector3(0, 0, 0);
         g4.transform.localScale = new Vector3(0, 0, 0);
 
-        for(int a = 0; a < playerList.Count; a++)
+        for (int a = 0; a < 4; a++)
         {
-            playerList[a] = playerobj[a].GetComponent<SelectChar>();
-            for (int b = 0; b < playerList.Count; b++)
-            {
-           
-            }
+            playerList.Add(playerobj[a].GetComponent<SelectChar>());
         }
 
         if (Instance != null)
@@ -82,26 +79,34 @@ public class PlayerConfigManager : MonoBehaviour
     }
     private void Update()
     {
-  
+
         if (g1.GetComponent<SelectChar>().isReady)
         {
             sprite1 = g1.GetComponent<SelectChar>().readySprite.name;
+            GameObject charTaken = g1.GetComponent<SelectChar>().charTaken;
             p1tag = g1.GetComponent<SelectChar>().charTaken.gameObject.tag;
             PlayerPrefs.SetString("Sprite1", sprite1);
+            /*            for (int a = 0; a < playerList.Count; a++)
+                        {
+                            playerList[a].charList.Remove(g1.GetComponent<SelectChar>().charTaken);
+                        }*/
+            for (int a = 0; a < playerobj.Count; a++)
+            {
+                playerobj[a].GetComponent<SelectChar>().charList.RemoveAt(g1.GetComponent<SelectChar>().charList.IndexOf(charTaken));
+            }
+            //  g2.GetComponent<SelectChar>().charList.RemoveAt(g1.GetComponent<SelectChar>().charList.IndexOf(charTaken));
+            tagged = GameObject.FindGameObjectsWithTag(g1.GetComponent<SelectChar>().charTaken.gameObject.tag);
+            foreach (GameObject tag in tagged)
+            {
+                tag.SetActive(false);
+            }
             p1Ready = true;
-            print("p1ready");
+            print(g1.GetComponent<SelectChar>().charList.IndexOf(charTaken));
             g1.transform.localScale = new Vector3(0, 0, 0);
-            g2.transform.localScale = new Vector3(1, 1, 1);                 
+            g2.transform.localScale = new Vector3(1, 1, 1);
         }
-        tagged = GameObject.FindGameObjectsWithTag(g1.GetComponent<SelectChar>().charTaken.gameObject.tag);
-        foreach(GameObject tag in tagged)
-        {
-            Destroy(tag);
-        }
-        for (int a=0; a < playerList.Count; a++)
-        {
-            playerList[a].charList.Remove(g1.GetComponent<SelectChar>().charTaken);
-        }
+
+
 
         if (g2.GetComponent<SelectChar>().isReady)
         {
@@ -137,7 +142,7 @@ public class PlayerConfigManager : MonoBehaviour
             SceneManager.LoadScene("PlayableTest01");
             sceneloaded = true;
         }
-        
+
     }
 
 

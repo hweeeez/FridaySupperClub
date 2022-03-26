@@ -28,11 +28,10 @@ public class SelectChar : MonoBehaviour
 
     public void OnLeft(InputAction.CallbackContext context)
     {
-        print("left!");
         if (context.performed)
         {
             charList[index].SetActive(false);
-            
+
             index--;
             if (index < 0)
                 index = charList.Count - 1;
@@ -78,7 +77,7 @@ public class SelectChar : MonoBehaviour
             leftKey.SetActive(true);
             rightKey.SetActive(true);
         }
-        charList.Remove(charTaken);
+        // charList.Remove(charTaken);
     }
 
 }
