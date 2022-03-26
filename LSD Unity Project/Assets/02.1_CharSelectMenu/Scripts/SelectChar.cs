@@ -8,6 +8,8 @@ using UnityEngine.InputSystem.Interactions;
 [RequireComponent(typeof(CharacterController))]
 public class SelectChar : MonoBehaviour
 {
+    public GameObject rightKey;
+    public GameObject leftKey;
     private int index;
     public List<GameObject> charList;
     public GameObject[] characterList;
@@ -16,14 +18,7 @@ public class SelectChar : MonoBehaviour
     public bool isReady = false;
     private void Start()
     {
-        //index = PlayerPrefs.GetInt("CharacterSelected");
-        charList = new List<GameObject>(transform.childCount);
-        characterList = new GameObject[transform.childCount];
-        for (int i = 0; i < transform.childCount; i++)
-        {
-            characterList[i] = transform.GetChild(i).gameObject;
-            charList.Add(transform.GetChild(i).gameObject);
-        }
+
         foreach (GameObject go in charList)
             go.SetActive(false);
         if (charList[0])
@@ -75,6 +70,13 @@ public class SelectChar : MonoBehaviour
         if (this.transform.localScale == Vector3.zero)
         {
             charList[0].SetActive(true);
+            leftKey.SetActive(false);
+            rightKey.SetActive(false);
+        }
+        else
+        {
+            leftKey.SetActive(true);
+            rightKey.SetActive(true);
         }
         charList.Remove(charTaken);
     }

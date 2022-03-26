@@ -8,6 +8,10 @@ TagManager:
   - Enemy
   - Head
   - Water
+  - KonpeiSelect
+  - TangHuluSelect
+  - RockSugarSelect
+  - MacaroonSelect
   layers:
   - Default
   - TransparentFX

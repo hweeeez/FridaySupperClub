@@ -7,9 +7,14 @@ using UnityEngine.SceneManagement;
 
 public class PlayerConfigManager : MonoBehaviour
 {
+    string p1tag;
+    public GameObject[] tagged;
     private bool readyUp;
     private List<PlayerInput> players;
     private List<GameObject> playerobj;
+    public List<SelectChar> playerList;
+    public List<List<GameObject>> charaList;
+
     public string sprite1;
     public string sprite2;
     public string sprite3;
@@ -19,6 +24,7 @@ public class PlayerConfigManager : MonoBehaviour
     public GameObject p2;
     public GameObject p3;
     public GameObject p4;
+
     public GameObject g1;
     public GameObject g2;
     public GameObject g3;
@@ -34,11 +40,11 @@ public class PlayerConfigManager : MonoBehaviour
     private int MaxPlayers = 4;
     public static PlayerConfigManager Instance { get; private set; }
     void Awake()
-    {
-
+    {charaList = new List<List<GameObject>>();
+        playerList = new List<SelectChar>();
         players = new List<PlayerInput>();
         playerobj = new List<GameObject>();
-
+        
         var player1 = PlayerInput.Instantiate(prefab: p1, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current);
         var player2 = PlayerInput.Instantiate(prefab: p2, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current);
         var player3 = PlayerInput.Instantiate(prefab: p3, playerIndex: 2, controlScheme: "Keyboard3", pairWithDevice: Keyboard.current);
@@ -47,10 +53,23 @@ public class PlayerConfigManager : MonoBehaviour
         g2 = GameObject.Find("Player2(Clone)");
         g3 = GameObject.Find("Player3(Clone)");
         g4 = GameObject.Find("Player4(Clone)");
-
+        playerobj.Add(g1);
+        playerobj.Add(g2);
+        playerobj.Add(g3);
+        playerobj.Add(g4);
         g2.transform.localScale = new Vector3(0, 0, 0);
         g3.transform.localScale = new Vector3(0, 0, 0);
         g4.transform.localScale = new Vector3(0, 0, 0);
+
+        for(int a = 0; a < playerList.Count; a++)
+        {
+            playerList[a] = playerobj[a].GetComponent<SelectChar>();
+            for (int b = 0; b < playerList.Count; b++)
+            {
+           
+            }
+        }
+
         if (Instance != null)
         {
             Debug.Log("create instance of singleton");
@@ -63,18 +82,25 @@ public class PlayerConfigManager : MonoBehaviour
     }
     private void Update()
     {
-
+  
         if (g1.GetComponent<SelectChar>().isReady)
         {
             sprite1 = g1.GetComponent<SelectChar>().readySprite.name;
-            var p1char = g1.GetComponent<SelectChar>().charTaken;
+            p1tag = g1.GetComponent<SelectChar>().charTaken.gameObject.tag;
             PlayerPrefs.SetString("Sprite1", sprite1);
             p1Ready = true;
             print("p1ready");
             g1.transform.localScale = new Vector3(0, 0, 0);
-            g2.transform.localScale = new Vector3(1, 1, 1);
-            g2.GetComponent<SelectChar>().charList.Remove(p1char);
-       
+            g2.transform.localScale = new Vector3(1, 1, 1);                 
+        }
+        tagged = GameObject.FindGameObjectsWithTag(g1.GetComponent<SelectChar>().charTaken.gameObject.tag);
+        foreach(GameObject tag in tagged)
+        {
+            Destroy(tag);
+        }
+        for (int a=0; a < playerList.Count; a++)
+        {
+            playerList[a].charList.Remove(g1.GetComponent<SelectChar>().charTaken);
         }
 
         if (g2.GetComponent<SelectChar>().isReady)
