@@ -7,14 +7,14 @@ public class MolassesScript : MonoBehaviour
 {
 
     //Timer
-    float timeRemaining = 90; //5 minutes = 300 seconds
+    float timeRemaining = 60; //in seconds
     bool timerIsRunning = false;
     public GameObject timerText;
 
     //Rising Water
     public GameObject molassesIntro;
     public GameObject water;
-    float riseSpeed = 12.5f;
+    float riseSpeed = 15f;
     Vector2 maxWaterHeight;
     bool isRising = false;
 
