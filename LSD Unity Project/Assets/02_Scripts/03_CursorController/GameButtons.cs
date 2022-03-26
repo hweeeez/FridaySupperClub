@@ -23,7 +23,11 @@ public class GameButtons : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("PlayableTest01");
     }
-  
+    public void startGame()
+    {
+
+        SceneManager.LoadScene("CharacterSelect");
+    }
     // Start is called before the first frame update
     void Start()
     {

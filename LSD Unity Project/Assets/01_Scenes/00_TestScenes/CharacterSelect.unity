@@ -249,7 +249,7 @@ PrefabInstance:
     - target: {fileID: 2130741575401582095, guid: a8af8b825a3dc0e46aff8b59057ec8ad, type: 3}
       propertyPath: p1
       value: 
-      objectReference: {fileID: 4535869762573773693, guid: fbd0d88ca27b37044adb48a03b5f35c9, type: 3}
+      objectReference: {fileID: 2955999580302806071, guid: 7d6b0cbbb98df324087cd0e7f65a4e3e, type: 3}
     - target: {fileID: 2130741575401582095, guid: a8af8b825a3dc0e46aff8b59057ec8ad, type: 3}
       propertyPath: p2
       value: 
