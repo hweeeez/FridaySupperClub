@@ -7,14 +7,14 @@ public class MolassesScript : MonoBehaviour
 {
 
     //Timer
-    float timeRemaining = 60; //in seconds
+    float timeRemaining = 60f; //in seconds
     bool timerIsRunning = false;
     public GameObject timerText;
 
     //Rising Water
     public GameObject molassesIntro;
     public GameObject water;
-    float riseSpeed = 15f;
+    float riseSpeed = 18f;
     Vector2 maxWaterHeight;
     bool isRising = false;
 
@@ -22,7 +22,7 @@ public class MolassesScript : MonoBehaviour
     void Start()
     {
         timerIsRunning = true;
-        maxWaterHeight = new Vector2(water.transform.position.x, -9.8f);
+        maxWaterHeight = new Vector2(water.transform.position.x, -9.5f);
         water.transform.position = new Vector2(0, -36f);
 
         molassesIntro.SetActive(false);
