@@ -7,6 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    public ParticleSystem dust;
     public Material hitMaterial;
     public Material defMaterial;
     Color color;
@@ -209,7 +210,7 @@ public class Controller : MonoBehaviour
 
             if (controller.isGrounded)
             {
-
+                dust.Play();
                 startedJump = true;
                 startY = transform.position.y;
             }
@@ -257,6 +258,7 @@ public class Controller : MonoBehaviour
 
         if (tryAccelerate)
         {
+            anim.SetBool("isGrounded", false);
             hasJumped = true;
             bool maxHeightExceeded = jumpedDistance > maxHeight;
             if (startedJump && !maxHeightExceeded)
@@ -276,6 +278,7 @@ public class Controller : MonoBehaviour
         }
         else if (controller.isGrounded && !tryAccelerate)
         {
+            anim.SetBool("isGrounded", true);
             hasJumped = false;
             slamming = false;
             playerVelocity.y = 0;
@@ -290,12 +293,12 @@ public class Controller : MonoBehaviour
             anim.SetBool("slam", true);
         }
         else if (controller.isGrounded) { anim.SetBool("slam", false); }
-        if (playerVelocity.y > 0)
+   /*     if (playerVelocity.y > 0)
         {
             anim.SetBool("isGrounded", false);
         }
         else
-        { anim.SetBool("isGrounded", true); }
+        { anim.SetBool("isGrounded", true); }*/
 
         if (movementInput.x > 0)
         {

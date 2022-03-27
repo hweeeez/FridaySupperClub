@@ -263,6 +263,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4535869762573773693, guid: 3809ee6cf695b0643a7ad5df50357fd7, type: 3}
     - target: {fileID: 2130741575401582095, guid: a8af8b825a3dc0e46aff8b59057ec8ad, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 1558081748}
+    - target: {fileID: 2130741575401582095, guid: a8af8b825a3dc0e46aff8b59057ec8ad, type: 3}
       propertyPath: playerPrefab
       value: 
       objectReference: {fileID: 0}
@@ -359,7 +363,7 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: -20.8
   far clip plane: 1000
   field of view: 60
   orthographic: 1

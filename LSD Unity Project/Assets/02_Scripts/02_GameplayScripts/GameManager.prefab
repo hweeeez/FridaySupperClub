@@ -83,6 +83,10 @@ MonoBehaviour:
   rocksugar: {fileID: 21300000, guid: e9e1bda35657b420e8a62c6791f4ce1d, type: 3}
   macaroon: {fileID: 21300000, guid: 3de40d027e14647a0a77a77ba3a27f64, type: 3}
   tanghulu: {fileID: 21300000, guid: 7388e88b0e6a54626aa30b1cd18e8466, type: 3}
+  kpAnim: {fileID: 9100000, guid: 223511807344a49df973e1cce6458343, type: 2}
+  rsAnim: {fileID: 9100000, guid: 5b42dba1b56374263b63afa459e35ade, type: 2}
+  thAnim: {fileID: 9100000, guid: cd98aaaffd4a36c4da3fb4aad1e05515, type: 2}
+  macAnim: {fileID: 9100000, guid: 23d038ceb538eb049b88a8526256ba15, type: 2}
 --- !u!114 &5263477463205811498
 MonoBehaviour:
   m_ObjectHideFlags: 0

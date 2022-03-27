@@ -8,6 +8,9 @@ using UnityEngine.SceneManagement;
 public class PlayerConfigManager : MonoBehaviour
 {
     string p1tag;
+    string p2tag;
+    string p3tag;
+    string p4tag;
     public GameObject[] tagged;
     private bool readyUp;
     private List<PlayerInput> players;
@@ -34,13 +37,16 @@ public class PlayerConfigManager : MonoBehaviour
     private bool p2Ready;
     private bool p3Ready;
     private bool p4Ready;
-
-
+    public Camera mainCamera;
+    private GameObject bgCanvas;
     [SerializeField]
     private int MaxPlayers = 4;
     public static PlayerConfigManager Instance { get; private set; }
     void Awake()
     {
+        bgCanvas = GameObject.Find("BackgroundCanvas");
+        var bgCamera = bgCanvas.GetComponent<Canvas>();
+        bgCamera.worldCamera = mainCamera;
         charaList = new List<List<GameObject>>();
         playerList = new List<SelectChar>();
         players = new List<PlayerInput>();
@@ -77,59 +83,82 @@ public class PlayerConfigManager : MonoBehaviour
             DontDestroyOnLoad(Instance);
         }
     }
+    IEnumerator playerActive(GameObject player, GameObject player2)
+    {
+
+        yield return new WaitForSeconds(1f);
+        player2.transform.localScale = new Vector3(1, 1, 1);
+        player.transform.localScale = new Vector3(0, 0, 0);
+        foreach (GameObject tag in tagged)
+        {
+            tag.SetActive(false);
+        }
+    }
     private void Update()
     {
 
-        if (g1.GetComponent<SelectChar>().isReady)
+        if (!p1Ready && g1.GetComponent<SelectChar>().isReady)
         {
             sprite1 = g1.GetComponent<SelectChar>().readySprite.name;
-            GameObject charTaken = g1.GetComponent<SelectChar>().charTaken;
-            p1tag = g1.GetComponent<SelectChar>().charTaken.gameObject.tag;
             PlayerPrefs.SetString("Sprite1", sprite1);
-            /*            for (int a = 0; a < playerList.Count; a++)
-                        {
-                            playerList[a].charList.Remove(g1.GetComponent<SelectChar>().charTaken);
-                        }*/
-            for (int a = 0; a < playerobj.Count; a++)
+        
+            p1tag = g1.GetComponent<SelectChar>().charTaken.gameObject.tag;
+
+            int index = PlayerPrefs.GetInt("charTaken");
+            foreach (GameObject obj in playerobj)
             {
-                playerobj[a].GetComponent<SelectChar>().charList.RemoveAt(g1.GetComponent<SelectChar>().charList.IndexOf(charTaken));
+               obj.GetComponent<SelectChar>().charList.RemoveAt(index);
             }
-            //  g2.GetComponent<SelectChar>().charList.RemoveAt(g1.GetComponent<SelectChar>().charList.IndexOf(charTaken));
             tagged = GameObject.FindGameObjectsWithTag(g1.GetComponent<SelectChar>().charTaken.gameObject.tag);
-            foreach (GameObject tag in tagged)
-            {
-                tag.SetActive(false);
-            }
             p1Ready = true;
-            print(g1.GetComponent<SelectChar>().charList.IndexOf(charTaken));
-            g1.transform.localScale = new Vector3(0, 0, 0);
-            g2.transform.localScale = new Vector3(1, 1, 1);
+            StartCoroutine(playerActive(g1, g2));
         }
 
+        print(PlayerPrefs.GetInt("charTaken"));
 
-
-        if (g2.GetComponent<SelectChar>().isReady)
+        if (!p2Ready && g2.GetComponent<SelectChar>().isReady)
         {
+            p2tag = g2.GetComponent<SelectChar>().charTaken.gameObject.tag;
+
+            int index = PlayerPrefs.GetInt("charTaken");
+            foreach (GameObject obj in playerobj)
+            {
+                obj.GetComponent<SelectChar>().charList.RemoveAt(index);
+            }
+            tagged = GameObject.FindGameObjectsWithTag(g2.GetComponent<SelectChar>().charTaken.gameObject.tag);
+          /*  foreach (GameObject tag in tagged)
+            {
+                tag.SetActive(false);
+            }*/
             sprite2 = g2.GetComponent<SelectChar>().readySprite.name;
             p2Ready = true;
             print("p2ready");
-            g2.transform.localScale = new Vector3(0, 0, 0);
-            g3.transform.localScale = new Vector3(1, 1, 1);
+     
             PlayerPrefs.SetString("Sprite2", sprite2);
-
+            StartCoroutine(playerActive(g2, g3));
         }
 
-        if (g3.GetComponent<SelectChar>().isReady)
+        if (!p3Ready && g3.GetComponent<SelectChar>().isReady)
         {
+            p3tag = g3.GetComponent<SelectChar>().charTaken.gameObject.tag;
+            int index = PlayerPrefs.GetInt("charTaken");
+            foreach (GameObject obj in playerobj)
+            {
+                obj.GetComponent<SelectChar>().charList.RemoveAt(index);
+            }
+            tagged = GameObject.FindGameObjectsWithTag(g3.GetComponent<SelectChar>().charTaken.gameObject.tag);
+          /*  foreach (GameObject tag in tagged)
+            {
+                tag.SetActive(false);
+            }*/
             p3Ready = true;
             sprite3 = g3.GetComponent<SelectChar>().readySprite.name;
             print("p3ready");
-            g3.transform.localScale = new Vector3(0, 0, 0);
-            g4.transform.localScale = new Vector3(1, 1, 1);
+    
             PlayerPrefs.SetString("Sprite3", sprite3);
-
+            StartCoroutine(playerActive(g3, g4));
         }
-        if (g3.GetComponent<SelectChar>().isReady)
+        if (!p4Ready && g4.GetComponent<SelectChar>().isReady)
         {
             p4Ready = true;
             sprite4 = g4.GetComponent<SelectChar>().readySprite.name;
@@ -137,10 +166,12 @@ public class PlayerConfigManager : MonoBehaviour
 
         }
         bool sceneloaded = false;
-        if (p1Ready && p2Ready && p3Ready && p4Ready && !sceneloaded)
-        {
-            SceneManager.LoadScene("PlayableTest01");
-            sceneloaded = true;
+        if ( p1Ready && p2Ready && p3Ready && p4Ready)
+        {if (!sceneloaded)
+            {
+                SceneManager.LoadScene("PlayableTest01");
+                sceneloaded = true;
+            }
         }
 
     }

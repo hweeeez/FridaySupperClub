@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class GameButtons : MonoBehaviour
 {
+    public GameObject backGround;
     public GameObject pauseMenu;
     
     public void openPause()
@@ -25,7 +26,7 @@ public class GameButtons : MonoBehaviour
     }
     public void startGame()
     {
-
+        DontDestroyOnLoad(backGround);
         SceneManager.LoadScene("CharacterSelect");
     }
     // Start is called before the first frame update

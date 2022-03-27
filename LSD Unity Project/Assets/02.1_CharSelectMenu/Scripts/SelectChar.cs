@@ -59,6 +59,9 @@ public class SelectChar : MonoBehaviour
         {
             isReady = true;
             charTaken = charList[index];
+            Animator animator = charTaken.GetComponent<Animator>();
+            animator.SetBool("Confirm", true);
+            PlayerPrefs.SetInt("charTaken", charList.IndexOf(charTaken));
             readySprite = charList[index].GetComponent<SpriteRenderer>().sprite;
             print(readySprite.name);
         }
@@ -68,6 +71,7 @@ public class SelectChar : MonoBehaviour
     {
         if (this.transform.localScale == Vector3.zero)
         {
+            print(charList[0]);
             charList[0].SetActive(true);
             leftKey.SetActive(false);
             rightKey.SetActive(false);

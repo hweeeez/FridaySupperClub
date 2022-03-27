@@ -13,8 +13,10 @@ public class characterspawn : MonoBehaviour
     public Sprite rocksugar;
     public Sprite macaroon;
     public Sprite tanghulu;
-
-
+    public RuntimeAnimatorController kpAnim;
+    public RuntimeAnimatorController rsAnim;
+    public RuntimeAnimatorController thAnim;
+    public RuntimeAnimatorController macAnim;
     void Awake()
     {
         string Sprite1 = PlayerPrefs.GetString("Sprite1");
@@ -23,68 +25,99 @@ public class characterspawn : MonoBehaviour
         string Sprite4 = PlayerPrefs.GetString("Sprite4");
 
 
-        if (Sprite1 == "Konpeito")
+        if (Sprite1 == "KonpeitoSprite")
         {
+            Animator animator = playerOne.GetComponent<Animator>();
+            animator.runtimeAnimatorController = kpAnim; 
             playerOne.GetComponent<SpriteRenderer>().sprite = konpeito;
         }
-        if (Sprite1 == "Macaroon")
+        if (Sprite1 == "MacaroonSprite")
         {
+            Animator animator = playerOne.GetComponent<Animator>();
+            animator.runtimeAnimatorController = macAnim;
             playerOne.GetComponent<SpriteRenderer>().sprite = macaroon;
         }
-        if (Sprite1 == "Tanghulu")
+        if (Sprite1 == "TangHuluSprite")
         {
+            Animator animator = playerOne.GetComponent<Animator>();
+            animator.runtimeAnimatorController = thAnim;
             playerOne.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
-        if (Sprite1 == "Rocksugar")
+        if (Sprite1 == "RockSugarSprite")
         {
+            Animator animator = playerOne.GetComponent<Animator>();
+            animator.runtimeAnimatorController = rsAnim;
             playerOne.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }
-        if (Sprite2 == "Konpeito")
-        {
+        if (Sprite2 == "KonpeitoSprite")
+        {Animator animator = playerTwo.GetComponent<Animator>();
+            animator.runtimeAnimatorController = kpAnim; 
             playerTwo.GetComponent<SpriteRenderer>().sprite = konpeito;
         }
-        if (Sprite2 == "Macaroon")
+        if (Sprite2 == "MacaroonSprite")
         {
+            Animator animator = playerTwo.GetComponent<Animator>();
+            animator.runtimeAnimatorController = macAnim;
             playerTwo.GetComponent<SpriteRenderer>().sprite = macaroon;
         }
-        if (Sprite2 == "Tanghulu")
+        if (Sprite2 == "TangHuluSprite")
         {
+            Animator animator = playerTwo.GetComponent<Animator>();
+            animator.runtimeAnimatorController = thAnim;
             playerTwo.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
-        if (Sprite2 == "RocksugarR")
+        if (Sprite2 == "RockSugarSprite")
         {
+            Animator animator = playerTwo.GetComponent<Animator>();
+            animator.runtimeAnimatorController = rsAnim;
             playerTwo.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }
-        if (Sprite3 == "Konpeito")
+        if (Sprite3 == "KonpeitoSprite")
         {
+            Animator animator = playerThree.GetComponent<Animator>();
+            animator.runtimeAnimatorController = kpAnim;
             playerThree.GetComponent<SpriteRenderer>().sprite = konpeito;
         }
-        if (Sprite3 == "Macaroon")
+        if (Sprite3 == "MacaroonSprite")
         {
+            Animator animator = playerThree.GetComponent<Animator>();
+            animator.runtimeAnimatorController = macAnim;
             playerThree.GetComponent<SpriteRenderer>().sprite = macaroon;
         }
-        if (Sprite3 == "Tanghulu")
+        if (Sprite3 == "TangHuluSprite")
         {
+            Animator animator = playerThree.GetComponent<Animator>();
+            animator.runtimeAnimatorController = thAnim;
             playerThree.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
-        if (Sprite3 == "Rocksugar")
+        if (Sprite3 == "RockSugarSprite")
         {
+            Animator animator = playerThree.GetComponent<Animator>();
+            animator.runtimeAnimatorController = rsAnim;
             playerThree.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }
-        if (Sprite4 == "Konpeito")
+        if (Sprite4 == "KonpeitoSprite")
         {
+            Animator animator = playerFour.GetComponent<Animator>();
+            animator.runtimeAnimatorController = kpAnim;
             playerFour.GetComponent<SpriteRenderer>().sprite = konpeito;
         }
-        if (Sprite4 == "Macaroon")
+        if (Sprite4 == "MacaroonSprite")
         {
+            Animator animator = playerFour.GetComponent<Animator>();
+            animator.runtimeAnimatorController = macAnim;
             playerFour.GetComponent<SpriteRenderer>().sprite = macaroon;
         }
-        if (Sprite4 == "Tanghulu")
+        if (Sprite4 == "TangHuluSprite")
         {
+            Animator animator = playerFour.GetComponent<Animator>();
+            animator.runtimeAnimatorController = thAnim;
             playerFour.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
-        if (Sprite4 == "Rocksugar")
+        if (Sprite4 == "RockSugarSprite")
         {
+            Animator animator = playerFour.GetComponent<Animator>();
+            animator.runtimeAnimatorController = rsAnim;
             playerFour.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }
         playerOne.transform.position = new Vector2(20.9f, 9.6f);
