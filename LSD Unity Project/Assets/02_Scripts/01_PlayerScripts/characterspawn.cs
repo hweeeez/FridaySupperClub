@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class characterspawn : MonoBehaviour
 {
+    private GameObject bg;
     private PlayerConfigManager configManager;
     private GameObject playerConfigMan;
     public GameObject playerOne;
@@ -13,12 +15,18 @@ public class characterspawn : MonoBehaviour
     public Sprite rocksugar;
     public Sprite macaroon;
     public Sprite tanghulu;
+    public GameObject kpGO;
+    public GameObject rsGO;
+    public GameObject macGO;
+    public GameObject thGO;
     public RuntimeAnimatorController kpAnim;
     public RuntimeAnimatorController rsAnim;
     public RuntimeAnimatorController thAnim;
     public RuntimeAnimatorController macAnim;
     void Awake()
     {
+        bg = GameObject.Find("BackgroundCanvas");
+        Destroy(bg);
         string Sprite1 = PlayerPrefs.GetString("Sprite1");
         string Sprite2 = PlayerPrefs.GetString("Sprite2");
         string Sprite3 = PlayerPrefs.GetString("Sprite3");
@@ -27,108 +35,133 @@ public class characterspawn : MonoBehaviour
 
         if (Sprite1 == "KonpeitoSprite")
         {
-            Animator animator = playerOne.GetComponent<Animator>();
-            animator.runtimeAnimatorController = kpAnim; 
-            playerOne.GetComponent<SpriteRenderer>().sprite = konpeito;
+            playerOne = Resources.Load("KonpeiGO") as GameObject;
+            //    Animator animator = playerOne.GetComponent<Animator>();
+            //  animator.runtimeAnimatorController = kpAnim;
+            //playerOne.GetComponent<SpriteRenderer>().sprite = konpeito;
         }
         if (Sprite1 == "MacaroonSprite")
         {
-            Animator animator = playerOne.GetComponent<Animator>();
-            animator.runtimeAnimatorController = macAnim;
-            playerOne.GetComponent<SpriteRenderer>().sprite = macaroon;
+            playerOne = Resources.Load("MacGO") as GameObject;
+            //Animator animator = playerOne.GetComponent<Animator>();
+            //  animator.runtimeAnimatorController = macAnim;
+            //playerOne.GetComponent<SpriteRenderer>().sprite = macaroon;
         }
         if (Sprite1 == "TangHuluSprite")
         {
-            Animator animator = playerOne.GetComponent<Animator>();
-            animator.runtimeAnimatorController = thAnim;
-            playerOne.GetComponent<SpriteRenderer>().sprite = tanghulu;
+            playerOne = Resources.Load("TangHuluGO") as GameObject;
+            //  Animator animator = playerOne.GetComponent<Animator>();
+            // animator.runtimeAnimatorController = thAnim;
+            //playerOne.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
         if (Sprite1 == "RockSugarSprite")
         {
-            Animator animator = playerOne.GetComponent<Animator>();
-            animator.runtimeAnimatorController = rsAnim;
-            playerOne.GetComponent<SpriteRenderer>().sprite = rocksugar;
+            playerOne = Resources.Load("RockSugarGO") as GameObject;
+            //  Animator animator = playerOne.GetComponent<Animator>();
+            //  animator.runtimeAnimatorController = rsAnim;
+            //playerOne.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }
         if (Sprite2 == "KonpeitoSprite")
-        {Animator animator = playerTwo.GetComponent<Animator>();
-            animator.runtimeAnimatorController = kpAnim; 
-            playerTwo.GetComponent<SpriteRenderer>().sprite = konpeito;
+        {
+            playerTwo = Resources.Load("KonpeiGO") as GameObject;
+            //   Animator animator = playerTwo.GetComponent<Animator>();
+            // animator.runtimeAnimatorController = kpAnim;
+            //playerTwo.GetComponent<SpriteRenderer>().sprite = konpeito;
         }
         if (Sprite2 == "MacaroonSprite")
         {
-            Animator animator = playerTwo.GetComponent<Animator>();
-            animator.runtimeAnimatorController = macAnim;
-            playerTwo.GetComponent<SpriteRenderer>().sprite = macaroon;
+            playerTwo = Resources.Load("MacGO") as GameObject;
+            // Animator animator = playerTwo.GetComponent<Animator>();
+            //   animator.runtimeAnimatorController = macAnim;
+            //playerTwo.GetComponent<SpriteRenderer>().sprite = macaroon;
         }
         if (Sprite2 == "TangHuluSprite")
         {
-            Animator animator = playerTwo.GetComponent<Animator>();
-            animator.runtimeAnimatorController = thAnim;
-            playerTwo.GetComponent<SpriteRenderer>().sprite = tanghulu;
+            playerTwo = Resources.Load("TangHuluGO") as GameObject;
+            //     Animator animator = playerTwo.GetComponent<Animator>();
+            //animator.runtimeAnimatorController = thAnim;
+            //playerTwo.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
         if (Sprite2 == "RockSugarSprite")
         {
-            Animator animator = playerTwo.GetComponent<Animator>();
-            animator.runtimeAnimatorController = rsAnim;
-            playerTwo.GetComponent<SpriteRenderer>().sprite = rocksugar;
+            playerTwo = Resources.Load("RockSugarGO") as GameObject;
+            //Animator animator = playerTwo.GetComponent<Animator>();
+            //animator.runtimeAnimatorController = rsAnim;
+            //playerTwo.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }
         if (Sprite3 == "KonpeitoSprite")
         {
-            Animator animator = playerThree.GetComponent<Animator>();
-            animator.runtimeAnimatorController = kpAnim;
-            playerThree.GetComponent<SpriteRenderer>().sprite = konpeito;
+            playerThree = Resources.Load("KonpeiGO") as GameObject;
+            // Animator animator = playerThree.GetComponent<Animator>();
+            //animator.runtimeAnimatorController = kpAnim;
+            //playerThree.GetComponent<SpriteRenderer>().sprite = konpeito;
         }
         if (Sprite3 == "MacaroonSprite")
         {
-            Animator animator = playerThree.GetComponent<Animator>();
-            animator.runtimeAnimatorController = macAnim;
-            playerThree.GetComponent<SpriteRenderer>().sprite = macaroon;
+            playerThree = Resources.Load("MacGO") as GameObject;
+            //Animator animator = playerThree.GetComponent<Animator>();
+            //animator.runtimeAnimatorController = macAnim;
+            //playerThree.GetComponent<SpriteRenderer>().sprite = macaroon;
         }
         if (Sprite3 == "TangHuluSprite")
         {
-            Animator animator = playerThree.GetComponent<Animator>();
-            animator.runtimeAnimatorController = thAnim;
-            playerThree.GetComponent<SpriteRenderer>().sprite = tanghulu;
+            playerThree = Resources.Load("TangHuluGO") as GameObject;
+            // Animator animator = playerThree.GetComponent<Animator>();
+            //animator.runtimeAnimatorController = thAnim;
+            //playerThree.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
         if (Sprite3 == "RockSugarSprite")
         {
-            Animator animator = playerThree.GetComponent<Animator>();
-            animator.runtimeAnimatorController = rsAnim;
-            playerThree.GetComponent<SpriteRenderer>().sprite = rocksugar;
+            playerThree = Resources.Load("RockSugarGO") as GameObject;
+            //           Animator animator = playerThree.GetComponent<Animator>();
+            //         animator.runtimeAnimatorController = rsAnim;
+            //playerThree.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }
         if (Sprite4 == "KonpeitoSprite")
         {
-            Animator animator = playerFour.GetComponent<Animator>();
-            animator.runtimeAnimatorController = kpAnim;
-            playerFour.GetComponent<SpriteRenderer>().sprite = konpeito;
+            playerFour = Resources.Load("KonpeiGO") as GameObject;
+            //       Animator animator = playerFour.GetComponent<Animator>();
+            //     animator.runtimeAnimatorController = kpAnim;
+            //playerFour.GetComponent<SpriteRenderer>().sprite = konpeito;
         }
         if (Sprite4 == "MacaroonSprite")
         {
-            Animator animator = playerFour.GetComponent<Animator>();
-            animator.runtimeAnimatorController = macAnim;
-            playerFour.GetComponent<SpriteRenderer>().sprite = macaroon;
+            playerFour = Resources.Load("MacGO") as GameObject;
+            //   Animator animator = playerFour.GetComponent<Animator>();
+            // animator.runtimeAnimatorController = macAnim;
+            //playerFour.GetComponent<SpriteRenderer>().sprite = macaroon;
         }
         if (Sprite4 == "TangHuluSprite")
         {
-            Animator animator = playerFour.GetComponent<Animator>();
-            animator.runtimeAnimatorController = thAnim;
-            playerFour.GetComponent<SpriteRenderer>().sprite = tanghulu;
+            playerFour = Resources.Load("TangHuluGO") as GameObject;
+            //Animator animator = playerFour.GetComponent<Animator>();
+            //animator.runtimeAnimatorController = thAnim;
+            //playerFour.GetComponent<SpriteRenderer>().sprite = tanghulu;
         }
         if (Sprite4 == "RockSugarSprite")
         {
-            Animator animator = playerFour.GetComponent<Animator>();
-            animator.runtimeAnimatorController = rsAnim;
-            playerFour.GetComponent<SpriteRenderer>().sprite = rocksugar;
+            playerFour = Resources.Load("RockSugarGO") as GameObject;
+            //    Animator animator = playerFour.GetComponent<Animator>();
+            //  animator.runtimeAnimatorController = rsAnim;
+            //playerFour.GetComponent<SpriteRenderer>().sprite = rocksugar;
         }
         playerOne.transform.position = new Vector2(20.9f, 9.6f);
         playerTwo.transform.position = new Vector2(20.9f, -2.78f);
         playerThree.transform.position = new Vector2(-21.1f, 9.1f);
         playerFour.transform.position = new Vector2(-21.1f, -3.4f);
+        // StartCoroutine(instantiatePlayers());
         var player1 = PlayerInput.Instantiate(prefab: playerOne, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
         var player2 = PlayerInput.Instantiate(prefab: playerTwo, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
         var player3 = PlayerInput.Instantiate(prefab: playerThree, playerIndex: 2, controlScheme: "Keyboard3", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
         var player4 = PlayerInput.Instantiate(prefab: playerFour, playerIndex: 3, controlScheme: "Keyboard4", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
-
+    }
+    IEnumerator instantiatePlayers()
+    {
+        yield return new WaitForSeconds(2f);
+        var player1 = PlayerInput.Instantiate(prefab: playerOne, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
+        var player2 = PlayerInput.Instantiate(prefab: playerTwo, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
+        var player3 = PlayerInput.Instantiate(prefab: playerThree, playerIndex: 2, controlScheme: "Keyboard3", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
+        var player4 = PlayerInput.Instantiate(prefab: playerFour, playerIndex: 3, controlScheme: "Keyboard4", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
     }
 }
 

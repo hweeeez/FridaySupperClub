@@ -11,7 +11,7 @@ public class Controller : MonoBehaviour
     public Material hitMaterial;
     public Material defMaterial;
     Color color;
-    Collider capcollider; 
+    Collider capcollider;
     Collider feetCollider;
     public Transform feetTransform;
     SpriteRenderer spriteRender;
@@ -41,15 +41,15 @@ public class Controller : MonoBehaviour
     private bool hasJumped = false;
     private float dropGravity = -65.91f;
     [SerializeField]
-    private float jumpGravity = -85.81f;
+    private float jumpGravity = -135.81f;
     [SerializeField]
-    private float fallingGravity = -95.81f;
+    private float fallingGravity = -165.81f;
     [SerializeField]
     private float slamGravity = -280f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
     public Vector3 spawnPos;
-    private float maxHeight = 5.5f;
+    private float maxHeight = 6.5f;
     private float minHeight = 2f;
     Ray ray;
     RaycastHit hit;
@@ -161,9 +161,9 @@ public class Controller : MonoBehaviour
 
         }
         playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
-        invulnerable = false;        
+        invulnerable = false;
         feetCollider.enabled = true;
-        
+
         controller.detectCollisions = true;
 
     }
@@ -171,7 +171,7 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-       // print(collider.enabled);
+        // print(collider.enabled);
         //ceilingcheck
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -180,12 +180,15 @@ public class Controller : MonoBehaviour
         {
             startedJump = false;
             if (playerVelocity.y > 0)
-            { playerVelocity.y += -140f * Time.deltaTime;
+            {
+                playerVelocity.y += -140f * Time.deltaTime;
                 controller.Move(playerVelocity * Time.deltaTime);
             }
             if (playerVelocity.y <= 0)
-            { playerVelocity.y =0;
-                controller.Move(playerVelocity * Time.deltaTime); }                 
+            {
+                playerVelocity.y = 0;
+                controller.Move(playerVelocity * Time.deltaTime);
+            }
             anim.SetTrigger("Dead");
             StartCoroutine(RespawnPlayer());
             invulnerable = true;
@@ -231,6 +234,7 @@ public class Controller : MonoBehaviour
         }
         else
         {
+            dust.Play();
             anim.SetBool("isMoving", true);
             controller.Move(move * Time.deltaTime * playerSpeed);
             if (controller.isGrounded)
@@ -293,12 +297,12 @@ public class Controller : MonoBehaviour
             anim.SetBool("slam", true);
         }
         else if (controller.isGrounded) { anim.SetBool("slam", false); }
-   /*     if (playerVelocity.y > 0)
-        {
-            anim.SetBool("isGrounded", false);
-        }
-        else
-        { anim.SetBool("isGrounded", true); }*/
+        /*     if (playerVelocity.y > 0)
+             {
+                 anim.SetBool("isGrounded", false);
+             }
+             else
+             { anim.SetBool("isGrounded", true); }*/
 
         if (movementInput.x > 0)
         {
@@ -312,7 +316,7 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
-        
+
         //Debug.Log(playerVelocity.y);
     }
     private void OnTriggerEnter(Collider other)

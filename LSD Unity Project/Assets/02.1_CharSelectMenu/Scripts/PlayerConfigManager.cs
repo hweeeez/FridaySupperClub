@@ -32,7 +32,7 @@ public class PlayerConfigManager : MonoBehaviour
     public GameObject g2;
     public GameObject g3;
     public GameObject g4;
-
+    private bool sceneloaded;
     private bool p1Ready;
     private bool p2Ready;
     private bool p3Ready;
@@ -44,6 +44,7 @@ public class PlayerConfigManager : MonoBehaviour
     public static PlayerConfigManager Instance { get; private set; }
     void Awake()
     {
+        sceneloaded = false;
         bgCanvas = GameObject.Find("BackgroundCanvas");
         var bgCamera = bgCanvas.GetComponent<Canvas>();
         bgCamera.worldCamera = mainCamera;
@@ -101,13 +102,13 @@ public class PlayerConfigManager : MonoBehaviour
         {
             sprite1 = g1.GetComponent<SelectChar>().readySprite.name;
             PlayerPrefs.SetString("Sprite1", sprite1);
-        
+
             p1tag = g1.GetComponent<SelectChar>().charTaken.gameObject.tag;
 
             int index = PlayerPrefs.GetInt("charTaken");
             foreach (GameObject obj in playerobj)
             {
-               obj.GetComponent<SelectChar>().charList.RemoveAt(index);
+                obj.GetComponent<SelectChar>().charList.RemoveAt(index);
             }
             tagged = GameObject.FindGameObjectsWithTag(g1.GetComponent<SelectChar>().charTaken.gameObject.tag);
             p1Ready = true;
@@ -126,14 +127,14 @@ public class PlayerConfigManager : MonoBehaviour
                 obj.GetComponent<SelectChar>().charList.RemoveAt(index);
             }
             tagged = GameObject.FindGameObjectsWithTag(g2.GetComponent<SelectChar>().charTaken.gameObject.tag);
-          /*  foreach (GameObject tag in tagged)
-            {
-                tag.SetActive(false);
-            }*/
+            /*  foreach (GameObject tag in tagged)
+              {
+                  tag.SetActive(false);
+              }*/
             sprite2 = g2.GetComponent<SelectChar>().readySprite.name;
             p2Ready = true;
             print("p2ready");
-     
+
             PlayerPrefs.SetString("Sprite2", sprite2);
             StartCoroutine(playerActive(g2, g3));
         }
@@ -147,14 +148,14 @@ public class PlayerConfigManager : MonoBehaviour
                 obj.GetComponent<SelectChar>().charList.RemoveAt(index);
             }
             tagged = GameObject.FindGameObjectsWithTag(g3.GetComponent<SelectChar>().charTaken.gameObject.tag);
-          /*  foreach (GameObject tag in tagged)
-            {
-                tag.SetActive(false);
-            }*/
+            /*  foreach (GameObject tag in tagged)
+              {
+                  tag.SetActive(false);
+              }*/
             p3Ready = true;
             sprite3 = g3.GetComponent<SelectChar>().readySprite.name;
             print("p3ready");
-    
+
             PlayerPrefs.SetString("Sprite3", sprite3);
             StartCoroutine(playerActive(g3, g4));
         }
@@ -165,9 +166,10 @@ public class PlayerConfigManager : MonoBehaviour
             PlayerPrefs.SetString("Sprite4", sprite4);
 
         }
-        bool sceneloaded = false;
-        if ( p1Ready && p2Ready && p3Ready && p4Ready)
-        {if (!sceneloaded)
+
+        if (p1Ready && p2Ready && p3Ready && p4Ready)
+        {
+            if (!sceneloaded)
             {
                 SceneManager.LoadScene("PlayableTest01");
                 sceneloaded = true;

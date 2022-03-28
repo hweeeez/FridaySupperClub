@@ -3794,6 +3794,22 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5263477463205811497, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
+      propertyPath: kpGO
+      value: 
+      objectReference: {fileID: 7104238988279009790, guid: da8678ba620ca264ba4d172942faaf7a, type: 3}
+    - target: {fileID: 5263477463205811497, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
+      propertyPath: rsGO
+      value: 
+      objectReference: {fileID: 7104238988279009790, guid: d70e6c8115b8d29419c27ba8d6641abc, type: 3}
+    - target: {fileID: 5263477463205811497, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
+      propertyPath: thGO
+      value: 
+      objectReference: {fileID: 7104238988279009790, guid: f7f95fb3238f8454bbeb860501d20c56, type: 3}
+    - target: {fileID: 5263477463205811497, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
+      propertyPath: macGO
+      value: 
+      objectReference: {fileID: 7104238988279009790, guid: 52f3e6b0fc8aad94a9c196799be4e91f, type: 3}
+    - target: {fileID: 5263477463205811497, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
       propertyPath: konpeiAnim
       value: 
       objectReference: {fileID: 9100000, guid: 223511807344a49df973e1cce6458343, type: 2}
@@ -7657,8 +7673,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 50, y: 28.324753, z: 1}
-  m_Center: {x: 0, y: -0.18615341, z: 0}
+  m_Size: {x: 50.00041, y: 24.021475, z: 1}
+  m_Center: {x: 0, y: -2.3378956, z: 0}
 --- !u!212 &2077885941
 SpriteRenderer:
   m_ObjectHideFlags: 0
