@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
@@ -54,8 +55,7 @@ public class SelectChar : MonoBehaviour
     }
 
     public void OnSelect(InputAction.CallbackContext context)
-    {
-        if (context.performed)
+    { if (context.performed)
         {
             isReady = true;
             charTaken = charList[index];

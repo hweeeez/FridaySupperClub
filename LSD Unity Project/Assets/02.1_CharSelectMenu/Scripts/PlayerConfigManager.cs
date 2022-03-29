@@ -17,7 +17,7 @@ public class PlayerConfigManager : MonoBehaviour
     private List<GameObject> playerobj;
     public List<SelectChar> playerList;
     public List<List<GameObject>> charaList;
-
+    public GameObject LoadingPanel;
     public string sprite1;
     public string sprite2;
     public string sprite3;
@@ -45,9 +45,9 @@ public class PlayerConfigManager : MonoBehaviour
     void Awake()
     {
         sceneloaded = false;
-        bgCanvas = GameObject.Find("BackgroundCanvas");
+    /*    bgCanvas = GameObject.Find("BackgroundCanvas");
         var bgCamera = bgCanvas.GetComponent<Canvas>();
-        bgCamera.worldCamera = mainCamera;
+        bgCamera.worldCamera = mainCamera;*/
         charaList = new List<List<GameObject>>();
         playerList = new List<SelectChar>();
         players = new List<PlayerInput>();
@@ -155,7 +155,7 @@ public class PlayerConfigManager : MonoBehaviour
             p3Ready = true;
             sprite3 = g3.GetComponent<SelectChar>().readySprite.name;
             print("p3ready");
-
+            p4Ready = true;
             PlayerPrefs.SetString("Sprite3", sprite3);
             StartCoroutine(playerActive(g3, g4));
         }
@@ -169,11 +169,15 @@ public class PlayerConfigManager : MonoBehaviour
 
         if (p1Ready && p2Ready && p3Ready && p4Ready)
         {
-            if (!sceneloaded)
+            LoadingPanel.SetActive(true);
+            g1.SetActive(false);
+            g2.SetActive(false); g3.SetActive(false); g4.SetActive(false);
+     /*       if (!sceneloaded)
             {
-                SceneManager.LoadScene("PlayableTest01");
+                SceneManager.LoadSceneAsync("PlayableTest01");
+                //SceneManager.LoadScene("LoadingScreen");
                 sceneloaded = true;
-            }
+            }*/
         }
 
     }
