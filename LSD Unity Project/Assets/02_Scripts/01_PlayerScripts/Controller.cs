@@ -33,9 +33,9 @@ public class Controller : MonoBehaviour
 
     private bool invulnerable = false;
     private float defplayerSpeed = 14.0f;
-    private float dashSpeed = 25.0f;
+    private float dashSpeed = 70.0f;
     private Vector3 move;
-    private float MaxDashTime = 1.5f;
+    private float MaxDashTime = 1.7f;
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
     private bool hasJumped = false;
@@ -57,7 +57,8 @@ public class Controller : MonoBehaviour
     float startY;
     private bool slammed = false;
     private bool slamming = false;
-
+    private bool moveTrigger;
+    private int rightCount; private int leftCount = 0;
     // if canDash and !dashing then perform dash
     private bool isDashing = false;
     private bool canDash;
@@ -112,6 +113,38 @@ public class Controller : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
+        if (context.action.triggered) { moveTrigger = true; }
+        else if (context.action.phase == InputActionPhase.Canceled) { moveTrigger = false; }
+     /*   if (context.action.triggered && movementInput.x < 0)
+         
+        {  
+                leftCount += 1;
+                currentDashTime = 0;
+            
+         
+ 
+            if (leftCount == 1 && !canDash)
+            {
+                rightCount = 0;
+            }
+            if (leftCount> 2 | rightCount > 2)
+            {
+                leftCount = 0;
+                rightCount = 0;
+            }
+        }
+        if (context.action.triggered && movementInput.x > 0)
+        {
+         
+                rightCount += 1;
+                currentDashTime = 0;
+            
+            if (rightCount == 1 && !canDash)
+            {
+                rightCount = 0;
+            }
+        }*/
+
     }
 
     public void OnSlam(InputAction.CallbackContext context)
@@ -131,7 +164,6 @@ public class Controller : MonoBehaviour
     {
         if (context.action.triggered)
         {
-            print("jumping");
             jumpButtonHeld = true;
         }
         else if (context.action.phase == InputActionPhase.Canceled)
@@ -242,14 +274,32 @@ public class Controller : MonoBehaviour
                 playerVelocity.y = 0;
             }
         }
-        if (canDash && !isDashing)
+        if(moveTrigger && movementInput.x < 0)
         {
-            currentDashTime = 0;
+            leftCount += 1;
         }
-        if (currentDashTime < MaxDashTime)
+        if (moveTrigger && movementInput.x > 0)
         {
+            rightCount += 1;
+        }
+        float startPress = 0;
+      if(rightCount == 1 | leftCount ==1)
+        {
+            startPress += Time.time;
+        }
+        if (startPress < 2.5f)
+            {
+            canDash = true;
+        }
+        if (rightCount == 2 && canDash)
+            {
+                currentDashTime += dashStopSpeed;
+                isDashing = true;
+            }
+        if (leftCount == 2 && canDash)
+        {
+            currentDashTime += dashStopSpeed;
             isDashing = true;
-            currentDashTime += dashStopSpeed * Time.deltaTime;
         }
         if (currentDashTime >= MaxDashTime && isDashing)
         {
@@ -257,6 +307,41 @@ public class Controller : MonoBehaviour
             canDash = false;
             isDashing = false;
         }
+        
+        if (startPress > 1f)
+        {
+            canDash = false;
+            isDashing = false;
+            startPress = 0;
+        }
+        print("left " + leftCount);
+        print("right " + rightCount);
+        //print(startPress);
+        /*    if (leftCount == 2)
+            {
+                currentDashTime += dashStopSpeed;
+                isDashing = true;
+            }*/
+        /*   if (currentDashTime >= MaxDashTime)
+           {
+               leftCount = 0;
+               rightCount = 0;
+               isDashing = false;
+               currentDashTime = 0;
+           }*/
+
+        //print(currentDashTime);
+        /*      if (currentDashTime < MaxDashTime)
+              {
+                  isDashing = true;
+                  currentDashTime += dashStopSpeed * Time.deltaTime;
+              }
+              if (currentDashTime >= MaxDashTime && isDashing)
+              {
+                  currentDashTime = MaxDashTime;
+                  canDash = false;
+                  isDashing = false;
+              }*/
 
 
 
@@ -297,12 +382,6 @@ public class Controller : MonoBehaviour
             anim.SetBool("slam", true);
         }
         else if (controller.isGrounded) { anim.SetBool("slam", false); }
-        /*     if (playerVelocity.y > 0)
-             {
-                 anim.SetBool("isGrounded", false);
-             }
-             else
-             { anim.SetBool("isGrounded", true); }*/
 
         if (movementInput.x > 0)
         {
@@ -317,7 +396,7 @@ public class Controller : MonoBehaviour
             StartCoroutine(finalDeath());
         }
 
-        //Debug.Log(playerVelocity.y);
+  
     }
     private void OnTriggerEnter(Collider other)
     {

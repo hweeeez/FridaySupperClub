@@ -155,7 +155,6 @@ public class PlayerConfigManager : MonoBehaviour
             p3Ready = true;
             sprite3 = g3.GetComponent<SelectChar>().readySprite.name;
             print("p3ready");
-            p4Ready = true;
             PlayerPrefs.SetString("Sprite3", sprite3);
             StartCoroutine(playerActive(g3, g4));
         }
