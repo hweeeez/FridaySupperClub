@@ -6,7 +6,8 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PlayerConfigManager : MonoBehaviour
-{
+{ 
+    public GameObject mapCanvas;
     string p1tag;
     string p2tag;
     string p3tag;
@@ -168,20 +169,27 @@ public class PlayerConfigManager : MonoBehaviour
 
         if (p1Ready && p2Ready && p3Ready && p4Ready)
         {
-            LoadingPanel.SetActive(true);
+            mapCanvas.SetActive(true);
+            //LoadingPanel.SetActive(true);
             g1.SetActive(false);
             g2.SetActive(false); g3.SetActive(false); g4.SetActive(false);
-     /*       if (!sceneloaded)
-            {
-                SceneManager.LoadSceneAsync("PlayableTest01");
-                //SceneManager.LoadScene("LoadingScreen");
-                sceneloaded = true;
-            }*/
+
         }
 
     }
 
-
+    public void mapOne()
+    {
+        mapCanvas.SetActive(false);
+        PlayerPrefs.SetString("MapSelect", "MapOne");
+        LoadingPanel.SetActive(true);
+    }
+    public void mapTwo()
+    {
+        mapCanvas.SetActive(false);
+        PlayerPrefs.SetString("MapSelect", "MapTwo");
+        LoadingPanel.SetActive(true);
+    }
 
 
 

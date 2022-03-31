@@ -39,6 +39,7 @@ public class CursorController : MonoBehaviour
     }
     private void Start()
     {
+        
         controls.Player1.MouseClick.started += _ => StartedClick();
         controls.Player1.MouseClick.performed += _ => EndedClick();
     }

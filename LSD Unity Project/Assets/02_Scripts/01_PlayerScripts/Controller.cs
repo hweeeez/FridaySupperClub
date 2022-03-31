@@ -7,6 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    public ParticleSystem bonk;
     public ParticleSystem dust;
     public Material hitMaterial;
     public Material defMaterial;
@@ -203,13 +204,12 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        // print(collider.enabled);
-        //ceilingcheck
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
         if (isAttacked && !invulnerable)
         {
+            bonk.Play();
             startedJump = false;
             if (playerVelocity.y > 0)
             {
@@ -225,7 +225,7 @@ public class Controller : MonoBehaviour
             StartCoroutine(RespawnPlayer());
             invulnerable = true;
             lifeScript.LoseLife();
-            StartCoroutine(RespawnPlayer());
+           
         }
 
         float fallGravity = hasJumped ? fallingGravity : dropGravity;
