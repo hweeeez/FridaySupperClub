@@ -19,8 +19,8 @@ public class characterspawn : MonoBehaviour
     public GameObject rsGO;
     public GameObject macGO;
     public GameObject thGO;
-    public GameObject Map1;
-    public GameObject Map2;
+    //  public GameObject Map1;
+    //public GameObject Map2;
     public RuntimeAnimatorController kpAnim;
     public RuntimeAnimatorController rsAnim;
     public RuntimeAnimatorController thAnim;
@@ -34,15 +34,15 @@ public class characterspawn : MonoBehaviour
         string Sprite3 = PlayerPrefs.GetString("Sprite3");
         string Sprite4 = PlayerPrefs.GetString("Sprite4");
         string mapChosen = PlayerPrefs.GetString("MapSelect");
-        if(mapChosen == "MapOne")
-        {
-            Map1.SetActive(true);
-        }
-            if (mapChosen == "MapTwo")
-        {
-            Map2.SetActive(true);
-        }
-                if (Sprite1 == "KonpeitoSprite")
+        /*      if (mapChosen == "MapOne")
+              {
+                  Map1.SetActive(true);
+              }
+              if (mapChosen == "MapTwo")
+              {
+                  Map2.SetActive(true);
+              }*/
+        if (Sprite1 == "KonpeitoSprite")
         {
             playerOne = Resources.Load("KonpeiGO") as GameObject;
             //    Animator animator = playerOne.GetComponent<Animator>();

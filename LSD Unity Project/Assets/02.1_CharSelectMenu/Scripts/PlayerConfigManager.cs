@@ -6,7 +6,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 
 public class PlayerConfigManager : MonoBehaviour
-{ 
+{
     public GameObject mapCanvas;
     string p1tag;
     string p2tag;
@@ -46,9 +46,9 @@ public class PlayerConfigManager : MonoBehaviour
     void Awake()
     {
         sceneloaded = false;
-    /*    bgCanvas = GameObject.Find("BackgroundCanvas");
-        var bgCamera = bgCanvas.GetComponent<Canvas>();
-        bgCamera.worldCamera = mainCamera;*/
+        /*    bgCanvas = GameObject.Find("BackgroundCanvas");
+            var bgCamera = bgCanvas.GetComponent<Canvas>();
+            bgCamera.worldCamera = mainCamera;*/
         charaList = new List<List<GameObject>>();
         playerList = new List<SelectChar>();
         players = new List<PlayerInput>();
@@ -167,13 +167,13 @@ public class PlayerConfigManager : MonoBehaviour
 
         }
 
-        if (p1Ready && p2Ready && p3Ready && p4Ready)
+        if (p1Ready && p2Ready && p3Ready && p4Ready && !sceneloaded)
         {
             mapCanvas.SetActive(true);
             //LoadingPanel.SetActive(true);
             g1.SetActive(false);
             g2.SetActive(false); g3.SetActive(false); g4.SetActive(false);
-
+            sceneloaded = true;
         }
 
     }
