@@ -7,6 +7,8 @@ public class GameButtons : MonoBehaviour
 {
     public GameObject backGround;
     public GameObject pauseMenu;
+    public GameObject optionsMenu;
+    public GameObject controlsMenu;
     
     public void openPause()
     {
@@ -24,10 +26,30 @@ public class GameButtons : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene("PlayableTest01");
     }
+    public void openOptions()
+    {
+        pauseMenu.SetActive(false);
+        optionsMenu.SetActive(true);
+    }
+    public void optionsBack()
+    {
+        optionsMenu.SetActive(false);
+        pauseMenu.SetActive(true);
+    }
     public void startGame()
     {
         DontDestroyOnLoad(backGround);
         SceneManager.LoadScene("CharacterSelect");
+    }
+    public void openControls()
+    {
+        controlsMenu.SetActive(true);
+        Time.timeScale = 0;
+    }
+    public void controlsBack()
+    {
+        controlsMenu.SetActive(false);
+        Time.timeScale = 1;
     }
     // Start is called before the first frame update
     void Start()
