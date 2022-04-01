@@ -204,18 +204,17 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        
+        print(playerVelocity.y);
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
         if (isAttacked && !invulnerable)
         {
-            print("attacked");
             bonk.Play();
             startedJump = false;
             if (playerVelocity.y > 0)
             {
-                playerVelocity.y += -140f * Time.deltaTime;
+                playerVelocity.y = -140f * Time.deltaTime;
                 controller.Move(playerVelocity * Time.deltaTime);
             }
             if (playerVelocity.y <= 0)

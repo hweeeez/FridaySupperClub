@@ -42,6 +42,7 @@ public class characterspawn : MonoBehaviour
               {
                   Map2.SetActive(true);
               }*/
+        #region
         if (Sprite1 == "KonpeitoSprite")
         {
             playerOne = Resources.Load("KonpeiGO") as GameObject;
@@ -122,7 +123,7 @@ public class characterspawn : MonoBehaviour
             playerFour = Resources.Load("RockSugarGO") as GameObject;
 
         }
-        print(PlayerPrefs.GetString("Sprite3") + Sprite3);
+        #endregion
         playerOne.transform.position = new Vector2(20.9f, 9.6f);
         playerTwo.transform.position = new Vector2(20.9f, -2.78f);
         playerThree.transform.position = new Vector2(-21.1f, 9.1f);
