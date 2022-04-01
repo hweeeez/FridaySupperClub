@@ -6,10 +6,24 @@ using UnityEngine.SceneManagement;
 public class GameButtons : MonoBehaviour
 {
     public GameObject backGround;
+
+    [Header("In-game Pause Menu & Sub Menus")]
     public GameObject pauseMenu;
     public GameObject optionsMenu;
     public GameObject controlsMenu;
-    
+
+    [Header("Title Menu & Submenus")]
+    public GameObject lol;
+
+    //title menu & submenus
+    public void startGame()
+    {
+        DontDestroyOnLoad(backGround);
+        SceneManager.LoadScene("CharacterSelect");
+    }
+
+
+    //in-game menu / submenu
     public void openPause()
     {
         pauseMenu.SetActive(true);
@@ -36,11 +50,6 @@ public class GameButtons : MonoBehaviour
         optionsMenu.SetActive(false);
         pauseMenu.SetActive(true);
     }
-    public void startGame()
-    {
-        DontDestroyOnLoad(backGround);
-        SceneManager.LoadScene("CharacterSelect");
-    }
     public void openControls()
     {
         controlsMenu.SetActive(true);
@@ -50,16 +59,5 @@ public class GameButtons : MonoBehaviour
     {
         controlsMenu.SetActive(false);
         Time.timeScale = 1;
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
