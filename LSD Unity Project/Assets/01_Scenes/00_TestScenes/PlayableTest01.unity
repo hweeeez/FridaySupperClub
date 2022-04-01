@@ -3852,7 +3852,7 @@ PrefabInstance:
       objectReference: {fileID: 2077885939}
     - target: {fileID: 5263477463205811498, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5263477463205811498, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
       propertyPath: timerText
@@ -7710,8 +7710,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 50.00041, y: 24.021475, z: 1}
-  m_Center: {x: 0, y: -2.3378956, z: 0}
+  m_Size: {x: 50.00071, y: 23.919306, z: 1}
+  m_Center: {x: 0, y: -2.3890593, z: 0}
 --- !u!212 &2077885941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7751,7 +7751,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 12
   m_Sprite: {fileID: 21300000, guid: f20d08e43a1bd4102adc0fce5e147fc2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

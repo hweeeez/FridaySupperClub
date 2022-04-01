@@ -14,7 +14,7 @@ public class MolassesScript : MonoBehaviour
     //Rising Water
     public GameObject molassesIntro;
     public GameObject water;
-    float riseSpeed = 18f;
+    float riseSpeed = 12f;
     Vector2 maxWaterHeight;
     bool isRising = false;
 
