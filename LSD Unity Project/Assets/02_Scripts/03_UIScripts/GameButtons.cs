@@ -13,7 +13,10 @@ public class GameButtons : MonoBehaviour
     public GameObject controlsMenu;
 
     [Header("Title Menu & Submenus")]
-    public GameObject lol;
+    public GameObject titleMenu;
+    public GameObject tutorialMenu;
+    public GameObject mainOptionsMenu;
+    public GameObject creditsScreen;
 
     //title menu & submenus
     public void startGame()
@@ -21,7 +24,28 @@ public class GameButtons : MonoBehaviour
         DontDestroyOnLoad(backGround);
         SceneManager.LoadScene("CharacterSelect");
     }
-
+    public void tutorialScreen()
+    {
+        tutorialMenu.SetActive(true);
+        titleMenu.SetActive(false);
+    }
+    public void optionsScreen()
+    {
+        mainOptionsMenu.SetActive(true);
+        titleMenu.SetActive(false);
+    }
+    public void theCredits()
+    {
+        creditsScreen.SetActive(true);
+        titleMenu.SetActive(false);
+    }
+    public void backToMain()
+    {
+        tutorialMenu.SetActive(false);
+        mainOptionsMenu.SetActive(false);
+        creditsScreen.SetActive(false);
+        titleMenu.SetActive(true);
+    }
 
     //in-game menu / submenu
     public void openPause()
