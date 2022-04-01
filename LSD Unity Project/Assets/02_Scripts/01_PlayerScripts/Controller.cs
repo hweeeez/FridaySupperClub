@@ -204,11 +204,13 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
+        
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
         if (isAttacked && !invulnerable)
         {
+            print("attacked");
             bonk.Play();
             startedJump = false;
             if (playerVelocity.y > 0)
@@ -314,8 +316,8 @@ public class Controller : MonoBehaviour
             isDashing = false;
             startPress = 0;
         }
-        print("left " + leftCount);
-        print("right " + rightCount);
+       // print("left " + leftCount);
+       // print("right " + rightCount);
         //print(startPress);
         /*    if (leftCount == 2)
             {

@@ -80,7 +80,7 @@ public class @SelectMenu : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""51b8dad2-9eb9-4471-b834-93bade6ffbb1"",
-                    ""path"": ""<Keyboard>/numpad8"",
+                    ""path"": ""<Keyboard>/8"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": ""Keyboard4"",

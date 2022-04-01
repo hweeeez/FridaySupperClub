@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonk: {fileID: 0}
   dust: {fileID: 2167250214023540568}
   hitMaterial: {fileID: 2100000, guid: 8619be08f9e217c4dab9e0d34bab0455, type: 2}
   defMaterial: {fileID: 2100000, guid: 842342c841e7969468a88a3c2e435655, type: 2}
@@ -511,11 +512,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.06
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.33
+      value: -1.43
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.z

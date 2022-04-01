@@ -116,7 +116,6 @@ public class PlayerConfigManager : MonoBehaviour
             StartCoroutine(playerActive(g1, g2));
         }
 
-        print(PlayerPrefs.GetInt("charTaken"));
 
         if (!p2Ready && g2.GetComponent<SelectChar>().isReady)
         {
@@ -128,10 +127,7 @@ public class PlayerConfigManager : MonoBehaviour
                 obj.GetComponent<SelectChar>().charList.RemoveAt(index);
             }
             tagged = GameObject.FindGameObjectsWithTag(g2.GetComponent<SelectChar>().charTaken.gameObject.tag);
-            /*  foreach (GameObject tag in tagged)
-              {
-                  tag.SetActive(false);
-              }*/
+
             sprite2 = g2.GetComponent<SelectChar>().readySprite.name;
             p2Ready = true;
             print("p2ready");
@@ -149,15 +145,13 @@ public class PlayerConfigManager : MonoBehaviour
                 obj.GetComponent<SelectChar>().charList.RemoveAt(index);
             }
             tagged = GameObject.FindGameObjectsWithTag(g3.GetComponent<SelectChar>().charTaken.gameObject.tag);
-            /*  foreach (GameObject tag in tagged)
-              {
-                  tag.SetActive(false);
-              }*/
+
             p3Ready = true;
             sprite3 = g3.GetComponent<SelectChar>().readySprite.name;
             print("p3ready");
             PlayerPrefs.SetString("Sprite3", sprite3);
             StartCoroutine(playerActive(g3, g4));
+            print("P3: " + sprite3);
         }
         if (!p4Ready && g4.GetComponent<SelectChar>().isReady)
         {

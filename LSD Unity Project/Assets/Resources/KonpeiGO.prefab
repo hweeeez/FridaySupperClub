@@ -32,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7104238988279009790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.1, y: -3.4, z: 0}
+  m_LocalPosition: {x: 20.9, y: -2.78, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8412014376694724086}
@@ -86,7 +86,7 @@ MonoBehaviour:
     m_Bits: 64
   feetMask:
     serializedVersion: 2
-    m_Bits: 128
+    m_Bits: 0
   actionReference: {fileID: -7197453741310385100, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
   jumpGravity: -85.81
   fallingGravity: -95.81
@@ -340,9 +340,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5
-  m_Height: 2
+  m_Height: 2.4181843
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.20909214, z: 0}
 --- !u!1001 &1654017330098811165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -360,7 +360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4989864191676103492, guid: ad824971674361e4c84e5c18caff1fa8, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: 4989864191676103492, guid: ad824971674361e4c84e5c18caff1fa8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -368,7 +368,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4989864191676103492, guid: ad824971674361e4c84e5c18caff1fa8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.62
+      value: -0.19
       objectReference: {fileID: 0}
     - target: {fileID: 4989864191676103492, guid: ad824971674361e4c84e5c18caff1fa8, type: 3}
       propertyPath: m_LocalPosition.z
@@ -629,6 +629,18 @@ PrefabInstance:
     - target: {fileID: 4089713158541057112, guid: 5c32ba2d87f93ac43a4841f52b71def5, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019004417059149435, guid: 5c32ba2d87f93ac43a4841f52b71def5, type: 3}
+      propertyPath: m_SortMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019004417059149435, guid: 5c32ba2d87f93ac43a4841f52b71def5, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019004417059149435, guid: 5c32ba2d87f93ac43a4841f52b71def5, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 449322511
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5c32ba2d87f93ac43a4841f52b71def5, type: 3}
