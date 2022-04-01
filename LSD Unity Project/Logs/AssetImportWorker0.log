@@ -2567,4 +2567,47 @@ Received Import Request.
 Start importing Assets/Resources/KonpeiGO.prefab using Guid(da8678ba620ca264ba4d172942faaf7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56af34ec52e36544b5ea25ffa99974bf') in 0.318134 seconds 
   Import took 0.328345 seconds .
 
+<<<<<<< Updated upstream
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+========================================================================
+Received Import Request.
+  Time since last request: 1991.952925 seconds.
+  path: Assets/01_Scenes/00_TestScenes/PlayableTest01 1.unity
+  artifactKey: Guid(83bf58a6a3d1b4ab39e8fa27cb8b9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01_Scenes/00_TestScenes/PlayableTest01 1.unity using Guid(83bf58a6a3d1b4ab39e8fa27cb8b9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ef991bff268c17262f2c8becb28fb27') in 0.006733 seconds 
+  Import took 0.039397 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.050600 seconds.
+  path: Assets/01_Scenes/00_TestScenes/PlayableTest02.unity
+  artifactKey: Guid(bf3770c8e406f4ae2a31831d4307837a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01_Scenes/00_TestScenes/PlayableTest02.unity using Guid(bf3770c8e406f4ae2a31831d4307837a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5502554f19ba6902f10775c6c3febbc') in 0.004114 seconds 
+  Import took 0.013072 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 39.490431 seconds.
+  path: Assets/01_Scenes/00_TestScenes/PlayableTest02.unity
+  artifactKey: Guid(bf3770c8e406f4ae2a31831d4307837a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01_Scenes/00_TestScenes/PlayableTest02.unity using Guid(bf3770c8e406f4ae2a31831d4307837a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146c88ad1248052e3796f80d54bca3e7') in 0.002417 seconds 
+  Import took 0.009938 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.723666 seconds.
+  path: Assets/01_Scenes/00_TestScenes/Map02_Test.unity
+  artifactKey: Guid(bf3770c8e406f4ae2a31831d4307837a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01_Scenes/00_TestScenes/Map02_Test.unity using Guid(bf3770c8e406f4ae2a31831d4307837a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fec17125c82f9013969edfdf84c41aae') in 0.002621 seconds 
+  Import took 0.009633 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.800032 seconds.
+  path: Assets/01_Scenes/00_TestScenes/PlayableTest02.unity
+  artifactKey: Guid(83bf58a6a3d1b4ab39e8fa27cb8b9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/01_Scenes/00_TestScenes/PlayableTest02.unity using Guid(83bf58a6a3d1b4ab39e8fa27cb8b9ea4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '63c8bdb51791554f81e364440dcd60de') in 0.001474 seconds 
+  Import took 0.008545 seconds .
+
+>>>>>>> Stashed changes
