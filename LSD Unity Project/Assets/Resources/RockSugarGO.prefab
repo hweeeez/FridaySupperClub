@@ -160,8 +160,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   actionReference: {fileID: 6832862665110910685, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
-  jumpGravity: -85.81
-  fallingGravity: -95.81
+  jumpGravity: -105.81
+  fallingGravity: -120.81
   slamGravity: -280
   spawnPos: {x: -21.1, y: 16.1, z: 0}
 --- !u!136 &7104238988279009777

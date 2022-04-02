@@ -4076,7 +4076,7 @@ PrefabInstance:
     - target: {fileID: 5263477463205811497, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
       propertyPath: kpGO
       value: 
-      objectReference: {fileID: 7104238988279009790, guid: da8678ba620ca264ba4d172942faaf7a, type: 3}
+      objectReference: {fileID: 7104238988279009790, guid: a552edd7544101341aedb3f6aca10350, type: 3}
     - target: {fileID: 5263477463205811497, guid: 0fb0049daac3cb14890d6cd629a79f79, type: 3}
       propertyPath: rsGO
       value: 
@@ -4935,6 +4935,10 @@ MonoBehaviour:
   pauseMenu: {fileID: 999365006}
   optionsMenu: {fileID: 1701230916}
   controlsMenu: {fileID: 1005912760}
+  titleMenu: {fileID: 0}
+  tutorialMenu: {fileID: 0}
+  mainOptionsMenu: {fileID: 0}
+  creditsScreen: {fileID: 0}
 --- !u!1 &1158752151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6961,6 +6965,10 @@ MonoBehaviour:
   pauseMenu: {fileID: 999365006}
   optionsMenu: {fileID: 1701230916}
   controlsMenu: {fileID: 1005912760}
+  titleMenu: {fileID: 0}
+  tutorialMenu: {fileID: 0}
+  mainOptionsMenu: {fileID: 0}
+  creditsScreen: {fileID: 0}
 --- !u!1 &1661588007
 GameObject:
   m_ObjectHideFlags: 0

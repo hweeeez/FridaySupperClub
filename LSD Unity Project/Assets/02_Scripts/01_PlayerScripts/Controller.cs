@@ -63,6 +63,7 @@ public class Controller : MonoBehaviour
     // if canDash and !dashing then perform dash
     private bool isDashing = false;
     private bool canDash;
+    bool canJump = true; bool tryAccelerate = false; bool confine = false;
     private void Awake()
     {
         feetCollider = feetTransform.GetComponent<Collider>();
@@ -175,11 +176,17 @@ public class Controller : MonoBehaviour
     }
     IEnumerator RespawnPlayer()
     {
+        playerVelocity.y = 0;
+        confine = true;
+        canJump = false;
+        invulnerable = true;
+        tryAccelerate = false;
         controller.detectCollisions = false;
         feetCollider.enabled = false;
         capcollider.enabled = false;
-        //controller.enabled = false;
+        controller.enabled = false;
         playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;
+        playerRB.AddForce(Vector3.down, ForceMode.Impulse);
         yield return new WaitForSeconds(1f);
         this.transform.position = spawnPos;
         capcollider.enabled = true;
@@ -196,40 +203,22 @@ public class Controller : MonoBehaviour
         playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
         invulnerable = false;
         feetCollider.enabled = true;
-
+        canJump = true;
         controller.detectCollisions = true;
-
+        confine = false;
     }
 
 
     void Update()
     {
-        print(playerVelocity.y);
+        bool canMove = true;
+        bool tryAccelerate = false;
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
-        if (isAttacked && !invulnerable)
-        {
-            bonk.Play();
-            startedJump = false;
-            if (playerVelocity.y > 0)
-            {
-                playerVelocity.y = -140f * Time.deltaTime;
-                controller.Move(playerVelocity * Time.deltaTime);
-            }
-            if (playerVelocity.y <= 0)
-            {
-                playerVelocity.y = 0;
-                controller.Move(playerVelocity * Time.deltaTime);
-            }
-            anim.SetTrigger("Dead");
-            StartCoroutine(RespawnPlayer());
-            invulnerable = true;
-            lifeScript.LoseLife();
-           
-        }
+      
 
-        float fallGravity = hasJumped ? fallingGravity : dropGravity;
+        float fallGravity = canJump ? fallingGravity : dropGravity;
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
         float playerSpeed = isDashing ? dashSpeed : defplayerSpeed;
         float gravityValue = startedJump ? jumpGravity : defaultfallGravity;
@@ -238,15 +227,14 @@ public class Controller : MonoBehaviour
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
         //print("isGrounded: " + controller.isGrounded);
-        bool tryAccelerate = false;
         float jumpedDistance = transform.position.y - startY;
 
-        if (jumpButtonHeld)
+        if (jumpButtonHeld && canJump)
         {
 
-            if (controller.isGrounded)
+            if (controller.isGrounded )
             {
-                dust.Play();
+               dust.Play();
                 startedJump = true;
                 startY = transform.position.y;
             }
@@ -265,7 +253,7 @@ public class Controller : MonoBehaviour
             move = Vector3.zero;
             anim.SetBool("isMoving", false);
         }
-        else
+        else if( canMove)
         {
             dust.Play();
             anim.SetBool("isMoving", true);
@@ -275,7 +263,8 @@ public class Controller : MonoBehaviour
                 playerVelocity.y = 0;
             }
         }
-        if(moveTrigger && movementInput.x < 0)
+        #region
+        if (moveTrigger && movementInput.x < 0)
         {
             leftCount += 1;
         }
@@ -315,8 +304,9 @@ public class Controller : MonoBehaviour
             isDashing = false;
             startPress = 0;
         }
-       // print("left " + leftCount);
-       // print("right " + rightCount);
+
+        // print("left " + leftCount);
+        // print("right " + rightCount);
         //print(startPress);
         /*    if (leftCount == 2)
             {
@@ -344,8 +334,8 @@ public class Controller : MonoBehaviour
                   isDashing = false;
               }*/
 
-
-
+        #endregion
+        print(tryAccelerate);
         if (tryAccelerate)
         {
             anim.SetBool("isGrounded", false);
@@ -378,11 +368,36 @@ public class Controller : MonoBehaviour
             canDash = false;
 
         }
-        if (slamming && !controller.isGrounded)
+        if (slamming && !controller.isGrounded )
         {
             anim.SetBool("slam", true);
         }
         else if (controller.isGrounded) { anim.SetBool("slam", false); }
+        if (isAttacked && !invulnerable )
+        {
+            if (!confine)
+            {
+                canMove = false;
+                tryAccelerate = false;
+                canJump = false;
+                bonk.Play();
+                startedJump = false;
+                playerVelocity.y = 0;
+                /*         if (playerVelocity.y > 0)
+                         {
+                             playerVelocity.y = -100.85f * Time.deltaTime;
+                             controller.Move(playerVelocity * Time.deltaTime);
+                         }
+                         if (playerVelocity.y < 0)
+                         {
+                             playerVelocity.y = 100.85f * Time.deltaTime;
+                             controller.Move(playerVelocity * Time.deltaTime);
+                         }*/
+                anim.SetTrigger("Dead");
+                StartCoroutine(RespawnPlayer());
+                lifeScript.LoseLife();
+            }
+        }
 
         if (movementInput.x > 0)
         {
@@ -396,8 +411,7 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
-
-  
+          
     }
     private void OnTriggerEnter(Collider other)
     {
