@@ -7,11 +7,12 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    #region
     public ParticleSystem bonk;
     public ParticleSystem dust;
     public Material hitMaterial;
     public Material defMaterial;
-    Color color;
+    Collider headCollider;
     Collider capcollider;
     Collider feetCollider;
     public Transform feetTransform;
@@ -52,8 +53,8 @@ public class Controller : MonoBehaviour
     public Vector3 spawnPos;
     private float maxHeight = 6.5f;
     private float minHeight = 2f;
-    Ray ray;
-    RaycastHit hit;
+    float mass = 3.0f;
+    Vector3 impact = Vector3.zero;
     bool startedJump;
     float startY;
     private bool slammed = false;
@@ -62,13 +63,15 @@ public class Controller : MonoBehaviour
     private int rightCount; private int leftCount = 0;
     // if canDash and !dashing then perform dash
     private bool isDashing = false;
-    private bool canDash;
+    private bool canDash; 
+    private bool canMove = true;
     bool canJump = true; bool tryAccelerate = false; bool confine = false;
+    #endregion
     private void Awake()
     {
+        headCollider = groundCheck.GetComponent<Collider>();
         feetCollider = feetTransform.GetComponent<Collider>();
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
-        color = spriteRender.color;
         anim = gameObject.GetComponent<Animator>();
         playerRB = GetComponent<Rigidbody>();
         controller = gameObject.GetComponent<CharacterController>();
@@ -176,19 +179,27 @@ public class Controller : MonoBehaviour
     }
     IEnumerator RespawnPlayer()
     {
+        Vector3 down = new Vector3(0, -1, 0);
+        controller.Move(down * Time.deltaTime * 80f);
         playerVelocity.y = 0;
+        controller.Move(playerVelocity * Time.deltaTime);
+        canMove = false;
+        AddImpact(Vector3.down, 30);
+        headCollider.enabled = false;
         confine = true;
         canJump = false;
         invulnerable = true;
         tryAccelerate = false;
         controller.detectCollisions = false;
         feetCollider.enabled = false;
-        capcollider.enabled = false;
+       // capcollider.enabled = false;
+      // controller.enabled = false;
+      // playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;  
+        yield return new WaitForSeconds(0.5f);
         controller.enabled = false;
-        playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;
-        playerRB.AddForce(Vector3.down, ForceMode.Impulse);
-        yield return new WaitForSeconds(1f);
         this.transform.position = spawnPos;
+        yield return new WaitForSeconds(0.5f);
+        canMove = true;
         capcollider.enabled = true;
         //controller.enabled = true;
         anim.ResetTrigger("Dead");
@@ -206,17 +217,18 @@ public class Controller : MonoBehaviour
         canJump = true;
         controller.detectCollisions = true;
         confine = false;
+        headCollider.enabled = true;
+        
     }
 
 
     void Update()
     {
-        bool canMove = true;
+ 
         bool tryAccelerate = false;
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
-      
 
         float fallGravity = canJump ? fallingGravity : dropGravity;
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
@@ -246,17 +258,18 @@ public class Controller : MonoBehaviour
             tryAccelerate = true;
         }
 
-        move = new Vector3(movementInput.x, movementInput.y, 0);
+       
 
         if (movementInput == Vector2.zero)
         {
             move = Vector3.zero;
             anim.SetBool("isMoving", false);
         }
-        else if( canMove)
-        {
-            dust.Play();
+        else if(canMove)
+
+        {   dust.Play();
             anim.SetBool("isMoving", true);
+            move = new Vector3(movementInput.x, movementInput.y, 0);
             controller.Move(move * Time.deltaTime * playerSpeed);
             if (controller.isGrounded)
             {
@@ -304,8 +317,9 @@ public class Controller : MonoBehaviour
             isDashing = false;
             startPress = 0;
         }
-
-        // print("left " + leftCount);
+        if(leftCount > 2) { leftCount = 0; }
+        if (rightCount > 2) { rightCount = 0; }
+         print("left " + leftCount);
         // print("right " + rightCount);
         //print(startPress);
         /*    if (leftCount == 2)
@@ -375,6 +389,10 @@ public class Controller : MonoBehaviour
         else if (controller.isGrounded) { anim.SetBool("slam", false); }
         if (isAttacked && !invulnerable )
         {
+            if (impact.magnitude > 0.2F) controller.Move(impact * Time.deltaTime);
+            // consumes the impact energy each cycle:
+            impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
+            
             if (!confine)
             {
                 canMove = false;
@@ -382,17 +400,7 @@ public class Controller : MonoBehaviour
                 canJump = false;
                 bonk.Play();
                 startedJump = false;
-                playerVelocity.y = 0;
-                /*         if (playerVelocity.y > 0)
-                         {
-                             playerVelocity.y = -100.85f * Time.deltaTime;
-                             controller.Move(playerVelocity * Time.deltaTime);
-                         }
-                         if (playerVelocity.y < 0)
-                         {
-                             playerVelocity.y = 100.85f * Time.deltaTime;
-                             controller.Move(playerVelocity * Time.deltaTime);
-                         }*/
+        
                 anim.SetTrigger("Dead");
                 StartCoroutine(RespawnPlayer());
                 lifeScript.LoseLife();
@@ -411,7 +419,7 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
-          
+    
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -419,6 +427,11 @@ public class Controller : MonoBehaviour
         {
             lifeScript.health = 0;
         }
+    }
+    void AddImpact(Vector3 dir, float force)
+    {    dir.Normalize();
+        if (dir.y < 0) dir.y = -dir.y; // reflect down force on the ground
+        impact += dir.normalized * force / mass;
     }
     IEnumerator finalDeath()
     {

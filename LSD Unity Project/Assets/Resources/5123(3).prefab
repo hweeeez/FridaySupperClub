@@ -104,7 +104,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 3.03
-  m_Radius: 1.08
+  m_Radius: 0.93
   m_SlopeLimit: 45
   m_StepOffset: 0
   m_SkinWidth: 0.0001
@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bonk: {fileID: 0}
   dust: {fileID: 5214728830382147368}
   hitMaterial: {fileID: 2100000, guid: 8619be08f9e217c4dab9e0d34bab0455, type: 2}
   defMaterial: {fileID: 2100000, guid: 842342c841e7969468a88a3c2e435655, type: 2}
@@ -475,15 +476,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.24293603
+      value: 0.34314716
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.094
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3267452056546558155, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.751
+      value: -1.55
       objectReference: {fileID: 0}
     - target: {fileID: 8195728310374889406, guid: e33dc8e62615de34093694359ecc03d2, type: 3}
       propertyPath: m_Size.x
