@@ -8,6 +8,7 @@ using System.Collections;
 public class Controller : MonoBehaviour
 {
     #region
+    public static bool dead;
     public ParticleSystem bonk;
     public ParticleSystem dust;
     public Material hitMaterial;
@@ -199,6 +200,7 @@ public class Controller : MonoBehaviour
         controller.enabled = false;
         this.transform.position = spawnPos;
         yield return new WaitForSeconds(0.5f);
+        canJump = true;
         canMove = true;
         capcollider.enabled = true;
         //controller.enabled = true;
@@ -214,7 +216,6 @@ public class Controller : MonoBehaviour
         playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionZ;
         invulnerable = false;
         feetCollider.enabled = true;
-        canJump = true;
         controller.detectCollisions = true;
         confine = false;
         headCollider.enabled = true;
@@ -286,31 +287,35 @@ public class Controller : MonoBehaviour
           {
               rightCount += 1;
           }*/
-        float startPress = 0;
-        if (rightCount == 1 | leftCount == 1)
-        {
-            startPress += Time.time;
-        }
-        if (startPress < 0.5f)
-        {
-            canDash = true;
-        }
-        if (rightCount == 2 && canDash)
-        {
-            currentDashTime += dashStopSpeed;
-            isDashing = true;
-        }
-        if (leftCount == 2 && canDash)
-        {
-            currentDashTime += dashStopSpeed;
-            isDashing = true;
-        }
-        if (currentDashTime >= MaxDashTime && isDashing)
-        {
-            currentDashTime = MaxDashTime;
-            canDash = false;
-            isDashing = false;
-        }
+
+        //confirm
+        /* float startPress = 0;
+         if (rightCount == 1 | leftCount == 1)
+         {
+             startPress += Time.time;
+         }
+         if (startPress < 0.5f)
+         {
+             canDash = true;
+         }
+         if (rightCount == 2 && canDash)
+         {
+             currentDashTime += dashStopSpeed;
+             isDashing = true;
+         }
+         if (leftCount == 2 && canDash)
+         {
+             currentDashTime += dashStopSpeed;
+             isDashing = true;
+         }
+         if (currentDashTime >= MaxDashTime && isDashing)
+         {
+             currentDashTime = MaxDashTime;
+             canDash = false;
+             isDashing = false;
+         }*/
+
+
         /*if (isDashing)
         {
             //canDash = false;
@@ -330,12 +335,14 @@ public class Controller : MonoBehaviour
             }
 
         }*/
-        if (startPress > 1f)
-        {
-            canDash = false;
-            isDashing = false;
-            startPress = 0;
-        }
+
+        //confirm
+        /* if (startPress > 1f)
+         {
+             canDash = false;
+             isDashing = false;
+             startPress = 0;
+         }*/
         /*      if (leftCount == 1 && rightCount == 1)
               {
                   if (movementInput.x == 1)
@@ -347,7 +354,7 @@ public class Controller : MonoBehaviour
                       rightCount = 0;
                   }
               }*/
-        print("left " + leftCount);
+        //print("left " + leftCount);
         // print("right " + rightCount);
         //print(startPress);
         /*    if (leftCount == 2)
