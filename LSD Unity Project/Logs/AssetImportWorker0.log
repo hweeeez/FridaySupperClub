@@ -5093,3 +5093,4 @@ Received Import Request.
 Start importing Assets/Resources/RockSugarGO.prefab using Guid(d70e6c8115b8d29419c27ba8d6641abc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9591d6f7d2b5dc6a08d61799c7ad405e') in 0.026752 seconds 
   Import took 0.034064 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
