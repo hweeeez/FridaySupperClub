@@ -21,6 +21,7 @@ public class OneWayPlatform : MonoBehaviour
 
     private void Awake()
     {
+        collider = this.GetComponent<BoxCollider>();
         print(this.transform.parent.gameObject.name);
         parentCollider = this.transform.parent.gameObject.GetComponent<BoxCollider>();
         // collider = this.GetComponent<BoxCollider>();
@@ -54,54 +55,54 @@ public class OneWayPlatform : MonoBehaviour
         print("exit");
         Physics.IgnoreCollision(parentCollider, other, false);
 
-        /*        if (other == overlapping)
-                {
-                    print("just exit " + overlapping.gameObject.name);
+        if (other == overlapping)
+        {
+            print("just exit " + overlapping.gameObject.name);
 
-                    overlapping = null;
+            overlapping = null;
 
-                }*/
-    }
 
-    private void Update()
-    {
-        /*  if (overlapping != null)
-          {
-              //print(transform.rotation + " " + overlapping.transform.rotation);
-              if (true*//*Physics.ComputePenetration(
+        }
+
+        private void Update()
+        {
+            if (overlapping != null)
+            {
+                //print(transform.rotation + " " + overlapping.transform.rotation);
+                if (true)/*Physics.ComputePenetration(
                   collisionCheckTrigger, transform.position, transform.rotation,
                   overlapping, overlapping.transform.position, overlapping.transform.rotation,
                   out Vector3 collisionDirection, out float penetrationDepth
-                  )*//*) //will simulate the collision and will return true if collision happens
-              {
-                  Vector3 direction;
-                  if (localDirection)
-                  {
-                      direction = transform.TransformDirection(entryDirection.normalized);
-                  }
-                  else
-                  {
-                      direction = entryDirection;
-                  }
+                  )*/ //will simulate the collision and will return true if collision happens
+                {
+                    Vector3 direction;
+                    if (localDirection)
+                    {
+                        direction = transform.TransformDirection(entryDirection.normalized);
+                    }
+                    else
+                    {
+                        direction = entryDirection;
+                    }
 
-                  //if it happens, we want to check the diff between entryDirection and actual direction the player is coming from
-                  float dot = Vector3.Dot(direction, overlapping.GetComponent<CharacterController>().velocity*//*collisionDirection*//*); //dot < 0, means they're facing opposite ways = coming from wrong directions
+                    //if it happens, we want to check the diff between entryDirection and actual direction the player is coming from
+                    float dot = Vector3.Dot(direction, overlapping.GetComponent<CharacterController>().velocity *//*collisionDirection*//*); //dot < 0, means they're facing opposite ways = coming from wrong directions
 
                   //Opposite direction, passing is not allowed
-                  if (dot < 0)
-                  {
-                      Physics.IgnoreCollision(collider, overlapping, false);
-                      //print("collision not ignored");
-                  }
-                  else //when dot > 0
-                  {
-                      Physics.IgnoreCollision(collider, overlapping, true);
-                      // print("collision ignored");
-                  }
-              }
-          }*/
+                    if (dot < 0)
+                    {
+                        Physics.IgnoreCollision(collider, overlapping, false);
+                        //print("collision not ignored");
+                    }
+                    else //when dot > 0
+                    {
+                        Physics.IgnoreCollision(collider, overlapping, true);
+                        // print("collision ignored");
+                    }
+                }
+            }
+        }
     }
-
     private void OnDrawGizmosSelected()
     {
         Vector3 direction;

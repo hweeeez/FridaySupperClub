@@ -662,11 +662,6 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""devicePath"": ""<Keyboard>"",
                     ""isOptional"": false,
                     ""isOR"": false
-                },
-                {
-                    ""devicePath"": ""<XInputController>"",
-                    ""isOptional"": false,
-                    ""isOR"": false
                 }
             ]
         },
