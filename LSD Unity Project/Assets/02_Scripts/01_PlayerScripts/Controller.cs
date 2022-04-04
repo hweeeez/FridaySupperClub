@@ -37,7 +37,7 @@ public class Controller : MonoBehaviour
     private float defplayerSpeed = 14.0f;
     private float dashSpeed = 70.0f;
     private Vector3 move;
-    private float MaxDashTime = 1.7f;
+    private float MaxDashTime = 1.4f;
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
     private bool hasJumped = false;
@@ -63,7 +63,7 @@ public class Controller : MonoBehaviour
     private int rightCount; private int leftCount = 0;
     // if canDash and !dashing then perform dash
     private bool isDashing = false;
-    private bool canDash; 
+    private bool canDash;
     private bool canMove = true;
     bool canJump = true; bool tryAccelerate = false; bool confine = false;
     #endregion
@@ -120,19 +120,19 @@ public class Controller : MonoBehaviour
         movementInput = context.ReadValue<Vector2>();
         if (context.action.triggered) { moveTrigger = true; }
         else if (context.action.phase == InputActionPhase.Canceled) { moveTrigger = false; }
-     /*   if (context.action.triggered && movementInput.x < 0)
-         
-        {  
-                leftCount += 1;
-                currentDashTime = 0;
-            
-         
- 
+        if (context.action.triggered && movementInput.x < 0)
+
+        {
+            leftCount += 1;
+            currentDashTime = 0;
+
+
+
             if (leftCount == 1 && !canDash)
             {
                 rightCount = 0;
             }
-            if (leftCount> 2 | rightCount > 2)
+            if (leftCount > 2 | rightCount > 2)
             {
                 leftCount = 0;
                 rightCount = 0;
@@ -140,15 +140,15 @@ public class Controller : MonoBehaviour
         }
         if (context.action.triggered && movementInput.x > 0)
         {
-         
-                rightCount += 1;
-                currentDashTime = 0;
-            
+
+            rightCount += 1;
+            currentDashTime = 0;
+
             if (rightCount == 1 && !canDash)
             {
                 rightCount = 0;
             }
-        }*/
+        }
 
     }
 
@@ -192,9 +192,9 @@ public class Controller : MonoBehaviour
         tryAccelerate = false;
         controller.detectCollisions = false;
         feetCollider.enabled = false;
-       // capcollider.enabled = false;
-      // controller.enabled = false;
-      // playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;  
+        // capcollider.enabled = false;
+        // controller.enabled = false;
+        // playerRB.constraints = RigidbodyConstraints.FreezeRotation | RigidbodyConstraints.FreezePositionX;  
         yield return new WaitForSeconds(0.5f);
         controller.enabled = false;
         this.transform.position = spawnPos;
@@ -218,13 +218,13 @@ public class Controller : MonoBehaviour
         controller.detectCollisions = true;
         confine = false;
         headCollider.enabled = true;
-        
+
     }
 
 
     void Update()
     {
- 
+
         bool tryAccelerate = false;
         isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -244,9 +244,9 @@ public class Controller : MonoBehaviour
         if (jumpButtonHeld && canJump)
         {
 
-            if (controller.isGrounded )
+            if (controller.isGrounded)
             {
-               dust.Play();
+                dust.Play();
                 startedJump = true;
                 startY = transform.position.y;
             }
@@ -258,16 +258,17 @@ public class Controller : MonoBehaviour
             tryAccelerate = true;
         }
 
-       
+
 
         if (movementInput == Vector2.zero)
         {
             move = Vector3.zero;
             anim.SetBool("isMoving", false);
         }
-        else if(canMove)
+        else if (canMove)
 
-        {   dust.Play();
+        {
+            dust.Play();
             anim.SetBool("isMoving", true);
             move = new Vector3(movementInput.x, movementInput.y, 0);
             controller.Move(move * Time.deltaTime * playerSpeed);
@@ -277,28 +278,28 @@ public class Controller : MonoBehaviour
             }
         }
         #region
-        if (moveTrigger && movementInput.x < 0)
-        {
-            leftCount += 1;
-        }
-        if (moveTrigger && movementInput.x > 0)
-        {
-            rightCount += 1;
-        }
+        /*  if (moveTrigger && movementInput.x < 0)
+          {
+              leftCount += 1;
+          }
+          if (moveTrigger && movementInput.x > 0)
+          {
+              rightCount += 1;
+          }*/
         float startPress = 0;
-      if(rightCount == 1 | leftCount ==1)
+        if (rightCount == 1 | leftCount == 1)
         {
             startPress += Time.time;
         }
-        if (startPress < 2.5f)
-            {
+        if (startPress < 0.5f)
+        {
             canDash = true;
         }
         if (rightCount == 2 && canDash)
-            {
-                currentDashTime += dashStopSpeed;
-                isDashing = true;
-            }
+        {
+            currentDashTime += dashStopSpeed;
+            isDashing = true;
+        }
         if (leftCount == 2 && canDash)
         {
             currentDashTime += dashStopSpeed;
@@ -310,16 +311,43 @@ public class Controller : MonoBehaviour
             canDash = false;
             isDashing = false;
         }
-        
+        /*if (isDashing)
+        {
+            //canDash = false;
+            if (rightCount == 2)
+            {
+                if (movementInput.x == -1)
+                {
+                    isDashing = false;
+                }
+            }
+            if (leftCount == 2)
+            {
+                if (movementInput.x == 1)
+                {
+                    isDashing = false;
+                }
+            }
+
+        }*/
         if (startPress > 1f)
         {
             canDash = false;
             isDashing = false;
             startPress = 0;
         }
-        if(leftCount > 2) { leftCount = 0; }
-        if (rightCount > 2) { rightCount = 0; }
-         print("left " + leftCount);
+        /*      if (leftCount == 1 && rightCount == 1)
+              {
+                  if (movementInput.x == 1)
+                  {
+                      leftCount = 0;
+                  }
+                  if (movementInput.x == -1)
+                  {
+                      rightCount = 0;
+                  }
+              }*/
+        print("left " + leftCount);
         // print("right " + rightCount);
         //print(startPress);
         /*    if (leftCount == 2)
@@ -349,7 +377,7 @@ public class Controller : MonoBehaviour
               }*/
 
         #endregion
-        print(tryAccelerate);
+
         if (tryAccelerate)
         {
             anim.SetBool("isGrounded", false);
@@ -382,17 +410,17 @@ public class Controller : MonoBehaviour
             canDash = false;
 
         }
-        if (slamming && !controller.isGrounded )
+        if (slamming && !controller.isGrounded)
         {
             anim.SetBool("slam", true);
         }
         else if (controller.isGrounded) { anim.SetBool("slam", false); }
-        if (isAttacked && !invulnerable )
+        if (isAttacked && !invulnerable)
         {
             if (impact.magnitude > 0.2F) controller.Move(impact * Time.deltaTime);
             // consumes the impact energy each cycle:
             impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
-            
+
             if (!confine)
             {
                 canMove = false;
@@ -400,7 +428,7 @@ public class Controller : MonoBehaviour
                 canJump = false;
                 bonk.Play();
                 startedJump = false;
-        
+
                 anim.SetTrigger("Dead");
                 StartCoroutine(RespawnPlayer());
                 lifeScript.LoseLife();
@@ -419,7 +447,7 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
-    
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -429,14 +457,25 @@ public class Controller : MonoBehaviour
         }
     }
     void AddImpact(Vector3 dir, float force)
-    {    dir.Normalize();
+    {
+        dir.Normalize();
         if (dir.y < 0) dir.y = -dir.y; // reflect down force on the ground
         impact += dir.normalized * force / mass;
     }
     IEnumerator finalDeath()
     {
-        controller.enabled = false;
-        playerRB.constraints = RigidbodyConstraints.FreezeAll;
+        Vector3 down = new Vector3(0, -1, 0);
+        controller.Move(down * Time.deltaTime * 10f);
+        playerVelocity.y = 0;
+        controller.Move(playerVelocity * Time.deltaTime);
+        canMove = false;
+        AddImpact(Vector3.down, 10);
+        headCollider.enabled = false;
+        controller.detectCollisions = false;
+        feetCollider.enabled = false;
+        canJump = false;
+        //controller.enabled = false;
+        //playerRB.constraints = RigidbodyConstraints.FreezeAll;
         anim.Play("death");
         yield return new WaitForSeconds(0.9f);
         Destroy(this.gameObject);

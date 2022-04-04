@@ -24,7 +24,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""id"": ""0c06fc2e-c03d-4182-b45e-c3a7a2f3ef69"",
                     ""expectedControlType"": ""Vector2"",
                     ""processors"": """",
-                    ""interactions"": ""Press,MultiTap""
+                    ""interactions"": """"
                 },
                 {
                     ""name"": ""Jump"",
