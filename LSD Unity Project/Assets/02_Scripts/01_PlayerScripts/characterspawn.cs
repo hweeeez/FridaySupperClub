@@ -25,6 +25,7 @@ public class characterspawn : MonoBehaviour
     public RuntimeAnimatorController rsAnim;
     public RuntimeAnimatorController thAnim;
     public RuntimeAnimatorController macAnim;
+
     void Awake()
     {
         bg = GameObject.Find("BackgroundCanvas");
@@ -128,19 +129,16 @@ public class characterspawn : MonoBehaviour
         playerTwo.transform.position = new Vector2(20.9f, -2.78f);
         playerThree.transform.position = new Vector2(-21.1f, 9.1f);
         playerFour.transform.position = new Vector2(-21.1f, -3.4f);
+        playerOne.GetComponent<SpriteRenderer>().flipX = true;
+        playerTwo.GetComponent<SpriteRenderer>().flipX = true;
+
         // StartCoroutine(instantiatePlayers());
         var player1 = PlayerInput.Instantiate(prefab: playerOne, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
         var player2 = PlayerInput.Instantiate(prefab: playerTwo, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
         var player3 = PlayerInput.Instantiate(prefab: playerThree, playerIndex: 2, controlScheme: "Keyboard3", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
         var player4 = PlayerInput.Instantiate(prefab: playerFour, playerIndex: 3, controlScheme: "Keyboard4", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
+
     }
-    IEnumerator instantiatePlayers()
-    {
-        yield return new WaitForSeconds(2f);
-        var player1 = PlayerInput.Instantiate(prefab: playerOne, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
-        var player2 = PlayerInput.Instantiate(prefab: playerTwo, playerIndex: 1, controlScheme: "Keyboard2", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
-        var player3 = PlayerInput.Instantiate(prefab: playerThree, playerIndex: 2, controlScheme: "Keyboard3", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
-        var player4 = PlayerInput.Instantiate(prefab: playerFour, playerIndex: 3, controlScheme: "Keyboard4", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
-    }
+
 }
 

@@ -7,7 +7,7 @@ public class MolassesScript : MonoBehaviour
 {
 
     //Timer
-    float timeRemaining = 60f; //in seconds
+    float timeRemaining = 1f; //in seconds
     bool timerIsRunning = false;
     public GameObject timerText;
 
