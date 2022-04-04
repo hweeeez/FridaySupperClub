@@ -14,11 +14,13 @@ public class VictoryScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (GameObject.FindGameObjectsWithTag("Player").Length < 2)
         {
             print("EndGame");
             winner = GameObject.FindGameObjectWithTag("Player");
             print(winner.name);
+
         }
     }
 }

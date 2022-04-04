@@ -48,24 +48,7 @@ public class HealthSystem : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    /* public void LoseLife()
-     {
-         if (!isInvulnerable)
-         {
-             this.numberOfLives--;
-             GameObject lastItem = lifeImages.Last();
-             lastItem.GetComponent<SpriteRenderer>().sprite = emptyLife;
-             GameObject lifeImage = this.lifeImages[this.lifeImages.Count - 1];
 
-             if (this.numberOfLives == 0)
-             {
-                 Destroy(this.gameObject);
-             }
-             this.isInvulnerable = true;
-             Invoke("BecomeVulnerable", this.invulnerabilityDuration);
-         }
-     }*/
     private void BecomeVulnerable()
     {
         this.isInvulnerable = false;

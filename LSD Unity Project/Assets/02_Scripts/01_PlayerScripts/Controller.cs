@@ -289,7 +289,7 @@ public class Controller : MonoBehaviour
           }*/
 
         //confirm
-        /* float startPress = 0;
+        /*float startPress = 0;
          if (rightCount == 1 | leftCount == 1)
          {
              startPress += Time.time;
