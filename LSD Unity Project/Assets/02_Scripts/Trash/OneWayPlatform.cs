@@ -75,7 +75,7 @@ public class OneWayPlatform : MonoBehaviour
                 //Opposite direction, passing is not allowed
                 if (dot < 0)
                 {
-                    //Physics.IgnoreCollision(collider, overlapping, false);
+                    Physics.IgnoreCollision(collider, overlapping, false);
                     print("collision not ignored");
                 }
                 else //when dot > 0
