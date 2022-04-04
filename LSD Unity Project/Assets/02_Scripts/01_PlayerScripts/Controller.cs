@@ -7,6 +7,7 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    public static List<Collider> playerColliders = new List<Collider>();
     #region
     public static bool dead;
     public ParticleSystem bonk;
@@ -78,6 +79,8 @@ public class Controller : MonoBehaviour
         controller = gameObject.GetComponent<CharacterController>();
         lifeScript = gameObject.GetComponent<HealthSystem>();
         capcollider = gameObject.GetComponent<Collider>();
+        playerColliders.Add(capcollider);
+
         spriteRender.material = defMaterial;
     }
     private void Start()
@@ -227,7 +230,7 @@ public class Controller : MonoBehaviour
     {
 
         bool tryAccelerate = false;
-        isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
+        // isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
         bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
 
@@ -486,6 +489,10 @@ public class Controller : MonoBehaviour
         anim.Play("death");
         yield return new WaitForSeconds(0.9f);
         Destroy(this.gameObject);
+    }
+    private void OnDestroy()
+    {
+        playerColliders.Remove(capcollider);
     }
 }
 
