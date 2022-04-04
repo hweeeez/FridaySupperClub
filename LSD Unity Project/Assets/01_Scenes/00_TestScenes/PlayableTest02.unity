@@ -2358,7 +2358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &623778671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4083,6 +4083,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backGround: {fileID: 0}
   pauseMenu: {fileID: 999365006}
+  optionsMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
+  titleMenu: {fileID: 0}
+  tutorialMenu: {fileID: 0}
+  mainOptionsMenu: {fileID: 0}
+  creditsScreen: {fileID: 0}
 --- !u!1 &1191403615
 GameObject:
   m_ObjectHideFlags: 0
@@ -6032,6 +6038,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   backGround: {fileID: 0}
   pauseMenu: {fileID: 999365006}
+  optionsMenu: {fileID: 0}
+  controlsMenu: {fileID: 0}
+  titleMenu: {fileID: 0}
+  tutorialMenu: {fileID: 0}
+  mainOptionsMenu: {fileID: 0}
+  creditsScreen: {fileID: 0}
 --- !u!1 &1661588007
 GameObject:
   m_ObjectHideFlags: 0
