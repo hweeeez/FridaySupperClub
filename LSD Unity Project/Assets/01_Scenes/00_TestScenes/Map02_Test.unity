@@ -123,87 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &13413486
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 13413487}
-  - component: {fileID: 13413488}
-  - component: {fileID: 13413489}
-  - component: {fileID: 13413490}
-  m_Layer: 9
-  m_Name: groundtrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &13413487
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13413486}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1746340882}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &13413488
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13413486}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.2269092, z: 0.2}
-  m_Center: {x: 0, y: -0.11345458, z: 0}
---- !u!114 &13413489
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13413486}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9953660c135664c2f897237d436b9d5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entryDirection: {x: 0, y: 1, z: 0}
-  localDirection: 0
-  triggerScale: 1.2
-  parent: {fileID: 1746340881}
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!54 &13413490
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 13413486}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &27250177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,7 +2003,6 @@ GameObject:
   m_Component:
   - component: {fileID: 430346287}
   - component: {fileID: 430346290}
-  - component: {fileID: 430346289}
   - component: {fileID: 430346288}
   m_Layer: 9
   m_Name: groundtrigger
@@ -2123,25 +2041,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &430346289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430346286}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9953660c135664c2f897237d436b9d5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entryDirection: {x: 0, y: 1, z: 0}
-  localDirection: 0
-  triggerScale: 1.2
-  parent: {fileID: 1626846311}
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!65 &430346290
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5275,7 +5174,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1006770012}
   - component: {fileID: 1006770015}
-  - component: {fileID: 1006770014}
   - component: {fileID: 1006770013}
   m_Layer: 9
   m_Name: groundtrigger
@@ -5314,25 +5212,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &1006770014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006770011}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9953660c135664c2f897237d436b9d5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  entryDirection: {x: 0, y: 1, z: 0}
-  localDirection: 0
-  triggerScale: 1.2
-  parent: {fileID: 1959668784}
-  ground:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!65 &1006770015
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -9435,8 +9314,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -18.74, y: -8.97, z: 0}
   m_LocalScale: {x: 11, y: 1, z: 0.12155245}
-  m_Children:
-  - {fileID: 13413487}
+  m_Children: []
   m_Father: {fileID: 1003316975}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
