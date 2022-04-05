@@ -63,66 +63,67 @@ public class OneWayPlatform : MonoBehaviour
 
 
         }
+    }
 
         private void Update()
         {
-            if (overlapping != null)
+            /*  if (overlapping != null)
+              {
+                  //print(transform.rotation + " " + overlapping.transform.rotation);
+                  if (true)*//*Physics.ComputePenetration(
+                    collisionCheckTrigger, transform.position, transform.rotation,
+                    overlapping, overlapping.transform.position, overlapping.transform.rotation,
+                    out Vector3 collisionDirection, out float penetrationDepth
+                    )*//* //will simulate the collision and will return true if collision happens
+                  {
+                      Vector3 direction;
+                      if (localDirection)
+                      {
+                          direction = transform.TransformDirection(entryDirection.normalized);
+                      }
+                      else
+                      {
+                          direction = entryDirection;
+                      }
+
+                      //if it happens, we want to check the diff between entryDirection and actual direction the player is coming from
+                      float dot = Vector3.Dot(direction, overlapping.GetComponent<CharacterController>().velocity *//*collisionDirection*//*); //dot < 0, means they're facing opposite ways = coming from wrong directions
+
+                    //Opposite direction, passing is not allowed
+                      if (dot < 0)
+                      {
+                          Physics.IgnoreCollision(collider, overlapping, false);
+                          //print("collision not ignored");
+                      }
+                      else //when dot > 0
+                      {
+                          Physics.IgnoreCollision(collider, overlapping, true);
+                          // print("collision ignored");
+                      }
+                  }
+              }
+          }*/
+        }
+        private void OnDrawGizmosSelected()
+        {
+            Vector3 direction;
+            if (localDirection)
             {
-                //print(transform.rotation + " " + overlapping.transform.rotation);
-                if (true)/*Physics.ComputePenetration(
-                  collisionCheckTrigger, transform.position, transform.rotation,
-                  overlapping, overlapping.transform.position, overlapping.transform.rotation,
-                  out Vector3 collisionDirection, out float penetrationDepth
-                  )*/ //will simulate the collision and will return true if collision happens
-                {
-                    Vector3 direction;
-                    if (localDirection)
-                    {
-                        direction = transform.TransformDirection(entryDirection.normalized);
-                    }
-                    else
-                    {
-                        direction = entryDirection;
-                    }
-
-                    //if it happens, we want to check the diff between entryDirection and actual direction the player is coming from
-                    float dot = Vector3.Dot(direction, overlapping.GetComponent<CharacterController>().velocity *//*collisionDirection*//*); //dot < 0, means they're facing opposite ways = coming from wrong directions
-
-                  //Opposite direction, passing is not allowed
-                    if (dot < 0)
-                    {
-                        Physics.IgnoreCollision(collider, overlapping, false);
-                        //print("collision not ignored");
-                    }
-                    else //when dot > 0
-                    {
-                        Physics.IgnoreCollision(collider, overlapping, true);
-                        // print("collision ignored");
-                    }
-                }
+                direction = transform.TransformDirection(entryDirection.normalized);
             }
-        }
-    }
-    private void OnDrawGizmosSelected()
-    {
-        Vector3 direction;
-        if (localDirection)
-        {
-            direction = transform.TransformDirection(entryDirection.normalized);
-        }
-        else
-        {
-            direction = entryDirection;
-        }
-        //so that when localDirection enabled, when you rotate the entry direction will change too!
+            else
+            {
+                direction = entryDirection;
+            }
+            //so that when localDirection enabled, when you rotate the entry direction will change too!
 
-        Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, direction);
-        //Gizmos.DrawRay(transform.position, entryDirection);
+            Gizmos.color = Color.red;
+            Gizmos.DrawRay(transform.position, direction);
+            //Gizmos.DrawRay(transform.position, entryDirection);
 
-        Gizmos.color = Color.green;
-        Gizmos.DrawRay(transform.position, -direction);
-        //Gizmos.DrawRay(transform.position, -entryDirection);
-    }
+            Gizmos.color = Color.green;
+            Gizmos.DrawRay(transform.position, -direction);
+            //Gizmos.DrawRay(transform.position, -entryDirection);
+        }
 
-}
+    } 
