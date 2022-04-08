@@ -4,6 +4,8 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(PlayerInput))]
 public class characterspawn : MonoBehaviour
 {
+    public GameObject Map2;
+    public GameObject Map1;
     private GameObject bg;
     private PlayerConfigManager configManager;
     private GameObject playerConfigMan;
@@ -35,14 +37,14 @@ public class characterspawn : MonoBehaviour
         string Sprite3 = PlayerPrefs.GetString("Sprite3");
         string Sprite4 = PlayerPrefs.GetString("Sprite4");
         string mapChosen = PlayerPrefs.GetString("MapSelect");
-        /*      if (mapChosen == "MapOne")
-              {
-                  Map1.SetActive(true);
-              }
-              if (mapChosen == "MapTwo")
-              {
-                  Map2.SetActive(true);
-              }*/
+        if (mapChosen == "MapOne")
+        {
+            Map1.SetActive(true);
+        }
+        if (mapChosen == "MapTwo")
+        {
+            Map2.SetActive(true);
+        }
         #region
         if (Sprite1 == "KonpeitoSprite")
         {

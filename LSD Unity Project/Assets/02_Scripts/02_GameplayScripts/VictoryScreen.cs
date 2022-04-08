@@ -15,7 +15,7 @@ public class VictoryScreen : MonoBehaviour
     bool loadScene;
 
     public GameObject[] spawnPoints;
-    GameObject selectedPoint;
+    public GameObject selectedPoint;
     int index;
 
     void Start()
@@ -31,7 +31,7 @@ public class VictoryScreen : MonoBehaviour
         if (!loadScene)
         {
             SceneManager.LoadSceneAsync("VictoryScreen", LoadSceneMode.Additive);
-            
+
             loadScene = true;
         }
     }

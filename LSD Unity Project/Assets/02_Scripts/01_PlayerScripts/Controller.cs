@@ -92,7 +92,7 @@ public class Controller : MonoBehaviour
         {
             above = below = false;
             left = right = false;
-    
+
             isTrigger = false;
 
             angle = 0;
@@ -100,7 +100,7 @@ public class Controller : MonoBehaviour
             bottomRayTags = new List<string>();
         }
     }
-   
+
     private void Awake()
     {
         headCollider = groundCheck.GetComponent<Collider>();
@@ -155,7 +155,7 @@ public class Controller : MonoBehaviour
     public void OnMove(InputAction.CallbackContext context)
     {
         movementInput = context.ReadValue<Vector2>();
-    #region
+        #region
         // if (context.action.triggered) { moveTrigger = true; }
         // else if (context.action.phase == InputActionPhase.Canceled) { moveTrigger = false; }
         /* if (context.action.triggered && movementInput.x < 0)
@@ -283,7 +283,7 @@ public class Controller : MonoBehaviour
             RaycastHit hit;
             if (Physics.Raycast(rayOrigin, Vector2.up * directionY, out hit, rayLength, collisionMask))
             {
-                
+
                 //playerVelocity.y = (hit.distance - skinWidth) * directionY;
                 rayLength = hit.distance;
 
@@ -331,7 +331,7 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-       // print(playerVelocity.y);
+        // print(playerVelocity.y);
 
         bool tryAccelerate = false;
         // isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
@@ -356,257 +356,259 @@ public class Controller : MonoBehaviour
         {
             VerticalCollisions();
         }
-  
+
         if (jumpButtonHeld && canJump)
-            {
+        {
 
-                if (controller.isGrounded)
-                {
-                    dust.Play();
-                    startedJump = true;
-                    startY = transform.position.y;
-                }
-
-                tryAccelerate = true;
-            }
-            else if (startedJump && jumpedDistance < minHeight)
-            {
-                tryAccelerate = true;
-            }
-
-
-
-            if (movementInput == Vector2.zero)
-            {
-                move = Vector3.zero;
-                anim.SetBool("isMoving", false);
-            }
-            else if (canMove)
-
+            if (controller.isGrounded)
             {
                 dust.Play();
-                anim.SetBool("isMoving", true);
-                move = new Vector3(movementInput.x, movementInput.y, 0);
-                controller.Move(move * Time.deltaTime * playerSpeed);
-                if (controller.isGrounded)
-                {
-                    playerVelocity.y = 0;
-                }
+                startedJump = true;
+                startY = transform.position.y;
             }
-            #region
-            /*  if (moveTrigger && movementInput.x < 0)
-              {
-                  leftCount += 1;
-              }
-              if (moveTrigger && movementInput.x > 0)
-              {
-                  rightCount += 1;
-              }*/
 
-            //confirm
-            /*float startPress = 0;
-             if (rightCount == 1 | leftCount == 1)
-             {
-                 startPress += Time.time;
-             }
-             if (startPress < 0.5f)
-             {
-                 canDash = true;
-             }
-             if (rightCount == 2 && canDash)
-             {
-                 currentDashTime += dashStopSpeed;
-                 isDashing = true;
-             }
-             if (leftCount == 2 && canDash)
-             {
-                 currentDashTime += dashStopSpeed;
-                 isDashing = true;
-             }
-             if (currentDashTime >= MaxDashTime && isDashing)
-             {
-                 currentDashTime = MaxDashTime;
-                 canDash = false;
-                 isDashing = false;
-             }*/
+            tryAccelerate = true;
+        }
+        else if (startedJump && jumpedDistance < minHeight)
+        {
+            tryAccelerate = true;
+        }
 
 
-            /*if (isDashing)
+
+        if (movementInput == Vector2.zero)
+        {
+            move = Vector3.zero;
+            anim.SetBool("isMoving", false);
+        }
+        else if (canMove)
+
+        {
+            dust.Play();
+            anim.SetBool("isMoving", true);
+            move = new Vector3(movementInput.x, movementInput.y, 0);
+            controller.Move(move * Time.deltaTime * playerSpeed);
+            if (controller.isGrounded)
             {
-                //canDash = false;
-                if (rightCount == 2)
-                {
-                    if (movementInput.x == -1)
-                    {
-                        isDashing = false;
-                    }
-                }
-                if (leftCount == 2)
-                {
-                    if (movementInput.x == 1)
-                    {
-                        isDashing = false;
-                    }
-                }
-
-            }*/
-
-            //confirm
-            /* if (startPress > 1f)
-             {
-                 canDash = false;
-                 isDashing = false;
-                 startPress = 0;
-             }*/
-            /*      if (leftCount == 1 && rightCount == 1)
-                  {
-                      if (movementInput.x == 1)
-                      {
-                          leftCount = 0;
-                      }
-                      if (movementInput.x == -1)
-                      {
-                          rightCount = 0;
-                      }
-                  }*/
-            //print("left " + leftCount);
-            // print("right " + rightCount);
-            //print(startPress);
-            /*    if (leftCount == 2)
-                {
-                    currentDashTime += dashStopSpeed;
-                    isDashing = true;
-                }*/
-            /*   if (currentDashTime >= MaxDashTime)
-               {
-                   leftCount = 0;
-                   rightCount = 0;
-                   isDashing = false;
-                   currentDashTime = 0;
-               }*/
-
-            //print(currentDashTime);
-            /*      if (currentDashTime < MaxDashTime)
-                  {
-                      isDashing = true;
-                      currentDashTime += dashStopSpeed * Time.deltaTime;
-                  }
-                  if (currentDashTime >= MaxDashTime && isDashing)
-                  {
-                      currentDashTime = MaxDashTime;
-                      canDash = false;
-                      isDashing = false;
-                  }*/
-
-            #endregion
-
-            if (tryAccelerate)
-            {
-                anim.SetBool("isGrounded", false);
-                hasJumped = true;
-                bool maxHeightExceeded = jumpedDistance > maxHeight;
-                if (startedJump && !maxHeightExceeded)
-                {
-                    playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravityValue);
-                }
-                else if (startedJump && maxHeightExceeded)
-                {
-
-                    startedJump = false;
-                }
-                if (startedJump && isColliding)
-                {
-                    startedJump = false;
-                    playerVelocity.y = 0;
-                }
-            }
-            else if (controller.isGrounded && !tryAccelerate)
-            {
-                anim.SetBool("isGrounded", true);
-                hasJumped = false;
-                slamming = false;
                 playerVelocity.y = 0;
             }
-            if (playerVelocity.y > 0)
-            {
-                canDash = false;
+        }
+        #region
+        /*  if (moveTrigger && movementInput.x < 0)
+          {
+              leftCount += 1;
+          }
+          if (moveTrigger && movementInput.x > 0)
+          {
+              rightCount += 1;
+          }*/
 
-            }
-            if (slamming && !controller.isGrounded)
-            {
-                anim.SetBool("slam", true);
-            }
-            else if (controller.isGrounded) { anim.SetBool("slam", false); }
-            if (isAttacked && !invulnerable)
-            {
-                if (impact.magnitude > 0.2F) controller.Move(impact * Time.deltaTime);
-                // consumes the impact energy each cycle:
-                impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
+        //confirm
+        /*float startPress = 0;
+         if (rightCount == 1 | leftCount == 1)
+         {
+             startPress += Time.time;
+         }
+         if (startPress < 0.5f)
+         {
+             canDash = true;
+         }
+         if (rightCount == 2 && canDash)
+         {
+             currentDashTime += dashStopSpeed;
+             isDashing = true;
+         }
+         if (leftCount == 2 && canDash)
+         {
+             currentDashTime += dashStopSpeed;
+             isDashing = true;
+         }
+         if (currentDashTime >= MaxDashTime && isDashing)
+         {
+             currentDashTime = MaxDashTime;
+             canDash = false;
+             isDashing = false;
+         }*/
 
-                if (!confine)
+
+        /*if (isDashing)
+        {
+            //canDash = false;
+            if (rightCount == 2)
+            {
+                if (movementInput.x == -1)
                 {
-                    canMove = false;
-                    tryAccelerate = false;
-                    canJump = false;
-                    bonk.Play();
-                    startedJump = false;
-
-                    anim.SetTrigger("Dead");
-                    StartCoroutine(RespawnPlayer());
-                    lifeScript.LoseLife();
+                    isDashing = false;
+                }
+            }
+            if (leftCount == 2)
+            {
+                if (movementInput.x == 1)
+                {
+                    isDashing = false;
                 }
             }
 
-            if (movementInput.x > 0)
+        }*/
+
+        //confirm
+        /* if (startPress > 1f)
+         {
+             canDash = false;
+             isDashing = false;
+             startPress = 0;
+         }*/
+        /*      if (leftCount == 1 && rightCount == 1)
+              {
+                  if (movementInput.x == 1)
+                  {
+                      leftCount = 0;
+                  }
+                  if (movementInput.x == -1)
+                  {
+                      rightCount = 0;
+                  }
+              }*/
+        //print("left " + leftCount);
+        // print("right " + rightCount);
+        //print(startPress);
+        /*    if (leftCount == 2)
             {
-                spriteRender.flipX = false;
-            }
-            if (movementInput.x < 0)
+                currentDashTime += dashStopSpeed;
+                isDashing = true;
+            }*/
+        /*   if (currentDashTime >= MaxDashTime)
+           {
+               leftCount = 0;
+               rightCount = 0;
+               isDashing = false;
+               currentDashTime = 0;
+           }*/
+
+        //print(currentDashTime);
+        /*      if (currentDashTime < MaxDashTime)
+              {
+                  isDashing = true;
+                  currentDashTime += dashStopSpeed * Time.deltaTime;
+              }
+              if (currentDashTime >= MaxDashTime && isDashing)
+              {
+                  currentDashTime = MaxDashTime;
+                  canDash = false;
+                  isDashing = false;
+              }*/
+
+        #endregion
+
+        if (tryAccelerate)
+        {
+            anim.SetBool("isGrounded", false);
+            hasJumped = true;
+            bool maxHeightExceeded = jumpedDistance > maxHeight;
+            if (startedJump && !maxHeightExceeded)
             {
-                spriteRender.flipX = true;
+                playerVelocity.y = Mathf.Sqrt(jumpHeight * -2.0f * gravityValue);
             }
-            if (lifeScript.health == 0)
+            else if (startedJump && maxHeightExceeded)
             {
-                StartCoroutine(finalDeath());
+
+                startedJump = false;
             }
+            if (startedJump && isColliding)
+            {
+                startedJump = false;
+                playerVelocity.y = 0;
+            }
+        }
+        else if (controller.isGrounded && !tryAccelerate)
+        {
+            anim.SetBool("isGrounded", true);
+            hasJumped = false;
+            slamming = false;
+            playerVelocity.y = 0;
+        }
+        if (playerVelocity.y > 0)
+        {
+            canDash = false;
 
         }
-        private void OnTriggerEnter(Collider other)
+        if (slamming && !controller.isGrounded)
         {
-            if (other.tag == "Water")
+            anim.SetBool("slam", true);
+        }
+        else if (controller.isGrounded) { anim.SetBool("slam", false); }
+        if (isAttacked && !invulnerable)
+        {
+            if (impact.magnitude > 0.2F) controller.Move(impact * Time.deltaTime);
+            // consumes the impact energy each cycle:
+            impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
+
+            if (!confine)
             {
-                lifeScript.health = 0;
+                canMove = false;
+                tryAccelerate = false;
+                canJump = false;
+                bonk.Play();
+                startedJump = false;
+
+                anim.SetTrigger("Dead");
+                StartCoroutine(RespawnPlayer());
+                lifeScript.LoseLife();
             }
         }
-        void AddImpact(Vector3 dir, float force)
+
+        if (movementInput.x > 0)
         {
-            dir.Normalize();
-            if (dir.y < 0) dir.y = -dir.y; // reflect down force on the ground
-            impact += dir.normalized * force / mass;
+            spriteRender.flipX = false;
         }
-        IEnumerator finalDeath()
+        if (movementInput.x < 0)
         {
-            Vector3 down = new Vector3(0, -1, 0);
-            controller.Move(down * Time.deltaTime * 10f);
-            playerVelocity.y = 0;
-            controller.Move(playerVelocity * Time.deltaTime);
-            canMove = false;
-            AddImpact(Vector3.down, 10);
-            headCollider.enabled = false;
-            controller.detectCollisions = false;
-            feetCollider.enabled = false;
-            canJump = false;
-            //controller.enabled = false;
-            //playerRB.constraints = RigidbodyConstraints.FreezeAll;
-            anim.Play("death");
-            yield return new WaitForSeconds(0.9f);
-            Destroy(this.gameObject);
+            spriteRender.flipX = true;
         }
-        private void OnDestroy()
+        if (lifeScript.health == 0)
         {
-            playerColliders.Remove(capcollider);
+            StartCoroutine(finalDeath());
+        }
+
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Water")
+        {
+            lifeScript.health = 0;
         }
     }
+    void AddImpact(Vector3 dir, float force)
+    {
+        dir.Normalize();
+        if (dir.y < 0) dir.y = -dir.y; // reflect down force on the ground
+        impact += dir.normalized * force / mass;
+    }
+    IEnumerator finalDeath()
+    {
+        Vector3 down = new Vector3(0, -1, 0);
+        controller.Move(down * Time.deltaTime * 10f);
+        playerVelocity.y = 0;
+        controller.Move(playerVelocity * Time.deltaTime);
+        canMove = false;
+        AddImpact(Vector3.down, 10);
+        headCollider.enabled = false;
+        controller.detectCollisions = false;
+        feetCollider.enabled = false;
+        canJump = false;
+        //controller.enabled = false;
+        //playerRB.constraints = RigidbodyConstraints.FreezeAll;
+        anim.Play("death");
+        yield return new WaitForSeconds(0.9f);
+        this.gameObject.SetActive(false);
+        VictoryScreen vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
+        this.transform.position = vicSc.selectedPoint.transform.position;
+    }
+    private void OnDestroy()
+    {
+        playerColliders.Remove(capcollider);
+    }
+}
 
 
 
