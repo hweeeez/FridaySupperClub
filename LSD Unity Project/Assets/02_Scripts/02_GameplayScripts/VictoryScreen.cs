@@ -7,15 +7,35 @@ public class VictoryScreen : MonoBehaviour
 
     public static GameObject winner;
 
-    bool vicScreen;
+    public GameObject firstPodium;
 
-    // Start is called before the first frame update
+    static Scene currentScene;
+
+    bool vicScreen;
+    bool loadScene;
+
+    public GameObject[] spawnPoints;
+    GameObject selectedPoint;
+    int index;
+
     void Start()
     {
         vicScreen = false;
+        currentScene = SceneManager.GetActiveScene();
+
+        //SPAWN POINTS FOR OTHER CHARACTERS
+        spawnPoints = GameObject.FindGameObjectsWithTag("VicScreenPoints");
+        index = Random.Range(0, spawnPoints.Length);
+        selectedPoint = spawnPoints[index];
+
+        if (!loadScene)
+        {
+            SceneManager.LoadSceneAsync("VictoryScreen", LoadSceneMode.Additive);
+            
+            loadScene = true;
+        }
     }
 
-    // Update is called once per frame
     void Update()
     {
         //bool vicScreen = false;
@@ -24,20 +44,24 @@ public class VictoryScreen : MonoBehaviour
         {
             print("EndGame");
             winner = GameObject.FindGameObjectWithTag("Player");
+            //DontDestroyOnLoad(winner);
             print(winner.name);
             if (!vicScreen)
             {
-                Invoke("LoadVictoryScreen", 1.5f);
+                Invoke("LoadVictoryScreen", 2f);
                 vicScreen = true;
             }
         }
-
     }
 
     void LoadVictoryScreen()
     {
-        SceneManager.LoadScene("VictoryScreen");
+        firstPodium = GameObject.Find("1stPlace");
+        SceneManager.MoveGameObjectToScene(winner, SceneManager.GetSceneByName("VictoryScreen"));
         DontDestroyOnLoad(this);
+
+        winner.transform.position = firstPodium.transform.position;
+        SceneManager.UnloadSceneAsync(currentScene);
     }
 
 }

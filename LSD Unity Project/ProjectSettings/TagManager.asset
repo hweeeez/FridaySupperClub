@@ -12,6 +12,7 @@ TagManager:
   - TangHuluSelect
   - RockSugarSelect
   - MacaroonSelect
+  - VicScreenPoints
   layers:
   - Default
   - TransparentFX
