@@ -40,10 +40,22 @@ public class characterspawn : MonoBehaviour
         if (mapChosen == "MapOne")
         {
             Map1.SetActive(true);
+            playerOne.transform.position = new Vector2(20.9f, 15.92f);
+            playerTwo.transform.position = new Vector2(20.9f, 15.92f);
+            playerThree.transform.position = new Vector2(-21.1f, 15.92f);
+            playerFour.transform.position = new Vector2(-21.1f, 15.92f);
+            playerOne.GetComponent<SpriteRenderer>().flipX = true;
+            playerTwo.GetComponent<SpriteRenderer>().flipX = true;
         }
         if (mapChosen == "MapTwo")
         {
             Map2.SetActive(true);
+            playerOne.transform.position = new Vector2(-22.96f, 15.92f);
+            playerTwo.transform.position = new Vector2(-14.23f, 15.92f);
+            playerThree.transform.position = new Vector2(14.12f, 15.92f);
+            playerFour.transform.position = new Vector2(22.97f, 15.92f);
+            playerThree.GetComponent<SpriteRenderer>().flipX = true;
+            playerFour.GetComponent<SpriteRenderer>().flipX = true;
         }
         #region
         if (Sprite1 == "KonpeitoSprite")
@@ -127,12 +139,7 @@ public class characterspawn : MonoBehaviour
 
         }
         #endregion
-        playerOne.transform.position = new Vector2(20.9f, 9.6f);
-        playerTwo.transform.position = new Vector2(20.9f, -2.78f);
-        playerThree.transform.position = new Vector2(-21.1f, 9.1f);
-        playerFour.transform.position = new Vector2(-21.1f, -3.4f);
-        playerOne.GetComponent<SpriteRenderer>().flipX = true;
-        playerTwo.GetComponent<SpriteRenderer>().flipX = true;
+     
 
         // StartCoroutine(instantiatePlayers());
         var player1 = PlayerInput.Instantiate(prefab: playerOne, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
