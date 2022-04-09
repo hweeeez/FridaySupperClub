@@ -84,4 +84,12 @@ public class GameButtons : MonoBehaviour
         controlsMenu.SetActive(false);
         Time.timeScale = 1;
     }
+
+    //Pause Menu & Vic screen
+
+    public void QuitToMainMenu()
+    {
+        SceneManager.LoadScene("TitleMenu");
+    }
+
 }
