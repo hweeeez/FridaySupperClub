@@ -18,6 +18,12 @@ public class GameButtons : MonoBehaviour
     public GameObject mainOptionsMenu;
     public GameObject creditsScreen;
 
+    //for tutorial pages
+    public GameObject[] tutorialPages;
+    [SerializeField] GameObject buttonLeft;
+    [SerializeField] GameObject buttonRight;
+    public int currentIndex = 0;
+
     //title menu & submenus
     public void startGame()
     {
@@ -27,6 +33,7 @@ public class GameButtons : MonoBehaviour
     public void tutorialScreen()
     {
         tutorialMenu.SetActive(true);
+        buttonLeft.SetActive(false);
         titleMenu.SetActive(false);
     }
     public void optionsScreen()
@@ -46,6 +53,72 @@ public class GameButtons : MonoBehaviour
         creditsScreen.SetActive(false);
         titleMenu.SetActive(true);
     }
+
+    //tutorial submenu
+    public int CurrentIndex
+    {
+
+        get
+        {
+            return currentIndex;
+        }
+        set
+        {
+            if (tutorialPages[currentIndex] != null)
+            {
+                //set the current active object to inactive, before replacing it
+                GameObject activePage = tutorialPages[currentIndex];
+                activePage.SetActive(false);
+            }
+
+            if (value < 0)
+                currentIndex = tutorialPages.Length - 1;
+            else if (value > tutorialPages.Length - 1)
+                currentIndex = 0;
+            else
+                currentIndex = value;
+            if (tutorialPages[currentIndex] != null)
+            {
+                GameObject aktivesObj = tutorialPages[currentIndex];
+                aktivesObj.SetActive(true);
+            }
+        }
+    }
+
+    public void Previous(int direction)
+    {
+        if (direction == 0)
+            CurrentIndex--;
+
+        if (CurrentIndex <= 3)
+        {
+            buttonRight.SetActive(true);
+        }
+
+        if (CurrentIndex <= 0)
+        {
+            buttonLeft.SetActive(false);
+        }
+    }
+
+    public void Next(int direction)
+    {
+        if (direction >= 0)
+            CurrentIndex++;
+
+        if (CurrentIndex >= 3)
+        {
+            buttonRight.SetActive(false);
+        }
+
+        if (CurrentIndex >= 1)
+        {
+            buttonLeft.SetActive(true);
+        }
+
+    }
+
+
 
     //in-game menu / submenu
     public void openPause()
