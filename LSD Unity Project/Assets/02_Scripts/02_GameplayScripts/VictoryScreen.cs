@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class VictoryScreen : MonoBehaviour
 {
 
-    public static GameObject winner;
+    public GameObject winner;
     public List<GameObject> players;
     public GameObject firstPodium;
 
