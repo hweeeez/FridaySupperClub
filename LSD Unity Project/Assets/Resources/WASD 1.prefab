@@ -32,7 +32,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7104238988279009790}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 20.9, y: 9.6, z: 0}
+  m_LocalPosition: {x: -22.96, y: 15.92, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8412014376694724086}
@@ -71,6 +71,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isWinner: 0
   bonk: {fileID: 0}
   dust: {fileID: 2167250214023540568}
   hitMaterial: {fileID: 2100000, guid: 8619be08f9e217c4dab9e0d34bab0455, type: 2}
@@ -91,6 +92,11 @@ MonoBehaviour:
   fallingGravity: -95.81
   slamGravity: -280
   spawnPos: {x: 7.23, y: 16.1, z: 0}
+  collisionMask:
+    serializedVersion: 2
+    m_Bits: 0
+  horizontalRayCount: 4
+  verticalRayCount: 4
 --- !u!54 &5893018536092498180
 Rigidbody:
   m_ObjectHideFlags: 0

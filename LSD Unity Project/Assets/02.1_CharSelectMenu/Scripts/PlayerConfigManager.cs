@@ -46,9 +46,9 @@ public class PlayerConfigManager : MonoBehaviour
     void Awake()
     {
         sceneloaded = false;
-        /*    bgCanvas = GameObject.Find("BackgroundCanvas");
+           bgCanvas = GameObject.Find("BackgroundCanvas");
             var bgCamera = bgCanvas.GetComponent<Canvas>();
-            bgCamera.worldCamera = mainCamera;*/
+            bgCamera.worldCamera = mainCamera;
         charaList = new List<List<GameObject>>();
         playerList = new List<SelectChar>();
         players = new List<PlayerInput>();
@@ -155,7 +155,7 @@ public class PlayerConfigManager : MonoBehaviour
         }
         if (!p4Ready && g4.GetComponent<SelectChar>().isReady)
         {
-            p4Ready = true;
+            StartCoroutine(fourReady());
             sprite4 = g4.GetComponent<SelectChar>().readySprite.name;
             PlayerPrefs.SetString("Sprite4", sprite4);
 
@@ -171,7 +171,11 @@ public class PlayerConfigManager : MonoBehaviour
         }
 
     }
-
+    IEnumerator fourReady()
+    {
+        yield return new WaitForSeconds(1f);
+        p4Ready = true;
+    }
     public void mapOne()
     {
         mapCanvas.SetActive(false);

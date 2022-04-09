@@ -143,6 +143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isWinner: 0
   bonk: {fileID: 4963437832816941842}
   dust: {fileID: 8506148166164366238}
   hitMaterial: {fileID: 2100000, guid: 8619be08f9e217c4dab9e0d34bab0455, type: 2}
@@ -165,7 +166,7 @@ MonoBehaviour:
   spawnPos: {x: -21.1, y: 16.1, z: 0}
   collisionMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   horizontalRayCount: 4
   verticalRayCount: 4
 --- !u!54 &5893018536092498180

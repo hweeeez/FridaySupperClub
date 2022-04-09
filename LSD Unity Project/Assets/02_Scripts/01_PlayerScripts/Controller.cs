@@ -7,6 +7,10 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    public bool isAttacked;
+    private VictoryScreen vicSc;      
+    private GameObject podium;
+    public bool isWinner;
     public static List<Collider> playerColliders = new List<Collider>();
     #region
     public static bool dead;
@@ -103,6 +107,7 @@ public class Controller : MonoBehaviour
 
     private void Awake()
     {
+        string mapChosen = PlayerPrefs.GetString("MapSelect");
         headCollider = groundCheck.GetComponent<Collider>();
         feetCollider = feetTransform.GetComponent<Collider>();
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
@@ -112,11 +117,12 @@ public class Controller : MonoBehaviour
         lifeScript = gameObject.GetComponent<HealthSystem>();
         capcollider = gameObject.GetComponent<Collider>();
         playerColliders.Add(capcollider);
-
         spriteRender.material = defMaterial;
+       
     }
     private void Start()
     {
+        vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
         CalculateRaySpacing();
         controller.enabled = true;
         feetCollider.enabled = true;
@@ -336,7 +342,7 @@ public class Controller : MonoBehaviour
         bool tryAccelerate = false;
         // isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-        bool isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
+         isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
 
         float fallGravity = canJump ? fallingGravity : dropGravity;
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
@@ -569,7 +575,8 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
-
+     
+       
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -601,8 +608,8 @@ public class Controller : MonoBehaviour
         anim.Play("death");
         yield return new WaitForSeconds(0.9f);
         this.gameObject.SetActive(false);
-        VictoryScreen vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
-        this.transform.position = vicSc.selectedPoint.transform.position;
+  /*      VictoryScreen vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
+        this.transform.position = vicSc.selectedPoint.transform.position;*/
     }
     private void OnDestroy()
     {
