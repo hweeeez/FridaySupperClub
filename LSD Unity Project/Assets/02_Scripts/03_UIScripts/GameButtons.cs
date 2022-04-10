@@ -5,7 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class GameButtons : MonoBehaviour
 {
+
     public GameObject backGround;
+
+    public SFXScript sfxScript;
 
     [Header("In-game Pause Menu & Sub Menus")]
     public GameObject pauseMenu;
@@ -29,22 +32,29 @@ public class GameButtons : MonoBehaviour
     {
         DontDestroyOnLoad(backGround);
         SceneManager.LoadScene("CharacterSelect");
+        sfxScript.PlayButton();
     }
     public void tutorialScreen()
     {
         tutorialMenu.SetActive(true);
         buttonLeft.SetActive(false);
         titleMenu.SetActive(false);
+
+        sfxScript.SubMenuButton();
     }
     public void optionsScreen()
     {
         mainOptionsMenu.SetActive(true);
         titleMenu.SetActive(false);
+
+        sfxScript.SubMenuButton();
     }
     public void theCredits()
     {
         creditsScreen.SetActive(true);
         titleMenu.SetActive(false);
+
+        sfxScript.SubMenuButton();
     }
     public void backToMain()
     {
@@ -52,6 +62,7 @@ public class GameButtons : MonoBehaviour
         mainOptionsMenu.SetActive(false);
         creditsScreen.SetActive(false);
         titleMenu.SetActive(true);
+        sfxScript.BackAndResumeButton();
     }
 
     //tutorial submenu
@@ -87,6 +98,8 @@ public class GameButtons : MonoBehaviour
 
     public void Previous(int direction)
     {
+        sfxScript.BackAndResumeButton();
+
         if (direction == 0)
             CurrentIndex--;
 
@@ -103,6 +116,8 @@ public class GameButtons : MonoBehaviour
 
     public void Next(int direction)
     {
+        sfxScript.InGameMenuButtons();
+
         if (direction >= 0)
             CurrentIndex++;
 
@@ -118,42 +133,54 @@ public class GameButtons : MonoBehaviour
 
     }
 
-
-
     //in-game menu / submenu
     public void openPause()
     {
+        sfxScript.InGameMenuButtons();
+
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
     }
     public void continueGame()
     {
+        sfxScript.BackAndResumeButton();
+
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
     public void restartGame()
     {
+        sfxScript.PlayButton();
+
         pauseMenu.SetActive(false);
         Time.timeScale = 1;
         SceneManager.LoadScene("PlayableTest01");
     }
     public void openOptions()
     {
+        sfxScript.SubMenuButton();
+
         pauseMenu.SetActive(false);
         optionsMenu.SetActive(true);
     }
     public void optionsBack()
     {
+        sfxScript.BackAndResumeButton();
+
         optionsMenu.SetActive(false);
         pauseMenu.SetActive(true);
     }
     public void openControls()
     {
+        sfxScript.InGameMenuButtons();
+
         controlsMenu.SetActive(true);
         Time.timeScale = 0;
     }
     public void controlsBack()
     {
+        sfxScript.BackAndResumeButton();
+
         controlsMenu.SetActive(false);
         Time.timeScale = 1;
     }
@@ -162,6 +189,8 @@ public class GameButtons : MonoBehaviour
 
     public void QuitToMainMenu()
     {
+        sfxScript.BackAndResumeButton();
+
         SceneManager.LoadScene("TitleMenu");
     }
     public void quitGame()
