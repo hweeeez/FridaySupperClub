@@ -5,7 +5,8 @@ using UnityEngine.InputSystem;
 using UnityEngine.UI;
 [RequireComponent(typeof(PlayerInput))]
 public class characterspawn : MonoBehaviour
-{ PlayerInput player1;
+{
+    PlayerInput player1;
     PlayerInput player2;
     PlayerInput player3;
     PlayerInput player4;
@@ -42,8 +43,8 @@ public class characterspawn : MonoBehaviour
         string Sprite2 = PlayerPrefs.GetString("Sprite2");
         string Sprite3 = PlayerPrefs.GetString("Sprite3");
         string Sprite4 = PlayerPrefs.GetString("Sprite4");
-         mapChosen = PlayerPrefs.GetString("MapSelect");
-        
+        mapChosen = PlayerPrefs.GetString("MapSelect");
+
         #region
         if (Sprite1 == "KonpeitoSprite")
         {
@@ -126,7 +127,7 @@ public class characterspawn : MonoBehaviour
 
         }
         #endregion
-     
+
 
         // StartCoroutine(instantiatePlayers());
         player1 = PlayerInput.Instantiate(prefab: playerOne, playerIndex: 0, controlScheme: "Keyboard1", pairWithDevice: Keyboard.current, splitScreenIndex: -1);
@@ -182,7 +183,7 @@ public class characterspawn : MonoBehaviour
                 player2.gameObject.GetComponent<SpriteRenderer>().flipX = true;
             }
         }
-        if(mapChosen == "MapTwo")
+        if (mapChosen == "MapTwo")
         {
             if (player3.GetComponent<Controller>().isAttacked == true)
             {

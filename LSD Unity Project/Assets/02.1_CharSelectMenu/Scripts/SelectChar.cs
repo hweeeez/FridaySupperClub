@@ -9,6 +9,8 @@ using UnityEngine.InputSystem.Interactions;
 [RequireComponent(typeof(CharacterController))]
 public class SelectChar : MonoBehaviour
 {
+    GameObject sfxGO;
+    AudioSource selectsfx;
     public GameObject rightKey;
     public GameObject leftKey;
     private int index;
@@ -19,7 +21,8 @@ public class SelectChar : MonoBehaviour
     public bool isReady = false;
     private void Start()
     {
-
+        sfxGO = GameObject.Find("CharSelectSFX");
+        selectsfx = sfxGO.GetComponent<AudioSource>();
         foreach (GameObject go in charList)
             go.SetActive(false);
         if (charList[0])
@@ -55,8 +58,10 @@ public class SelectChar : MonoBehaviour
     }
 
     public void OnSelect(InputAction.CallbackContext context)
-    { if (context.performed)
+    {
+        if (context.performed)
         {
+            selectsfx.Play();
             isReady = true;
             charTaken = charList[index];
             Animator animator = charTaken.GetComponent<Animator>();
