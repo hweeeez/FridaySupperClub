@@ -164,5 +164,8 @@ public class GameButtons : MonoBehaviour
     {
         SceneManager.LoadScene("TitleMenu");
     }
-
+    public void quitGame()
+    {
+        Application.Quit();
+    }
 }

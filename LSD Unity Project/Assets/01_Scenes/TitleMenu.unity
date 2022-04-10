@@ -409,7 +409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9.600006, y: 17.2}
+  m_AnchoredPosition: {x: 9.600159, y: 17.2}
   m_SizeDelta: {x: 31, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &77777092
@@ -1271,7 +1271,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 9.600006, y: 17.2}
+  m_AnchoredPosition: {x: 9.599976, y: 17.2}
   m_SizeDelta: {x: 31, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &444584058
@@ -1420,8 +1420,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -1.3125, y: -1.8000002}
-  m_SizeDelta: {x: -13.935, y: 11.83}
+  m_AnchoredPosition: {x: -1.315094, y: -0.8999901}
+  m_SizeDelta: {x: -13.93, y: 13.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &553504398
 GameObject:
@@ -3160,8 +3160,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.6, y: 38.6}
-  m_SizeDelta: {x: 670.23, y: 36.17}
+  m_AnchoredPosition: {x: 3.6, y: 38}
+  m_SizeDelta: {x: 670.23, y: 34.97}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1261756487
 MonoBehaviour:
@@ -3956,8 +3956,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: -1.3125, y: 0}
-  m_SizeDelta: {x: -13.935, y: 11.83}
+  m_AnchoredPosition: {x: -2.3399963, y: -0.7425003}
+  m_SizeDelta: {x: -11.87, y: 14.515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1608590924
 GameObject:
@@ -5236,7 +5236,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 45771677}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1521843014}
+        m_TargetAssemblyTypeName: GameButtons, Assembly-CSharp
+        m_MethodName: quitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2106894883
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5308,6 +5320,6 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.420013, y: -7.99}
-  m_SizeDelta: {x: -30.15, y: 4.36}
+  m_AnchoredPosition: {x: -3.2900085, y: -10}
+  m_SizeDelta: {x: -13.77, y: 4.36}
   m_Pivot: {x: 0.5, y: 0.5}

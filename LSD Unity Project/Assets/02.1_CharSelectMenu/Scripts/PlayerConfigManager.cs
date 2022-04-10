@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerConfigManager : MonoBehaviour
 {
+    public GameObject map1;
+    public GameObject map2;
     public GameObject mapCanvas;
     string p1tag;
     string p2tag;
@@ -46,7 +48,7 @@ public class PlayerConfigManager : MonoBehaviour
     void Awake()
     {
         sceneloaded = false;
-           bgCanvas = GameObject.Find("BackgroundCanvas");
+         bgCanvas = GameObject.Find("BackgroundCanvas");
             var bgCamera = bgCanvas.GetComponent<Canvas>();
             bgCamera.worldCamera = mainCamera;
         charaList = new List<List<GameObject>>();
@@ -178,17 +180,22 @@ public class PlayerConfigManager : MonoBehaviour
     }
     public void mapOne()
     {
-        mapCanvas.SetActive(false);
+     
         PlayerPrefs.SetString("MapSelect", "MapOne");
-        LoadingPanel.SetActive(true);
+        StartCoroutine(mapSelect());
     }
     public void mapTwo()
     {
-        mapCanvas.SetActive(false);
+     
         PlayerPrefs.SetString("MapSelect", "MapTwo");
+        StartCoroutine(mapSelect());
+    }
+    IEnumerator mapSelect()
+    {
+        yield return new WaitForSeconds(1f);
+        mapCanvas.SetActive(false);
         LoadingPanel.SetActive(true);
     }
-
 
 
     /*    public void ReadyPlayer(int index)
