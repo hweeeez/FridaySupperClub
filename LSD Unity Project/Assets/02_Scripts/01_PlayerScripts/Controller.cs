@@ -7,8 +7,10 @@ using System.Collections;
 [RequireComponent(typeof(CharacterController))]
 public class Controller : MonoBehaviour
 {
+    public bool rayGround;
+    AudioSource aS;
     public bool isAttacked;
-    private VictoryScreen vicSc;      
+    private VictoryScreen vicSc;
     private GameObject podium;
     public bool isWinner;
     public static List<Collider> playerColliders = new List<Collider>();
@@ -47,18 +49,18 @@ public class Controller : MonoBehaviour
     private float dashStopSpeed = 0.1f;
     private float currentDashTime;
     private bool hasJumped = false;
-    private float dropGravity = -65.91f;
+    private float dropGravity = -150.91f;
     [SerializeField]
-    private float jumpGravity = -135.81f;
+    private float jumpGravity = -170.81f;
     [SerializeField]
-    private float fallingGravity = -165.81f;
+    private float fallingGravity = -210.81f;
     [SerializeField]
-    private float slamGravity = -280f;
+    private float slamGravity = -400f;
     private Vector2 movementInput = Vector2.zero;
     private bool jumpButtonHeld;
     public Vector3 spawnPos;
-    private float maxHeight = 6.5f;
-    private float minHeight = 2f;
+    private float maxHeight = 8.2f;
+    private float minHeight = 3f;
     float mass = 3.0f;
     Vector3 impact = Vector3.zero;
     bool startedJump;
@@ -118,10 +120,11 @@ public class Controller : MonoBehaviour
         capcollider = gameObject.GetComponent<Collider>();
         playerColliders.Add(capcollider);
         spriteRender.material = defMaterial;
-       
+
     }
     private void Start()
     {
+        aS = this.GetComponent<AudioSource>();
         vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
         CalculateRaySpacing();
         controller.enabled = true;
@@ -285,7 +288,7 @@ public class Controller : MonoBehaviour
         {
             Vector2 rayOrigin = (directionY == -1) ? raycastOrigins.bottomLeft : raycastOrigins.topLeft;
             rayOrigin += Vector2.right * (verticalRaySpacing * i + playerVelocity.x);
-            Debug.DrawRay(raycastOrigins.bottomLeft + Vector2.right * verticalRaySpacing * i, Vector2.up * -2, Color.red);
+            //Debug.DrawRay(raycastOrigins.bottomLeft + Vector2.right * verticalRaySpacing * i, Vector2.up * -2, Color.red);
             RaycastHit hit;
             if (Physics.Raycast(rayOrigin, Vector2.up * directionY, out hit, rayLength, collisionMask))
             {
@@ -307,11 +310,13 @@ public class Controller : MonoBehaviour
                     print("hit");
                     collisions.above = false;
                     continue;
+                    rayGround = false;
                 }
                 else
                 {
                     if (directionY == -1)
                     {
+                        rayGround = true;
                         Physics.IgnoreCollision(hit.collider, capcollider, false);
                         collisions.bottomRayTags.Add("NONE");
                     }
@@ -342,7 +347,7 @@ public class Controller : MonoBehaviour
         bool tryAccelerate = false;
         // isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
-         isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
+        isAttacked = Physics.CheckSphere(groundCheck.position, groundDistance, feetMask);
 
         float fallGravity = canJump ? fallingGravity : dropGravity;
         float defaultfallGravity = slammed ? slamGravity : fallGravity;
@@ -398,6 +403,16 @@ public class Controller : MonoBehaviour
             {
                 playerVelocity.y = 0;
             }
+        }
+
+        RaycastHit hit;
+        if (Physics.Raycast(this.transform.position, Vector2.down, out hit, 2f, groundMask)
+ )
+        {
+            Debug.DrawRay(this.transform.position, Vector2.down, Color.red);
+            print("Gronded");
+            playerVelocity.y = 0;
+
         }
         #region
         /*  if (moveTrigger && movementInput.x < 0)
@@ -545,6 +560,7 @@ public class Controller : MonoBehaviour
         else if (controller.isGrounded) { anim.SetBool("slam", false); }
         if (isAttacked && !invulnerable)
         {
+            aS.Play();
             if (impact.magnitude > 0.2F) controller.Move(impact * Time.deltaTime);
             // consumes the impact energy each cycle:
             impact = Vector3.Lerp(impact, Vector3.zero, 5 * Time.deltaTime);
@@ -575,8 +591,8 @@ public class Controller : MonoBehaviour
         {
             StartCoroutine(finalDeath());
         }
-     
-       
+
+
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -608,8 +624,8 @@ public class Controller : MonoBehaviour
         anim.Play("death");
         yield return new WaitForSeconds(0.9f);
         this.gameObject.SetActive(false);
-  /*      VictoryScreen vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
-        this.transform.position = vicSc.selectedPoint.transform.position;*/
+        /*      VictoryScreen vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
+              this.transform.position = vicSc.selectedPoint.transform.position;*/
     }
     private void OnDestroy()
     {

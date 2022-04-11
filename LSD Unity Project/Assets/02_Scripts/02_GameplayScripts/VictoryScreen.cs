@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class VictoryScreen : MonoBehaviour
 {
+    public GameObject drawScreen;
 
     public GameObject winner;
     public List<GameObject> players;
@@ -24,25 +25,35 @@ public class VictoryScreen : MonoBehaviour
         currentScene = SceneManager.GetActiveScene();
 
         //SPAWN POINTS FOR OTHER CHARACTERS
-       // spawnPoints = GameObject.FindGameObjectsWithTag("VicScreenPoints");
-    /*    index = Random.Range(0, spawnPoints.Length);
-        selectedPoint = spawnPoints[index];*/
+        // spawnPoints = GameObject.FindGameObjectsWithTag("VicScreenPoints");
+        /*    index = Random.Range(0, spawnPoints.Length);
+            selectedPoint = spawnPoints[index];*/
 
- /*       if (!loadScene)
-        {
-            SceneManager.LoadSceneAsync("VictoryScreen", LoadSceneMode.Additive);
+        /*       if (!loadScene)
+               {
+                   SceneManager.LoadSceneAsync("VictoryScreen", LoadSceneMode.Additive);
 
-            loadScene = true;
-        }*/
-      /*  players = new List<GameObject>();
-        players.AddRange(GameObject.FindGameObjectsWithTag("Player"));
-       */
+                   loadScene = true;
+               }*/
+        /*  players = new List<GameObject>();
+          players.AddRange(GameObject.FindGameObjectsWithTag("Player"));
+         */
+    }
+    IEnumerator draw()
+    {
+        yield return new WaitForSeconds(1.5f);
+        drawScreen.SetActive(true);
+
     }
 
     void Update()
     {
         //bool vicScreen = false;
-      
+        if (GameObject.FindGameObjectsWithTag("Player").Length == 0)
+        {
+            StartCoroutine(draw());
+        }
+
         if (GameObject.FindGameObjectsWithTag("Player").Length < 2)
         {
             endGame = true;
@@ -57,10 +68,10 @@ public class VictoryScreen : MonoBehaviour
                 vicScreen = true;
             }
         }
-     
-           
-        }
-    
+
+
+    }
+
 
     void LoadVictoryScreen()
     {/*for(int i = 0; i < players.Count; i++)

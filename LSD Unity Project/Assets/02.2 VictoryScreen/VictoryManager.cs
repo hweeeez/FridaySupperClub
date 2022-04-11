@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class VictoryManager : MonoBehaviour
 {
+    AudioSource aS;
+    public AudioClip victory, title;
     string winner;
     public GameObject winNer;
     private VictoryScreen vcSc;
@@ -18,12 +20,14 @@ public class VictoryManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        aS = this.GetComponent<AudioSource>();
+        aS.PlayOneShot(victory);
         //vcSc = GameObject.Find("VictoryScreen").GetComponent<VictoryScreen>();
         kpGO = GameObject.FindGameObjectsWithTag("KPWin");
         mcGO = GameObject.FindGameObjectsWithTag("MCWin");
         rsGO = GameObject.FindGameObjectsWithTag("RSWin");
         thGO = GameObject.FindGameObjectsWithTag("THWin");
-        
+
         foreach (GameObject mc in mcGO)
         {
             mc.SetActive(false);
@@ -41,12 +45,17 @@ public class VictoryManager : MonoBehaviour
             mc.SetActive(false);
         }
         winner = PlayerPrefs.GetString("Winner");
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!aS.isPlaying)
+        {
+            aS.clip = title;
+            aS.PlayOneShot(title);
+        }
         if (winner.Contains("Konpei"))
         {
             Animator kpanim = kp.GetComponent<Animator>();

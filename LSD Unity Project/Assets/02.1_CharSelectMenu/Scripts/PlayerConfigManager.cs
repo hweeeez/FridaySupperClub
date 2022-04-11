@@ -52,9 +52,9 @@ public class PlayerConfigManager : MonoBehaviour
         sfxGO = GameObject.Find("CharSelectSFX");
         selectsfx = sfxGO.GetComponent<AudioSource>();
         sceneloaded = false;
-        /*  bgCanvas = GameObject.Find("BackgroundCanvas");
-             var bgCamera = bgCanvas.GetComponent<Canvas>();
-             bgCamera.worldCamera = mainCamera;*/
+        bgCanvas = GameObject.Find("BackgroundCanvas");
+        var bgCamera = bgCanvas.GetComponent<Canvas>();
+        bgCamera.worldCamera = mainCamera;
         charaList = new List<List<GameObject>>();
         playerList = new List<SelectChar>();
         players = new List<PlayerInput>();

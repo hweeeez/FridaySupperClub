@@ -5,9 +5,11 @@ using TMPro;
 
 public class MolassesScript : MonoBehaviour
 {
-
+    bool hasplayed = false;
+    AudioSource audioSource;
+    public AudioClip warning, waterSplash;
     //Timer
-    float timeRemaining = 1f; //in seconds
+    float timeRemaining = 60f; //in seconds
     bool timerIsRunning = false;
     public GameObject timerText;
 
@@ -21,6 +23,7 @@ public class MolassesScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = this.GetComponent<AudioSource>();
         timerIsRunning = true;
         maxWaterHeight = new Vector2(water.transform.position.x, -9.5f);
         water.transform.position = new Vector2(0, -36f);
@@ -35,6 +38,12 @@ public class MolassesScript : MonoBehaviour
         if (timerIsRunning)
         {
 
+            if (timeRemaining <= 1.1f && !hasplayed)
+            {
+                hasplayed = true;
+                audioSource.clip = warning;
+                audioSource.PlayOneShot(warning);
+            }
             if (timeRemaining > 0)
             {
                 timeRemaining -= Time.deltaTime;
@@ -42,6 +51,9 @@ public class MolassesScript : MonoBehaviour
             }
             else
             {
+                audioSource.clip = waterSplash;
+                audioSource.PlayOneShot(waterSplash);
+                audioSource.loop = true;
                 molassesIntro.SetActive(true);
                 //Debug.Log("Game over!");
                 timeRemaining = 0;
@@ -79,7 +91,7 @@ public class MolassesScript : MonoBehaviour
             water.transform.position = Vector2.Lerp(startLevel, maxLevel, t);
             yield return null;
         }
-
+        audioSource.loop = false;
         isRising = false;
     }
 

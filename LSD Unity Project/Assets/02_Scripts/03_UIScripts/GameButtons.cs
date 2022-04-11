@@ -8,6 +8,7 @@ public class GameButtons : MonoBehaviour
 
     public GameObject backGround;
 
+    private GameObject sfxGO;
     public SFXScript sfxScript;
 
     [Header("In-game Pause Menu & Sub Menus")]
@@ -30,6 +31,8 @@ public class GameButtons : MonoBehaviour
     //title menu & submenus
     public void startGame()
     {
+        sfxGO = GameObject.Find("SFX");
+        sfxScript = sfxGO.GetComponent<SFXScript>();
         DontDestroyOnLoad(backGround);
         SceneManager.LoadScene("CharacterSelect");
         sfxScript.PlayButton();
