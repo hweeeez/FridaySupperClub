@@ -42,6 +42,7 @@ public class PlayerConfigManager : MonoBehaviour
     private bool p2Ready;
     private bool p3Ready;
     private bool p4Ready;
+
     public Camera mainCamera;
     private GameObject bgCanvas;
     [SerializeField]
@@ -105,7 +106,7 @@ public class PlayerConfigManager : MonoBehaviour
     private void Update()
     {
 
-        if (!p1Ready && g1.GetComponent<SelectChar>().isReady)
+        if (!p1Ready && g1.GetComponent<SelectChar>().isReady && g1.GetComponent<SelectChar>().canSelect)
         {
             sprite1 = g1.GetComponent<SelectChar>().readySprite.name;
             PlayerPrefs.SetString("Sprite1", sprite1);
@@ -123,7 +124,7 @@ public class PlayerConfigManager : MonoBehaviour
         }
 
 
-        if (!p2Ready && g2.GetComponent<SelectChar>().isReady)
+        if (!p2Ready && g2.GetComponent<SelectChar>().isReady && g2.GetComponent<SelectChar>().canSelect)
         {
             p2tag = g2.GetComponent<SelectChar>().charTaken.gameObject.tag;
 
@@ -142,7 +143,7 @@ public class PlayerConfigManager : MonoBehaviour
             StartCoroutine(playerActive(g2, g3));
         }
 
-        if (!p3Ready && g3.GetComponent<SelectChar>().isReady)
+        if (!p3Ready && p2Ready && g3.GetComponent<SelectChar>().isReady && g3.GetComponent<SelectChar>().canSelect)
         {
             p3tag = g3.GetComponent<SelectChar>().charTaken.gameObject.tag;
             int index = PlayerPrefs.GetInt("charTaken");
@@ -159,7 +160,7 @@ public class PlayerConfigManager : MonoBehaviour
             StartCoroutine(playerActive(g3, g4));
             print("P3: " + sprite3);
         }
-        if (!p4Ready && g4.GetComponent<SelectChar>().isReady)
+        if (!p4Ready && g4.GetComponent<SelectChar>().canSelect && g4.GetComponent<SelectChar>().isReady)
         {
             StartCoroutine(fourReady());
             sprite4 = g4.GetComponent<SelectChar>().readySprite.name;

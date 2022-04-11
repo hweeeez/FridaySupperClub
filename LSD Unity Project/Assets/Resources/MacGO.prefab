@@ -144,6 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29b869e105712594481c8dbce273e85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rayGround: 0
   isAttacked: 0
   isWinner: 0
   bonk: {fileID: 3111965309194561947}
@@ -318,7 +319,7 @@ Animator:
   m_Controller: {fileID: 9100000, guid: 23d038ceb538eb049b88a8526256ba15, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
-  m_ApplyRootMotion: 0
+  m_ApplyRootMotion: 1
   m_LinearVelocityBlending: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1

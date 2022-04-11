@@ -9,6 +9,7 @@ using UnityEngine.InputSystem.Interactions;
 [RequireComponent(typeof(CharacterController))]
 public class SelectChar : MonoBehaviour
 {
+    public bool canSelect = false;
     GameObject sfxGO;
     AudioSource selectsfx;
     public GameObject rightKey;
@@ -61,14 +62,17 @@ public class SelectChar : MonoBehaviour
     {
         if (context.performed)
         {
-            selectsfx.Play();
-            isReady = true;
-            charTaken = charList[index];
-            Animator animator = charTaken.GetComponent<Animator>();
-            animator.SetBool("Confirm", true);
-            PlayerPrefs.SetInt("charTaken", charList.IndexOf(charTaken));
-            readySprite = charList[index].GetComponent<SpriteRenderer>().sprite;
-            //print(readySprite.name);
+            if (canSelect)
+            {
+                selectsfx.Play();
+                isReady = true;
+                charTaken = charList[index];
+                Animator animator = charTaken.GetComponent<Animator>();
+                animator.SetBool("Confirm", true);
+                PlayerPrefs.SetInt("charTaken", charList.IndexOf(charTaken));
+                readySprite = charList[index].GetComponent<SpriteRenderer>().sprite;
+                //print(readySprite.name);
+            }
         }
     }
     // Update is called once per frame
@@ -76,13 +80,14 @@ public class SelectChar : MonoBehaviour
     {
         if (this.transform.localScale == Vector3.zero)
         {
-
+            canSelect = false;
             charList[0].SetActive(true);
             leftKey.SetActive(false);
             rightKey.SetActive(false);
         }
         else
         {
+            canSelect = true;
             leftKey.SetActive(true);
             rightKey.SetActive(true);
         }

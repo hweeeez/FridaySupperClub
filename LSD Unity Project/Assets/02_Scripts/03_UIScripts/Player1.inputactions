@@ -236,7 +236,7 @@
                     "path": "<Keyboard>/numpad4",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard3",
+                    "groups": "Keyboard4",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -247,7 +247,7 @@
                     "path": "<Keyboard>/numpad6",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard3",
+                    "groups": "Keyboard4",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -291,7 +291,7 @@
                     "path": "<Keyboard>/j",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard4",
+                    "groups": "Keyboard3",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -302,7 +302,7 @@
                     "path": "<Keyboard>/l",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard4",
+                    "groups": "Keyboard3",
                     "action": "Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
@@ -401,7 +401,7 @@
                     "path": "<Keyboard>/numpad8",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard3",
+                    "groups": "Keyboard4",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -412,7 +412,7 @@
                     "path": "<Keyboard>/i",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard4",
+                    "groups": "Keyboard3",
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -445,7 +445,7 @@
                     "path": "<Keyboard>/k",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard4",
+                    "groups": "Keyboard3",
                     "action": "Slam",
                     "isComposite": false,
                     "isPartOfComposite": false
@@ -456,7 +456,7 @@
                     "path": "<Keyboard>/numpad5",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard3",
+                    "groups": "Keyboard4",
                     "action": "Slam",
                     "isComposite": false,
                     "isPartOfComposite": false

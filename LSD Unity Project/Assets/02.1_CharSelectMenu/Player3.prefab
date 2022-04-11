@@ -872,7 +872,7 @@ CharacterController:
   m_GameObject: {fileID: 4535869762573773693}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Height: 0
   m_Radius: 0
@@ -893,6 +893,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa75eb4559ca1dc43aab051753bd2d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canSelect: 0
   rightKey: {fileID: 3127696345293118350}
   leftKey: {fileID: 8818341242482930585}
   charList:

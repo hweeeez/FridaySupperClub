@@ -249,7 +249,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/numpad4"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard3"",
+                    ""groups"": ""Keyboard4"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -260,7 +260,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/numpad6"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard3"",
+                    ""groups"": ""Keyboard4"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -304,7 +304,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard4"",
+                    ""groups"": ""Keyboard3"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -315,7 +315,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/l"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard4"",
+                    ""groups"": ""Keyboard3"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
@@ -414,7 +414,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/numpad8"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard3"",
+                    ""groups"": ""Keyboard4"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -425,7 +425,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/i"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard4"",
+                    ""groups"": ""Keyboard3"",
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -458,7 +458,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard4"",
+                    ""groups"": ""Keyboard3"",
                     ""action"": ""Slam"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
@@ -469,7 +469,7 @@ public class @AutoGen : IInputActionCollection, IDisposable
                     ""path"": ""<Keyboard>/numpad5"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Keyboard3"",
+                    ""groups"": ""Keyboard4"",
                     ""action"": ""Slam"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false

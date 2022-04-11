@@ -406,7 +406,7 @@ public class Controller : MonoBehaviour
         }
 
         RaycastHit hit;
-        if (Physics.Raycast(this.transform.position, Vector2.down, out hit, 2f, groundMask)
+        if (Physics.Raycast(this.transform.position, Vector2.down, out hit, 1.8f, groundMask)
  )
         {
             Debug.DrawRay(this.transform.position, Vector2.down, Color.red);

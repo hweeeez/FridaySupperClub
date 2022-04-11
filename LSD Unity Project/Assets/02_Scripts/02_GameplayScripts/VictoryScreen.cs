@@ -41,7 +41,7 @@ public class VictoryScreen : MonoBehaviour
     }
     IEnumerator draw()
     {
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1f);
         drawScreen.SetActive(true);
 
     }
@@ -64,7 +64,7 @@ public class VictoryScreen : MonoBehaviour
             PlayerPrefs.SetString("Winner", winner.name);
             if (!vicScreen)
             {
-                Invoke("LoadVictoryScreen", 2f);
+                Invoke("LoadVictoryScreen", 1f);
                 vicScreen = true;
             }
         }
