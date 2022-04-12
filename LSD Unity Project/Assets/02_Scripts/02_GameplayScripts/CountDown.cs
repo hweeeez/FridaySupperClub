@@ -4,14 +4,15 @@ using UnityEngine;
 using UnityEngine.UI;
 public class CountDown : MonoBehaviour
 {
+    private AudioSource audioSource;
+    public AudioClip shortBeep, longBeep;
     public GameObject GameManager;
     public GameObject countDown;
-    public int countdownTime;
-    public Text countdownDisplay;
+
     private void Start()
     {
         StartCoroutine(StartDelay());
-
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -25,6 +26,16 @@ public class CountDown : MonoBehaviour
         Time.timeScale = 1;
 
         countDown.SetActive(false);
+    }
+    public void ShortBeep()
+    {
+        audioSource.clip = shortBeep;
+        audioSource.PlayOneShot(shortBeep);
+    }
+    public void LongBeep()
+    {
+        audioSource.clip = longBeep;
+        audioSource.PlayOneShot(longBeep);
     }
 }
 
