@@ -9,7 +9,7 @@ public class MolassesScript : MonoBehaviour
     AudioSource audioSource;
     public AudioClip warning, waterSplash;
     //Timer
-    float timeRemaining = 1f; //in seconds
+    float timeRemaining = 60f; //in seconds
     bool timerIsRunning = false;
     public GameObject timerText;
 

@@ -603,8 +603,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 705.7, y: -18.1}
-  m_SizeDelta: {x: 196.58, y: 38}
+  m_AnchoredPosition: {x: 659.64, y: -14.08}
+  m_SizeDelta: {x: 288.71, y: 46.05}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &225155557
 MonoBehaviour:
@@ -4468,7 +4468,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: TUTORIAL
+  m_text: HOW TO PLAY
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3e5c06ca88fe040a79e235a1465941f7, type: 2}
   m_sharedMaterial: {fileID: -5558006430179034474, guid: 3e5c06ca88fe040a79e235a1465941f7, type: 2}
@@ -5634,8 +5634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.2900085, y: -10}
-  m_SizeDelta: {x: -13.77, y: 4.36}
+  m_AnchoredPosition: {x: -10.540009, y: -9.195}
+  m_SizeDelta: {x: -28.26, y: 0.87878}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &5835394983442400743
 PrefabInstance:
