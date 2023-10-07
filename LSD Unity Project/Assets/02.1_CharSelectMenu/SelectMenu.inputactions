@@ -11,7 +11,8 @@
                     "id": "adfd1ac1-9800-4bb7-a310-ee16bd91d5ed",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Left",
@@ -19,7 +20,8 @@
                     "id": "acc470d0-5340-4115-95d8-e76c66ce051f",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 },
                 {
                     "name": "Right",
@@ -27,7 +29,8 @@
                     "id": "7d71ec8b-3ccb-4198-96f7-e2f2741d7328",
                     "expectedControlType": "Button",
                     "processors": "",
-                    "interactions": ""
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -67,7 +70,7 @@
                 {
                     "name": "",
                     "id": "51b8dad2-9eb9-4471-b834-93bade6ffbb1",
-                    "path": "<Keyboard>/numpad8",
+                    "path": "<Keyboard>/8",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard4",
