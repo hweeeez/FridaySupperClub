@@ -20,20 +20,10 @@ public class characterspawn : MonoBehaviour
     public GameObject playerTwo;
     public GameObject playerThree;
     public GameObject playerFour;
-    public Sprite konpeito;
-    public Sprite rocksugar;
-    public Sprite macaroon;
-    public Sprite tanghulu;
-    public GameObject kpGO;
-    public GameObject rsGO;
-    public GameObject macGO;
-    public GameObject thGO;
+
     //  public GameObject Map1;
     //public GameObject Map2;
-    public RuntimeAnimatorController kpAnim;
-    public RuntimeAnimatorController rsAnim;
-    public RuntimeAnimatorController thAnim;
-    public RuntimeAnimatorController macAnim;
+
     string mapChosen;
     void Awake()
     {

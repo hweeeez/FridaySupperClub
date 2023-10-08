@@ -3,9 +3,10 @@ using UnityEngine.InputSystem.Interactions;
 using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using Unity.Netcode;
 
 [RequireComponent(typeof(CharacterController))]
-public class Controller : MonoBehaviour
+public class NetControl : NetworkBehaviour
 {
     public bool rayGround;
     AudioSource aS;
@@ -407,9 +408,10 @@ public class Controller : MonoBehaviour
 
         RaycastHit hit;
         if (Physics.Raycast(this.transform.position, Vector2.down, out hit, 1.8f, groundMask)
- )
+    )
         {
             Debug.DrawRay(this.transform.position, Vector2.down, Color.red);
+            print("Gronded");
             playerVelocity.y = 0;
 
         }
