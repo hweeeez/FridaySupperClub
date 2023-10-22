@@ -172,7 +172,7 @@ MonoBehaviour:
   feetMask:
     serializedVersion: 2
     m_Bits: 128
-  actionReference: {fileID: 6832862665110910685, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
+  actionReference: {fileID: -7197453741310385100, guid: e372e2dac7b2f7646b54992bb3c45a4b, type: 3}
   jumpGravity: -85.81
   fallingGravity: -95.81
   slamGravity: -280
@@ -346,7 +346,7 @@ MonoBehaviour:
     m_ActionId: 2f5b79bb-e1de-47ec-b7c9-3d3f599653bf
     m_ActionName: Player1/MousePosition[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 1
-  m_DefaultControlScheme: Keyboard4
+  m_DefaultControlScheme: Keyboard1
   m_DefaultActionMap: Player1
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}

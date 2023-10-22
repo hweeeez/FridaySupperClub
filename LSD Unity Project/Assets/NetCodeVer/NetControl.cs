@@ -110,7 +110,7 @@ public class NetControl : NetworkBehaviour
 
     private void Awake()
     {
-        string mapChosen = PlayerPrefs.GetString("MapSelect");
+        //string mapChosen = PlayerPrefs.GetString("MapSelect");
         headCollider = groundCheck.GetComponent<Collider>();
         feetCollider = feetTransform.GetComponent<Collider>();
         spriteRender = gameObject.GetComponent<SpriteRenderer>();
@@ -126,7 +126,7 @@ public class NetControl : NetworkBehaviour
     private void Start()
     {
         aS = this.GetComponent<AudioSource>();
-        vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
+        //vicSc = GameObject.Find("VictoryManager").GetComponent<VictoryScreen>();
         CalculateRaySpacing();
         controller.enabled = true;
         feetCollider.enabled = true;
@@ -343,8 +343,10 @@ public class NetControl : NetworkBehaviour
 
     void Update()
     {
-        // print(playerVelocity.y);
-
+        if (!IsOwner)
+        {
+            return;
+        }
         bool tryAccelerate = false;
         // isColliding = Physics.CheckSphere(groundCheck.position, groundDistance, groundMask);
 
@@ -411,7 +413,6 @@ public class NetControl : NetworkBehaviour
     )
         {
             Debug.DrawRay(this.transform.position, Vector2.down, Color.red);
-            print("Gronded");
             playerVelocity.y = 0;
 
         }
