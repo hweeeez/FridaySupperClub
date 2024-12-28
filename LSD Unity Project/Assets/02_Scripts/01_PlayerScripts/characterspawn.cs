@@ -43,8 +43,8 @@ public class characterspawn : MonoBehaviour
         string Sprite2 = PlayerPrefs.GetString("Sprite2");
         string Sprite3 = PlayerPrefs.GetString("Sprite3");
         string Sprite4 = PlayerPrefs.GetString("Sprite4");
-        mapChosen = PlayerPrefs.GetString("MapSelect");
-
+        //mapChosen = PlayerPrefs.GetString("MapSelect");
+        mapChosen = "MapOne";
         #region
         if (Sprite1 == "KonpeitoSprite")
         {
@@ -165,10 +165,10 @@ public class characterspawn : MonoBehaviour
             player3.gameObject.GetComponent<Controller>().spawnPos = new Vector3(14.12f, 15.92f, 0f);
             player4.gameObject.GetComponent<Controller>().spawnPos = new Vector3(22.97f, 15.92f, 0f);
         }
-        print("p1: " + player1.gameObject.name);
+        /*print("p1: " + player1.gameObject.name);
         print("p2: " + player2.gameObject.name);
         print("p3: " + player3.gameObject.name);
-        print("p4: " + player4.gameObject.name);
+        print("p4: " + player4.gameObject.name);*/
     }
     private void Update()
     {

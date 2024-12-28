@@ -357,6 +357,7 @@ public class Controller : MonoBehaviour
 
         playerVelocity.y += gravityValue * Time.deltaTime;
         controller.Move(playerVelocity * Time.deltaTime);
+
         //print("isGrounded: " + controller.isGrounded);
         float jumpedDistance = transform.position.y - startY;
 
